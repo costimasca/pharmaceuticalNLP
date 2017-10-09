@@ -1,8 +1,8 @@
 # Information extraction on drug dosage
 
-Information extraction system that returns quantity and measuring unit given a natural language description of the dosage for a farmaceutical drug. For more details, read the pdf in the Report folder.
+Information extraction system that returns quantity and measuring unit given a natural language description of the dosage for a farmaceutical drug. The model is based on python's CRF implementation, crfsuite. Part-ofspeech tags were obtained with nltk.
 
-
+For more details, read the pdf in the Report folder.
 
 
 ## Getting Started
@@ -18,6 +18,9 @@ nltk
 ```
 sklearn
 ```
+```
+sklearn-crfsuite
+```
 
 
 ### Installing
@@ -32,6 +35,9 @@ pip3 install nltk
 pip3 install sklearn
  ```
 
+```
+pip3 install sklearn-crfsuite
+ ```
 To run the application, open a terminal session and issue the following commands:
 
 ```
