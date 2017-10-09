@@ -35,7 +35,10 @@ pip3 install sklearn
 To run the application, open a terminal session and issue the following commands:
 
 ```
-git pull https://github.com/costimasca/farmaceuticalNLP.git
+git clone https://github.com/costimasca/farmaceuticalNLP.git
+```
+```
+cd farmaceuticalNLP
 ```
 ```
 chmod +x dosage.py
