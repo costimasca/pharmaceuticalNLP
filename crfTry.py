@@ -1,7 +1,9 @@
 import sys
-sys.path.insert(0,'.')
-
 from crfUtil import *
+from sklearn.externals import joblib
+
+sys.path.insert(0, '.')
+
 
 train_sents = openFile('train.tsv')
 test_sents = openFile('test.tsv')
@@ -50,7 +52,7 @@ rs.fit(X_train, y_train)
 crf = rs.best_estimator_
 
 y_pred = crf.predict(X_test)
-metrics.flat_f1_score(y_test,y_pred,average = 'weighted',labels = labels)
+metrics.flat_f1_score(y_test, y_pred, average='weighted', labels=labels)
 
 # group B and I results
 sorted_labels = sorted(
@@ -62,5 +64,4 @@ print(metrics.flat_classification_report(
 ))
 
 
-from sklearn.externals import joblib
 joblib.dump(crf, 'model.pkl')

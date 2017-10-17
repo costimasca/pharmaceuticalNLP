@@ -3,6 +3,7 @@ import sys
 import nltkTry
 
 import matplotlib.pyplot as plt
+
 plt.style.use('ggplot')
 
 from itertools import chain
@@ -24,8 +25,8 @@ nltk.corpus.conll2002.fileids()
 
 import csv
 
-#clf = joblib.load('model.pkl')
 
+# clf = joblib.load('model.pkl')
 
 
 def word2features(sent, i):
@@ -44,8 +45,8 @@ def word2features(sent, i):
         'postag[:2]': postag[:2],
     }
     if i > 0:
-        word1 = sent[i-1][0]
-        postag1 = sent[i-1][1]
+        word1 = sent[i - 1][0]
+        postag1 = sent[i - 1][1]
         features.update({
             '-1:word.lower()': word1.lower(),
             '-1:word.istitle()': word1.istitle(),
@@ -56,9 +57,9 @@ def word2features(sent, i):
     else:
         features['BOS'] = True
 
-    if i < len(sent)-1:
-        word1 = sent[i+1][0]
-        postag1 = sent[i+1][1]
+    if i < len(sent) - 1:
+        word1 = sent[i + 1][0]
+        postag1 = sent[i + 1][1]
         features.update({
             '+1:word.lower()': word1.lower(),
             '+1:word.istitle()': word1.istitle(),
@@ -75,14 +76,17 @@ def word2features(sent, i):
 def sent2features(sent):
     return [word2features(sent, i) for i in range(len(sent))]
 
+
 def sent2labels(sent):
     return [label for token, postag, label in sent]
+
 
 def sent2tokens(sent):
     return [token for token, postag, label in sent]
 
 
-sys.path.insert(0,'.')
+sys.path.insert(0, '.')
+
 
 def makeCorpus():
     dir = 'DATASET/dosage/'
@@ -91,11 +95,11 @@ def makeCorpus():
     text = []
 
     for file in l:
-        with open(dir+file,'r') as f:
+        with open(dir + file, 'r') as f:
             text.append(nltkTry.parseString(f.read()))
             f.close()
 
-    with open('corpus','w') as f:
+    with open('corpus', 'w') as f:
         for sent in text:
             for tup in sent:
                 f.write(tup[0] + '\t' + tup[1] + '\tO-DOSE\n')
@@ -114,13 +118,13 @@ def remakeList(list):
             newList.append(smallList)
             smallList = []
 
-    #newList.append(smallList)
+    # newList.append(smallList)
 
     return newList
 
 
 def openFile(file):
-    with open(file,'r') as f:
+    with open(file, 'r') as f:
         text = [tuple(line.strip().split('\t')) for line in f.readlines()]
         f.close()
 
@@ -128,8 +132,9 @@ def openFile(file):
 
     return text
 
+
 def repairCorpus(file):
-    with open(file,'r') as f:
+    with open(file, 'r') as f:
         text = [tuple(line.strip().split('\t')) for line in f.readlines()]
         f.close()
 
@@ -146,14 +151,14 @@ def writeIOB(corpus):
 
     for sentence in corpus:
         newSentence = []
-        for i in range(0,len(sentence)):
+        for i in range(0, len(sentence)):
             token = sentence[i]
-            
+
             if len(token) == 2:
                 print(token)
                 if i == 0:
                     token = token + ('B-DOSE',)
-                elif len(sentence[i-1]) == 3:
+                elif len(sentence[i - 1]) == 3:
                     token = token + ('B-DOSE',)
                 else:
                     token = token + ('I-DOSE',)
@@ -162,6 +167,7 @@ def writeIOB(corpus):
 
     return newCorpus
 
+
 def getCorpus():
     file = '/home/constantin/Documents/practica/finalCorpus.tsv'
 
@@ -169,11 +175,12 @@ def getCorpus():
 
 
 def corpus2file(list, name):
-    with open(name,'w') as f:
+    with open(name, 'w') as f:
         for line in list:
             for token in line:
                 f.write(token[0] + '\t' + token[1] + '\t' + token[2] + '\n')
             f.write('\n')
+
 
 def getDosage(sentence):
     global clf
@@ -184,8 +191,8 @@ def getDosage(sentence):
 
     labels = clf.predict([sent])
     dosage = []
-    for i in range(0,len(labels[0])):
-        if(labels[0][i] == 'DOS'):
+    for i in range(0, len(labels[0])):
+        if (labels[0][i] == 'DOS'):
             dosage.append(sentence[i])
 
     return dosage
@@ -198,7 +205,7 @@ def getAllDosages():
     text = []
 
     for file in files:
-        with open(dir+file,'r') as f:
+        with open(dir + file, 'r') as f:
             text.append(f.read())
 
     text2 = []
@@ -208,11 +215,12 @@ def getAllDosages():
 
     return text, text2
 
+
 def makeDosageCorpus():
     file = 'dosageCorpus'
     corpus = 'dosage.tsv'
 
-    with open(file,'r') as f:
+    with open(file, 'r') as f:
         text = f.readlines()
         f.close()
 
@@ -223,15 +231,16 @@ def makeDosageCorpus():
         sent = nltk.pos_tag(sent)
         text2.append(sent)
 
-    with open(corpus,'w') as f:
+    with open(corpus, 'w') as f:
         for line in text2:
             for tup in line:
                 f.write(tup[0] + '\t' + tup[1] + '\t' + 'O\n')
             f.write('\n')
         f.close()
 
+
 def repairCorpus2():
-    with open("corpus.tsv",r) as f:
+    with open("corpus.tsv", r) as f:
         text = f.readlines()
         f.close()
 
@@ -246,9 +255,10 @@ def repairCorpus2():
 
     return text2
 
+
 def loadCorpus(file):
-    with open(file,'r') as f:
-        l = list(csv.reader(f,delimiter='\t'))
+    with open(file, 'r') as f:
+        l = list(csv.reader(f, delimiter='\t'))
 
     sentences = []
     sent = []
@@ -263,23 +273,38 @@ def loadCorpus(file):
     sentences.append(sent)
 
     for sent in sentences:
-        if sent[0] =='0' and sent[1] == '0':
+        if sent[0] == '0' and sent[1] == '0':
             sent[0] = '.'
             sent[1] = '.'
 
     return sentences
 
+
 def testTrain(sentences):
     import random
-    test = random.sample(sentences,150)
+    test_number = int(len(sentences) * 0.2)
+    test = random.sample(sentences, test_number)
     train = list(sent for sent in sentences if not sent in test)
 
-    return train,test
+    return train, test
 
-def writeTsv(sentences,name):
-    with open(name,'w') as f:
+
+def writeTsv(sentences, name):
+    with open(name, 'w') as f:
         for sent in sentences:
             for line in sent:
                 f.write(line[0] + '\t' + line[1] + '\t' + line[2] + '\n')
             f.write('\n')
         f.close()
+
+
+def gen_test_train_files(corpus_file):
+    """Given the .tsv corp file, it will generate 2 disjoint files, "train.tsv" and "test.tsv",
+    whose cardinality is in a 80%/20% ratio. """
+    sent = loadCorpus(corpus_file)
+    train, test = testTrain(sent)
+    writeTsv(train, "train.tsv")
+    writeTsv(test, "test.tsv")
+
+
+gen_test_train_files("corp.tsv")
