@@ -18,7 +18,6 @@ from sklearn.grid_search import RandomizedSearchCV
 import sklearn_crfsuite
 from sklearn_crfsuite import scorers
 from sklearn_crfsuite import metrics
-
 from sklearn.externals import joblib
 
 nltk.corpus.conll2002.fileids()
@@ -131,19 +130,6 @@ def openFile(file):
     text = remakeList(text)
 
     return text
-
-
-def repairCorpus(file):
-    with open(file, 'r') as f:
-        text = [tuple(line.strip().split('\t')) for line in f.readlines()]
-        f.close()
-
-    newCorpus = []
-    for line in text:
-        if line == ('0', '0', 'O-DOSE'):
-            line = ('.', '.', 'O-DOSE')
-        newCorpus.append(line)
-    return newCorpus
 
 
 def writeIOB(corpus):
@@ -264,7 +250,7 @@ def loadCorpus(file):
     sent = []
 
     for line in l:
-        if line[0] == '':
+        if line == [] or line[0] == '':
             sentences.append(sent)
             sent = []
         else:
@@ -273,7 +259,7 @@ def loadCorpus(file):
     sentences.append(sent)
 
     for sent in sentences:
-        if sent[0] == '0' and sent[1] == '0':
+        if sent and sent[0] == '0' and sent[1] == '0':
             sent[0] = '.'
             sent[1] = '.'
 
@@ -307,4 +293,99 @@ def gen_test_train_files(corpus_file):
     writeTsv(test, "test.tsv")
 
 
-gen_test_train_files("corp.tsv")
+def word2features(sent, i):
+    word = sent[i][0]
+    postag = sent[i][1]
+
+    features = {
+        'bias': 1.0,
+        'word.lower()': word.lower(),
+        'word[-3:]': word[-3:],
+        'word[-2:]': word[-2:],
+        'word.isupper()': word.isupper(),
+        'word.istitle()': word.istitle(),
+        'word.isdigit()': word.isdigit(),
+        'postag': postag,
+        'postag[:2]': postag[:2],
+    }
+    if i > 0:
+        word1 = sent[i - 1][0]
+        postag1 = sent[i - 1][1]
+        features.update({
+            '-1:word.lower()': word1.lower(),
+            '-1:word.istitle()': word1.istitle(),
+            '-1:word.isupper()': word1.isupper(),
+            '-1:postag': postag1,
+            '-1:postag[:2]': postag1[:2],
+        })
+    else:
+        features['BOS'] = True
+
+    if i < len(sent) - 1:
+        word1 = sent[i + 1][0]
+        postag1 = sent[i + 1][1]
+        features.update({
+            '+1:word.lower()': word1.lower(),
+            '+1:word.istitle()': word1.istitle(),
+            '+1:word.isupper()': word1.isupper(),
+            '+1:postag': postag1,
+            '+1:postag[:2]': postag1[:2],
+        })
+    else:
+        features['EOS'] = True
+
+    return features
+
+
+def sent2features(sent):
+    return [word2features(sent, i) for i in range(len(sent))]
+
+
+def sent2labels(sent):
+    return [label for token, postag, label in sent]
+
+
+def sent2tokens(sent):
+    return [token for token, postag, label in sent]
+
+
+def lists_equal(l1, l2):
+    if len(l1) != len(l2):
+        return False
+
+    for i in range(len(l1)):
+        if l1[i] != l2[i]:
+            return False
+
+    return True
+
+
+def view_issues():
+    """generates a tsv file with labels given to test sentences.
+    the purpose of this is to see where most errors occur.
+    perhaps a clue to a correction in the data set can be inferred from this"""
+    test = loadCorpus('test.tsv')
+    clf = joblib.load('model.pkl')
+
+    corp = loadCorpus('corp.tsv')
+
+    for sent in corp:
+        new_sent = ' '.join([el[0] for el in sent])
+        sentence = nltk.word_tokenize(new_sent)
+        sentence = nltk.pos_tag(sentence)
+        sentence = sent2features(sentence)
+
+        labels = [el[2] for el in sent]
+
+        prediction = clf.predict([sentence])[0]
+        if not lists_equal(labels, prediction):
+            j = corp.index(sent)
+            for i in range(len(sent)):
+                if corp[j][i][2] != prediction[i]:
+                    corp[j][i][2] += '!!!' + prediction[i]
+
+    writeTsv(corp, 'issues.tsv')
+
+
+if __name__ == '__main__':
+    view_issues()

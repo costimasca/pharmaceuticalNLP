@@ -20,8 +20,8 @@ without	IN	O
 regard	NN	O
 to	TO	O
 meals	NNS	O
-0	0	O
-		
+.	.	O
+
 Administer	RB	O
 ABLAVAR	NNP	O
 as	IN	O
@@ -65,8 +65,8 @@ mL	NN	UNIT
 normal	JJ	O
 saline	JJ	O
 flush	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 suggested	JJ	O
 total	JJ	O
@@ -82,8 +82,8 @@ kg	NN	O
 in	IN	O
 divided	JJ	O
 doses	NNS	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -114,8 +114,8 @@ until	IN	O
 the	DT	O
 medication	NN	O
 disappears	VBZ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -156,8 +156,8 @@ based	VBN	O
 on	IN	O
 clinical	JJ	O
 response	NN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 single	JJ	DOS
 intravenous	JJ	UNIT
@@ -176,8 +176,8 @@ of	IN	O
 pituitary	JJ	O
 corticotrophin	NN	O
 function	NN	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 :	:	O
 The	DT	O
@@ -213,8 +213,8 @@ of	IN	O
 100	CD	DOS
 mg	JJ	UNIT
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -232,13 +232,13 @@ is	VBZ	O
 mg/kg/day	NN	UNIT
 given	VBN	O
 in	IN	O
-2	CD	O
+2	CD	DOS
 or	CC	O
-3	CD	O
-divided	JJ	O
-doses	NNS	O
-0	0	O
-		
+3	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -257,8 +257,8 @@ or	CC	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -299,8 +299,8 @@ following	VBG	O
 corneal	JJ	O
 refractive	JJ	O
 surgery	NN	O
-0	0	O
-		
+.	.	O
+
 Adacel	NNP	O
 vaccine	NN	O
 is	VBZ	O
@@ -310,7 +310,7 @@ a	DT	O
 single	JJ	DOS
 0.5	CD	DOS
 mL	NN	UNIT
-intramuscular	JJ	UNIT
+intramuscular	JJ	O
 injection	NN	UNIT
 into	IN	O
 the	DT	O
@@ -320,8 +320,8 @@ of	IN	O
 the	DT	O
 upper	JJ	O
 arm	NN	O
-0	0	O
-		
+.	.	O
+
 It	PRP	O
 is	VBZ	O
 recommended	VBN	O
@@ -337,8 +337,8 @@ on	IN	O
 an	DT	O
 empty	JJ	O
 stomach	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -354,8 +354,8 @@ per	IN	O
 day	NN	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 single	JJ	DOS
 vaccine	NN	UNIT
@@ -380,8 +380,8 @@ of	IN	O
 Adenovirus	NNP	O
 Type	NNP	O
 7	CD	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 starting	VBG	O
 dose	NN	O
@@ -396,8 +396,8 @@ daily	JJ	O
 for	IN	O
 14	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 adults	NNS	O
 (	(	O
@@ -418,8 +418,8 @@ mCi	NN	UNIT
 370	CD	DOS
 MBq	NNP	UNIT
 )	)	O
-0	0	O
-		
+.	.	O
+
 ADVAIR	NNP	O
 HFA	NNP	O
 should	MD	O
@@ -436,8 +436,8 @@ orally	RB	O
 inhaled	VBN	O
 route	NN	O
 only	RB	O
-0	0	O
-		
+.	.	O
+
 Administer	NNP	O
 as	IN	O
 a	DT	O
@@ -445,8 +445,8 @@ single	JJ	DOS
 0.5	CD	DOS
 mL	NN	UNIT
 dose	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 IV	NNP	O
@@ -454,8 +454,8 @@ dose	NN	O
 is	VBZ	O
 16	CD	DOS
 mg/m??	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -491,8 +491,8 @@ nostril	NN	O
 once	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 single	JJ	O
@@ -505,8 +505,8 @@ is	VBZ	O
 mg	NN	UNIT
 injected	VBD	O
 subcutaneously	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -523,8 +523,8 @@ mg	NN	UNIT
 once	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 recommended	VBD	O
@@ -547,8 +547,8 @@ the	DT	O
 evening	NN	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosing	NN	O
@@ -566,8 +566,8 @@ the	DT	O
 evening	NN	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -582,8 +582,8 @@ or	CC	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -622,8 +622,8 @@ planned	JJ	O
 time	NN	O
 of	IN	O
 awakening	VBG	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -662,8 +662,8 @@ planned	JJ	O
 time	NN	O
 of	IN	O
 awakening	VBG	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -675,8 +675,8 @@ mg	NN	UNIT
 or	CC	O
 2.5	CD	DOS
 mg	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -701,11 +701,11 @@ is	VBZ	O
 mg/kg/day	NN	UNIT
 divided	VBD	O
 into	IN	O
-2	CD	O
+2	CD	DOS
 or	CC	O
-3	CD	O
-equal	JJ	O
-doses	NNS	O
+3	CD	DOS
+equal	JJ	UNIT
+doses	NNS	UNIT
 administered	VBN	O
 at	IN	O
 equally-divided	JJ	O
@@ -715,13 +715,13 @@ i.e.	NN	O
 ,	,	O
 7.5	CD	DOS
 mg/kg	NN	UNIT
-q12h	NN	O
+q12h	NN	UNIT
 or	CC	O
 5	CD	DOS
 mg/kg	JJ	UNIT
-q8h	NN	O
-0	0	O
-		
+q8h	NN	UNIT
+.	.	O
+
 For	IN	O
 peripheral	JJ	O
 intravenous	JJ	O
@@ -739,8 +739,8 @@ will	MD	O
 reduce	VB	O
 protein	JJ	O
 catabolism	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -775,8 +775,8 @@ administered	VBN	O
 every	DT	O
 other	JJ	O
 week	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -796,8 +796,8 @@ capsule	NN	UNIT
 taken	VBN	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -823,22 +823,22 @@ hours	NNS	O
 ,	,	O
 delivering	VBG	O
 approximately	RB	O
-4	CD	O
-mg	NNS	O
+4	CD	DOS
+mg	NNS	UNIT
 of	IN	O
 testosterone	NN	O
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 Initial	JJ	O
 200-400	JJ	DOS
 mg	NNS	UNIT
 daily	RB	O
 in	IN	O
-two	CD	O
-divided	JJ	O
-doses	NNS	O
+two	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
 ,	,	O
 with	IN	O
 meals	NNS	O
@@ -856,8 +856,8 @@ dosage	NN	O
 in	IN	O
 one	CD	O
 week	NN	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 suppository	NN	UNIT
 in	IN	O
@@ -873,8 +873,8 @@ weeks	NNS	O
 in	IN	O
 nonspecific	JJ	O
 proctitis	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -885,8 +885,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 target	NN	O
@@ -896,8 +896,8 @@ aripiprazole	NN	O
 is	VBZ	O
 10	CD	DOS
 mg/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 intramuscular	JJ	O
@@ -924,8 +924,8 @@ disease	NN	O
 entity	NN	O
 being	VBG	O
 treated	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 range	NN	O
 of	IN	O
@@ -948,8 +948,8 @@ to	TO	O
 48	CD	DOS
 mg/m??bsa/day	NN	UNIT
 )	)	O
-0	0	O
-		
+.	.	O
+
 ARMONAIR	NNP	O
 RESPICLICK	NNP	O
 should	MD	O
@@ -971,8 +971,8 @@ the	DT	O
 orally	RB	O
 inhaled	JJ	O
 route	NN	O
-0	0	O
-		
+.	.	O
+
 Most	JJS	O
 patients	NNS	O
 require	VBP	O
@@ -980,8 +980,8 @@ require	VBP	O
 to	TO	O
 120	CD	DOS
 mg/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1003,8 +1003,8 @@ daily	JJ	O
 after	IN	O
 a	DT	O
 meal	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 adults	NNS	O
 ,	,	O
@@ -1048,8 +1048,8 @@ see	VBP	O
 Clinical	JJ	O
 Studies	NNP	O
 ]	NNP	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 average	JJ	O
 protective	JJ	O
@@ -1065,8 +1065,8 @@ to	TO	O
 150	CD	DOS
 mg	NNS	UNIT
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -1096,8 +1096,8 @@ per	IN	O
 nostril	JJ	O
 twice	JJ	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 ASTEPRO	RB	O
 0.1	CD	O
 %	NN	O
@@ -1108,8 +1108,8 @@ per	IN	O
 nostril	JJ	O
 twice	JJ	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1125,8 +1125,8 @@ for	IN	O
 to	TO	O
 14	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 Atralin	NNP	O
 Gel	NNP	O
 should	MD	O
@@ -1156,8 +1156,8 @@ the	DT	O
 entire	JJ	O
 affected	JJ	O
 area	NN	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 and	CC	O
 pediatric	JJ	O
@@ -1196,8 +1196,8 @@ on	IN	O
 an	DT	O
 empty	JJ	O
 stomach	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -1209,8 +1209,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1251,8 +1251,8 @@ every	DT	O
 10	CD	O
 weeks	NNS	O
 thereafter	RB	O
-0	0	O
-		
+.	.	O
+
 AVITA??	NNP	O
 Cream	NNP	O
 should	MD	O
@@ -1283,8 +1283,8 @@ entire	JJ	O
 affected	JJ	O
 area	NN	O
 lightly	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1294,8 +1294,8 @@ micrograms	NN	UNIT
 once	RB	O
 a	DT	O
 week	NN	O
-0	0	O
-		
+.	.	O
+
 Active	JJ	O
 Duodenal	NNP	O
 Ulcer	NNP	O
@@ -1313,8 +1313,8 @@ once	RB	O
 daily	RB	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 When	WRB	O
 AZILECT	NNP	O
 is	VBZ	O
@@ -1346,8 +1346,8 @@ administered	VBN	O
 orally	RB	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 starting	VBG	O
@@ -1367,12 +1367,12 @@ approximately	RB	O
 mg/kg	NNS	UNIT
 administered	VBN	O
 in	IN	O
-two	CD	O
-equally	RB	O
-divided	JJ	O
-doses	NNS	O
-0	0	O
-		
+two	CD	DOS
+equally	RB	UNIT
+divided	JJ	UNIT
+doses	NNS	UNIT
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1398,8 +1398,8 @@ progression	NN	O
 or	CC	O
 unacceptable	JJ	O
 toxicity	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dosage	NN	O
 range	NN	O
@@ -1409,8 +1409,8 @@ mg	NN	UNIT
 to	TO	O
 0.8	CD	DOS
 mg	NNS	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1423,8 +1423,8 @@ administered	VBN	O
 orally	RB	O
 twice	JJ	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Pediatric	JJ	O
 Patients	NNS	O
 ,	,	O
@@ -1442,8 +1442,8 @@ or	CC	O
 150	CD	DOS
 mg/m??/24	JJ	UNIT
 hr	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -1464,8 +1464,8 @@ at	IN	O
 4-week	JJ	O
 intervals	NNS	O
 thereafter	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -1477,8 +1477,8 @@ four	CD	O
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 and	CC	O
 Children	NNP	O
@@ -1506,8 +1506,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 cough	NN	O
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 drop	NN	UNIT
@@ -1531,8 +1531,8 @@ apart	RB	O
 for	IN	O
 7	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1554,8 +1554,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1584,8 +1584,8 @@ every	DT	O
 to	TO	O
 4	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 Hodgkin	NNP	O
 's	POS	O
 disease	NN	O
@@ -1611,8 +1611,8 @@ weekly	JJ	O
 or	CC	O
 twice	JJ	O
 weekly	RB	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 conjunctivitis	NN	O
 and	CC	O
@@ -1646,8 +1646,8 @@ to	TO	O
 three	CD	O
 hours	NNS	O
 initially	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 initial	JJ	O
@@ -1672,8 +1672,8 @@ added	VBN	O
 to	TO	O
 diuretic	JJ	O
 therapy	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1702,8 +1702,8 @@ of	IN	O
 to	TO	O
 30	CD	O
 seconds	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -1730,8 +1730,8 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 total	JJ	O
@@ -1758,8 +1758,8 @@ as	IN	O
 a	DT	O
 single	JJ	DOS
 dose	NN	UNIT
-0	0	O
-		
+.	.	O
+
 Initial	JJ	O
 dosage	NN	O
 range	NN	O
@@ -1781,8 +1781,8 @@ per	IN	O
 kilogram	NN	O
 body	NN	O
 weight	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 total	JJ	O
@@ -1816,8 +1816,8 @@ g/m??/day	NN	UNIT
 in	IN	O
 larger	JJR	O
 patients	NNS	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 :	:	O
 The	DT	O
@@ -1866,8 +1866,8 @@ intervals	NNS	O
 ,	,	O
 as	IN	O
 needed	VBN	O
-0	0	O
-		
+.	.	O
+
 Buprenorphine	NNP	O
 and	CC	O
 naloxone	RB	O
@@ -1881,8 +1881,8 @@ a	DT	O
 single	JJ	DOS
 daily	JJ	O
 dose	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -1896,8 +1896,8 @@ or	CC	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -1919,8 +1919,8 @@ weekly	RB	O
 every	DT	O
 other	JJ	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -1941,8 +1941,8 @@ of	IN	O
 to	TO	O
 3	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -1985,8 +1985,8 @@ given	VBN	O
 intravenously	RB	O
 or	CC	O
 intramuscularly	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -2012,8 +2012,8 @@ meals	NNS	O
 and	CC	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dose	NN	O
@@ -2029,8 +2029,8 @@ is	VBZ	O
 25	CD	DOS
 mg	NN	UNIT
 b.i.d	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -2051,8 +2051,8 @@ four	CD	O
 times	NNS	O
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -2071,11 +2071,11 @@ the	DT	O
 morning	NN	O
 or	CC	O
 evening	NN	O
-0	0	O
-		
+.	.	O
+
 0.1	CD	DOS
 mg	JJ	UNIT
-tablet	NN	O
+tablet	NN	UNIT
 twice	RB	O
 daily	RB	O
 (	(	O
@@ -2083,8 +2083,8 @@ morning	NN	O
 and	CC	O
 bedtime	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -2111,8 +2111,8 @@ doses	NNS	O
 every	DT	O
 12	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -2140,8 +2140,8 @@ disease	NN	O
 entity	NN	O
 being	VBG	O
 treated	VBN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 small	JJ	O
 amount	NN	O
@@ -2164,8 +2164,8 @@ directed	VBN	O
 by	IN	O
 a	DT	O
 physician	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -2181,8 +2181,8 @@ CYP2D6	NNP	O
 EMs	NNP	O
 and	CC	O
 IMs	NNP	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 normal	JJ	O
 adult	NN	O
@@ -2205,8 +2205,8 @@ leukocytes	NNS	O
 by	IN	O
 intravenous	JJ	O
 injection	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -2220,8 +2220,8 @@ mg	NN	UNIT
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 tablet	NN	UNIT
 three	CD	O
@@ -2229,8 +2229,8 @@ or	CC	O
 four	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -2248,9 +2248,9 @@ daily	JJ	O
 ,	,	O
 or	CC	O
 in	IN	O
-two	CD	O
-divided	JJ	O
-doses	NNS	O
+two	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
 ,	,	O
 in	IN	O
 pediatric	JJ	O
@@ -2258,8 +2258,8 @@ patients	NNS	O
 and	CC	O
 in	IN	O
 adults	NNS	O
-0	0	O
-		
+.	.	O
+
 Metastatic	JJ	O
 Testicular	NNP	O
 Tumors	NNPS	O
@@ -2295,8 +2295,8 @@ for	IN	O
 days	NNS	O
 per	IN	O
 cycle	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 daily	JJ	O
@@ -2306,8 +2306,8 @@ not	RB	O
 exceed	VB	O
 12	CD	DOS
 grams	NNS	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -2330,8 +2330,8 @@ or	CC	O
 without	IN	O
 a	DT	O
 meal	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -2340,13 +2340,13 @@ is	VBZ	O
 1.34	CD	DOS
 mg	NN	UNIT
 (	(	O
-1/2	CD	DOS
+01/02/17	CD	DOS
 tablet	NN	UNIT
 )	)	O
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -2381,8 +2381,8 @@ for	IN	O
 3	CD	O
 consecutive	JJ	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -2397,8 +2397,8 @@ daily	RB	O
 to	TO	O
 affected	JJ	O
 area	NN	O
-0	0	O
-		
+.	.	O
+
 CLINDETS??	NNP	O
 (	(	O
 clindamycin	JJ	O
@@ -2422,8 +2422,8 @@ morning	NN	O
 and	CC	O
 at	IN	O
 night	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	NNP	O
 Cloderm	NNP	O
 (	(	O
@@ -2446,8 +2446,8 @@ and	CC	O
 rub	NN	O
 in	IN	O
 gently	RB	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 :	:	O
 15	CD	DOS
@@ -2467,8 +2467,8 @@ dose	NN	O
 30	CD	DOS
 mg	NN	UNIT
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -2491,11 +2491,11 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	RB	O
 1	CD	DOS
-??"	JJ	DOS
+to	JJ	O
 4	CD	DOS
 pumps	NNS	UNIT
 up	RB	O
@@ -2504,8 +2504,8 @@ four	CD	O
 times	NNS	O
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -2533,8 +2533,8 @@ once	RB	O
 or	CC	O
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 adults	NNS	O
 ,	,	O
@@ -2555,8 +2555,8 @@ or	CC	O
 in	IN	O
 divided	JJ	O
 doses	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dose	NN	O
 of	IN	O
@@ -2570,8 +2570,8 @@ four	CD	O
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	NNP	O
 twice	RB	O
 daily	RB	O
@@ -2586,8 +2586,8 @@ for	IN	O
 4	CD	O
 consecutive	JJ	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -2601,8 +2601,8 @@ twice	RB	O
 daily	RB	O
 with	IN	O
 meals	NNS	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 thin	JJ	O
 layer	NN	O
@@ -2631,8 +2631,8 @@ and	CC	O
 once	RB	O
 at	IN	O
 night	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -2661,8 +2661,8 @@ administered	VBN	O
 by	IN	O
 intravenous	JJ	O
 bolus	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -2689,8 +2689,8 @@ disease	NN	O
 entity	NN	O
 being	VBG	O
 treated	VBN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 small	JJ	O
 quantity	NN	O
@@ -2708,8 +2708,8 @@ daily	RB	O
 ,	,	O
 as	IN	O
 required	VBN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 thin	JJ	O
 film	NN	O
@@ -2724,8 +2724,8 @@ to	TO	O
 the	DT	O
 affected	JJ	O
 area	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -2749,8 +2749,8 @@ disease	NN	O
 entity	NN	O
 being	VBG	O
 treated	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -2779,8 +2779,8 @@ mg	NNS	UNIT
 every	DT	O
 4	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 COVERA-HS	NNP	O
 should	MD	O
 be	VB	O
@@ -2789,8 +2789,8 @@ once	RB	O
 daily	JJ	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	VBG	O
@@ -2802,8 +2802,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Administer	NNP	O
 CYMBALTA	NNP	O
 at	IN	O
@@ -2836,8 +2836,8 @@ mg	JJ	UNIT
 twice	RB	O
 daily	RB	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dose	NN	O
@@ -2845,7 +2845,7 @@ is	VBZ	O
 2	CD	DOS
 mg	NN	UNIT
 (	(	O
-1/2	CD	DOS
+01/02/17	CD	DOS
 tablet	NN	UNIT
 )	)	O
 two	CD	O
@@ -2866,8 +2866,8 @@ response	NN	O
 of	IN	O
 the	DT	O
 patient	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 CYSTAGON??	NNP	O
@@ -2894,11 +2894,11 @@ base	NN	O
 ,	,	O
 given	VBN	O
 in	IN	O
-four	CD	O
-divided	JJ	O
-doses	NNS	O
-0	0	O
-		
+four	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 drop	NN	UNIT
@@ -2911,8 +2911,8 @@ eye	NN	O
 every	DT	O
 waking	VBG	O
 hour	NN	O
-0	0	O
-		
+.	.	O
+
 Recommended	VBN	O
 starting	JJ	O
 dosage	NN	O
@@ -2920,8 +2920,8 @@ is	VBZ	O
 5	CD	DOS
 mcg	JJ	UNIT
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -2945,8 +2945,8 @@ times	NNS	O
 daily	RB	O
 with	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 It	PRP	O
 is	VBZ	O
 recommended	VBN	O
@@ -2965,8 +2965,8 @@ three	CD	O
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 adult	NN	O
 starting	VBG	O
@@ -2997,16 +2997,16 @@ sulfapyrimidine	NN	O
 type	NN	O
 ,	,	O
 e.g	NN	O
-0	0	O
-		
+.	.	O
+
 sufadoxine	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
 is	VBZ	O
-one	CD	O
+one	CD	DOS
 65	CD	DOS
 mg	NN	UNIT
 propoxyphene	NN	O
@@ -3019,8 +3019,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 bolus	NN	O
@@ -3054,8 +3054,8 @@ a	DT	O
 mL	NN	UNIT
 saline	NN	O
 flush	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -3082,8 +3082,8 @@ disease	NN	O
 entity	NN	O
 being	VBG	O
 treated	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -3094,8 +3094,8 @@ mg/kg/day	NN	UNIT
 given	VBN	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 Doses	NNS	O
 of	IN	O
 400	CD	DOS
@@ -3113,8 +3113,8 @@ week	NN	O
 are	VBP	O
 recommended	VBN	O
 initially	RB	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -3129,8 +3129,8 @@ skin	NN	O
 areas	NNS	O
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	VBG	O
@@ -3155,8 +3155,8 @@ the	DT	O
 first	JJ	O
 main	JJ	O
 meal	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 total	JJ	O
 daily	JJ	O
@@ -3172,8 +3172,8 @@ each	DT	O
 morning	NN	O
 with	IN	O
 breakfast	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	NN	O
 recommended	VBD	O
@@ -3197,8 +3197,8 @@ at	IN	O
 bedtime	NN	O
 )	)	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 DIFFERIN??	NNP	O
 Cream	NNP	O
 should	MD	O
@@ -3215,8 +3215,8 @@ once	RB	O
 daily	JJ	O
 at	IN	O
 nighttime	NN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 thin	JJ	O
 film	NN	O
@@ -3235,8 +3235,8 @@ lips	NNS	O
 and	CC	O
 mucous	JJ	O
 membranes	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -3253,8 +3253,8 @@ to	TO	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 recommended	JJ	O
 daily	JJ	O
@@ -3266,8 +3266,8 @@ usually	RB	O
 to	TO	O
 8	CD	DOS
 mg/kg	NNS	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	NN	O
@@ -3279,8 +3279,8 @@ HCT	NNP	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -3294,11 +3294,11 @@ is	VBZ	O
 1	CD	O
 g/day	NN	O
 in	IN	O
-two	CD	O
-divided	JJ	O
-doses	NNS	O
-0	0	O
-		
+two	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
+.	.	O
+
 Donnatal??	NNP	O
 Tablets	NNP	O
 -	:	O
@@ -3322,16 +3322,16 @@ and	CC	O
 severity	NN	O
 of	IN	O
 symptoms	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
 of	IN	O
 DORIBAX??	NNP	O
 is	VBZ	O
-500	CD	O
-mg	NN	O
+500	CD	DOS
+mg	NN	UNIT
 administered	VBN	O
 every	DT	O
 8	CD	O
@@ -3349,8 +3349,8 @@ patients	NNS	O
 years	NNS	O
 of	IN	O
 age	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -3372,8 +3372,8 @@ in	IN	O
 gently	RB	O
 and	CC	O
 completely	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3408,8 +3408,8 @@ total	NN	O
 of	IN	O
 four	CD	O
 cycles	NNS	O
-0	0	O
-		
+.	.	O
+
 Generally	RB	O
 ,	,	O
 it	PRP	O
@@ -3428,8 +3428,8 @@ directed	VBN	O
 by	IN	O
 a	DT	O
 physician	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 daily	JJ	O
@@ -3454,8 +3454,8 @@ three	CD	O
 times	NNS	O
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3469,9 +3469,9 @@ albuterol	VB	O
 sulfate	NN	O
 )	)	O
 is	VBZ	O
-one	CD	O
+one	CD	DOS
 3	CD	DOS
-mL	NN	O
+mL	NN	UNIT
 vial	NN	UNIT
 administered	VBD	O
 4	CD	O
@@ -3494,8 +3494,8 @@ day	NN	O
 ,	,	O
 if	IN	O
 needed	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -3509,8 +3509,8 @@ infusion	NN	O
 is	VBZ	O
 30	CD	DOS
 mcg/hr	NN	UNIT
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 drop	NN	UNIT
@@ -3534,8 +3534,8 @@ tapering	VBG	O
 as	IN	O
 clinically	RB	O
 indicated	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3550,8 +3550,8 @@ mg	NN	UNIT
 )	)	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 DUTREBIS	NNP	O
 is	VBZ	O
 a	DT	O
@@ -3568,8 +3568,8 @@ and	CC	O
 mg	NN	UNIT
 of	IN	O
 raltegravir	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3604,8 +3604,8 @@ sulfate	NN	O
 ,	,	O
 respectively	RB	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosages	NNS	O
@@ -3625,8 +3625,8 @@ is	VBZ	O
 to	TO	O
 120	CD	DOS
 mg/m??	NNS	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3637,7 +3637,7 @@ is	VBZ	O
 mg/day	NN	UNIT
 taken	VBN	O
 as	IN	O
-one	CD	O
+one	CD	DOS
 100	CD	DOS
 mg	NN	O
 capsule	NN	UNIT
@@ -3645,8 +3645,8 @@ orally	RB	O
 three	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3662,8 +3662,8 @@ to	TO	O
 four	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dose	NN	O
 of	IN	O
@@ -3693,8 +3693,8 @@ to	TO	O
 weeks	NNS	O
 total	JJ	O
 duration	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dosage	NN	O
 delivered	VBN	O
@@ -3710,8 +3710,8 @@ mg/kg	NN	UNIT
 of	IN	O
 atropine	JJ	O
 sulfate	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -3730,8 +3730,8 @@ up	IN	O
 to	TO	O
 8	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 parenteral	NN	O
@@ -3745,8 +3745,8 @@ given	VBN	O
 subcutaneously	RB	O
 or	CC	O
 intramuscularly	RB	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -3766,8 +3766,8 @@ once	RB	O
 daily	RB	O
 after	IN	O
 washing	VBG	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -3801,8 +3801,8 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 tablet	NN	UNIT
 is	VBZ	O
@@ -3814,8 +3814,8 @@ at	IN	O
 the	DT	O
 same	JJ	O
 time	NN	O
-0	0	O
-		
+.	.	O
+
 In	IN	O
 the	DT	O
 treatment	NN	O
@@ -3838,8 +3838,8 @@ daily	RB	O
 for	IN	O
 4	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -3856,8 +3856,8 @@ mg	NN	UNIT
 every	DT	O
 12	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -3871,8 +3871,8 @@ in	IN	O
 equally	RB	O
 divided	JJ	O
 doses	NNS	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 treatment	NN	O
 of	IN	O
@@ -3911,8 +3911,8 @@ the	DT	O
 skin	NN	O
 twice	RB	O
 weekly	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3933,8 +3933,8 @@ amount	NN	O
 that	WDT	O
 controls	VBZ	O
 symptoms	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 intravenous	JJ	O
@@ -3946,8 +3946,8 @@ to	TO	O
 mL	NNS	UNIT
 per	IN	O
 varix	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -3967,12 +3967,12 @@ as	IN	O
 a	DT	O
 15-minute	JJ	O
 i.v	NN	O
-0	0	O
-		
+.	.	O
+
 Dose	NNP	O
 once-daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -3995,8 +3995,8 @@ to	TO	O
 minute	NN	O
 intravenous	JJ	O
 infusion	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -4034,8 +4034,8 @@ mL	NN	UNIT
 every	DT	O
 other	JJ	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -4055,8 +4055,8 @@ as	IN	O
 a	DT	O
 single	JJ	DOS
 dose	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dosage	NN	O
 of	IN	O
@@ -4069,8 +4069,8 @@ once	RB	O
 daily	JJ	O
 ,	,	O
 orally	RB	O
-0	0	O
-		
+.	.	O
+
 Exogenous	JJ	O
 Obesity	NN	O
 :	:	O
@@ -4085,8 +4085,8 @@ breakfast	NN	O
 for	IN	O
 appetite	JJ	O
 control	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dose	NN	O
@@ -4097,8 +4097,8 @@ to	TO	O
 mg	NNS	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4122,8 +4122,8 @@ to	TO	O
 8	CD	O
 days	NNS	O
 later	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4143,8 +4143,8 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dose	NN	O
@@ -4155,8 +4155,8 @@ to	TO	O
 mg	NNS	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	NNP	O
 and	CC	O
 gently	RB	O
@@ -4181,8 +4181,8 @@ morning	NN	O
 and	CC	O
 evening	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 or	CC	O
 two	CD	DOS
@@ -4190,8 +4190,8 @@ capsules	NNS	UNIT
 every	DT	O
 four	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4212,8 +4212,8 @@ area	NN	O
 twice	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 most	JJS	O
 patients	NNS	O
@@ -4230,8 +4230,8 @@ three	CD	O
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 FLOMAX	NNP	O
 capsules	VBZ	O
 0.4	CD	DOS
@@ -4253,8 +4253,8 @@ and	CC	O
 symptoms	NNS	O
 of	IN	O
 BPH	NNP	O
-0	0	O
-		
+.	.	O
+
 Administer	RB	O
 Flublok	NNP	O
 as	IN	O
@@ -4262,8 +4262,8 @@ a	DT	O
 single	JJ	DOS
 0.5-mL	NN	DOS
 dose	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -4307,8 +4307,8 @@ for	IN	O
 five	CD	O
 consecutive	JJ	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 the	DT	O
 treatment	NN	O
@@ -4340,8 +4340,8 @@ into	IN	O
 the	DT	O
 affected	JJ	O
 ear	NN	O
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 drop	NN	UNIT
@@ -4354,8 +4354,8 @@ to	TO	O
 four	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -4398,8 +4398,8 @@ mg/day	NN	UNIT
 for	IN	O
 adult	NN	O
 patients	NNS	O
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 adult	NN	O
 dose	NN	O
@@ -4415,8 +4415,8 @@ directed	VBN	O
 by	IN	O
 a	DT	O
 physician	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -4433,8 +4433,8 @@ every	DT	O
 to	TO	O
 12	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4457,8 +4457,8 @@ intranasally	RB	O
 alternating	VBG	O
 nostrils	JJ	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 initial	JJ	O
@@ -4470,8 +4470,8 @@ FOSRENOL	NNP	O
 is	VBZ	O
 1500	CD	DOS
 mg	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4497,8 +4497,8 @@ anterior	JJ	O
 thigh	NN	O
 or	CC	O
 abdomen	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4523,8 +4523,8 @@ weight	VBD	O
 0.1	CD	DOS
 mmol/kg	NN	UNIT
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4552,8 +4552,8 @@ every	DT	O
 to	TO	O
 4	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dose	NN	O
 of	IN	O
@@ -4583,8 +4583,8 @@ every	DT	O
 to	TO	O
 4	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 Severe	JJ	O
 Infections	NNS	O
 :	:	O
@@ -4608,8 +4608,8 @@ three	CD	O
 times	NNS	O
 daily	JJ	O
 thereafter	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -4650,12 +4650,12 @@ than	IN	O
 or	CC	O
 equal	JJ	O
 to	TO	O
-30	CD	O
-mL	NNS	O
+30	CD	DOS
+mL	NNS	UNIT
 per	IN	O
 minute	NN	O
-0	0	O
-		
+.	.	O
+
 GEODON	NNP	O
 Capsules	NNP	O
 should	MD	O
@@ -4673,8 +4673,8 @@ twice	RB	O
 daily	RB	O
 with	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4697,8 +4697,8 @@ tolerated	VBN	O
 by	IN	O
 the	DT	O
 patient	NN	O
-0	0	O
-		
+.	.	O
+
 Titrate	NNP	O
 GRALISE	NNP	O
 to	TO	O
@@ -4714,8 +4714,8 @@ with	IN	O
 the	DT	O
 evening	NN	O
 meal	NN	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 and	CC	O
 pediatric	JJ	O
@@ -4741,8 +4741,8 @@ tablets	NNS	UNIT
 in	IN	O
 24	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -4770,8 +4770,8 @@ the	DT	O
 cream	NN	O
 )	)	O
 intravaginally	RB	O
-0	0	O
-		
+.	.	O
+
 Use	NNP	O
 once	RB	O
 or	CC	O
@@ -4790,16 +4790,16 @@ relieve	VB	O
 external	JJ	O
 vulvar	NN	O
 itching	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 dose	NN	O
 is	VBZ	O
 20	CD	DOS
 mg/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 the	DT	O
 0.1	CD	O
@@ -4820,8 +4820,8 @@ to	TO	O
 three	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -4846,8 +4846,8 @@ to	TO	O
 three	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -4864,8 +4864,8 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 amount	NN	O
 usually	RB	O
@@ -4875,8 +4875,8 @@ is	VBZ	O
 to	TO	O
 1000	CD	DOS
 mL	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -4899,8 +4899,8 @@ tablet	NN	UNIT
 )	)	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 10	CD	DOS
 mL	NN	UNIT
 every	DT	O
@@ -4921,8 +4921,8 @@ mL	NN	UNIT
 in	IN	O
 24	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 Adult	NNP	O
 Dose	NNP	O
@@ -4957,8 +4957,8 @@ a	DT	O
 hour	NN	O
 period	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 Administer	NNP	O
 HYQVIA	NNP	O
 at	IN	O
@@ -4976,8 +4976,8 @@ intervals	NNS	O
 after	IN	O
 initial	JJ	O
 ramp-up	NN	O
-0	0	O
-		
+.	.	O
+
 Initiate	NNP	O
 therapy	NN	O
 with	IN	O
@@ -4989,8 +4989,8 @@ orally	RB	O
 every	DT	O
 24	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	VBG	O
@@ -5008,8 +5008,8 @@ mg	NN	UNIT
 )	)	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5019,7 +5019,7 @@ is	VBZ	O
 a	DT	O
 125	CD	DOS
 mg	NN	UNIT
-capsule	NN	O
+capsule	NN	UNIT
 taken	VBN	O
 orally	RB	O
 once	RB	O
@@ -5042,8 +5042,8 @@ cycle	NN	O
 of	IN	O
 28	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 Start	NNP	O
 dosing	VBG	O
 with	IN	O
@@ -5051,8 +5051,8 @@ with	IN	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5083,8 +5083,8 @@ kg	NN	O
 every	DT	O
 14	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 IFEX	NNP	O
 (	(	O
 ifosfamide	NN	O
@@ -5105,8 +5105,8 @@ for	IN	O
 5	CD	O
 consecutive	JJ	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 drop	NN	UNIT
 of	IN	O
@@ -5151,8 +5151,8 @@ of	IN	O
 the	DT	O
 postoperative	JJ	O
 period	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5165,15 +5165,15 @@ is	VBZ	O
 mg	NN	UNIT
 (	(	O
 four	CD	DOS
-140	CD	O
-mg	NN	O
+140	CD	DOS
+mg	NN	UNIT
 capsules	NNS	UNIT
 )	)	O
 orally	RB	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -5194,7 +5194,7 @@ mg	JJ	UNIT
 tablet	NN	UNIT
 or	CC	O
 as	IN	O
-1/2	CD	DOS
+01/02/17	CD	DOS
 of	IN	O
 a	DT	O
 60	CD	DOS
@@ -5213,8 +5213,8 @@ tablet	NN	UNIT
 )	)	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 single	JJ	O
@@ -5238,8 +5238,8 @@ is	VBZ	O
 mg	NN	UNIT
 injected	VBD	O
 subcutaneously	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5265,8 +5265,8 @@ million	CD	O
 PFU	NNP	O
 per	IN	O
 mL	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5297,8 +5297,8 @@ not	RB	O
 low	JJ	O
 fat	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 daily	JJ	O
@@ -5315,8 +5315,8 @@ day	NN	O
 in	IN	O
 divided	JJ	O
 doses	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 initial	JJ	O
@@ -5337,8 +5337,8 @@ added	VBN	O
 to	TO	O
 a	DT	O
 diuretic	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5379,8 +5379,8 @@ of	IN	O
 active	JJ	O
 ankylosing	VBG	O
 spondylitis	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 management	NN	O
 of	IN	O
@@ -5420,8 +5420,8 @@ day	NN	O
 at	IN	O
 regular	JJ	O
 intervals	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 duration	NN	O
@@ -5438,8 +5438,8 @@ is	VBZ	O
 to	TO	O
 48	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5463,8 +5463,8 @@ mg	NN	UNIT
 administered	VBN	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initiation	NN	O
@@ -5495,8 +5495,8 @@ in	IN	O
 the	DT	O
 deltoid	JJ	O
 muscle	NN	O
-0	0	O
-		
+.	.	O
+
 IPLEX	NNP	O
 (	(	O
 mecasermin	JJ	O
@@ -5538,8 +5538,8 @@ mg/kg	NN	UNIT
 given	VBN	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5561,8 +5561,8 @@ progression	NN	O
 or	CC	O
 unacceptable	JJ	O
 toxicity	NN	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 drop	NN	UNIT
 of	IN	O
@@ -5591,8 +5591,8 @@ to	TO	O
 four	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5619,8 +5619,8 @@ of	IN	O
 a	DT	O
 28-day	JJ	O
 cycle	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -5637,8 +5637,8 @@ hours	NNS	O
 every	DT	O
 3	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -5658,19 +5658,19 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 Initiate	NNP	O
 treatment	NN	O
 with	IN	O
 one	CD	DOS
-0.1	CD	O
-mg	NN	O
+0.1	CD	DOS
+mg	NN	UNIT
 tablet	NN	UNIT
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dietary	JJ	O
@@ -5687,8 +5687,8 @@ to	TO	O
 mEq	NNS	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 range	NN	O
 of	IN	O
@@ -5700,19 +5700,19 @@ to	TO	O
 1.6	CD	DOS
 mg/kg/day	NN	UNIT
 in	IN	O
-3	CD	O
+3	CD	DOS
 or	CC	O
-4	CD	O
-divided	VBN	O
-doses	NNS	O
+4	CD	DOS
+divided	VBN	UNIT
+doses	NNS	UNIT
 (	(	O
 3.2	CD	DOS
 to	TO	O
 48	CD	DOS
 mg/m??bsa/day	NN	UNIT
 )	)	O
-0	0	O
-		
+.	.	O
+
 Initiate	NNP	O
 treatment	NN	O
 with	IN	O
@@ -5723,8 +5723,8 @@ of	IN	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Initiate	NNP	O
 dosing	NN	O
 at	IN	O
@@ -5732,8 +5732,8 @@ at	IN	O
 mg	JJ	UNIT
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -5746,8 +5746,8 @@ mg/kg	NN	UNIT
 for	IN	O
 NOMID	NNP	O
 patients	NNS	O
-0	0	O
-		
+.	.	O
+
 KYBELLA	NNP	O
 is	VBZ	O
 injected	VBN	O
@@ -5766,8 +5766,8 @@ dose	NN	O
 of	IN	O
 2	CD	DOS
 mg/cm??	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -5785,8 +5785,8 @@ Days	NNS	O
 1	CD	O
 and	CC	O
 2	CD	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -5808,8 +5808,8 @@ or	CC	O
 mg	JJ	UNIT
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Toenail	JJ	O
 onychomycosis	NN	O
 :	:	O
@@ -5822,8 +5822,8 @@ daily	JJ	O
 for	IN	O
 12	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 the	DT	O
 treatment	NN	O
@@ -5849,7 +5849,7 @@ daily	RB	O
 in	IN	O
 combination	NN	O
 with	IN	O
-one	CD	O
+one	CD	DOS
 or	CC	O
 more	JJR	O
 other	JJ	O
@@ -5871,8 +5871,8 @@ Lamprene	NNP	O
 clofazimine	NN	O
 )	)	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	NN	O
@@ -5903,8 +5903,8 @@ mg	NN	UNIT
 given	VBN	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 Initiate	NNP	O
 treatment	NN	O
 with	IN	O
@@ -5925,8 +5925,8 @@ mg	NN	UNIT
 twice	RB	O
 daily	RB	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 recommended	VBD	O
@@ -5938,8 +5938,8 @@ administration	NN	O
 is	VBZ	O
 2	CD	DOS
 mg	NN	UNIT
-0	0	O
-		
+.	.	O
+
 7	CD	DOS
 mcg/kg/day	NN	UNIT
 (	(	O
@@ -5954,8 +5954,8 @@ a	DT	O
 kg	NN	O
 adult	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 and	CC	O
 pediatric	JJ	O
@@ -5977,8 +5977,8 @@ hours	NNS	O
 or	CC	O
 as	IN	O
 needed	VBN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 1000	CD	DOS
 second	NN	UNIT
@@ -5994,12 +5994,12 @@ required	VBN	O
 to	TO	O
 provide	VB	O
 a	DT	O
-10	CD	O
-J/cm??	NNP	O
+10	CD	DOS
+J/cm??	NNP	UNIT
 light	NN	O
 dose	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 the	DT	O
 clinical	JJ	O
@@ -6039,8 +6039,8 @@ directed	VBN	O
 by	IN	O
 a	DT	O
 physician	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -6054,21 +6054,21 @@ or	CC	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dosage	NN	O
 range	NN	O
 of	IN	O
 LIPTRUZET	NNP	O
 is	VBZ	O
-10/10	CD	DOS
+10/10/17	CD	DOS
 mg/day	NN	UNIT
 to	TO	O
 10/80	CD	DOS
 mg/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dose	JJ	O
 range	NN	O
@@ -6092,8 +6092,8 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -6106,8 +6106,8 @@ a	DT	O
 single	JJ	DOS
 daily	JJ	O
 dose	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -6118,9 +6118,9 @@ is	VBZ	O
 mg	NN	UNIT
 administered	VBN	O
 in	IN	O
-two	CD	O
-divided	JJ	O
-doses	NNS	O
+two	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
 30	CD	O
 minutes	NNS	O
 before	IN	O
@@ -6129,8 +6129,8 @@ morning	NN	O
 and	CC	O
 evening	NN	O
 meals	NNS	O
-0	0	O
-		
+.	.	O
+
 In	IN	O
 patients	NNS	O
 who	WP	O
@@ -6166,8 +6166,8 @@ continue	VB	O
 for	IN	O
 48	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -6184,8 +6184,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -6202,8 +6202,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 Dosage	NNP	O
 in	IN	O
@@ -6233,8 +6233,8 @@ mg	NN	UNIT
 twice	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 daily	JJ	O
 dose	NN	O
@@ -6245,8 +6245,8 @@ is	VBZ	O
 grams	NNS	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 course	NN	O
@@ -6265,8 +6265,8 @@ combination	NN	O
 with	IN	O
 norethindrone	JJ	O
 acetate	NN	O
-5	CD	O
-mg	JJ	O
+5	CD	DOS
+mg	JJ	UNIT
 daily	RB	O
 is	VBZ	O
 not	RB	O
@@ -6274,8 +6274,8 @@ to	TO	O
 exceed	VB	O
 six	CD	O
 months	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -6293,8 +6293,8 @@ injection	NN	UNIT
 every	DT	O
 12	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -6310,8 +6310,8 @@ in	IN	O
 a	DT	O
 depot	NN	O
 formulation	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -6330,8 +6330,8 @@ in	IN	O
 a	DT	O
 depot	NN	O
 formulation	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dose	NN	O
@@ -6354,8 +6354,8 @@ repeated	VBD	O
 every	DT	O
 4-6	JJ	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dose	NN	O
@@ -6381,8 +6381,8 @@ monitoring	NN	O
 of	IN	O
 serum	JJ	O
 potassium	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -6422,8 +6422,8 @@ period	NN	O
 of	IN	O
 30	CD	O
 seconds	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dose	NN	O
@@ -6448,8 +6448,8 @@ protection	NN	O
 against	IN	O
 motion	NN	O
 sickness	NN	O
-0	0	O
-		
+.	.	O
+
 Breast	NNP	O
 cancer	NN	O
 :	:	O
@@ -6459,11 +6459,11 @@ mg/day	NN	UNIT
 40	CD	DOS
 mg	NN	UNIT
 q.i.d	NN	O
-0	0	O
-		
+.	.	O
+
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -6485,8 +6485,8 @@ is	VBZ	O
 225	CD	DOS
 International	NNP	UNIT
 Units	NNP	UNIT
-0	0	O
-		
+.	.	O
+
 Each	DT	O
 MENVEO	NNP	O
 dose	NN	O
@@ -6526,8 +6526,8 @@ toddlers	NNS	O
 adolescents	NNS	O
 and	CC	O
 adults	NNS	O
-0	0	O
-		
+.	.	O
+
 0.1	CD	DOS
 to	TO	O
 0.2	CD	DOS
@@ -6548,8 +6548,8 @@ of	IN	O
 body	NN	O
 weight	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 Average	JJ	O
 dosage	NN	O
 is	VBZ	O
@@ -6558,8 +6558,8 @@ to	TO	O
 30	CD	DOS
 mg	NNS	UNIT
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 15	CD	DOS
 mg/kg	NNS	UNIT
 orally	RB	O
@@ -6569,8 +6569,8 @@ hours	NNS	O
 for	IN	O
 6	CD	O
 doses	NNS	O
-0	0	O
-		
+.	.	O
+
 Take	VB	O
 10	CD	DOS
 mg	NNS	UNIT
@@ -6600,8 +6600,8 @@ and	CC	O
 at	IN	O
 bedtime	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -6631,8 +6631,8 @@ day	NN	O
 for	IN	O
 5	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	VBG	O
@@ -6655,8 +6655,8 @@ the	DT	O
 first	JJ	O
 main	JJ	O
 meal	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 Control	NNP	O
 of	IN	O
@@ -6687,8 +6687,8 @@ combination	NN	O
 with	IN	O
 other	JJ	O
 antihypertensives	NNS	O
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 pediatric	JJ	O
 dose	NN	O
@@ -6738,8 +6738,8 @@ mg	NNS	O
 in	IN	O
 24	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 maximum	JJ	O
@@ -6753,8 +6753,8 @@ thiabendazole	NN	O
 is	VBZ	O
 3	CD	DOS
 grams	NNS	UNIT
-0	0	O
-		
+.	.	O
+
 Initial	JJ	O
 dosage	NN	O
 of	IN	O
@@ -6782,8 +6782,8 @@ mg	NN	UNIT
 the	DT	O
 third	JJ	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 Treatment	NN	O
 of	IN	O
 Testicular	JJ	O
@@ -6820,8 +6820,8 @@ kilogram	NN	O
 of	IN	O
 body	NN	O
 weight	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 dose	NN	O
@@ -6830,8 +6830,8 @@ is	VBZ	O
 mg	JJ	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 MOVANTIK	NNP	O
@@ -6844,8 +6844,8 @@ daily	RB	O
 in	IN	O
 the	DT	O
 morning	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -6860,8 +6860,8 @@ for	IN	O
 fourteen	JJ	O
 consecutive	JJ	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 It	PRP	O
 is	VBZ	O
 recommended	VBN	O
@@ -6878,8 +6878,8 @@ of	IN	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -6904,8 +6904,8 @@ skin	NN	O
 for	IN	O
 2	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 dose	NN	O
 of	IN	O
@@ -6918,8 +6918,8 @@ recommended	VBN	O
 for	IN	O
 most	JJS	O
 patients	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	VBG	O
@@ -6937,8 +6937,8 @@ three	CD	O
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 adults	NNS	O
 ,	,	O
@@ -6979,8 +6979,8 @@ in	IN	O
 to	TO	O
 7	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -7005,8 +7005,8 @@ ONE	CD	O
 nostril	NN	O
 once	RB	O
 weekly	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -7027,8 +7027,8 @@ infusion	NN	O
 of	IN	O
 0.01	CD	O
 mcg/kg/min	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -7047,8 +7047,8 @@ once	RB	O
 per	IN	O
 chemotherapy	NN	O
 cycle	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 daily	JJ	O
@@ -7083,8 +7083,8 @@ after	IN	O
 a	DT	O
 meal	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 :	:	O
 1	CD	DOS
@@ -7093,8 +7093,8 @@ or	CC	O
 capsules	NNS	UNIT
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -7116,8 +7116,8 @@ mg	NN	UNIT
 once	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 dosage	NN	O
 of	IN	O
@@ -7135,8 +7135,8 @@ week	NN	O
 ,	,	O
 is	VBZ	O
 recommended	VBN	O
-0	0	O
-		
+.	.	O
+
 Apply	NNP	O
 and	CC	O
 rub	NN	O
@@ -7158,8 +7158,8 @@ area	NN	O
 (	(	O
 s	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -7188,8 +7188,8 @@ given	VBN	O
 in	IN	O
 divided	JJ	O
 doses	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -7201,8 +7201,8 @@ to	TO	O
 mg	NNS	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 initial	JJ	O
@@ -7226,8 +7226,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 intravenous	JJ	O
 use	NN	O
@@ -7252,8 +7252,8 @@ using	VBG	O
 polypropylene	JJ	O
 infusion	NN	O
 bags	NNS	O
-0	0	O
-		
+.	.	O
+
 10	CD	DOS
 mL	NN	UNIT
 every	DT	O
@@ -7265,17 +7265,17 @@ hours	NNS	O
 not	RB	O
 to	TO	O
 exceed	VB	O
-6	CD	O
-doses	NNS	O
+6	CD	DOS
+doses	NNS	UNIT
 (	(	O
-60	CD	O
-mL	NN	O
+60	CD	DOS
+mL	NN	UNIT
 )	)	O
 in	IN	O
 24	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -7327,12 +7327,12 @@ than	IN	O
 or	CC	O
 equal	JJ	O
 to	TO	O
-30	CD	O
-mL	NNS	O
+30	CD	DOS
+mL	NNS	UNIT
 per	IN	O
 minute	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -7355,8 +7355,8 @@ for	IN	O
 five	CD	O
 consecutive	JJ	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -7370,8 +7370,8 @@ once	RB	O
 daily	JJ	O
 in	IN	O
 adults	NNS	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -7403,8 +7403,8 @@ to	TO	O
 2	CD	O
 consecutive	JJ	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -7412,8 +7412,8 @@ of	IN	O
 OLYSIO	NNP	O
 is	VBZ	O
 one	CD	DOS
-150	CD	O
-mg	NN	O
+150	CD	DOS
+mg	NN	UNIT
 capsule	NN	UNIT
 taken	VBN	O
 orally	RB	O
@@ -7421,8 +7421,8 @@ once	RB	O
 daily	JJ	O
 with	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -7448,8 +7448,8 @@ progression	NN	O
 or	CC	O
 unacceptable	JJ	O
 toxicity	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -7475,8 +7475,8 @@ s	JJ	O
 twice	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosing	NN	O
@@ -7501,8 +7501,8 @@ patients	NNS	O
 years	NNS	O
 and	CC	O
 older	JJR	O
-0	0	O
-		
+.	.	O
+
 1	CD	DOS
 or	CC	O
 2	CD	DOS
@@ -7512,8 +7512,8 @@ every	DT	O
 hours	NNS	O
 as	IN	O
 needed	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -7553,8 +7553,8 @@ approximately	RB	O
 8	CD	O
 hours	NNS	O
 apart	RB	O
-0	0	O
-		
+.	.	O
+
 INJECTION	NN	O
 :	:	O
 Adults	NNP	O
@@ -7577,8 +7577,8 @@ repeated	VBN	O
 every	DT	O
 12	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 daily	JJ	O
@@ -7598,8 +7598,8 @@ day	NN	O
 given	VBN	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -7635,8 +7635,8 @@ over	IN	O
 to	TO	O
 24	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -7659,8 +7659,8 @@ severity	NN	O
 of	IN	O
 the	DT	O
 condition	NN	O
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 Pediatric	NNP	O
 Dosage	NN	O
@@ -7678,8 +7678,8 @@ to	TO	O
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -7692,13 +7692,13 @@ is	VBZ	O
 ??	JJ	DOS
 to	TO	O
 one	CD	DOS
-2??	CD	O
-mg	NN	O
-scored	VBD	O
+2??	CD	DOS
+mg	NN	UNIT
+scored	VBD	UNIT
 tablet	JJ	UNIT
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -7721,8 +7721,8 @@ tablet	NN	UNIT
 every	DT	O
 12	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -7758,8 +7758,8 @@ disease	NN	O
 entity	NN	O
 being	VBG	O
 treated	VBN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 adults	NNS	O
 ,	,	O
@@ -7780,8 +7780,8 @@ or	CC	O
 4	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 PEGANONE	NNP	O
 (	(	O
 ethotoin	JJ	O
@@ -7797,10 +7797,10 @@ in	IN	O
 to	TO	O
 6	CD	DOS
 divided	JJ	UNIT
-doses	NNS	O
+doses	NNS	UNIT
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Pentacel	NNP	O
 vaccine	NN	O
 is	VBZ	O
@@ -7823,8 +7823,8 @@ and	CC	O
 months	NNS	O
 of	IN	O
 age	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -7842,8 +7842,8 @@ a	DT	O
 day	NN	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -7871,8 +7871,8 @@ evening	NN	O
 )	)	O
 by	IN	O
 nebulization	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -7885,8 +7885,8 @@ is	VBZ	O
 to	TO	O
 40	CD	DOS
 mL/kg/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 Administration	NN	O
 of	IN	O
 Permax	NNP	O
@@ -7909,8 +7909,8 @@ the	DT	O
 first	JJ	O
 2	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -7936,12 +7936,12 @@ six	CD	O
 hours	NNS	O
 as	IN	O
 a	DT	O
-20-	JJ	O
+-20	JJ	O
 to	TO	O
 30-minute	JJ	O
 infusion	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 PLATINOL	NNP	O
@@ -7969,8 +7969,8 @@ for	IN	O
 days	NNS	O
 per	IN	O
 cycle	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -7995,8 +7995,8 @@ after	IN	O
 breakfast	NN	O
 and	CC	O
 dinner	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	NNP	O
 twice	JJ	O
 daily	RB	O
@@ -8021,8 +8021,8 @@ for	IN	O
 4	CD	O
 consecutive	JJ	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 TO	NNP	O
 TREAT	NNP	O
 THE	NNP	O
@@ -8044,23 +8044,23 @@ more	RBR	O
 frequently	RB	O
 as	IN	O
 required	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dose	NN	O
 is	VBZ	O
 one	CD	DOS
-20	CD	O
-mg	NN	O
+20	CD	DOS
+mg	NN	UNIT
 tablet	NN	UNIT
 three	CD	O
 times	NNS	O
 daily	JJ	O
 before	IN	O
 meals	NNS	O
-0	0	O
-		
+.	.	O
+
 PrandiMet	NN	O
 can	MD	O
 be	VB	O
@@ -8084,8 +8084,8 @@ repaglinide/2500	VBP	O
 mg	JJ	O
 metformin	NN	O
 HCl	NNP	O
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 to	TO	O
@@ -8100,8 +8100,8 @@ to	TO	O
 four	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 dosage	NN	O
@@ -8147,8 +8147,8 @@ disease	NN	O
 entity	NN	O
 being	VBG	O
 treated	VBN	O
-0	0	O
-		
+.	.	O
+
 PREMPRO	NNP	O
 therapy	NN	O
 consists	VBZ	O
@@ -8162,8 +8162,8 @@ taken	VBN	O
 orally	RB	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -8175,8 +8175,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 treatment	NN	O
 of	IN	O
@@ -8214,8 +8214,8 @@ every	DT	O
 to	TO	O
 6	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 Apply	NNP	O
 to	TO	O
 affected	VB	O
@@ -8225,8 +8225,8 @@ to	TO	O
 4	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dose	NN	O
@@ -8247,8 +8247,8 @@ and	CC	O
 central	JJ	O
 venous	JJ	O
 pressure	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -8270,9 +8270,9 @@ need	VB	O
 a	DT	O
 2	CD	DOS
 mg	NN	UNIT
-dose	NN	O
-0	0	O
-		
+dose	NN	UNIT
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -8291,12 +8291,12 @@ with	IN	O
 5	CD	DOS
 mCi	NNS	UNIT
 of	IN	O
-Indium	NNP	O
+Indium	NNP	UNIT
 In	IN	O
 111	CD	O
 chloride	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 course	NN	O
@@ -8314,8 +8314,8 @@ at	IN	O
 approximately	RB	O
 2-week	JJ	O
 intervals	NNS	O
-0	0	O
-		
+.	.	O
+
 PROVERA	NNP	O
 tablets	NNS	O
 may	MD	O
@@ -8334,8 +8334,8 @@ for	IN	O
 to	TO	O
 10	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -8362,8 +8362,8 @@ dose	NN	UNIT
 in	IN	O
 the	DT	O
 morning	NN	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 and	CC	O
 children	NNS	O
@@ -8388,8 +8388,8 @@ capsules	NNS	UNIT
 in	IN	O
 24	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 PULMICORT	NNP	O
 FLEXHALER	NNP	O
 (	(	O
@@ -8408,8 +8408,8 @@ orally	RB	O
 inhaled	VBN	O
 route	NN	O
 only	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 daily	JJ	O
@@ -8426,8 +8426,8 @@ as	IN	O
 a	DT	O
 single	JJ	DOS
 dose	NN	UNIT
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 dose	NN	O
 :	:	O
@@ -8442,8 +8442,8 @@ to	TO	O
 mg/kg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -8475,8 +8475,8 @@ taken	VBN	O
 orally	RB	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -8506,8 +8506,8 @@ or	CC	O
 twice	VB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -8529,8 +8529,8 @@ daily	RB	O
 in	IN	O
 the	DT	O
 morning	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -8547,14 +8547,14 @@ up	IN	O
 to	TO	O
 four	CD	O
 patches	NNS	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 RAGWITEK	NNP	O
 tablet	NN	UNIT
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -8567,8 +8567,8 @@ daily	JJ	O
 with	IN	O
 a	DT	O
 meal	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -8590,8 +8590,8 @@ influenza	NN	O
 is	VBZ	O
 a	DT	O
 single	JJ	DOS
-600	CD	O
-mg	NN	O
+600	CD	DOS
+mg	NN	UNIT
 dose	NN	UNIT
 ,	,	O
 administered	VBN	O
@@ -8603,8 +8603,8 @@ for	IN	O
 to	TO	O
 30	CD	O
 minutes	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -8623,8 +8623,8 @@ three	CD	O
 times	NNS	O
 per	IN	O
 week	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 regimen	NN	O
@@ -8644,8 +8644,8 @@ less	JJR	O
 than	IN	O
 15	CD	O
 minutes	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -8657,8 +8657,8 @@ mg	NN	UNIT
 subcutaneously	RB	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -8686,8 +8686,8 @@ evening	NN	O
 prior	RB	O
 to	TO	O
 sleep	VB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -8717,8 +8717,8 @@ evening	NN	O
 prior	RB	O
 to	TO	O
 sleep	VB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -8770,8 +8770,8 @@ fistulizing	VBG	O
 Crohn	NNP	O
 's	POS	O
 disease	NN	O
-0	0	O
-		
+.	.	O
+
 Based	VBN	O
 on	IN	O
 clinical	JJ	O
@@ -8792,8 +8792,8 @@ approximately	RB	O
 g	NNS	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -8836,8 +8836,8 @@ of	IN	O
 for	IN	O
 12	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 the	DT	O
 short-term	JJ	O
@@ -8859,8 +8859,8 @@ dose	NN	O
 of	IN	O
 REPREXAIN?"?	NNP	O
 is	VBZ	O
-one	CD	O
-tablet	NN	O
+one	CD	DOS
+tablet	NN	UNIT
 every	DT	O
 4	CD	O
 to	TO	O
@@ -8869,8 +8869,8 @@ hours	NNS	O
 ,	,	O
 as	IN	O
 necessary	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -8885,8 +8885,8 @@ mg	NN	UNIT
 three	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -8902,8 +8902,8 @@ s	JJ	O
 )	)	O
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 RETIN-A	NNP	O
 Gel	NNP	O
 ,	,	O
@@ -8937,8 +8937,8 @@ entire	JJ	O
 affected	JJ	O
 area	NN	O
 lightly	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 oral	JJ	O
@@ -8956,8 +8956,8 @@ with	IN	O
 other	JJ	O
 antiretroviral	JJ	O
 agents	NNS	O
-0	0	O
-		
+.	.	O
+
 This	DT	O
 dose	NN	O
 should	MD	O
@@ -8975,8 +8975,8 @@ to	TO	O
 mg/kg	NNS	UNIT
 daily	RB	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	NN	O
 recommended	VBD	O
@@ -8986,8 +8986,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Methotrexate	NNP	O
 is	VBZ	O
 administered	VBN	O
@@ -9006,8 +9006,8 @@ for	IN	O
 a	DT	O
 five-day	JJ	O
 course	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -9034,8 +9034,8 @@ or	CC	O
 mg	NNS	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 RISPERDAL??	NNP	O
 CONSTA??	NNP	O
 should	MD	O
@@ -9054,8 +9054,8 @@ deltoid	NN	O
 or	CC	O
 gluteal	JJ	O
 injection	NN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 dose	NN	O
 of	IN	O
@@ -9112,8 +9112,8 @@ units/dL	NN	UNIT
 of	IN	O
 normal	JJ	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -9128,8 +9128,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -9149,8 +9149,8 @@ of	IN	O
 going	VBG	O
 to	TO	O
 bed	VB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 starting	VBG	O
@@ -9170,12 +9170,12 @@ approximately	RB	O
 mg/kg	NNS	UNIT
 administered	VBN	O
 in	IN	O
-two	CD	O
-equally	RB	O
-divided	JJ	O
-doses	NNS	O
-0	0	O
-		
+two	CD	DOS
+equally	RB	UNIT
+divided	JJ	UNIT
+doses	NNS	UNIT
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 prophylactic	JJ	O
@@ -9203,8 +9203,8 @@ minutes	NNS	O
 prior	RB	O
 to	TO	O
 surgery	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -9231,8 +9231,8 @@ the	DT	O
 first	JJ	O
 3	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 Take	VB	O
 one	CD	DOS
 tablet	NN	UNIT
@@ -9244,8 +9244,8 @@ same	JJ	O
 time	NN	O
 every	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -9254,8 +9254,8 @@ is	VBZ	O
 mg	JJ	UNIT
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -9264,15 +9264,15 @@ SANCTURA	NNP	O
 XR??	NNP	O
 is	VBZ	O
 one	CD	DOS
-60	CD	O
-mg	NN	O
+60	CD	DOS
+mg	NN	UNIT
 capsule	NN	UNIT
 daily	RB	O
 in	IN	O
 the	DT	O
 morning	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 initial	JJ	O
 oral	JJ	O
@@ -9299,16 +9299,16 @@ dose	NN	UNIT
 of	IN	O
 15	CD	DOS
 mg/kg	NN	UNIT
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 adult	NN	O
 dose	JJ	O
 4-8	JJ	DOS
 mg	JJ	UNIT
 daily	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -9320,8 +9320,8 @@ mg	NN	UNIT
 given	VBN	O
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -9377,8 +9377,8 @@ each	DT	O
 new	JJ	O
 cycle	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -9391,8 +9391,8 @@ taken	VBN	O
 orally	RB	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -9407,8 +9407,8 @@ mg	NN	UNIT
 twice	RB	O
 daily	RB	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 Treatment	NN	O
 of	IN	O
 tinea	NN	O
@@ -9426,8 +9426,8 @@ small	JJ	O
 amount	NN	O
 of	IN	O
 water	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -9444,8 +9444,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 SIMCOR	NNP	O
 should	MD	O
 be	VB	O
@@ -9463,8 +9463,8 @@ a	DT	O
 low	JJ	O
 fat	JJ	O
 snack	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 SIMPONI	NNP	O
 ARIA	NNP	O
@@ -9494,8 +9494,8 @@ every	DT	O
 8	CD	O
 weeks	NNS	O
 thereafter	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -9505,13 +9505,13 @@ is	VBZ	O
 to	TO	O
 40	CD	DOS
 mg/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 SITAVIG	NNP	O
-50	CD	O
-mg	NN	O
-buccal	JJ	O
+50	CD	DOS
+mg	NN	UNIT
+buccal	JJ	UNIT
 tablet	NN	UNIT
 should	MD	O
 be	VB	O
@@ -9529,8 +9529,8 @@ region	NN	O
 canine	JJ	O
 fossa	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -9572,8 +9572,8 @@ of	IN	O
 age	NN	O
 or	CC	O
 older	JJR	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 the	DT	O
 entire	JJ	O
@@ -9608,8 +9608,8 @@ to	TO	O
 donning	VBG	O
 MOPP	NNP	O
 gear	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -9633,8 +9633,8 @@ directed	VBN	O
 by	IN	O
 a	DT	O
 physician	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -9649,8 +9649,8 @@ daily	RB	O
 for	IN	O
 12	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 range	NN	O
 of	IN	O
@@ -9662,19 +9662,19 @@ to	TO	O
 1.6	CD	DOS
 mg/kg/day	NN	UNIT
 in	IN	O
-three	CD	O
+three	CD	DOS
 or	CC	O
-four	CD	O
-divided	VBN	O
-doses	NNS	O
+four	CD	DOS
+divided	VBN	UNIT
+doses	NNS	UNIT
 (	(	O
 3.2	CD	DOS
 to	TO	O
 48	CD	DOS
 mg/m??bsa/day	NN	UNIT
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 loading	NN	O
@@ -9691,8 +9691,8 @@ under	IN	O
 healthcare	NN	O
 provider	NN	O
 supervision	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -9702,8 +9702,8 @@ is	VBZ	O
 mg	JJ	UNIT
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dosage	NN	O
 should	MD	O
@@ -9736,8 +9736,8 @@ not	RB	O
 exceed	VB	O
 10	CD	O
 mL	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -9765,9 +9765,9 @@ to	TO	O
 mg/kg/day	NN	UNIT
 given	VBN	O
 in	IN	O
-two	CD	O
-divided	JJ	O
-doses	NNS	O
+two	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
 with	IN	O
 food	NN	O
 for	IN	O
@@ -9775,15 +9775,15 @@ for	IN	O
 to	TO	O
 20	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
 layer	NN	O
 (	(	O
-1	CD	O
-drop	NN	O
+1	CD	DOS
+drop	NN	UNIT
 covers	VBZ	O
 an	DT	O
 area	NN	O
@@ -9817,8 +9817,8 @@ and	CC	O
 rub	NN	O
 in	IN	O
 gently	RB	O
-0	0	O
-		
+.	.	O
+
 To	TO	O
 receive	VB	O
 the	DT	O
@@ -9836,8 +9836,8 @@ as	IN	O
 two	CD	DOS
 inhalations	NNS	UNIT
 once-daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 daily	JJ	O
@@ -9849,8 +9849,8 @@ mg	NN	UNIT
 four	CD	DOS
 doses	NNS	UNIT
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -9868,8 +9868,8 @@ administered	VBN	O
 orally	RB	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 recommended	VBD	O
@@ -9888,8 +9888,8 @@ in	IN	O
 one	CD	O
 nostril	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -9901,8 +9901,8 @@ daily	RB	O
 in	IN	O
 divided	JJ	O
 doses	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 dosing	NN	O
@@ -9913,8 +9913,8 @@ STAXYN	NNP	O
 tablet	NN	UNIT
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -9947,8 +9947,8 @@ about	IN	O
 hours	NNS	O
 apart	RB	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	JJ	O
 single	JJ	O
@@ -9971,8 +9971,8 @@ is	VBZ	O
 mg	NN	UNIT
 given	VBN	O
 subcutaneously	RB	O
-0	0	O
-		
+.	.	O
+
 SYLVANT	NNP	O
 11	CD	DOS
 mg/kg	NN	UNIT
@@ -9992,8 +9992,8 @@ weeks	NNS	O
 until	IN	O
 treatment	NN	O
 failure	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -10008,8 +10008,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -10027,8 +10027,8 @@ is	VBZ	O
 7.5	CD	DOS
 mg/kg	NN	UNIT
 q12h	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 starting	NN	O
@@ -10053,8 +10053,8 @@ over	IN	O
 a	DT	O
 28-day	JJ	O
 cycle	NN	O
-0	0	O
-		
+.	.	O
+
 However	RB	O
 ,	,	O
 on	IN	O
@@ -10090,8 +10090,8 @@ or	CC	O
 four	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -10133,8 +10133,8 @@ mg	NNS	UNIT
 every	DT	O
 4	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -10148,8 +10148,8 @@ four	CD	O
 times	NNS	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -10163,8 +10163,8 @@ capsules	VBZ	O
 is	VBZ	O
 300	CD	DOS
 mg/m2/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -10190,8 +10190,8 @@ progression	NN	O
 or	CC	O
 unacceptable	JJ	O
 toxicity	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -10222,8 +10222,8 @@ patients	NNS	O
 years	NNS	O
 of	IN	O
 age	NN	O
-0	0	O
-		
+.	.	O
+
 Chlorthalidone	NN	O
 is	VBZ	O
 usually	RB	O
@@ -10246,8 +10246,8 @@ is	VBZ	O
 50	CD	DOS
 mg	JJ	UNIT
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 :	:	O
 The	DT	O
@@ -10275,8 +10275,8 @@ to	TO	O
 12	CD	O
 hour	NN	O
 intervals	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	NN	O
@@ -10308,8 +10308,8 @@ mg	NNS	O
 daily	RB	O
 if	IN	O
 necessary	JJ	O
-0	0	O
-		
+.	.	O
+
 Adults	NNS	O
 :	:	O
 The	DT	O
@@ -10338,12 +10338,12 @@ TIMENTIN	NNP	O
 3.1-gram	JJ	O
 vial	NN	O
 containing	VBG	O
-3	CD	O
-grams	NNS	O
+3	CD	DOS
+grams	NNS	UNIT
 ticarcillin	NN	O
 and	CC	O
-100	CD	O
-mg	NN	O
+100	CD	DOS
+mg	NN	UNIT
 clavulanic	JJ	O
 acid	NN	O
 )	)	O
@@ -10353,8 +10353,8 @@ every	DT	O
 to	TO	O
 6	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 recommended	JJ	O
@@ -10373,12 +10373,12 @@ grams	NNS	UNIT
 of	IN	O
 TIMENTIN	NNP	O
 (	(	O
-3	CD	O
-grams	NNS	O
+3	CD	DOS
+grams	NNS	UNIT
 ticarcillin	NN	O
 and	CC	O
-100	CD	O
-mg	NN	O
+100	CD	DOS
+mg	NN	UNIT
 clavulanic	JJ	O
 acid	NN	O
 )	)	O
@@ -10388,8 +10388,8 @@ every	DT	O
 to	TO	O
 6	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	NN	O
@@ -10411,8 +10411,8 @@ s	JJ	O
 twice	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	NN	O
@@ -10438,8 +10438,8 @@ administered	VBD	O
 twice	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dose	NN	O
 is	VBZ	O
@@ -10465,8 +10465,8 @@ s	JJ	O
 once	RB	O
 a	DT	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -10484,7 +10484,7 @@ and	CC	O
 older	JJR	O
 is	VBZ	O
 1	CD	DOS
-single-use	NN	O
+single-use	NN	UNIT
 ampule	NN	UNIT
 (	(	O
 300	CD	DOS
@@ -10495,8 +10495,8 @@ BID	NNP	O
 for	IN	O
 28	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 TOBI	NNP	O
 Podhaler	NNP	O
 is	VBZ	O
@@ -10508,8 +10508,8 @@ periods	NNS	O
 of	IN	O
 28	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 or	CC	O
 two	CD	DOS
@@ -10527,8 +10527,8 @@ four	CD	O
 to	TO	O
 six	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 drop	NN	UNIT
@@ -10544,8 +10544,8 @@ four	CD	O
 to	TO	O
 six	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 Apply	NNP	O
 Tolak	NNP	O
 Cream	NNP	O
@@ -10584,8 +10584,8 @@ uniformly	RB	O
 into	IN	O
 the	DT	O
 skin	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 the	DT	O
 relief	NN	O
@@ -10624,8 +10624,8 @@ a	DT	O
 dose	NN	O
 at	IN	O
 bedtime	NN	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 a	DT	O
 thin	JJ	O
@@ -10647,8 +10647,8 @@ skin	NN	O
 areas	NNS	O
 twice	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -10673,8 +10673,8 @@ period	NN	O
 once	IN	O
 a	DT	O
 week	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -10685,8 +10685,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 suggested	JJ	O
 starting	NN	O
@@ -10699,8 +10699,8 @@ mg/hr*	NN	UNIT
 and	CC	O
 0.4	CD	DOS
 mg/hr*	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -10719,8 +10719,8 @@ daily	JJ	O
 in	IN	O
 the	DT	O
 evening	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -10737,8 +10737,8 @@ twice	RB	O
 daily	RB	O
 after	IN	O
 meals	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -10746,7 +10746,7 @@ dosage	NN	O
 is	VBZ	O
 two	CD	DOS
 (	(	O
-2	CD	O
+2	CD	DOS
 )	)	O
 TREZIX?"?	NNP	O
 capsules	NNS	UNIT
@@ -10760,18 +10760,18 @@ hours	NNS	O
 ,	,	O
 as	IN	O
 needed	VBN	O
-0	0	O
-		
+.	.	O
+
 0.9-2.4	JJ	DOS
 grams	NNS	UNIT
 daily	RB	O
 in	IN	O
-3	CD	O
+3	CD	DOS
 or	CC	O
-4	CD	O
-equally	RB	O
-divided	VBN	O
-doses	NNS	O
+4	CD	DOS
+equally	RB	UNIT
+divided	VBN	UNIT
+doses	NNS	UNIT
 (	(	O
 i.e.	JJ	O
 ,	,	O
@@ -10783,8 +10783,8 @@ or	CC	O
 times	NNS	O
 daily	RB	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 dosage	NN	O
 regimen	NNS	O
@@ -10816,8 +10816,8 @@ a	DT	O
 7-day	JJ	O
 placebo	NN	O
 schedule	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -10850,8 +10850,8 @@ up	RB	O
 to	TO	O
 10	CD	O
 kilograms	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 regimen	NN	O
@@ -10876,8 +10876,8 @@ ZITHROMAX	NNP	O
 for	IN	O
 oral	JJ	O
 suspension	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initiating	NN	O
@@ -10889,8 +10889,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 weekly	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -10912,8 +10912,8 @@ mg	NNS	UNIT
 every	DT	O
 12	CD	O
 hours	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -10955,8 +10955,8 @@ a	DT	O
 repeating	JJ	O
 21-day	JJ	O
 cycle	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	NN	O
 recommended	JJ	O
@@ -10971,8 +10971,8 @@ session	NN	O
 4	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -10998,8 +10998,8 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 patients	NNS	O
 with	IN	O
@@ -11041,17 +11041,17 @@ at	IN	O
 25	CD	DOS
 mg/day	NN	UNIT
 (	(	O
-half	JJ	O
-ULTRAM??	NNP	O
-scored	VBD	O
-tablet	NN	O
+half	JJ	DOS
+ULTRAM??	NNP	DOS
+scored	VBD	UNIT
+tablet	NN	UNIT
 )	)	O
 qAM	NN	O
 and	CC	O
 titrated	VBN	O
 in	IN	O
-25	CD	O
-mg	NN	O
+25	CD	DOS
+mg	NN	UNIT
 increments	NNS	O
 as	IN	O
 separate	JJ	O
@@ -11061,17 +11061,17 @@ every	DT	O
 days	NNS	O
 to	TO	O
 reach	VB	O
-100	CD	O
-mg/day	NN	O
+100	CD	DOS
+mg/day	NN	UNIT
 (	(	O
-25	CD	O
-mg	NN	O
+25	CD	DOS
+mg	NN	UNIT
 q.i.d	NN	O
-0	0	O
-		
+.	.	O
+
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -11095,8 +11095,8 @@ meals	NNS	O
 ,	,	O
 once	RB	O
 daily	JJ	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -11112,8 +11112,8 @@ mcg	NN	O
 given	VBN	O
 twice	JJ	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 dose	NN	O
 of	IN	O
@@ -11124,8 +11124,8 @@ times	NNS	O
 daily	RB	O
 is	VBZ	O
 suggested	VBN	O
-0	0	O
-		
+.	.	O
+
 Patients	NNS	O
 who	WP	O
 are	VBP	O
@@ -11192,8 +11192,8 @@ dose	NN	O
 of	IN	O
 another	DT	O
 opioid	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -11215,8 +11215,8 @@ or	CC	O
 two	CD	DOS
 divided	JJ	UNIT
 doses	NNS	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dosage	NN	O
@@ -11237,8 +11237,8 @@ or	CC	O
 two	CD	DOS
 divided	JJ	UNIT
 doses	NNS	UNIT
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 dose	NN	O
 is	VBZ	O
@@ -11251,8 +11251,8 @@ directed	VBN	O
 by	IN	O
 a	DT	O
 physician	NN	O
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 dose	NN	O
 is	VBZ	O
@@ -11265,8 +11265,8 @@ directed	VBN	O
 by	IN	O
 a	DT	O
 physician	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -11288,8 +11288,8 @@ minutes	NNS	O
 every	DT	O
 14	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -11308,8 +11308,8 @@ once	RB	O
 daily	JJ	O
 with	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 starting	NN	O
 dose	NN	O
@@ -11321,8 +11321,8 @@ daily	JJ	O
 or	CC	O
 twice	JJ	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -11333,8 +11333,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 Apply	VB	O
 one	CD	DOS
 -	:	DOS
@@ -11373,8 +11373,8 @@ of	IN	O
 the	DT	O
 postoperative	JJ	O
 period	NN	O
-0	0	O
-		
+.	.	O
+
 VICODIN??	NNP	O
 (	(	O
 Hydrocodone	NNP	O
@@ -11407,8 +11407,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 drop	NN	UNIT
@@ -11423,8 +11423,8 @@ day	NN	O
 for	IN	O
 7	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 target	NN	O
@@ -11442,8 +11442,8 @@ once	RB	O
 daily	JJ	O
 with	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 dose	NN	O
@@ -11455,8 +11455,8 @@ adults	NNS	O
 is	VBZ	O
 1.4	CD	DOS
 mg/m??	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -11471,7 +11471,7 @@ tablets	NNS	UNIT
 or	CC	O
 two	CD	DOS
 625	CD	DOS
-mg	NNS	O
+mg	NNS	UNIT
 tablets	NNS	UNIT
 )	)	O
 twice	RB	O
@@ -11481,15 +11481,15 @@ or	CC	O
 mg	NN	UNIT
 (	(	O
 three	CD	DOS
-250	CD	O
-mg	JJ	O
+250	CD	DOS
+mg	JJ	UNIT
 tablets	NNS	UNIT
 )	)	O
 three	CD	O
 times	NNS	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 treatment	NN	O
@@ -11528,8 +11528,8 @@ for	IN	O
 to	TO	O
 7	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 For	IN	O
 the	DT	O
 treatment	NN	O
@@ -11544,8 +11544,8 @@ The	DT	O
 dose	NN	O
 is	VBZ	O
 one	CD	DOS
-300	CD	O
-mg	NN	O
+300	CD	DOS
+mg	NN	UNIT
 VIREAD	NNP	O
 tablet	NN	UNIT
 once	RB	O
@@ -11557,8 +11557,8 @@ without	IN	O
 regard	NN	O
 to	TO	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -11576,8 +11576,8 @@ or	CC	O
 once	RB	O
 a	DT	O
 month	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 maximum	NN	O
 recommended	VBD	O
@@ -11589,8 +11589,8 @@ VIVLODEX	NNP	O
 is	VBZ	O
 10	CD	DOS
 mg	NN	UNIT
-0	0	O
-		
+.	.	O
+
 One	CD	DOS
 capsule	NN	UNIT
 is	VBZ	O
@@ -11625,7 +11625,7 @@ e.g.	NN	O
 ??F	NN	O
 )	)	O
 ]	VBZ	O
-drink	VBP	O
+drink	VBP	UNIT
 on	IN	O
 alternate	NN	O
 days	NNS	O
@@ -11640,8 +11640,8 @@ days	NNS	O
 5	CD	O
 and	CC	O
 7	CD	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -11678,8 +11678,8 @@ bolus	NN	UNIT
 within	IN	O
 40	CD	O
 seconds	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -11710,8 +11710,8 @@ a	DT	O
 60-minute	JJ	O
 intravenous	JJ	O
 infusion	NN	O
-0	0	O
-		
+.	.	O
+
 In	IN	O
 patients	NNS	O
 with	IN	O
@@ -11734,13 +11734,13 @@ dose	NN	O
 of	IN	O
 VYTORIN	NNP	O
 is	VBZ	O
-10/20	CD	DOS
+10/20/17	CD	DOS
 mg/day	NN	UNIT
 in	IN	O
 the	DT	O
 evening	NN	O
-0	0	O
-		
+.	.	O
+
 WESTCORT	NNP	O
 CREAM	NNP	O
 (	(	O
@@ -11771,8 +11771,8 @@ severity	NN	O
 of	IN	O
 the	DT	O
 condition	NN	O
-0	0	O
-		
+.	.	O
+
 An	DT	O
 initial	JJ	O
 dose	NN	O
@@ -11799,8 +11799,8 @@ the	DT	O
 treatment	NN	O
 of	IN	O
 ITP	NNP	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 suggested	JJ	O
 total	JJ	O
@@ -11812,8 +11812,8 @@ between	IN	O
 to	TO	O
 6	CD	DOS
 mg/day	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 starting	VBG	O
 dose	NN	O
@@ -11828,8 +11828,8 @@ once	RB	O
 in	IN	O
 the	DT	O
 morning	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -11837,8 +11837,8 @@ of	IN	O
 XIFAXAN	NNP	O
 is	VBZ	O
 one	CD	DOS
-200	CD	O
-mg	NN	O
+200	CD	DOS
+mg	NN	UNIT
 tablet	NN	UNIT
 taken	VBN	O
 orally	RB	O
@@ -11849,8 +11849,8 @@ day	NN	O
 for	IN	O
 3	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 one	CD	DOS
 drop	NN	UNIT
@@ -11871,8 +11871,8 @@ using	VBG	O
 a	DT	O
 single-use	JJ	O
 container	NN	O
-0	0	O
-		
+.	.	O
+
 XTAMPZA	NN	O
 ER	NNP	O
 is	VBZ	O
@@ -11891,8 +11891,8 @@ be	VB	O
 taken	VBN	O
 with	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 Instill	NNP	O
 four	CD	DOS
 drops	NNS	UNIT
@@ -11908,8 +11908,8 @@ daily	RB	O
 for	IN	O
 seven	CD	O
 days	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -11930,8 +11930,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
@@ -11958,8 +11958,8 @@ courses	NNS	O
 (	(	O
 weeks	NNS	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 starting	NN	O
@@ -11969,8 +11969,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 daily	RB	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -11994,8 +11994,8 @@ or	CC	O
 without	IN	O
 a	DT	O
 meal	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -12009,9 +12009,9 @@ to	TO	O
 mg/kg/day	NN	UNIT
 given	VBN	O
 in	IN	O
-two	CD	O
-divided	JJ	O
-doses	NNS	O
+two	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
 with	IN	O
 food	NN	O
 for	IN	O
@@ -12019,8 +12019,8 @@ for	IN	O
 to	TO	O
 20	CD	O
 weeks	NNS	O
-0	0	O
-		
+.	.	O
+
 Usual	JJ	O
 dose	NN	O
 is	VBZ	O
@@ -12040,8 +12040,8 @@ the	DT	O
 individual	JJ	O
 patient	NN	O
 response	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -12058,8 +12058,8 @@ with	IN	O
 or	CC	O
 without	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 starting	NN	O
@@ -12077,8 +12077,8 @@ mg	NN	UNIT
 once	RB	O
 per	IN	O
 day	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -12111,8 +12111,8 @@ cisplatin	NN	O
 ???	VBD	O
 50	CD	DOS
 mg/m	NN	UNIT
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 adult	NN	O
@@ -12133,8 +12133,8 @@ of	IN	O
 mg	NNS	UNIT
 per	IN	O
 dose	NN	O
-0	0	O
-		
+.	.	O
+
 Daily	JJ	O
 doses	NNS	O
 of	IN	O
@@ -12179,8 +12179,8 @@ potency	NN	O
 has	VBZ	O
 been	VBN	O
 established	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -12192,8 +12192,8 @@ once	RB	O
 daily	JJ	O
 with	IN	O
 food	NN	O
-0	0	O
-		
+.	.	O
+
 A	DT	O
 thin	JJ	O
 film	NN	O
@@ -12221,8 +12221,8 @@ hour	NN	O
 interval	NN	O
 between	IN	O
 applications	NNS	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 total	JJ	O
@@ -12239,20 +12239,20 @@ every	DT	O
 six	CD	O
 hours	NNS	O
 totaling	VBG	O
-13.5	CD	O
-g	NN	O
+13.5	CD	DOS
+g	NN	UNIT
 (	(	O
-12	CD	O
-g	NN	O
+12	CD	DOS
+g	NN	UNIT
 piperacillin/1.5	NN	O
 g	NN	O
 tazobactam	NN	O
 )	)	O
-0	0	O
-		
+.	.	O
+
 5	CD	DOS
 mg/400	JJ	UNIT
-mg	NN	O
+mg	NN	UNIT
 :	:	O
 The	DT	O
 usual	JJ	O
@@ -12272,8 +12272,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	JJ	O
 dosage	NN	O
@@ -12289,9 +12289,9 @@ with	IN	O
 asthma	NN	O
 is	VBZ	O
 two	CD	DOS
-600	CD	O
-mg	NNS	O
-extended-release	JJ	O
+600	CD	DOS
+mg	NNS	UNIT
+extended-release	JJ	UNIT
 tablets	NNS	UNIT
 twice	RB	O
 daily	RB	O
@@ -12322,8 +12322,8 @@ chewed	VBN	O
 cut	VBD	O
 or	CC	O
 crushed	VBN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 usual	JJ	O
 adult	NN	O
@@ -12340,8 +12340,8 @@ as	IN	O
 needed	VBN	O
 for	IN	O
 pain	NN	O
-0	0	O
-		
+.	.	O
+
 The	DT	O
 recommended	VBN	O
 dose	NN	O
@@ -12370,4 +12370,5 @@ administered	VBN	O
 orally	RB	O
 twice	JJ	O
 daily	RB	O
-0	0	O
+.	.	O
+

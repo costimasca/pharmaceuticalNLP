@@ -5,6 +5,7 @@ import nltk,sys
 
 clf = joblib.load('model.pkl')
 
+
 def getDosage(sentence):
     global clf
 

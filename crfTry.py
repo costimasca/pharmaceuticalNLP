@@ -64,3 +64,10 @@ def gen_model(train, test, writeFile=False):
     return metrics.flat_classification_report(
         y_test, y_pred, labels=sorted_labels, digits=3
     )
+
+
+if __name__ == '__main__':
+    train = loadCorpus('train.tsv')
+    test = loadCorpus('test.tsv')
+
+    print(gen_model(train, test, True))

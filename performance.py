@@ -12,7 +12,7 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False):
     Parameters
     ----------
     corpus_file : optional
-        the name of the corpus file
+        the name of the corpus file. defaults to "corp.tsv"
     ten_fold :
         if True, performs 10-fold cross validation
 
@@ -89,4 +89,5 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False):
     return res
 
 
-print(performance_measure(ten_fold=False))
+if __name__ == '__main__':
+    print(performance_measure(ten_fold=True))
