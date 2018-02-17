@@ -2,7 +2,7 @@ import crfTry, random
 from crfUtil import loadCorpus
 
 
-def performance_measure(corpus_file="corp.tsv", ten_fold=False):
+def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
     """
     Measures the performance on a given corpus file.
     ten_fold parameter changes the behavior of the function, performing a
@@ -15,7 +15,8 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False):
         the name of the corpus file. defaults to "corp.tsv"
     ten_fold :
         if True, performs 10-fold cross validation
-
+    verbose:
+        if True, prints the performance for each fold
     Returns
     -------
     string
@@ -48,6 +49,9 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False):
         test = s
         train = [sentence for set in sets for sentence in set if set != s]
         data = crfTry.gen_model(train, test, False)
+        if verbose:
+            print(data)
+
         data = data.split('     ')
 
         unit_precision += float(data[4])
@@ -90,4 +94,4 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False):
 
 
 if __name__ == '__main__':
-    print(performance_measure(ten_fold=True))
+    print(performance_measure(ten_fold=True,verbose=True))

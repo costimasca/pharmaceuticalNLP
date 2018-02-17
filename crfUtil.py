@@ -67,6 +67,7 @@ def word2features(sent, i):
             '+1:postag[:2]': postag1[:2],
         })
     else:
+        print(sent[i][0])
         features['EOS'] = True
 
     return features
@@ -258,6 +259,7 @@ def loadCorpus(file):
 
     sentences.append(sent)
 
+
     for sent in sentences:
         if sent and sent[0] == '0' and sent[1] == '0':
             sent[0] = '.'
@@ -284,13 +286,19 @@ def writeTsv(sentences, name):
         f.close()
 
 
-def gen_test_train_files(corpus_file):
+def gen_test_train_files(corpus_file='corp.tsv'):
     """Given the .tsv corp file, it will generate 2 disjoint files, "train.tsv" and "test.tsv",
     whose cardinality is in a 80%/20% ratio. """
     sent = loadCorpus(corpus_file)
     train, test = testTrain(sent)
     writeTsv(train, "train.tsv")
     writeTsv(test, "test.tsv")
+
+
+def ispunctuation(word):
+    if word in ['.', ',', '(', ')', '[', ']', '{', '}', ':', ';']:
+        return True
+    return False
 
 
 def word2features(sent, i):
@@ -305,12 +313,13 @@ def word2features(sent, i):
         'word.isupper()': word.isupper(),
         'word.istitle()': word.istitle(),
         'word.isdigit()': word.isdigit(),
+        'word.ispunctuation()': ispunctuation(word),
         'postag': postag,
         'postag[:2]': postag[:2],
     }
     if i > 0:
-        word1 = sent[i - 1][0]
-        postag1 = sent[i - 1][1]
+        word1 = sent[i-1][0]
+        postag1 = sent[i-1][1]
         features.update({
             '-1:word.lower()': word1.lower(),
             '-1:word.istitle()': word1.istitle(),
@@ -321,9 +330,9 @@ def word2features(sent, i):
     else:
         features['BOS'] = True
 
-    if i < len(sent) - 1:
-        word1 = sent[i + 1][0]
-        postag1 = sent[i + 1][1]
+    if i < len(sent)-1:
+        word1 = sent[i+1][0]
+        postag1 = sent[i+1][1]
         features.update({
             '+1:word.lower()': word1.lower(),
             '+1:word.istitle()': word1.istitle(),
@@ -333,6 +342,9 @@ def word2features(sent, i):
         })
     else:
         features['EOS'] = True
+
+    if ispunctuation(word):
+        features['bias'] = 0
 
     return features
 
@@ -349,7 +361,7 @@ def sent2tokens(sent):
     return [token for token, postag, label in sent]
 
 
-def lists_equal(l1, l2):
+def lists_equal(l1,l2):
     if len(l1) != len(l2):
         return False
 
@@ -369,23 +381,24 @@ def view_issues():
 
     corp = loadCorpus('corp.tsv')
 
+
     for sent in corp:
         new_sent = ' '.join([el[0] for el in sent])
         sentence = nltk.word_tokenize(new_sent)
         sentence = nltk.pos_tag(sentence)
         sentence = sent2features(sentence)
-
         labels = [el[2] for el in sent]
 
         prediction = clf.predict([sentence])[0]
-        if not lists_equal(labels, prediction):
+        if not lists_equal(labels,prediction):
             j = corp.index(sent)
             for i in range(len(sent)):
                 if corp[j][i][2] != prediction[i]:
-                    corp[j][i][2] += '!!!' + prediction[i]
+                    corp[j][i][2] += '!!!'+prediction[i]
 
     writeTsv(corp, 'issues.tsv')
 
 
 if __name__ == '__main__':
+    gen_test_train_files()
     view_issues()

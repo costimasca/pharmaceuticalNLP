@@ -79,4 +79,5 @@ def sent2tokens(sent):
     return [token for token, postag, label in sent]
 
 if __name__ =='__main__':
-    print(getDosage(sys.argv[1]))
+    # print(getDosage(sys.argv[1]))
+    print(getDosage("Active Duodenal Ulcer ??\" The recommended oral dosage for adults is 300 mg once daily at bedtime.?"))

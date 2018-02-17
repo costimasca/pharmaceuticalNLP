@@ -1,0 +1,43 @@
+27.dec.2017
+-generate tsv file with labels given to the sentences from the test set to view where most issues occur
+
+Main issues were regarding:
+-the 0 at the end of sentences which is a character format issue that turns '.' into '0'.
+-identifiying as 'DOS' numbers that indicate a time period e.g. 'two to three days'
+-not identifying 'international units' as 'UNIT'
+-not identifying as 'DOS' complex dosages e.g. '30-50mg' -> perhaps splitting numbers from letters would solve this issue
+-line 7692
+-not identifiying 'mg/l'
+
+Questions:
+-how do I treat adjectives that are attached to the UNIT? e.g. 'DAILY dose'?
+
+Conclusion:
+-Although there were many false positives and false negatives, a few inconsistencies were indeed detected in the dataset.
+-average f1-score increased by 4 percent after this attempt. great!!
+
+TO-DO:
+-maybe experiment with different features?
+-punctuation should not be classified as DOS or UNIT
+-split sentences by '-', '/' and maybe '.' (I saw 2 sentences marked as one)
+-create 'contains_dosage(sentence)' function to be able to increase dataset size.
+
+11.jan.2018
+Idea:
+	there is a weight parameter that I could set in the labeling process. (maybe set weight for '.' to 0)
+
+13.feb.2018
+-what should the final application do?
+-include comparisons on different algorithms?
+-research paper?
+
+answer "I don't know"
+precision > recall
+lod initiative + yago + dbpedia
+notez orice citesc! sa am pt bibliografie, bookmarks etc.
+
+17.feb.2018
+-1/2 formatted incorrectly
+-fixed '.' formatting problem
+-'4-8' cataloged as JJ (adjective)
+-anywhere there is a formatting problem, it is replaced by '??' and this causes bad classification => remake corpus
