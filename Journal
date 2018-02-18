@@ -41,3 +41,33 @@ notez orice citesc! sa am pt bibliografie, bookmarks etc.
 -fixed '.' formatting problem
 -'4-8' cataloged as JJ (adjective)
 -anywhere there is a formatting problem, it is replaced by '??' and this causes bad classification => remake corpus
+
+18.feb.2018
+-remade corpus; performance improvement from the start.
+-issues identifying interval ('1 to 3') dosages
+-is 'daily dose' a UNIT?
+-started labeling both 'TREZIX' and 'tablet' as UNIT
+-something causes labels to be placed one step lower than they should:
+    0.9-2.4	JJ	DOS
+    grams	NNS	UNIT
+    daily	RB	O
+    in	IN	O
+    3	CD	DOS
+    or	CC	O
+    4	CD	DOS
+    equally	RB	UNIT
+    divided	VBN	UNIT
+    doses	NNS	UNIT
+    (	(	O
+    i.e.	JJ	O
+    ,	,	O
+    300-600	JJ	DOS !!! O
+    mg	NN	UNIT !!! DOS
+    3	CD	O !!! UNIT
+    or	CC	O
+    4	CD	O
+    times	NNS	O
+    daily	RB	O
+    )	)	O
+    .	.	O
+-

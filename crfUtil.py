@@ -67,7 +67,6 @@ def word2features(sent, i):
             '+1:postag[:2]': postag1[:2],
         })
     else:
-        print(sent[i][0])
         features['EOS'] = True
 
     return features
@@ -89,7 +88,7 @@ sys.path.insert(0, '.')
 
 
 def makeCorpus():
-    dir = 'DATASET/dosage/'
+    dir = 'dosage/'
     l = sorted(os.listdir(dir))
 
     text = []
@@ -102,7 +101,7 @@ def makeCorpus():
     with open('corpus', 'w') as f:
         for sent in text:
             for tup in sent:
-                f.write(tup[0] + '\t' + tup[1] + '\tO-DOSE\n')
+                f.write(tup[0] + '\t' + tup[1] + '\tO\n')
             f.write('\n')
         f.close()
 
@@ -142,7 +141,6 @@ def writeIOB(corpus):
             token = sentence[i]
 
             if len(token) == 2:
-                print(token)
                 if i == 0:
                     token = token + ('B-DOSE',)
                 elif len(sentence[i - 1]) == 3:
@@ -203,8 +201,25 @@ def getAllDosages():
     return text, text2
 
 
+def makeCorpusFile():
+    dir = 'dosage/'
+
+    files = sorted(os.listdir(dir))
+    text = []
+
+    for file in files:
+        with open(dir + file, 'r') as f:
+            text.append(f.read())
+            f.close()
+
+    with open('corpus', 'w') as f:
+        for line in text:
+            f.write(line + '\n')
+        f.close()
+
+
 def makeDosageCorpus():
-    file = 'dosageCorpus'
+    file = 'corpus'
     corpus = 'dosage.tsv'
 
     with open(file, 'r') as f:
@@ -394,11 +409,10 @@ def view_issues():
             j = corp.index(sent)
             for i in range(len(sent)):
                 if corp[j][i][2] != prediction[i]:
-                    corp[j][i][2] += '!!!'+prediction[i]
+                    corp[j][i][2] += ' !!! '+prediction[i]
 
     writeTsv(corp, 'issues.tsv')
 
 
 if __name__ == '__main__':
     gen_test_train_files()
-    view_issues()

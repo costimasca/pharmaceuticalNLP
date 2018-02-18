@@ -7,7 +7,7 @@ For more details, read the pdf in the Report folder.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -63,7 +63,7 @@ Using 10-fold cross validation:
 ```
 
  	precision	recall	f1-measure
-UNIT 	0.939		0.910	0.924
-DOS 	0.942		0.936	0.936
-avg 	0.940		0.923	0.931
+UNIT 	0.951		0.936	0.943
+DOS 	0.960		0.937	0.937
+avg 	0.956		0.936	0.945
 ```

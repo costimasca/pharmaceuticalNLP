@@ -1,4 +1,7 @@
 .idea/
 __pycache__/
-nltkTry.pyc
+*.pyc
 *.bak
+test.tsv
+train.tsv
+issues.tsv
