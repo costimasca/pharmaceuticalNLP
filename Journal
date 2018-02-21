@@ -36,11 +36,13 @@ precision > recall
 lod initiative + yago + dbpedia
 notez orice citesc! sa am pt bibliografie, bookmarks etc.
 
+
 17.feb.2018
 -1/2 formatted incorrectly
 -fixed '.' formatting problem
 -'4-8' cataloged as JJ (adjective)
 -anywhere there is a formatting problem, it is replaced by '??' and this causes bad classification => remake corpus
+
 
 18.feb.2018
 -remade corpus; performance improvement from the start.
@@ -70,4 +72,8 @@ notez orice citesc! sa am pt bibliografie, bookmarks etc.
     daily	RB	O
     )	)	O
     .	.	O
--
+
+
+21.feb.2018
+-split "0.15-mg/kg" or "8-mg" by hyphen?
+-deleted sentences that were missclassified because of formatiing issues (the one above and one more)

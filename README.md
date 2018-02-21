@@ -63,7 +63,7 @@ Using 10-fold cross validation:
 ```
 
  	precision	recall	f1-measure
-UNIT 	0.951		0.936	0.943
-DOS 	0.960		0.937	0.937
-avg 	0.956		0.936	0.945
+UNIT 	0.961		0.948	0.954
+DOS 	0.974		0.960	0.960
+avg 	0.968		0.954	0.961
 ```

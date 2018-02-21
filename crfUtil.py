@@ -285,7 +285,7 @@ def loadCorpus(file):
 
 def testTrain(sentences):
     import random
-    test_number = int(len(sentences) * 0.2)
+    test_number = int(len(sentences) * 0.1)
     test = random.sample(sentences, test_number)
     train = list(sent for sent in sentences if not sent in test)
 
@@ -332,6 +332,18 @@ def word2features(sent, i):
         'postag': postag,
         'postag[:2]': postag[:2],
     }
+
+    if i > 1:
+        word2 = sent[i-2][0]
+        postag2 = sent[i-2][1]
+        features.update({
+            '-2:word.lower()': word2.lower(),
+            '-2:word.istitle()': word2.istitle(),
+            '-2:word.isupper()': word2.isupper(),
+            '-2:postag': postag2,
+            '-2:postag[:2]': postag2[:2],
+        })
+
     if i > 0:
         word1 = sent[i-1][0]
         postag1 = sent[i-1][1]
@@ -344,6 +356,17 @@ def word2features(sent, i):
         })
     else:
         features['BOS'] = True
+
+    if i < len(sent)-3:
+        word3 = sent[i+3][0]
+        postag3 = sent[i+3][1]
+        features.update({
+            '+3:word.lower()': word3.lower(),
+            '+3:word.istitle()': word3.istitle(),
+            '+3:word.isupper()': word3.isupper(),
+            '+3:postag': postag3,
+            '+3:postag[:2]': postag3[:2],
+        })
 
     if i < len(sent)-1:
         word1 = sent[i+1][0]
@@ -416,3 +439,4 @@ def view_issues():
 
 if __name__ == '__main__':
     gen_test_train_files()
+    view_issues()
