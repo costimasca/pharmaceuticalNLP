@@ -77,3 +77,12 @@ notez orice citesc! sa am pt bibliografie, bookmarks etc.
 21.feb.2018
 -split "0.15-mg/kg" or "8-mg" by hyphen?
 -deleted sentences that were missclassified because of formatiing issues (the one above and one more)
+
+22.feb.2018
+-generated "corpus2" with all sentences that may contain "DOS" or "UNIT"
+-definitely need to separate by "-" and "/". first I have to remake the main corpus
+
+26.feb.2018
+-remade initial dataset splitting by "-" and "/"
+-add as feature words in front of a preceding parenthesis for the current word.
+-added word2 feature.

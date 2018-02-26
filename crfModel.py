@@ -50,7 +50,6 @@ def gen_model(train, test, writeFile=False):
     crf = rs.best_estimator_
 
     y_pred = crf.predict(X_test)
-    metrics.flat_f1_score(y_test, y_pred, average='weighted', labels=labels)
 
     # group B and I results
     sorted_labels = sorted(
@@ -64,7 +63,6 @@ def gen_model(train, test, writeFile=False):
     return metrics.flat_classification_report(
         y_test, y_pred, labels=sorted_labels, digits=3
     )
-
 
 if __name__ == '__main__':
     train = loadCorpus('train.tsv')

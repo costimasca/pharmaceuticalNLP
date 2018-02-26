@@ -28,50 +28,6 @@ import csv
 # clf = joblib.load('model.pkl')
 
 
-def word2features(sent, i):
-    word = sent[i][0]
-    postag = sent[i][1]
-
-    features = {
-        'bias': 1.0,
-        'word.lower()': word.lower(),
-        'word[-3:]': word[-3:],
-        'word[-2:]': word[-2:],
-        'word.isupper()': word.isupper(),
-        'word.istitle()': word.istitle(),
-        'word.isdigit()': word.isdigit(),
-        'postag': postag,
-        'postag[:2]': postag[:2],
-    }
-    if i > 0:
-        word1 = sent[i - 1][0]
-        postag1 = sent[i - 1][1]
-        features.update({
-            '-1:word.lower()': word1.lower(),
-            '-1:word.istitle()': word1.istitle(),
-            '-1:word.isupper()': word1.isupper(),
-            '-1:postag': postag1,
-            '-1:postag[:2]': postag1[:2],
-        })
-    else:
-        features['BOS'] = True
-
-    if i < len(sent) - 1:
-        word1 = sent[i + 1][0]
-        postag1 = sent[i + 1][1]
-        features.update({
-            '+1:word.lower()': word1.lower(),
-            '+1:word.istitle()': word1.istitle(),
-            '+1:word.isupper()': word1.isupper(),
-            '+1:postag': postag1,
-            '+1:postag[:2]': postag1[:2],
-        })
-    else:
-        features['EOS'] = True
-
-    return features
-
-
 def sent2features(sent):
     return [word2features(sent, i) for i in range(len(sent))]
 
@@ -104,59 +60,6 @@ def makeCorpus():
                 f.write(tup[0] + '\t' + tup[1] + '\tO\n')
             f.write('\n')
         f.close()
-
-
-def remakeList(list):
-    newList = []
-    smallList = []
-
-    for el in list:
-        if el != ('',):
-            smallList.append(el)
-        else:
-            newList.append(smallList)
-            smallList = []
-
-    # newList.append(smallList)
-
-    return newList
-
-
-def openFile(file):
-    with open(file, 'r') as f:
-        text = [tuple(line.strip().split('\t')) for line in f.readlines()]
-        f.close()
-
-    text = remakeList(text)
-
-    return text
-
-
-def writeIOB(corpus):
-    newCorpus = []
-
-    for sentence in corpus:
-        newSentence = []
-        for i in range(0, len(sentence)):
-            token = sentence[i]
-
-            if len(token) == 2:
-                if i == 0:
-                    token = token + ('B-DOSE',)
-                elif len(sentence[i - 1]) == 3:
-                    token = token + ('B-DOSE',)
-                else:
-                    token = token + ('I-DOSE',)
-            newSentence.append(token)
-        newCorpus.append(newSentence)
-
-    return newCorpus
-
-
-def getCorpus():
-    file = '/home/constantin/Documents/practica/finalCorpus.tsv'
-
-    return openFile(file)
 
 
 def corpus2file(list, name):
@@ -202,17 +105,21 @@ def getAllDosages():
 
 
 def makeCorpusFile():
-    dir = 'dosage/'
+    dir = 'fullDescription/'
+    sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
 
     files = sorted(os.listdir(dir))
     text = []
 
     for file in files:
         with open(dir + file, 'r') as f:
-            text.append(f.read())
+            for line in f.readlines():
+                for sent in sent_detector.tokenize(line):
+                    if contains_dosage(sent):
+                        text.append(sent)
             f.close()
 
-    with open('corpus', 'w') as f:
+    with open('corpus2', 'w') as f:
         for line in text:
             f.write(line + '\n')
         f.close()
@@ -285,7 +192,7 @@ def loadCorpus(file):
 
 def testTrain(sentences):
     import random
-    test_number = int(len(sentences) * 0.1)
+    test_number = int(len(sentences) * 0.2)
     test = random.sample(sentences, test_number)
     train = list(sent for sent in sentences if not sent in test)
 
@@ -303,7 +210,7 @@ def writeTsv(sentences, name):
 
 def gen_test_train_files(corpus_file='corp.tsv'):
     """Given the .tsv corp file, it will generate 2 disjoint files, "train.tsv" and "test.tsv",
-    whose cardinality is in a 80%/20% ratio. """
+    whose cardinality is in a 90%/10% ratio. """
     sent = loadCorpus(corpus_file)
     train, test = testTrain(sent)
     writeTsv(train, "train.tsv")
@@ -357,6 +264,17 @@ def word2features(sent, i):
     else:
         features['BOS'] = True
 
+    if i < len(sent)-2:
+        word2 = sent[i+2][0]
+        postag2 = sent[i+2][1]
+        features.update({
+            '+2:word.lower()': word2.lower(),
+            '+2:word.istitle()': word2.istitle(),
+            '+2:word.isupper()': word2.isupper(),
+            '+2:postag': postag2,
+            '+2:postag[:2]': postag2[:2],
+        })
+
     if i < len(sent)-3:
         word3 = sent[i+3][0]
         postag3 = sent[i+3][1]
@@ -385,18 +303,6 @@ def word2features(sent, i):
         features['bias'] = 0
 
     return features
-
-
-def sent2features(sent):
-    return [word2features(sent, i) for i in range(len(sent))]
-
-
-def sent2labels(sent):
-    return [label for token, postag, label in sent]
-
-
-def sent2tokens(sent):
-    return [token for token, postag, label in sent]
 
 
 def lists_equal(l1,l2):
@@ -435,6 +341,68 @@ def view_issues():
                     corp[j][i][2] += ' !!! '+prediction[i]
 
     writeTsv(corp, 'issues.tsv')
+
+
+def contains_dosage(sentence):
+    pred = getDosage(sentence)
+    if len(pred) > 0:
+        return True
+
+
+def fix_dashes_slashes():
+    c = open('corp.tsv')
+    lines = c.readlines()
+
+    t = open('tmp','w')
+    sentences = []
+    sent = ''
+    for i, line in enumerate(lines):
+        word = line.split('\t')[0]
+        if word == '' or i == len(lines) -1:
+            sentences.append(sent)
+            sent = ''
+        else:
+            if '-' in word:
+                print(word)
+                tmp = word.split('-')
+                word = ' - '.join(tmp)
+                print(word)
+            if '/' in word:
+                print(word)
+                tmp = word.split('/')
+                word = ' / '.join(tmp)
+                print(word)
+
+            sent += word + ' '
+
+    for i,sent in enumerate(sentences):
+        sentences[i] = sent[:-3] + '.'
+
+    for sent in sentences:
+        t.write(sent + '\n')
+
+
+def remake():
+    file = 'tmp'
+    corpus = 'tmp2.tsv'
+
+    with open(file, 'r') as f:
+        text = f.readlines()
+        f.close()
+
+    text2 = []
+
+    for line in text:
+        sent = nltk.word_tokenize(line)
+        sent = nltk.pos_tag(sent)
+        text2.append(sent)
+
+    with open(corpus, 'w') as f:
+        for line in text2:
+            for tup in line:
+                f.write(tup[0] + '\t' + tup[1] + '\t' + 'O\n')
+            f.write('\n')
+        f.close()
 
 
 if __name__ == '__main__':

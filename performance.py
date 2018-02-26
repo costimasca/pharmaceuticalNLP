@@ -1,4 +1,5 @@
-import crfTry, random
+import crfModel
+import random
 from crfUtil import loadCorpus
 
 
@@ -48,7 +49,7 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
     for s in sets:
         test = s
         train = [sentence for set in sets for sentence in set if set != s]
-        data = crfTry.gen_model(train, test, False)
+        data = crfModel.gen_model(train, test, False)
         if verbose:
             print(data)
 
