@@ -5,3 +5,4 @@ __pycache__/
 test.tsv
 train.tsv
 issues.tsv
+*.png

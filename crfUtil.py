@@ -1,28 +1,25 @@
 import os
 import sys
 import nltkTry
-
 import matplotlib.pyplot as plt
-
-plt.style.use('ggplot')
-
 from itertools import chain
-
 import nltk
 import sklearn
 import scipy.stats
 from sklearn.metrics import make_scorer
 from sklearn.cross_validation import cross_val_score
 from sklearn.grid_search import RandomizedSearchCV
-
 import sklearn_crfsuite
 from sklearn_crfsuite import scorers
 from sklearn_crfsuite import metrics
 from sklearn.externals import joblib
+import csv
+from scipy.stats import norm
+import matplotlib.mlab as mlab
+
 
 nltk.corpus.conll2002.fileids()
 
-import csv
 
 
 # clf = joblib.load('model.pkl')
@@ -320,11 +317,8 @@ def view_issues():
     """generates a tsv file with labels given to test sentences.
     the purpose of this is to see where most errors occur.
     perhaps a clue to a correction in the data set can be inferred from this"""
-    test = loadCorpus('test.tsv')
-    clf = joblib.load('model.pkl')
-
     corp = loadCorpus('corp.tsv')
-
+    clf = joblib.load('model.pkl')
 
     for sent in corp:
         new_sent = ' '.join([el[0] for el in sent])
@@ -338,7 +332,8 @@ def view_issues():
             j = corp.index(sent)
             for i in range(len(sent)):
                 if corp[j][i][2] != prediction[i]:
-                    corp[j][i][2] += ' !!! '+prediction[i]
+                    if corp[j][i][2] == "WHO" or prediction[i] == "WHO":
+                        corp[j][i][2] += ' !!! ' + prediction[i]
 
     writeTsv(corp, 'issues.tsv')
 
@@ -382,8 +377,108 @@ def fix_dashes_slashes():
         t.write(sent + '\n')
 
 
-def remake():
-    file = 'tmp'
+def fix_eg_ie():
+    c = open('corp.tsv')
+    lines = c.readlines()
+
+    t = open('tmp.tsv','w')
+    new_lines = []
+    sent = ''
+    for line in lines:
+        line_split = line.split('\t')
+        word = line_split[0]
+        if word == 'eg.' or word == 'e.g.':
+            print(word)
+            word = 'e.g'
+        if word == 'ie.' or word == 'i.e.':
+            print(word)
+            word = 'i.e'
+
+        new_line = '\t'.join([word]+line_split[1:])
+        new_lines.append(new_line)
+
+    t.writelines(new_lines)
+
+
+def label_corpus():
+    clf = joblib.load('model.pkl')
+    corp = loadCorpus('tmp2.tsv')
+
+    for sent in corp:
+        new_sent = ' '.join([el[0] for el in sent])
+        sentence = nltk.word_tokenize(new_sent)
+        sentence = nltk.pos_tag(sentence)
+        sentence = sent2features(sentence)
+        labels = [el[2] for el in sent]
+
+        prediction = clf.predict([sentence])[0]
+        if not lists_equal(labels, prediction):
+            j = corp.index(sent)
+            for i in range(len(sent)):
+                if corp[j][i][2] != prediction[i]:
+                    corp[j][i][2] = prediction[i]
+
+    writeTsv(corp, 'corpus2.tsv')
+
+
+def plot_error_distrib(x):
+   avg = sum(x)/len(x)
+   p = [y - avg for y in x]
+
+   (mu,sigma) = norm.fit(p)
+
+   n, bins, patches = plt.hist(p, normed=1, facecolor='green', alpha=0.75)
+
+   y = mlab.normpdf(bins, mu, sigma)
+   l = plt.plot(bins,y,'r--', linewidth=2)
+
+   plt.title("Distributia erorilor de recall")
+   plt.grid(True)
+
+   plt.show()
+
+
+def fix_slashes_dashes_on_sent_file():
+    f = open('corpus2')
+    sentences = f.readlines()
+    f.close()
+    new_sentences = []
+
+    for sent in sentences:
+        new_sent = ''
+        sent_list = sent.split(' ')
+        sent_list = list(filter(None, sent_list))
+        l = len(sent_list)
+        for i, word in enumerate(sent_list):
+            if '-' in word:
+                print(word)
+                word = ' - '.join(word.split('-'))
+                print(word)
+
+            if '–' in word:
+                print(word)
+                word = ' – '.join(word.split('–'))
+                print(word)
+
+            if '/' in word:
+                word = ' / '.join(word.split('/'))
+            new_sent += word
+            if i != l:
+                new_sent += ' '
+
+        new_sent = new_sent.replace('  ', ' ')
+
+        new_sentences.append(new_sent)
+
+    f = open('corpus2_split','w')
+    for sent in new_sentences:
+        f.write(sent)
+
+    f.close()
+
+
+def sent_file_to_unlab_corp():
+    file = 'corpus2_split'
     corpus = 'tmp2.tsv'
 
     with open(file, 'r') as f:
@@ -406,5 +501,4 @@ def remake():
 
 
 if __name__ == '__main__':
-    gen_test_train_files()
     view_issues()
