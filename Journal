@@ -170,3 +170,10 @@ notez orice citesc! sa am pt bibliografie, bookmarks etc.
     restricted	JJ	WHO
     physical	JJ	WHO
     activity	NN	WHO
+
+24.Mar.2018
+-created a function that generates a tree with nodes containing the named entities
+
+25.Mar.2018
+-created a function that calculates the distance between two trees without taking into consideration the names of the
+nodes, just the structure

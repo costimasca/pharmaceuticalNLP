@@ -67,4 +67,4 @@ WHO 	0.934		0.871	0.897
 UNIT 	0.983		0.969	0.976
 DOS 	0.980		0.970	0.975
 avg 	0.964		0.936	0.949
-```
+```Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) which is prepared by infusing the processed whole tea leaves in hot water. This is as opposed to matcha (抹茶), powdered Japanese green tea, where the green tea powder is mixed with hot water and therefore the leaf itself is included in the beverage. Sencha ...

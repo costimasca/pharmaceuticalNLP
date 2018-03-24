@@ -1,6 +1,6 @@
 import os
 import sys
-import nltkTry
+import distance
 import matplotlib.pyplot as plt
 from itertools import chain
 import nltk
@@ -48,7 +48,7 @@ def makeCorpus():
 
     for file in l:
         with open(dir + file, 'r') as f:
-            text.append(nltkTry.parseString(f.read()))
+            text.append(distance.parseString(f.read()))
             f.close()
 
     with open('corpus', 'w') as f:
