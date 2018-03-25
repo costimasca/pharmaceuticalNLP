@@ -1,0 +1,33 @@
+Use CardioGen-82 only with an infusion system specifically designed for use with the generator and capable of accurate measurement and delivery of doses of rubidium Rb 82 chloride injection. Follow instructions in the Infusion System User's Guide for the set up and intravenous infusion of rubidium Rb 82 chloride injection dose(s).
+The recommended adult single dose of rubidium Rb 82 chloride injection is 1480 MBq (40 mCi) with a range of 1110-2220 MBq (30-60 mCi).
+Administer two separate single doses to complete rest and stress myocardial perfusion imaging as follows:
+For rest imaging:
+For stress imaging:
+Use additive-free sodium chloride injection USP for all elutions. Apply aseptic technique throughout. 
+Before administering rubidium Rb 82 chloride injection to the first patient each day, perform the following test: 
+Perform the additional daily eluate tests at time points determined by the day's elution volume; tests are performed every 750 mL.
+1. Set a dose calibrator for Rb-82 as recommended by the manufacturer or use the Co-60 setting and divide the reading obtained by 0.548. Obtain the reading from the instrument in millicuries.
+2. Elute the generator with 50 mL of Sodium Chloride Injection USP and discard the eluate (first elution).
+3. Allow at least 10 minutes for the regeneration of Rb-82, then elute the generator with 50 mL of Sodium Chloride Injection USP at a rate of 50 mL/min and collect the eluate in a stoppered glass vial (plastic containers are not suitable). Note the exact time of end of elution (E.O.E.).
+4. Using the dose calibrator, determine the activity of Rb-82 and note the time of the reading. Correct the reading for decay to the E.O.E. using the appropriate decay factor for Rb-82 (see Table 1). Note: If the reading is taken 2 ½ minutes after end of elution, multiply the dose calibrator reading by 4 to correct for decay.
+5. Using the sample obtained for the Rb-82 activity determination, allow the sample to stand for at least one hour to allow for the complete decay of Rb-82.
+6. Measure the activity of the sample in a dose calibrator at the setting recommended by the manufacturer for Rb-82 and/or Sr-82. As an alternative, use the Co-60 setting and the reading obtained divided by 0.548. Set the instrument to read in microcuries and record the reading in the display. 
+7. Calculate the ratio (R) of Sr-85/Sr-82 on the day (postcalibration) of the measurement using the ratio of Sr85/Sr-82 on the day of calibration provided on the generator label and the Sr-85/Sr-82 Ratio Factor from Table 2. Determine R using the following equation:
+
+8. Use a correction factor (F) of 0.478 to compensate for the contribution of Sr-85 to the reading.
+9. Calculate the amount of Sr-82 in the sample using the following equation:
+
+Example: dose calibrator reading (μCi) = 0.8; Sr85/Sr82 ratio (R) =1.48; correction factor (F) = 0.478.
+
+10. Determine if Sr-82 in the eluate exceeds an Alert or Expiration Limit by dividing the μCi of Sr-82 by the mCi of Rb-82 at End of Elution (see below for further instructions based on the Sr-82 level)
+Example: 0.47 μCi of Sr-82; 50 mCi of Rb-82 E.O.E.
+
+11. Determine if Sr-85 in the eluate exceeds an Alert or   Expiration Limit by multiplying the result obtained in step 10 by (R) as calculated in step 7 (above).
+Example: 0.0094 x 1.48 = 0.014 μCi Sr-85/mCi Rb-82 (test result is below Alert and Expiration Limits)
+Use Table 1 to calculate the decay factor for Rb-82; step 4 (above).
+TABLE 1 : Physical Decay Chart: Rb-82 half-life 75 seconds 
+Use Table 2 to calculate the ratio (R) of Sr-85/Sr-82; step 7 (above). 
+TABLE 2 : Sr-85/Sr-82 Ratio Chart (Sr-85 T ½= 65 days, Sr-82½= 25 days) 
+Stop use of the CardioGen-82 generator once any one of the following Expiration Limits is reached.
+The estimated absorbed radiation doses for Rb-82, Sr-82, and Sr-85 from an intravenous injection rubidium Rb- 82 chloride are shown in Table 3.
+Table 3 : Adult Absorbed Radiation Dose Coefficient 

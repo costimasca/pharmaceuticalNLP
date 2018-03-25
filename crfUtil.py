@@ -16,6 +16,7 @@ from sklearn.externals import joblib
 import csv
 from scipy.stats import norm
 import matplotlib.mlab as mlab
+import model
 
 
 nltk.corpus.conll2002.fileids()
@@ -40,48 +41,12 @@ def sent2tokens(sent):
 sys.path.insert(0, '.')
 
 
-def makeCorpus():
-    dir = 'dosage/'
-    l = sorted(os.listdir(dir))
-
-    text = []
-
-    for file in l:
-        with open(dir + file, 'r') as f:
-            text.append(distance.parseString(f.read()))
-            f.close()
-
-    with open('corpus', 'w') as f:
-        for sent in text:
-            for tup in sent:
-                f.write(tup[0] + '\t' + tup[1] + '\tO\n')
-            f.write('\n')
-        f.close()
-
-
 def corpus2file(list, name):
     with open(name, 'w') as f:
         for line in list:
             for token in line:
                 f.write(token[0] + '\t' + token[1] + '\t' + token[2] + '\n')
             f.write('\n')
-
-
-def getDosage(sentence):
-    global clf
-
-    sentence = nltk.word_tokenize(sentence)
-    sent = nltk.pos_tag(sentence)
-    sent = sent2features(sent)
-
-    labels = clf.predict([sent])
-    dosage = []
-    for i in range(0, len(labels[0])):
-        if (labels[0][i] == 'DOS'):
-            dosage.append(sentence[i])
-
-    return dosage
-
 
 def getAllDosages():
     dir = 'DATASET/dosage/'
@@ -102,7 +67,7 @@ def getAllDosages():
 
 
 def makeCorpusFile():
-    dir = 'fullDescription/'
+    dir = './train_full/'
     sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
 
     files = sorted(os.listdir(dir))
@@ -112,7 +77,7 @@ def makeCorpusFile():
         with open(dir + file, 'r') as f:
             for line in f.readlines():
                 for sent in sent_detector.tokenize(line):
-                    if contains_dosage(sent):
+                    if contains_named_entities(sent):
                         text.append(sent)
             f.close()
 
@@ -123,8 +88,8 @@ def makeCorpusFile():
 
 
 def makeDosageCorpus():
-    file = 'corpus'
-    corpus = 'dosage.tsv'
+    file = 'corpus2_split'
+    corpus = 'corp2.tsv'
 
     with open(file, 'r') as f:
         text = f.readlines()
@@ -317,7 +282,7 @@ def view_issues():
     """generates a tsv file with labels given to test sentences.
     the purpose of this is to see where most errors occur.
     perhaps a clue to a correction in the data set can be inferred from this"""
-    corp = loadCorpus('corp.tsv')
+    corp = loadCorpus('corp2.tsv')
     clf = joblib.load('model.pkl')
 
     for sent in corp:
@@ -334,21 +299,25 @@ def view_issues():
                 if corp[j][i][2] != prediction[i]:
                     if corp[j][i][2] == "WHO" or prediction[i] == "WHO":
                         corp[j][i][2] += ' !!! ' + prediction[i]
+                    if corp[j][i][2] == "DOS" or prediction[i] == "DOS":
+                        corp[j][i][2] += ' !!! ' + prediction[i]
+                    if corp[j][i][2] == "UNIT" or prediction[i] == "UNIT":
+                        corp[j][i][2] += ' !!! ' + prediction[i]
 
     writeTsv(corp, 'issues.tsv')
 
 
-def contains_dosage(sentence):
-    pred = getDosage(sentence)
-    if len(pred) > 0:
+def contains_named_entities(sentence):
+    pred = model.getLabels(sentence)
+    if 'WHO' in pred[0] or 'DOS' in pred[0] or 'UNIT' in pred[0]:
         return True
 
 
 def fix_dashes_slashes():
-    c = open('corp.tsv')
+    c = open('corp2.tsv')
     lines = c.readlines()
 
-    t = open('tmp','w')
+    t = open('corpus2','w')
     sentences = []
     sent = ''
     for i, line in enumerate(lines):
@@ -378,10 +347,10 @@ def fix_dashes_slashes():
 
 
 def fix_eg_ie():
-    c = open('corp.tsv')
+    c = open('tmp2.tsv')
     lines = c.readlines()
 
-    t = open('tmp.tsv','w')
+    t = open('corp2.tsv','w')
     new_lines = []
     sent = ''
     for line in lines:
@@ -402,7 +371,7 @@ def fix_eg_ie():
 
 def label_corpus():
     clf = joblib.load('model.pkl')
-    corp = loadCorpus('tmp2.tsv')
+    corp = loadCorpus('corp2.tsv')
 
     for sent in corp:
         new_sent = ' '.join([el[0] for el in sent])
@@ -501,4 +470,4 @@ def sent_file_to_unlab_corp():
 
 
 if __name__ == '__main__':
-    view_issues()
+    print()

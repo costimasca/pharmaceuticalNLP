@@ -238,3 +238,7 @@ nodes, just the structure
     O DOS O DOS O :['kenalog-10-injection']
     O DOS O DOS UNIT O DOS O DOS UNIT O DOS UNIT O :['trophamine']
     O WHO O DOS UNIT O DOS UNIT O DOS UNIT O DOS UNIT O :['gamunex-c']
+
+-removed all files with validation sentences from 'fullDescription' folder
+-renamed fullDescription to train
+-found ~ 20 000 sentences that contain WHO or DOS or UNIT - saved them to corp2 and labeled using current model

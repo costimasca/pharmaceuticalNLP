@@ -1,0 +1,33 @@
+Rubidium Rb 82 is a radioactive drug and should be handled with appropriate safety measures to minimize radiation exposure during administration [see  WARNINGS AND PRECAUTIONS]).
+3. Immediately after detection of the volume alert limit (20 L).
+When the Quality Control test is performed as described in the User Manual, the system automatically performs the following eluate testing:
+
+Sr 82 (μCi) = 
+Example: 
+dose calibrator reading (μCi) = 0.8 Sr 85/Sr 82 ratio (R) = (1.48) correction factor (F) = 0.48
+
+
+Sr 82 (kBq) =
+Example: 
+dose calibrator reading (kBq) = 29.6 kBq Sr 85/Sr 82 ratio (R) = (1.48) correction factor (F) = 0.48
+ 
+6. The system determines if Sr   82 in the eluate exceeds an Alert or Expiration Limit by dividing the μCi   (or kBq) of Sr 82 by the mCi (or MBq) of Rb 82 at End of Elution (see below for further instructions based on the Sr 82 level)
+Example: 
+0.47 μCi of Sr 82; 50 mCi of Rb 82
+0.47 μCi Sr 82
+(Sr 82 is above Alert Limit of 0.004 μCi/mCi; additional daily eluate testing must be performed)
+Example: 17.3 kBq of Sr 82; 1850 MBq of Rb 82
+17.3 kBq Sr 82
+(Sr 82 is above Alert Limit of 0.004 kBq/MBq; additional daily eluate testing must be performed)
+7. The system determines if Sr 85 in the eluate exceeds an Alert or Expiration Limit by multiplying the result obtained in step 6 by (R) as calculated in step 3 (above).
+Example: 0.0094 x 1.48 = 0.014 μCi Sr 85/mCi Rb 82    (Sr 85 test result is below Alert and Expiration Limits)
+Example: 0.0094 x 1.48 = 0.014 kBq Sr 85/MBq Rb 82    (Sr 85 test result is below Alert and Expiration Limits)
+The system uses Table 1 to calculate the decay factor for Rb 82
+TABLE 1 
+The system uses Table 2 to calculate the ratio (R) of Sr 85/Sr 82.
+TABLE 2 
+Stop use of the RUBY-FILL Rubidium Rb 82 Generator once any one of the following Expiration Limits is reached:
+The maximum available activity (delivery limit) will decrease as the generator ages. Certain doses, including the maximum recommended dose [60 mCi (2220 MBq)], are not achievable for the entire shelf-life of the generator. Table 3 provides an estimate of the maximum available activity of Rubidium Rb 82 (Delivery Limit) as a function of generator age.
+Table 3 : Rubidium Rb 82 Dose Delivery Limit Based on Generator Age1 
+The estimated radiation absorbed dose coefficients for Rb 82, Sr 82, and Sr 85 from an intravenous injection of rubidium Rb 82 chloride are shown in Table 4.
+Table 4 : Adult absorbed dose per radioisotope activity associated with injection 
