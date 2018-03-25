@@ -6,7 +6,7 @@ import nltk,sys
 clf = joblib.load('model.pkl')
 
 
-def getDosage(sentence):
+def getLabels(sentence):
     global clf
 
     sentence = nltk.word_tokenize(sentence)
@@ -14,16 +14,8 @@ def getDosage(sentence):
     sent = sent2features(sent)
 
     labels = clf.predict([sent])
-    dosage = []
-    unit = []
-    for i in range(0,len(labels[0])):
-        if(labels[0][i] == 'DOS'):
-            dosage.append(sentence[i])
-        if(labels[0][i] == 'UNIT'):
-            unit.append(sentence[i])
 
-    return tuple((dosage,unit))
-
+    return labels
 
 def word2features(sent, i):
     word = sent[i][0]
@@ -80,4 +72,4 @@ def sent2tokens(sent):
 
 if __name__ =='__main__':
     # print(getDosage(sys.argv[1]))
-    print(getDosage("Active Duodenal Ulcer ??\" The recommended oral dosage for adults is 300 mg once daily at bedtime.?"))
+    print(getLabels("The recommended oral dosage for adults is 300 mg once daily at bedtime."))
