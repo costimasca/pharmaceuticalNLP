@@ -65,7 +65,7 @@ def gen_model(train, test, writeFile=False):
     )
 
 if __name__ == '__main__':
-    gen_test_train_files()
+    gen_test_train_files('corp.tsv')
     train = loadCorpus('train.tsv')
     test = loadCorpus('test.tsv')
 

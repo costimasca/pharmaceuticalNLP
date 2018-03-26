@@ -1,6 +1,6 @@
 # Information extraction on drug dosage
 
-Information extraction system that returns quantity and measuring unit given a natural language description of the dosage for a farmaceutical drug. The model is based on python's CRF implementation, crfsuite. Part-ofspeech tags were obtained with nltk.
+Information extraction system that returns quantity (DOS) and measuring unit (UNIT) as well as to whom the treatement is directed (WHO) given a natural language description of the dosage for a farmaceutical drug. The model is based on python's CRF implementation, crfsuite. Part-ofspeech tags were obtained with nltk.
 
 For more details, read the pdf in the Report folder.
 
@@ -50,11 +50,12 @@ cd farmaceuticalNLP
 chmod +x dosage.py
 ```
 ```
-./dosage.py "The recommended dosage for X is 42 grams."
+./model.py "The recommended oral dosage for adults is 300 mg once daily at bedtime."
 ```
 You can specify any sentence using different quantities (1, two, 3 to 5, 0.5 etc.) and different measuring units (drops, ml, miligrams, tablespoons etc.) Feel free to choose one from the corpus.
 
-In the above example, the output is the following touple: (['42'],['grams'])
+In the above example, the output is the following label list:
+ (['O', 'O', 'O', 'O', 'O', 'WHO', 'O', 'DOS', 'UNIT', 'O', 'O', 'O', 'O', 'O'])
 
 ### Performance
 
@@ -63,8 +64,8 @@ Using 10-fold cross validation:
 ```
 
  	precision	recall	f1-measure
-WHO 	0.934		0.871	0.897
-UNIT 	0.983		0.969	0.976
-DOS 	0.980		0.970	0.975
-avg 	0.964		0.936	0.949
-```Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) which is prepared by infusing the processed whole tea leaves in hot water. This is as opposed to matcha (抹茶), powdered Japanese green tea, where the green tea powder is mixed with hot water and therefore the leaf itself is included in the beverage. Sencha ...
+WHO 	0.950		0.918	0.933
+UNIT 	0.985		0.960	0.972
+DOS 	0.983		0.966	0.974
+avg 	0.969		0.942	0.955
+```

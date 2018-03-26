@@ -152,15 +152,6 @@ def loadCorpus(file):
     return sentences
 
 
-def testTrain(sentences):
-    import random
-    test_number = int(len(sentences) * 0.2)
-    test = random.sample(sentences, test_number)
-    train = list(sent for sent in sentences if not sent in test)
-
-    return train, test
-
-
 def writeTsv(sentences, name):
     with open(name, 'w') as f:
         for sent in sentences:
@@ -172,9 +163,14 @@ def writeTsv(sentences, name):
 
 def gen_test_train_files(corpus_file='corp.tsv'):
     """Given the .tsv corp file, it will generate 2 disjoint files, "train.tsv" and "test.tsv",
-    whose cardinality is in a 90%/10% ratio. """
-    sent = loadCorpus(corpus_file)
-    train, test = testTrain(sent)
+    whose cardinality is in a 80%/20% ratio. """
+    sentences = loadCorpus(corpus_file)
+
+    import random
+    test_number = int(len(sentences) * 0.2)
+    test = random.sample(sentences, test_number)
+    train = list(sent for sent in sentences if not sent in test)
+
     writeTsv(train, "train.tsv")
     writeTsv(test, "test.tsv")
 
@@ -282,7 +278,7 @@ def view_issues():
     """generates a tsv file with labels given to test sentences.
     the purpose of this is to see where most errors occur.
     perhaps a clue to a correction in the data set can be inferred from this"""
-    corp = loadCorpus('corp2.tsv')
+    corp = loadCorpus('corp.tsv')
     clf = joblib.load('model.pkl')
 
     for sent in corp:

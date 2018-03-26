@@ -15,7 +15,7 @@ def getLabels(sentence):
 
     labels = clf.predict([sent])
 
-    return labels
+    return labels[0]
 
 def word2features(sent, i):
     word = sent[i][0]

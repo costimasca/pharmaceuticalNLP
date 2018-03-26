@@ -242,3 +242,6 @@ nodes, just the structure
 -removed all files with validation sentences from 'fullDescription' folder
 -renamed fullDescription to train
 -found ~ 20 000 sentences that contain WHO or DOS or UNIT - saved them to corp2 and labeled using current model
+
+26.Mar.2018
+-increased size of corpus and removed duplicates

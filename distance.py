@@ -44,7 +44,7 @@ def convert_to_ne_text_tree(sentence):
     returns a bracket notation tree
     """
 
-    ne_labels = getLabels(sentence)[0]
+    ne_labels = getLabels(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
@@ -68,7 +68,7 @@ def convert_to_ne_tree(sentence):
     returns a bracket notation tree
     """
 
-    ne_labels = getLabels(sentence)[0]
+    ne_labels = getLabels(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
@@ -84,7 +84,7 @@ def convert_to_ne_tree(sentence):
 
 
 def view_tree(sentence):
-    ne_labels = getLabels(sentence)[0]
+    ne_labels = getLabels(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
