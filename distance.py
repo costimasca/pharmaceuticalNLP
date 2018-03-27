@@ -10,7 +10,7 @@ clf = joblib.load('model.pkl')
 
 def convert_to_IOB(sent):
     new_sent = []
-    inside_entity = {'O':False,'DOS':False,'UNIT':False,'WHO':False}
+    inside_entity = {'O':False,'DOS':False,'UNIT':False,'WHO':False, 'FREQ':False, 'PER':False}
 
     for i,(t,p,n) in enumerate(sent):
         if inside_entity[n]:
@@ -55,7 +55,7 @@ def convert_to_ne_text_tree(sentence):
     for t, p, n in sent:
         text += t + ' ' + p + ' ' + n + '\n'
 
-    tree = nltk.chunk.conllstr2tree(text, chunk_types=['DOS','UNIT','WHO', 'O'])
+    tree = nltk.chunk.conllstr2tree(text, chunk_types=['DOS','UNIT','WHO', 'O', 'FREQ', 'PER'])
     tree = convert_bracket_notation(tree.__str__())
 
     return tree
@@ -79,7 +79,7 @@ def convert_to_ne_tree(sentence):
     for t, p, n in sent:
         text += t + ' ' + p + ' ' + n + '\n'
 
-    tree = nltk.chunk.conllstr2tree(text, chunk_types=['DOS','UNIT','WHO', 'O'])
+    tree = nltk.chunk.conllstr2tree(text, chunk_types=['DOS','UNIT','WHO', 'O', 'FREQ', 'PER'])
     return tree
 
 
@@ -95,7 +95,7 @@ def view_tree(sentence):
     for t, p, n in sent:
         text += t + ' ' + p + ' ' + n + '\n'
 
-    tree = nltk.chunk.conllstr2tree(text, chunk_types=['DOS','UNIT','WHO', 'O'])
+    tree = nltk.chunk.conllstr2tree(text, chunk_types=['DOS','UNIT','WHO', 'O', 'FREQ', 'PER'])
     tree.draw()
 
 def calculate_distance_from_text_trees(text_tree1, text_tree2):
@@ -136,7 +136,7 @@ def generate_distance_matrix(folder):
     output.close()
 
 
-def all_structures(folder='./dosages/'):
+def all_structures(folder='./train_full/'):
     files = sorted(os.listdir(folder))
 
     structures = {}
@@ -161,17 +161,17 @@ def all_structures(folder='./dosages/'):
     for k,v in sorted(structures.items(),key=lambda x: len(x[1]),reverse=True):
         print(k + ":" + str(v))
 
+    print(len(structures.items()))
+
 
 if __name__ == '__main__':
 
     all_structures()
 
-    first_struct = ['ablavar', 'acular-ls', 'adacel', 'addyi', 'adlyxin', 'advair-hfa', 'afluria-quadrivalent', 'alkeran-injection', 'alsuma', 'altace', 'altoprev', 'arava', 'aripiprazole-tablets', 'aristocort-forte', 'armonair-respiclick', 'aromasin', 'astepro', 'avapro', 'avonex', 'bavencio', 'belviq', 'bentyl', 'besivance', 'bextra', 'bleph', 'blocadren', 'boniva-injection', 'brisdelle', 'capoten', 'cardura', 'cerdelga', 'cisplatin', 'claforan', 'clarinex-d-24hr', 'colcigel', 'combivent', 'corlanor', 'corphedra', 'cortone', 'cozaar', 'cystaran', 'cytomel', 'darvon', 'depakote-er', 'diabinese', 'diclegis', 'diovan-hct', 'duraclon', 'durezol', 'emadine', 'ethyol', 'exondys-51', 'fareston', 'fastin', 'flomax', 'flublok', 'fluocinolone', 'fluorometholone', 'fosrenol', 'geodon', 'gilotrif', 'gralise', 'haldol', 'harvoni', 'hyqvia', 'hysingla-er', 'ibrance', 'iclusig', 'inderal-la', 'iressa', 'istodax', 'ixempra', 'jardiance', 'jenloga', 'keppra-xr', 'keveyis', 'kyprolis', 'lamisil', 'levatol', 'levo-dromoran', 'liptruzet', 'loniten', 'lovaza', 'lupron-depot-375', 'lupron-depot-75', 'meclizine-hydrochloride', 'mintezol', 'mitigare', 'movantik', 'mycelex', 'mycobutin', 'olysio', 'opdivo', 'peganone', 'pentacel', 'perforomist', 'permax', 'platinol', 'pletal', 'poly-pred', 'pondimin', 'prandimet', 'pred-forte', 'prempro', 'prestalia', 'provenge', 'provera', 'qbrelis', 'rapaflo-capsules', 'reclast', 'relistor', 'reprexain', 'requip', 'rescula', 'retrovir', 'rezulin', 'rheumatrex', 'rozerem', 'safyral', 'sanctura', 'sanctura-xr', 'sandimmune', 'saphris', 'savaysa', 'simponi-aria', 'somavert', 'sorine', 'spiriva-respimat', 'sprycel', 'stavzor', 'staxyn', 'sumavel-dosepro', 'synercid', 'synribo', 'targretin', 'tecentriq', 'timoptic', 'timoptic-in-ocudose', 'timoptic-xe', 'tobradex-st', 'torisel', 'tradjenta', 'transderm-nitro', 'travatan', 'trental', 'trulicity', 'tyvaso', 'tyzeka', 'uptravi', 'urobiotic', 'vayarin', 'vayarol', 'vectibix', 'versacloz', 'vesicare', 'vexol', 'vigamox', 'virazole', 'viread', 'vivitrol', 'vivlodex', 'xanax-xr', 'xenazine', 'xifaxan', 'xiidra', 'xtoro', 'zebeta', 'zepatier', 'zolinza']
-    second_struct = ['actos', 'amaryl', 'amerge', 'baycol', 'benlysta', 'calcijex', 'celestone', 'clemastine-fumarate-tablets', 'cortef', 'cosentyx', 'definity', 'deltasone', 'depo-provera', 'dilacor-xr', 'doxorubicin-hydrochloride', 'duexis', 'duoneb', 'durlaza', 'dutrebis', 'elmiron', 'erythrocin-stearate', 'famvir', 'feraheme', 'fetzima', 'fortical', 'fuzeon', 'gynazole', 'imbruvica', 'imlygic', 'incivek', 'inderal', 'inflectra', 'invega-sustenna', 'levetiracetam', 'lopressor', 'lupaneta-pack', 'lupron-depot', 'metozolv', 'nardil', 'nascobal', 'neulasta', 'nexavar', 'nilandron', 'norvasc', 'novolin-r', 'orenitram', 'oxtellar-xr', 'pamidronate-disodium', 'pce', 'prostascint', 'rebif', 'remeron', 'remeron-soltab', 'rixubis', 'rytary', 'savella', 'sprix', 'striant', 'tenoretic', 'timoptic-in-ocudose', 'tygacil', 'vemlidy', 'viibryd', 'winrho-sdf', 'zanosar', 'zelboraf']
-    third_struct = ['fioricet', 'orbivan', 'tobradex']
+    first_struct = ['actoplus-met', 'adasuve', 'adreview', 'agrylin', 'alesse', 'alimta', 'alosetron-hydrochloride', 'alphagan-p', 'anoro-ellipta', 'apidra', 'aubagio', 'auvi-q', 'azopt', 'bactrim', 'bayrab', 'bendeka', 'betimol', 'bevespi-aerosphere', 'bidil', 'biltricide', 'cephadyn', 'cetacaine', 'clinolipid', 'colchicine', 'combigan', 'combunox', 'corlopam', 'covera-hs', 'crixivan', 'cycloset', 'dantrium', 'deconsal', 'deconsal-ct', 'dht', 'donnatal', 'duagen', 'duoneb', 'dynacirc-cr', 'dyrenium', 'eldepryl', 'elitek', 'ella', 'empliciti', 'enablex', 'entyvio', 'epipen', 'eraxis', 'estrostep', 'estrostep-fe', 'etopophos', 'eulexin', 'exalgo', 'faslodex', 'ferriprox', 'firazyr', 'flonase', 'floxuridine', 'fluress', 'fml', 'frova', 'genoptic', 'giazo', 'gilenya', 'gliadel', 'glyset', 'gonal-f', 'heparin-sodium-injection', 'hycamtin-capsules', 'hyperrab', 'imodium', 'incruse-ellipta', 'infergen', 'inspra', 'inversine', 'invokamet-xr', 'iplex', 'janumet', 'janumet-xr', 'jentadueto-xr', 'jevtana', 'junel-fe', 'keflex', 'kepivance', 'kerlone', 'konyne', 'lartruvo', 'latisse', 'lexiscan', 'liletta', 'lotemax', 'lotrel', 'lutera', 'lymphazurin', 'medrol', 'mepron', 'methylene-blue', 'miacalcin', 'micardis', 'mono-vacc', 'mugard', 'myfortic', 'nasonex', 'neotect', 'nexavar', 'nipent', 'nitro-dur', 'nitropress', 'novolin-70-30-innolet', 'novolin-n-innolet', 'nuplazid', 'omniscan', 'onglyza', 'onmel', 'opticrom', 'panhematin', 'pentasa', 'pentoxifylline', 'perforomist', 'perjeta', 'permax', 'praluent', 'pred-g', 'prevacid', 'primaquine', 'pristiq', 'procardia-xl', 'profilnine', 'provera', 'ranexa', 'relpax', 'revatio', 'rexulti', 'rowasa', 'seasonique', 'secreflo', 'siliq', 'simbrinza', 'skelid', 'skyla', 'sodium-lactate', 'solaraze', 'solesta', 'stiolto-respimat', 'stivarga', 'striverdi-respimat', 'stromectol', 'sulfamylon', 'sumavel-dosepro', 'synarel', 'tekamlo', 'tenivac', 'terazol', 'testoderm', 'thrombin', 'tice', 'tigecycline-generic', 'toviaz', 'trobicin', 'trusopt', 'tussigon', 'twynsta', 'ultracet', 'viadur', 'victrelis', 'viramune', 'visken', 'voraxaze', 'votrient', 'xadago', 'xalatan', 'xtandi', 'yellow-fever-vaccine', 'yervoy', 'zadaxin', 'zingo', 'zirgan', 'zontivity', 'zyflo']
 
-    for drug in second_struct:
-        with open('./dosages/'+drug) as f:
+    for drug in first_struct:
+        with open('./train_full/'+drug) as f:
             sent = f.readline()
             f.close()
         print(view_tree(sent))

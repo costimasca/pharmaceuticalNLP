@@ -7,8 +7,8 @@ is	VBZ	O
 600	CD	DOS
 mg	NN	UNIT
 orally	RB	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 with	IN	O
 food	NN	O
 [	NNS	O
@@ -50,14 +50,14 @@ mg	NN	UNIT
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-at	IN	O
-least	JJS	O
-10	CD	O
-days	NNS	O
+at	IN	PER
+least	JJ	PER
+10	CD	PER
+days	NNS	PER
 .	.	O
 
 Limit	NNP	O
@@ -74,8 +74,8 @@ episodes	NNS	O
 of	IN	O
 breakthrough	NN	O
 pain	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 Each	DT	O
@@ -183,8 +183,8 @@ older	JJR	WHO
 is	VBZ	O
 20	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 In	IN	O
@@ -230,10 +230,10 @@ monitor	VB	O
 trough	IN	O
 concentrations	NNS	O
 every	DT	O
-3	CD	O
+3	CD	FREQ
 to	TO	O
-6	CD	O
-months	NNS	O
+6	CD	FREQ
+months	NNS	FREQ
 in	IN	O
 patients	NNS	WHO
 with	IN	WHO
@@ -243,10 +243,10 @@ surface	JJ	WHO
 area	NN	WHO
 or	CC	O
 every	DT	O
-6	CD	O
+6	CD	FREQ
 to	TO	O
-12	CD	O
-months	NNS	O
+12	CD	FREQ
+months	NNS	FREQ
 in	IN	O
 patients	NNS	WHO
 with	IN	WHO
@@ -270,7 +270,7 @@ tablets	NNS	UNIT
 of	IN	O
 amiloride	JJ	O
 HCl	NNP	O
-daily	RB	O
+daily	RB	FREQ
 usually	RB	O
 are	VBP	O
 not	RB	O
@@ -303,8 +303,8 @@ one	CD	DOS
 25	CD	DOS
 mg	NN	UNIT
 tablet	NN	UNIT
-once	IN	O
-daily	JJ	O
+once	IN	FREQ
+daily	JJ	FREQ
 after	IN	O
 a	DT	O
 meal	NN	O
@@ -443,9 +443,9 @@ more	JJR	O
 than	IN	O
 500	CD	DOS
 mg	JJ	UNIT
-every	DT	O
-4	CD	O
-weeks	NNS	O
+every	DT	FREQ
+4	CD	FREQ
+weeks	NNS	FREQ
 up	RB	O
 to	TO	O
 a	DT	O
@@ -454,8 +454,8 @@ dose	NN	O
 of	IN	O
 2000	CD	DOS
 mg	NN	UNIT
-a	DT	O
-day	NN	O
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -468,9 +468,9 @@ is	VBZ	O
 mg	NN	UNIT
 administered	VBN	O
 orally	RB	O
-once	RB	O
-per	IN	O
-day	NN	O
+once	RB	FREQ
+per	IN	FREQ
+day	NN	FREQ
 at	IN	O
 bedtime	NN	O
 .	.	O
@@ -603,8 +603,8 @@ kilogram	NN	O
 of	IN	O
 body	NN	O
 weight	JJ	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 will	MD	O
 meet	VB	O
 the	DT	O
@@ -689,7 +689,7 @@ mg	NNS	UNIT
 to	TO	O
 500	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 Once	RB	O
@@ -752,8 +752,8 @@ started	VBN	O
 on	IN	O
 20	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 of	IN	O
 lovastatin	NN	O
 .	.	O
@@ -808,8 +808,8 @@ is	VBZ	O
 /	JJ	O
 2.5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -829,9 +829,9 @@ years	NNS	WHO
 is	VBZ	O
 20	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 given	VBN	O
 in	IN	O
 the	DT	O
@@ -850,8 +850,8 @@ is	VBZ	O
 1	CD	DOS
 mg	NN	UNIT
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 either	CC	O
 in	IN	O
 the	DT	O
@@ -880,8 +880,8 @@ usually	RB	O
 to	TO	O
 375	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
@@ -914,7 +914,7 @@ maximum	NN	O
 of	IN	O
 250	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 Using	VBG	O
@@ -956,8 +956,8 @@ patients	NNS	WHO
 is	VBZ	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	NN	O
@@ -974,7 +974,7 @@ tablet	NN	UNIT
 37.5	CD	DOS
 mg	NN	UNIT
 )	)	O
-daily	RB	O
+daily	RB	FREQ
 ,	,	O
 as	IN	O
 prescribed	VBN	O
@@ -1046,8 +1046,8 @@ renal	JJ	WHO
 impairment	NN	WHO
 ,	,	O
 the	DT	O
-maximum	JJ	O
-daily	JJ	O
+maximum	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 should	MD	O
 not	RB	O
@@ -1150,7 +1150,7 @@ drainage	NN	O
 ,	,	O
 diarrhea	NN	O
 )	)	O
-daily	JJ	O
+daily	JJ	FREQ
 losses	NNS	O
 .	.	O
 
@@ -1175,8 +1175,8 @@ should	MD	O
 be	VB	O
 250	CD	DOS
 mg	JJ	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 in	IN	O
 addition	NN	O
 to	TO	O
@@ -1212,8 +1212,8 @@ not	RB	O
 exceed	VB	O
 0.5	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 in	IN	O
 any	DT	O
 one	CD	O
@@ -1226,14 +1226,14 @@ dose	NN	O
 is	VBZ	O
 one	CD	DOS
 troche	NN	UNIT
-five	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+five	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-fourteen	JJ	O
-consecutive	JJ	O
-days	NNS	O
+fourteen	JJ	PER
+consecutive	JJ	PER
+days	NNS	PER
 .	.	O
 
 Treatment	NN	O
@@ -1244,8 +1244,8 @@ with	IN	O
 ALDACTONE	NNP	O
 25	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 if	IN	O
 the	DT	O
 patient	NN	O
@@ -1280,8 +1280,8 @@ TRADJENTA	NNP	O
 is	VBZ	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Avoid	IN	O
@@ -1429,7 +1429,7 @@ mg	NNS	UNIT
 to	TO	O
 100	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 is	VBZ	O
 useful	JJ	O
 in	IN	O
@@ -1505,7 +1505,7 @@ mSv	NN	O
 
 The	DT	O
 maximum	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 is	VBZ	O
 63	CD	DOS
@@ -1584,10 +1584,10 @@ higher	JJR	O
 than	IN	O
 2.5	CD	DOS
 mg	NNS	UNIT
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 ,	,	O
 if	IN	O
 tolerated	VBN	O
@@ -1655,8 +1655,8 @@ tolerated	VBN	WHO
 AGRYLIN	NNP	WHO
 therapy	NN	O
 for	IN	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 may	MD	O
 have	VB	O
 their	PRP$	O
@@ -1712,8 +1712,8 @@ to	TO	O
 g	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 of	IN	O
 total	JJ	O
 amino	NN	O
@@ -1736,8 +1736,8 @@ mg	NN	UNIT
 or	CC	O
 2	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -1790,8 +1790,8 @@ ALTACE	NNP	O
 ramipril	JJ	O
 capsules	NNS	O
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 It	PRP	O
@@ -1804,9 +1804,9 @@ than	IN	O
 mg	JJ	UNIT
 /	NNP	O
 kg	NN	O
-every	DT	O
-24	CD	O
-hours	NNS	O
+every	DT	FREQ
+24	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 In	IN	O
@@ -1816,7 +1816,7 @@ and	CC	WHO
 children	NNS	WHO
 ,	,	O
 the	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 can	MD	O
 be	VB	O
@@ -1872,8 +1872,8 @@ sulfate	NN	O
 is	VBZ	O
 stable	JJ	O
 for	IN	O
-24	CD	O
-hours	NNS	O
+24	CD	PER
+hours	NNS	PER
 at	IN	O
 room	NN	O
 temperature	NN	O
@@ -1919,8 +1919,8 @@ capsules	NNS	O
 of	IN	O
 450	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 and	CC	O
 patients	NNS	WHO
@@ -1946,8 +1946,8 @@ Capsules	NNP	O
 of	IN	O
 300	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 see	VB	O
 CLINICAL	NNP	O
@@ -1982,8 +1982,8 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 divided	VBD	O
 into	IN	O
 2	CD	DOS
@@ -2023,9 +2023,9 @@ eye	NN	O
 (	(	O
 s	PRP	O
 )	)	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 Table	JJ	O
@@ -2096,7 +2096,7 @@ mg	NN	UNIT
 and	CC	O
 40	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 ,	,	O
 respectively	RB	O
 .	.	O
@@ -2196,8 +2196,8 @@ therapy	NN	O
 with	IN	O
 2	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 is	VBZ	O
 instituted	VBN	O
 when	WRB	O
@@ -2233,13 +2233,13 @@ dose	NN	O
 is	VBZ	O
 5	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 An	DT	O
 initial	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 100	CD	DOS
@@ -2264,7 +2264,7 @@ from	IN	O
 to	TO	O
 200	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -2275,8 +2275,8 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 or	CC	O
 less	JJR	O
 and	CC	O
@@ -2310,7 +2310,7 @@ dose	NN	O
 to	TO	O
 2.5	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 For	IN	O
@@ -2474,8 +2474,8 @@ USP	NNP	O
 The	DT	O
 30	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 dose	VB	O
 was	VBD	O
 not	RB	O
@@ -2488,8 +2488,8 @@ than	IN	O
 the	DT	O
 10	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 dose	VB	O
 .	.	O
 
@@ -2578,8 +2578,8 @@ treatment	NN	O
 at	IN	O
 400	CD	DOS
 mcg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Reconstituted	VBN	O
@@ -2622,8 +2622,8 @@ up	IN	O
 to	TO	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 should	MD	O
 occur	VB	O
 gradually	RB	O
@@ -2703,7 +2703,7 @@ missed	VBN	O
 After	IN	O
 reaching	VBG	O
 a	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 2	CD	DOS
@@ -2744,15 +2744,15 @@ of	IN	O
 mL	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 provides	VBZ	O
 130	CD	O
 kcal	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 As	IN	O
@@ -2787,7 +2787,7 @@ dose	NN	O
 is	VBZ	O
 100	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -2915,8 +2915,8 @@ DISKUS	NNP	O
 100	CD	O
 /	VBD	O
 50	CD	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 approximately	RB	O
 12	CD	O
@@ -2951,9 +2951,9 @@ to	TO	O
 the	DT	O
 affected	JJ	O
 eye	NN	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 beginning	VBG	O
 24	CD	O
 hours	NNS	O
@@ -3003,8 +3003,8 @@ mg	NN	UNIT
 /	NNP	O
 m²	NN	O
 ,	,	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 [	NNP	O
 see	VBP	O
 Dose	NNP	O
@@ -3114,10 +3114,10 @@ the	DT	O
 wick	NN	O
 in	IN	O
 for	IN	O
-at	IN	O
-least	JJS	O
-24	CD	O
-hours	NNS	O
+at	IN	PER
+least	JJS	PER
+24	CD	PER
+hours	NNS	PER
 and	CC	O
 to	TO	O
 keep	VB	O
@@ -3181,11 +3181,11 @@ increased	VBN	O
 to	TO	O
 100	CD	DOS
 mg	NNS	UNIT
-two	CD	O
+two	CD	FREQ
 or	CC	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 by	IN	O
 the	DT	O
 end	NN	O
@@ -3202,19 +3202,19 @@ dose	NN	O
 is	VBZ	O
 80	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Oral	JJ	O
 :	:	O
 One	CD	DOS
 tablet	NN	UNIT
-one	CD	O
+one	CD	FREQ
 to	TO	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -3259,11 +3259,11 @@ cream	NN	O
 should	MD	O
 be	VB	O
 applied	VBN	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 for	IN	O
-4	CD	O
-weeks	NNS	O
+4	CD	PER
+weeks	NNS	PER
 .	.	O
 
 Patients	NNS	O
@@ -3444,8 +3444,8 @@ dosage	NN	O
 is	VBZ	O
 2	CD	DOS
 inhalations	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 approximately	RB	O
 12	CD	O
@@ -3491,8 +3491,8 @@ and	CC	O
 to	TO	O
 continue	VB	O
 for	IN	O
-48	CD	O
-hours	NNS	O
+48	CD	PER
+hours	NNS	PER
 while	IN	O
 at	IN	O
 high	JJ	O
@@ -3523,8 +3523,8 @@ mg	NN	UNIT
 or	CC	O
 30	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -3574,8 +3574,8 @@ dose	NN	O
 is	VBZ	O
 16	CD	DOS
 mcg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 In	IN	O
@@ -3636,7 +3636,7 @@ adults	NNS	WHO
 ,	,	O
 an	DT	O
 initial	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 50	CD	DOS
@@ -3681,9 +3681,9 @@ treatment	NN	O
 with	IN	O
 1	CD	DOS
 mg	NNS	UNIT
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Patients	NNS	WHO
@@ -3727,9 +3727,9 @@ by	IN	O
 or	CC	O
 250	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-four	CD	O
-hours	NNS	O
+every	DT	FREQ
+four	CD	FREQ
+hours	NNS	FREQ
 depending	VBG	O
 on	IN	O
 the	DT	O
@@ -3760,7 +3760,7 @@ cirrhosis	NN	WHO
 
 The	DT	O
 usual	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 ALDOMET	NNP	O
@@ -3834,16 +3834,16 @@ mg	NN	UNIT
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+twice	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 for	IN	O
-at	IN	O
-least	JJS	O
-10	CD	O
-days	NNS	O
+at	IN	PER
+least	JJ	PER
+10	CD	PER
+days	NNS	PER
 .	.	O
 
 To	TO	O
@@ -3924,14 +3924,14 @@ mg	NN	UNIT
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-at	IN	O
-least	JJS	O
-10	CD	O
-days	NNS	O
+at	IN	PER
+least	JJ	PER
+10	CD	PER
+days	NNS	PER
 .	.	O
 
 The	DT	O
@@ -4043,29 +4043,29 @@ control	NN	O
 .	.	O
 
 Apply	NNP	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 morning	NN	O
 and	CC	O
 evening	NN	O
 (	(	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 )	)	O
 ,	,	O
 for	IN	O
-3	CD	O
-consecutive	JJ	O
-days	NNS	O
+3	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 ,	,	O
 then	RB	O
 withhold	VBD	O
 use	NN	O
 for	IN	O
-4	CD	O
-consecutive	JJ	O
-days	NNS	O
+4	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 .	.	O
 
 A	DT	O
@@ -4231,8 +4231,8 @@ g	NNS	UNIT
 fat	JJ	O
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 infused	VBD	O
 simultaneously	RB	O
@@ -4332,8 +4332,8 @@ dose	NN	O
 of	IN	O
 400	CD	DOS
 mcg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 may	MD	O
 be	VB	O
 considered	VBN	O
@@ -4379,8 +4379,8 @@ areas	NNS	O
 on	IN	O
 the	DT	O
 face	NN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 morning	NN	O
 and	CC	O
@@ -4403,7 +4403,7 @@ is	VBZ	O
 to	TO	O
 5	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 ,	,	O
 administered	VBN	O
 with	IN	O
@@ -4420,9 +4420,9 @@ Cream	NNP	O
 should	MD	O
 be	VB	O
 applied	VBN	O
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 ,	,	O
 in	IN	O
 the	DT	O
@@ -4467,8 +4467,8 @@ methyldopa	SYM	O
 hydrochlorothiazide	NN	O
 )	)	O
 D50	NNP	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 may	MD	O
 be	VB	O
 used	VBN	O
@@ -4483,8 +4483,8 @@ between	IN	O
 and	CC	O
 3	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 depending	VBG	O
 upon	IN	O
 the	DT	O
@@ -4499,8 +4499,8 @@ dose	NN	O
 is	VBZ	O
 8	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 A	DT	O
@@ -4508,8 +4508,8 @@ dose	NN	O
 of	IN	O
 one	CD	DOS
 tablet	NN	UNIT
-once	IN	O
-daily	JJ	O
+once	IN	FREQ
+daily	JJ	FREQ
 is	VBZ	O
 recommended	VBN	O
 as	IN	O
@@ -4592,8 +4592,8 @@ dosing	NN	O
 at	IN	O
 1.25	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 After	IN	O
@@ -4614,9 +4614,9 @@ to	TO	O
 mg	NNS	UNIT
 )	)	O
 for	IN	O
-14	CD	O
-consecutive	JJ	O
-days	NNS	O
+14	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 to	TO	O
 achieve	VB	O
 therapeutic	JJ	O
@@ -4667,7 +4667,7 @@ to	TO	O
 6	CD	DOS
 divided	JJ	UNIT
 doses	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 100	CD	DOS
@@ -4676,14 +4676,14 @@ mg	NN	UNIT
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-at	IN	O
-least	JJS	O
-7	CD	O
-days	NNS	O
+at	IN	PER
+least	JJ	PER
+7	CD	PER
+days	NNS	PER
 .	.	O
 
 The	DT	O
@@ -4734,7 +4734,7 @@ is	VBZ	O
 administered	VBN	O
 at	IN	O
 a	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 400	CD	DOS
@@ -4774,8 +4774,8 @@ mg	NN	UNIT
 to	TO	O
 60	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -4823,8 +4823,8 @@ mg	NN	UNIT
 to	TO	O
 be	VB	O
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 at	IN	O
 the	DT	O
 same	JJ	O
@@ -4890,7 +4890,7 @@ tablet	NN	UNIT
 18.75	CD	DOS
 mg	NN	UNIT
 )	)	O
-daily	NN	O
+daily	NN	FREQ
 may	MD	O
 be	VB	O
 adequate	JJ	O
@@ -4911,10 +4911,10 @@ tablets	NNS	UNIT
 18.75	CD	DOS
 mg	NN	UNIT
 )	)	O
-two	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+two	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -4928,8 +4928,8 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 but	CC	O
 higher	JJR	O
 doses	NNS	O
@@ -4973,11 +4973,11 @@ is	VBZ	O
 30	CD	DOS
 mg	NN	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
-2	CD	O
-months	NNS	O
+2	CD	PER
+months	NNS	PER
 .	.	O
 
 For	IN	O
@@ -5198,8 +5198,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 given	VBN	O
 in	IN	O
 two	CD	DOS
@@ -5222,9 +5222,9 @@ one	CD	DOS
 20	CD	DOS
 mg	NN	UNIT
 tablet	NN	UNIT
-three	CD	O
-times	NNS	O
-daily	JJ	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	JJ	FREQ
 before	IN	O
 meals	NNS	O
 .	.	O
@@ -5346,8 +5346,8 @@ g	NN	O
 kg	VBZ	O
 body	NN	O
 weight	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 basis	NN	O
 and	CC	O
 patient	JJ	O
@@ -5363,8 +5363,8 @@ to	TO	O
 g	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 ages	VBZ	WHO
 1	CD	WHO
@@ -5378,8 +5378,8 @@ to	TO	O
 g	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 ages	VBZ	WHO
 4	CD	WHO
@@ -5391,8 +5391,8 @@ years	NNS	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 ages	VBZ	WHO
 13	CD	WHO
@@ -5404,8 +5404,8 @@ years	NNS	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 ages	VBZ	WHO
 16	CD	WHO
@@ -5416,8 +5416,8 @@ above	RB	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 In	IN	O
@@ -5448,8 +5448,8 @@ alternates	NNS	O
 .	.	O
 
 A	DT	O
-recommended	JJ	O
-daily	JJ	O
+recommended	JJ	FREQ
+daily	JJ	FREQ
 maintenance	NN	O
 dosage	NN	O
 is	VBZ	O
@@ -5488,9 +5488,9 @@ timolol	NN	O
 is	VBZ	O
 10	CD	DOS
 mg	NN	UNIT
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 ,	,	O
 whether	IN	O
 used	VBN	O
@@ -5572,12 +5572,12 @@ weight	NN	O
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-60	CD	O
-days	NNS	O
+60	CD	PER
+days	NNS	PER
 .	.	O
 
 Examples	NNS	O
@@ -5658,8 +5658,8 @@ switched	VBN	O
 to	TO	O
 1.25	CD	DOS
 mg	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 and	CC	O
 after	IN	O
@@ -5686,8 +5686,8 @@ dose	NN	O
 of	IN	O
 5	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 with	IN	O
 dosage	NN	O
@@ -5846,8 +5846,8 @@ not	RB	O
 exceed	VB	O
 10	CD	DOS
 mg	JJ	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	NN	O
@@ -5866,8 +5866,8 @@ eye	NN	O
 (	(	O
 s	JJ	O
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 in	IN	O
 the	DT	O
 evening	NN	O
@@ -5916,7 +5916,7 @@ inducer	NN	O
 consider	VB	O
 doubling	VBG	O
 the	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 AFINITOR	NNP	O
@@ -5938,8 +5938,8 @@ is	VBZ	O
 -	:	O
 60	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 in	IN	O
 single	JJ	DOS
@@ -5962,7 +5962,7 @@ mg	NN	UNIT
 /	VBD	O
 40	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 are	VBP	O
 not	RB	O
 recommended	VBN	O
@@ -5982,8 +5982,8 @@ cells	NNS	UNIT
 /	JJ	O
 µL	NNP	O
 for	IN	O
-one	CD	O
-month	NN	O
+one	CD	PER
+month	NN	PER
 [	VBD	O
 see	JJ	O
 WARNINGS	NNP	O
@@ -6037,12 +6037,12 @@ mg	NN	UNIT
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-7	CD	O
-days	NNS	O
+7	CD	PER
+days	NNS	PER
 .	.	O
 
 Aldara	NNP	O
@@ -6224,8 +6224,8 @@ mg	NNS	UNIT
 kg	NNS	O
 administered	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 or	CC	O
 in	IN	O
@@ -6396,8 +6396,8 @@ four	CD	DOS
 mg	NN	UNIT
 capsules	NNS	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 combination	NN	O
 with	IN	O
@@ -6417,8 +6417,8 @@ course	NN	O
 of	IN	O
 10	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 for	IN	O
 7	CD	O
 to	TO	O
@@ -6476,8 +6476,8 @@ given	VBN	O
 as	RB	O
 often	RB	O
 as	IN	O
-every	DT	O
-hour	NN	O
+every	DT	FREQ
+hour	NN	FREQ
 .	.	O
 
 An	DT	WHO
@@ -6505,8 +6505,8 @@ kg	NN	O
 of	IN	O
 body	NN	O
 weight	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -6540,10 +6540,10 @@ of	IN	O
 0.5	CD	DOS
 mg	NN	UNIT
 ,	,	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 when	WRB	O
 initiating	VBG	O
 Adempas	NNP	O
@@ -6610,10 +6610,10 @@ is	VBZ	O
 to	TO	O
 100	CD	DOS
 mg	NNS	UNIT
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 ,	,	O
 with	IN	O
 a	DT	O
@@ -6625,7 +6625,7 @@ maximum	NN	O
 of	IN	O
 800	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 if	IN	O
 necessary	JJ	O
 .	.	O
@@ -6687,8 +6687,8 @@ is	VBZ	O
 6	CD	DOS
 mg	NN	UNIT
 administered	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 If	IN	O
@@ -6842,9 +6842,9 @@ layer	NN	O
 of	IN	O
 NAFTIN	NNP	O
 Cream	NNP	O
-once	RB	O
+once	RB	FREQ
 -	:	O
-daily	NN	O
+daily	NN	FREQ
 to	TO	O
 the	DT	O
 affected	JJ	O
@@ -6859,8 +6859,8 @@ healthy	JJ	O
 surrounding	VBG	O
 skin	NN	O
 for	IN	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 .	.	O
 
 The	DT	O
@@ -6872,7 +6872,7 @@ AGRYLIN	NNP	O
 is	VBZ	O
 0.5	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 A	DT	O
@@ -7381,10 +7381,10 @@ of	IN	O
 0.5	CD	DOS
 mg	NN	UNIT
 taken	VBN	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 For	IN	O
@@ -7476,8 +7476,8 @@ to	TO	O
 mL	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 Arginine	NNP	O
 HCl	NNP	O
 Injection	NNP	O
@@ -7498,8 +7498,8 @@ HFA	NNP	O
 230	CD	O
 /	VBD	O
 21	CD	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Doses	NNS	O
@@ -7507,7 +7507,7 @@ greater	JJR	O
 than	IN	O
 2000	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 are	VBP	O
 not	RB	O
 recommended	VBN	O
@@ -7585,7 +7585,7 @@ neonatal	JJ	O
 period	NN	O
 ,	,	O
 the	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 should	MD	O
 not	RB	O
@@ -7624,7 +7624,7 @@ nitrogen	NN	O
 balance	NN	O
 ,	,	O
 the	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 level	NN	O
 of	IN	O
@@ -7650,7 +7650,7 @@ weight	NN	O
 
 The	DT	O
 usual	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 ranges	VBZ	O
 from	IN	O
@@ -7713,8 +7713,8 @@ Increase	NNP	O
 to	TO	O
 40	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 based	VBN	O
 upon	IN	O
 individual	JJ	O
@@ -7812,8 +7812,8 @@ doses	NNS	O
 ,	,	O
 the	DT	O
 maximum	NN	O
-recommended	VBD	O
-daily	JJ	O
+recommended	VBD	FREQ
+daily	JJ	FREQ
 dosage	NN	O
 is	VBZ	O
 3	CD	DOS
@@ -7958,8 +7958,8 @@ chronically	RB	O
 at	IN	O
 2	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 ,	,	O
 patients	NNS	O
 should	MD	O
@@ -8053,10 +8053,10 @@ by	IN	O
 0.5	CD	DOS
 mg	NNS	UNIT
 taken	VBN	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 A	DT	O
@@ -8098,17 +8098,17 @@ should	MD	O
 proceed	VB	O
 over	IN	O
 a	DT	O
-7	CD	O
+7	CD	PER
 -	:	O
-14	CD	O
-day	NN	O
+14	CD	PER
+day	NN	PER
 period	NN	O
 starting	VBG	O
 with	IN	O
 30	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 For	IN	O
@@ -8137,9 +8137,9 @@ mg	NN	UNIT
 subcutaneously	RB	O
 ,	,	O
 repeated	VBD	O
-every	DT	O
-four	CD	O
-hours	NNS	O
+every	DT	FREQ
+four	CD	FREQ
+hours	NNS	FREQ
 if	IN	O
 required	VBN	O
 .	.	O
@@ -8158,9 +8158,9 @@ start	VBP	O
 with	IN	O
 2.5	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 ;	:	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 may	MD	O
 be	VB	O
@@ -8171,8 +8171,8 @@ of	IN	O
 2.5	CD	DOS
 mg	NN	UNIT
 at	IN	O
-weekly	JJ	O
-intervals	NNS	O
+weekly	JJ	FREQ
+intervals	NNS	FREQ
 until	IN	O
 optimal	JJ	O
 response	NN	O
@@ -8193,9 +8193,9 @@ start	VBP	O
 with	IN	O
 10	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 ;	:	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 may	MD	O
 be	VB	O
@@ -8206,8 +8206,8 @@ of	IN	O
 10	CD	DOS
 mg	NN	UNIT
 at	IN	O
-weekly	JJ	O
-intervals	NNS	O
+weekly	JJ	FREQ
+intervals	NNS	FREQ
 until	IN	O
 optimal	JJ	O
 response	NN	O
@@ -8220,7 +8220,7 @@ measurements	NNS	O
 using	VBG	O
 single	JJ	DOS
 injection	NN	UNIT
-techniques	NNS	UNIT
+techniques	NNS	O
 are	VBP	O
 generally	RB	O
 inaccurate	JJ	O
@@ -8246,7 +8246,7 @@ more	JJR	O
 than	IN	O
 500	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 (	(	O
 based	VBN	O
 on	IN	O
@@ -8254,9 +8254,9 @@ the	DT	O
 NIASPAN	NNP	O
 component	NN	O
 )	)	O
-every	DT	O
-4	CD	O
-weeks	NNS	O
+every	DT	FREQ
+4	CD	FREQ
+weeks	NNS	FREQ
 .	.	O
 
 Note	NN	O
@@ -8304,8 +8304,8 @@ increased	VBN	O
 to	TO	O
 30	CD	DOS
 mg	NNS	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 based	VBN	O
 on	IN	O
 clinical	JJ	O
@@ -8333,8 +8333,8 @@ kcal	NN	O
 
 Total	JJ	O
 dosage	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 should	MD	O
 not	RB	O
 exceed	VB	O
@@ -8369,8 +8369,8 @@ is	VBZ	O
 -	:	O
 60	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 in	IN	O
 single	JJ	O
@@ -8408,8 +8408,8 @@ is	VBZ	O
 15	CD	DOS
 mg	NN	UNIT
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 as	IN	O
 monotherapy	NN	O
 and	CC	O
@@ -8419,8 +8419,8 @@ to	TO	O
 15	CD	DOS
 mg	NNS	UNIT
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 as	IN	O
 adjunctive	JJ	O
 therapy	NN	O
@@ -8444,7 +8444,7 @@ has	VBZ	O
 reached	VBN	O
 300	CD	DOS
 mg	JJ	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 (	(	O
 or	CC	O
 lower	JJR	O
@@ -8453,10 +8453,10 @@ of	IN	O
 tolerance	NN	O
 )	)	O
 for	IN	O
-at	IN	O
-least	JJS	O
-two	CD	O
-weeks	NNS	O
+at	IN	PER
+least	JJS	PER
+two	CD	PER
+weeks	NNS	PER
 .	.	O
 
 One	CD	DOS
@@ -8465,11 +8465,11 @@ tablet	NN	UNIT
 should	MD	O
 be	VB	O
 taken	VBN	O
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
-21	CD	O
-consecutive	JJ	O
-days	NNS	O
+21	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 ,	,	O
 followed	VBN	O
 by	IN	O
@@ -8479,11 +8479,11 @@ light	NN	UNIT
 green	JJ	UNIT
 inert	JJ	UNIT
 tablet	NN	UNIT
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
-7	CD	O
-consecutive	JJ	O
-days	NNS	O
+7	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 .	.	O
 
 Single	NNP	DOS
@@ -8549,8 +8549,8 @@ maximum	NN	O
 of	IN	O
 16	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 Apply	VB	O
@@ -8564,10 +8564,10 @@ calcipotriene	JJ	O
 ointment	NN	O
 )	)	O
 ointment	NN	O
-once	RB	O
+once	RB	FREQ
 or	CC	O
-twice	JJ	O
-daily	JJ	O
+twice	JJ	FREQ
+daily	JJ	FREQ
 and	CC	O
 rub	NN	O
 in	IN	O
@@ -8652,10 +8652,10 @@ should	MD	O
 be	VB	O
 continued	VBN	O
 for	IN	O
-at	IN	O
-least	JJS	O
-five	CD	O
-days	NNS	O
+at	IN	PER
+least	JJS	PER
+five	CD	PER
+days	NNS	PER
 at	IN	O
 the	DT	O
 initial	JJ	O
@@ -8681,7 +8681,7 @@ either	DT	O
 single	JJ	DOS
 or	CC	O
 divided	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	O
 .	.	O
 
@@ -8729,7 +8729,7 @@ Although	IN	O
 to	TO	O
 150	CD	DOS
 mg	NNS	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 may	MD	O
 be	VB	O
 adequate	JJ	O
@@ -8796,8 +8796,8 @@ Tablets	NNPS	O
 is	VBZ	O
 one	CD	DOS
 tablet	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 administered	VBN	O
 on	IN	O
 an	DT	O
@@ -8828,7 +8828,7 @@ capsule	NN	UNIT
 37.5	CD	DOS
 mg	NN	UNIT
 )	)	O
-daily	RB	O
+daily	RB	FREQ
 as	IN	O
 prescribed	VBN	O
 by	IN	O
@@ -8869,8 +8869,8 @@ amino	NN	O
 acid	VBP	O
 /	NNP	O
 kg	FW	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
 infants	NNS	WHO
 up	RB	WHO
@@ -9042,8 +9042,8 @@ those	DT	O
 receiving	VBG	O
 ,	,	O
 for	IN	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 or	CC	O
 longer	JJR	O
 ,	,	O
@@ -9053,8 +9053,8 @@ least	JJS	O
 mg	JJ	UNIT
 oral	JJ	O
 morphine	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 25	CD	DOS
 mcg	NN	UNIT
@@ -9067,29 +9067,29 @@ hour	NN	O
 mg	JJ	UNIT
 oral	JJ	O
 oxycodone	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 8	CD	DOS
 mg	JJ	UNIT
 oral	JJ	O
 hydromorphone	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 25	CD	DOS
 mg	JJ	UNIT
 oral	JJ	O
 oxymorphone	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 60	CD	DOS
 mg	JJ	UNIT
 oral	JJ	O
 hydrocodone	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 or	CC	O
 an	DT	O
@@ -9181,8 +9181,8 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 divided	VBD	O
 into	IN	O
 2	CD	DOS
@@ -9231,8 +9231,8 @@ function	NN	WHO
 .	.	O
 
 The	DT	O
-recommended	JJ	O
-daily	JJ	O
+recommended	JJ	FREQ
+daily	JJ	FREQ
 dosage	NN	O
 for	IN	O
 adults	NNS	WHO
@@ -9366,14 +9366,14 @@ doxycycline	NN	O
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+twice	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 for	IN	O
-60	CD	O
-days	NNS	O
+60	CD	PER
+days	NNS	PER
 .	.	O
 
 Continuous	JJ	O
@@ -9499,8 +9499,8 @@ Tablets	NNPS	O
 is	VBZ	O
 one	CD	DOS
 tablet	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 administered	VBN	O
 on	IN	O
 an	DT	O
@@ -9549,8 +9549,8 @@ dose	NN	O
 of	IN	O
 15	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 a	DT	O
 dose	NN	O
@@ -9697,8 +9697,8 @@ mg	NNS	UNIT
 kg	NN	O
 ,	,	O
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 Intraspinal	JJ	O
@@ -9819,8 +9819,8 @@ of	IN	O
 mg	NNS	UNIT
 administered	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -9848,8 +9848,8 @@ Aminosyn	NNP	O
 HF	$	O
 8	CD	O
 %	NN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -9867,9 +9867,9 @@ osteoporosis	NN	O
 is	VBZ	O
 3	CD	DOS
 mg	NN	UNIT
-every	DT	O
-3	CD	O
-months	NNS	O
+every	DT	FREQ
+3	CD	FREQ
+months	NNS	FREQ
 administered	VBN	O
 intravenously	RB	O
 over	IN	O
@@ -9892,12 +9892,12 @@ doxycycline	NN	O
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-60	CD	O
-days	NNS	O
+60	CD	PER
+days	NNS	PER
 .	.	O
 
 The	DT	O
@@ -9910,7 +9910,7 @@ XR	NNP	O
 ODT	$	O
 12.5	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 A	DT	O
@@ -9968,8 +9968,8 @@ not	RB	O
 exceed	VB	O
 20	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Upper	NNP	O
@@ -10029,8 +10029,8 @@ dose	NN	O
 of	IN	O
 5	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 with	IN	O
 dosage	NN	O
@@ -10118,8 +10118,8 @@ four	CD	DOS
 mg	NN	UNIT
 capsules	NNS	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 combination	NN	O
 with	IN	O
@@ -10141,8 +10141,8 @@ is	VBZ	O
 10	CD	DOS
 mg	NN	UNIT
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 followed	VBN	O
 by	IN	O
 titration	NN	O
@@ -10304,7 +10304,7 @@ mg	NN	UNIT
 to	TO	O
 1000	CD	DOS
 mg	NN	UNIT
-daily	RB	O
+daily	RB	FREQ
 ,	,	O
 in	IN	O
 divided	JJ	O
@@ -10321,7 +10321,7 @@ appropriate	NN	O
 .	.	O
 
 Average	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 adult	NN	WHO
 fluid	NN	O
 requirements	NNS	O
@@ -10415,20 +10415,20 @@ four	CD	DOS
 mg	NN	UNIT
 injections	NNS	UNIT
 in	IN	O
-one	CD	O
-day	NN	O
+one	CD	PER
+day	NN	PER
 or	CC	O
 as	IN	O
 two	CD	DOS
 40	CD	DOS
 mg	NNS	UNIT
 injections	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 for	IN	O
-two	CD	O
-consecutive	JJ	O
-days	NNS	O
+two	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 )	)	O
 ,	,	O
 followed	VBN	O
@@ -10574,8 +10574,8 @@ II	NNP	O
 is	VBZ	O
 15	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 1	CD	O
@@ -10720,8 +10720,8 @@ increments	NNS	O
 of	IN	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 at	IN	O
 intervals	NNS	O
 of	IN	O
@@ -10761,9 +10761,9 @@ is	VBZ	O
 600	CD	DOS
 mg	NN	UNIT
 administered	VBN	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 by	IN	O
 intravenous	JJ	O
 (	(	O
@@ -10828,8 +10828,8 @@ to	TO	O
 mL	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 For	IN	O
@@ -10845,13 +10845,13 @@ is	VBZ	O
 mg	NN	UNIT
 by	IN	O
 mouth	NN	O
-four	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+four	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-seven	CD	O
-days	NNS	O
+seven	CD	PER
+days	NNS	PER
 .	.	O
 
 If	IN	O
@@ -10910,8 +10910,8 @@ cells	NNS	UNIT
 /	JJ	O
 mm³	NN	O
 for	IN	O
-a	DT	O
-week	NN	O
+a	DT	PER
+week	NN	PER
 or	CC	O
 longer	JJR	O
 )	)	O
@@ -10982,14 +10982,14 @@ to	TO	O
 mg	NN	UNIT
 of	IN	O
 acetaZOLAMIDE	NN	O
-once	IN	O
-a	DT	O
-day	NN	O
+once	IN	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-one	CD	O
+one	CD	PER
 or	CC	O
-two	CD	O
-days	NNS	O
+two	CD	PER
+days	NNS	PER
 ,	,	O
 alternating	VBG	O
 with	IN	O
@@ -11060,7 +11060,7 @@ hours	NNS	O
 .	.	O
 
 The	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 NIASPAN	NNP	O
@@ -11175,8 +11175,8 @@ approximately	RB	O
 mL	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 (	(	O
 range	NN	O
 :	:	O
@@ -11186,8 +11186,8 @@ to	TO	O
 mL	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 )	)	O
 ,	,	O
 depending	VBG	O
@@ -11227,11 +11227,11 @@ inhalation	NN	O
 solution	NN	O
 )	)	O
 administered	VBD	O
-3	CD	O
+3	CD	FREQ
 or	CC	O
-4	CD	O
-times	NNS	O
-daily	RB	O
+4	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 ,	,	O
 as	IN	O
 needed	VBN	O
@@ -11259,9 +11259,9 @@ tract	NN	O
 ,	,	O
 100	CD	DOS
 mg	NN	UNIT
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 is	VBZ	O
 recommended	VBN	O
 .	.	O
@@ -11306,8 +11306,8 @@ is	VBZ	O
 to	TO	O
 40	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 administered	VBN	O
 in	IN	O
 a	DT	O
@@ -11400,8 +11400,8 @@ patients	NNS	WHO
 is	VBZ	O
 6.25	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	JJ	O
@@ -11447,8 +11447,8 @@ dosage	NN	O
 is	VBZ	O
 1	CD	DOS
 inhalation	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 approximately	RB	O
 12	CD	O
@@ -11464,10 +11464,10 @@ is	VBZ	O
 1	CD	DOS
 mg	NN	UNIT
 taken	VBN	O
-3	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+3	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Normal	JJ	O
@@ -11540,9 +11540,9 @@ kg	NN	O
 should	MD	O
 be	VB	O
 administered	VBN	O
-every	DT	O
-18	CD	O
-hours	NNS	O
+every	DT	FREQ
+18	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 The	DT	O
@@ -11600,8 +11600,8 @@ not	RB	O
 exceed	VB	O
 0.5	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 in	IN	O
 any	DT	O
 one	CD	O
@@ -11626,12 +11626,12 @@ dosage	NN	O
 to	TO	O
 300	CD	DOS
 mg	NN	UNIT
-once	RB	O
-monthly	RB	O
+once	RB	FREQ
+monthly	RB	FREQ
 .	.	O
 
 The	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 nutrient	NN	O
 requirements	NNS	O
 of	IN	O
@@ -11680,8 +11680,8 @@ amino	NN	O
 acids	NNS	O
 /	VBP	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 )	)	O
 and	CC	O
 between	IN	O
@@ -11784,9 +11784,9 @@ intravenously	RB	O
 over	IN	O
 30	CD	O
 minutes	NNS	O
-every	DT	O
-3	CD	O
-weeks	NNS	O
+every	DT	FREQ
+3	CD	FREQ
+weeks	NNS	FREQ
 .	.	O
 
 Since	IN	O
@@ -11835,8 +11835,8 @@ not	RB	O
 exceed	VB	O
 40	CD	DOS
 mg	JJ	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 (	(	O
 see	VB	O
 WARNINGS	NNP	O
@@ -11859,7 +11859,7 @@ Interactions	NNP	O
 The	DT	O
 usual	JJ	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 Bumex	NNP	O
@@ -11908,9 +11908,9 @@ restarted	VBN	O
 at	IN	O
 0.5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 In	IN	O
@@ -11933,8 +11933,8 @@ mL	NN	O
 solutions	NNS	O
 aged	VBD	O
 for	IN	O
-60	CD	O
-days	NNS	O
+60	CD	PER
+days	NNS	PER
 at	IN	O
 4°C	CD	O
 and	CC	O
@@ -12077,14 +12077,14 @@ is	VBZ	O
 to	TO	O
 200	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
 recommended	JJ	O
-maximum	JJ	O
-daily	JJ	O
+maximum	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 MINTEZOL	NNP	O
@@ -12112,8 +12112,8 @@ DISKUS	NNP	O
 250	CD	O
 /	VBD	O
 50	CD	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 approximately	RB	O
 12	CD	O
@@ -12138,9 +12138,9 @@ available	JJ	WHO
 strength	NN	WHO
 ,	,	O
 administer	NN	O
-every	DT	O
-other	JJ	O
-day	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 In	IN	O
@@ -12168,8 +12168,8 @@ dose	NN	O
 is	VBZ	O
 20	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Administer	NNP	O
@@ -12374,8 +12374,8 @@ mg	NN	UNIT
 dose	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 the	DT	O
 evening	NN	O
@@ -12536,8 +12536,8 @@ is	VBZ	O
 /	JJ	O
 14	CD	DOS
 mcg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -12593,12 +12593,12 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 divided	VBD	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Patients	NNS	WHO
@@ -12740,9 +12740,9 @@ s	NN	O
 )	)	O
 up	IN	O
 to	TO	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 Peak	JJ	O
@@ -12782,19 +12782,19 @@ avoided	VBN	O
 .	.	O
 
 Apply	NNP	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 for	IN	O
-3	CD	O
-consecutive	JJ	O
-days	NNS	O
+3	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 ,	,	O
 then	RB	O
 discontinue	NN	O
 for	IN	O
-4	CD	O
-consecutive	JJ	O
-days	NNS	O
+4	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 .	.	O
 
 The	DT	O
@@ -12806,11 +12806,11 @@ is	VBZ	O
 10	CD	DOS
 mcg	NN	UNIT
 subcutaneously	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
-14	CD	O
-days	NNS	O
+14	CD	PER
+days	NNS	PER
 .	.	O
 
 DUTREBIS	NNP	O
@@ -12947,7 +12947,7 @@ to	TO	O
 60	CD	O
 %	NN	O
 of	IN	O
-daily	JJ	O
+daily	JJ	FREQ
 calories	NNS	O
 at	IN	O
 a	DT	O
@@ -12960,8 +12960,8 @@ g	JJ	UNIT
 fat	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 USE	NNP	O
@@ -13035,7 +13035,7 @@ ACTOS	NNP	O
 is	VBZ	O
 15	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 when	WRB	O
 used	VBN	O
 in	IN	O
@@ -13079,7 +13079,7 @@ up	RB	O
 to	TO	O
 400	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 Elderly	RB	WHO
@@ -13154,8 +13154,8 @@ a	DT	O
 2	CD	DOS
 mg	NN	UNIT
 dose	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 first	JJ	O
@@ -13165,8 +13165,8 @@ followed	VBN	O
 by	IN	O
 4	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 second	JJ	O
@@ -13174,8 +13174,8 @@ week	NN	O
 and	CC	O
 8	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 maintenance	NN	O
 dose	NN	O
@@ -13194,7 +13194,7 @@ is	VBZ	O
 to	TO	O
 300	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -13315,9 +13315,9 @@ or	CC	O
 as	IN	O
 50	CD	DOS
 mg	NN	UNIT
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Nebulization	NNP	O
@@ -13397,10 +13397,10 @@ the	DT	O
 solution	NN	O
 three	CD	O
 to	TO	O
-four	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+four	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Table	JJ	O
@@ -13522,7 +13522,7 @@ dosage	NN	O
 of	IN	O
 25	CD	DOS
 mg	JJ	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 and	CC	O
 gradually	RB	O
 increased	VBD	O
@@ -13586,12 +13586,12 @@ trachomatis	NN	O
 mg	NN	UNIT
 by	IN	O
 mouth	NN	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-7	CD	O
-days	NNS	O
+7	CD	PER
+days	NNS	PER
 .	.	O
 
 (	(	O
@@ -13683,8 +13683,8 @@ dose	NN	O
 of	IN	O
 250	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 may	MD	O
 be	VB	O
 used	VBN	O
@@ -13710,8 +13710,8 @@ is	VBZ	O
 to	TO	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 A	DT	O
@@ -13773,10 +13773,10 @@ other	JJ	O
 body	NN	O
 fluids	NNS	O
 for	IN	O
-at	IN	O
-least	JJS	O
-5	CD	O
-days	NNS	O
+at	IN	PER
+least	JJ	PER
+5	CD	PER
+days	NNS	PER
 after	IN	O
 each	DT	O
 treatment	NN	O
@@ -13806,9 +13806,9 @@ eye	NN	O
 s	JJ	O
 )	)	O
 administered	VBD	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Alosetron	NNP	O
@@ -13879,7 +13879,7 @@ to	TO	O
 %	NN	O
 of	IN	O
 the	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 caloric	JJ	O
 intake	NN	O
 at	IN	O
@@ -13894,8 +13894,8 @@ g	JJ	UNIT
 fat	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 There	EX	O
@@ -13968,11 +13968,11 @@ Apply	NNP	O
 to	TO	O
 affected	VB	O
 area	NN	O
-3	CD	O
+3	CD	FREQ
 to	TO	O
-4	CD	O
-times	NNS	O
-daily	RB	O
+4	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 â€¢	JJ	O
@@ -13986,8 +13986,8 @@ dose	NN	O
 of	IN	O
 20	CD	DOS
 mcg	NNS	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 starting	VBG	O
 on	IN	O
 Day	NNP	O
@@ -14042,8 +14042,8 @@ increased	VBN	O
 to	TO	O
 20	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 after	IN	O
 one	CD	O
 week	NN	O
@@ -14147,21 +14147,21 @@ one	CD	DOS
 5	CD	DOS
 mg	JJ	UNIT
 tablet	NN	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 300	CD	DOS
 mg	NNS	UNIT
-a	DT	O
-day	NN	O
+a	DT	FREQ
+day	NN	FREQ
 in	IN	O
 divided	JJ	O
 doses	NNS	O
 for	IN	O
-at	IN	O
-least	JJS	O
-10	CD	O
-days	NNS	O
+at	IN	PER
+least	JJ	PER
+10	CD	PER
+days	NNS	PER
 .	.	O
 
 Two	CD	DOS
@@ -14308,8 +14308,8 @@ After	IN	O
 a	DT	O
 period	NN	O
 of	IN	O
-2	CD	O
-months	NNS	O
+2	CD	PER
+months	NNS	PER
 or	CC	O
 more	JJR	O
 off	IN	O
@@ -14378,8 +14378,8 @@ is	VBZ	O
 -	:	O
 750	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
 pediatric	JJ	WHO
 patients	NNS	WHO
@@ -14388,8 +14388,8 @@ and	CC	O
 -	:	O
 1250	CD	DOS
 mg	NN	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
 adults	NNS	WHO
 given	VBN	O
@@ -14398,11 +14398,11 @@ divided	JJ	O
 doses	NNS	O
 two	CD	O
 ,	,	O
-three	CD	O
+three	CD	FREQ
 or	CC	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 Hospitalized	VBN	WHO
@@ -14431,7 +14431,7 @@ up	IN	O
 to	TO	O
 600	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 in	IN	O
 divided	JJ	O
 doses	NNS	O
@@ -14514,8 +14514,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 as	IN	O
 tolerated	VBN	O
@@ -14535,8 +14535,8 @@ g	NNS	UNIT
 fat	JJ	O
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 infused	VBD	O
 simultaneously	RB	O
@@ -14636,8 +14636,8 @@ of	IN	O
 body	NN	O
 weight	NN	O
 administered	VBN	O
-once	RB	O
-weekly	JJ	O
+once	RB	FREQ
+weekly	JJ	FREQ
 as	IN	O
 an	DT	O
 intravenous	JJ	O
@@ -14728,9 +14728,9 @@ dose	NN	O
 is	VBZ	O
 30	CD	DOS
 micrograms	NN	UNIT
-once	RB	O
-a	DT	O
-week	NN	O
+once	RB	FREQ
+a	DT	FREQ
+week	NN	FREQ
 .	.	O
 
 For	IN	O
@@ -14822,8 +14822,8 @@ increases	NNS	O
 above	IN	O
 20	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 should	MD	O
 only	RB	O
 be	VB	O
@@ -15001,8 +15001,8 @@ dose	NN	O
 is	VBZ	O
 24	CD	DOS
 mcg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 orally	RB	O
 with	IN	O
 food	NN	O
@@ -15019,16 +15019,16 @@ children	NNS	WHO
 is	VBZ	O
 30	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 doses	VBZ	O
 greater	JJR	O
 than	IN	O
 30	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 of	IN	O
 ADDERALL	NNP	O
 XR	NNP	O
@@ -15176,14 +15176,14 @@ is	VBZ	O
 administered	VBN	O
 at	IN	O
 a	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 400	CD	DOS
 mg	NNS	UNIT
 for	IN	O
-four	CD	O
-days	NNS	O
+four	CD	PER
+days	NNS	PER
 .	.	O
 
 Adding	VBG	O
@@ -15297,8 +15297,8 @@ up	IN	O
 to	TO	O
 30	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 ,	,	O
 given	VBN	O
 as	IN	O
@@ -15311,8 +15311,8 @@ AMRIX	$	O
 mg	NN	UNIT
 capsule	NN	UNIT
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 or	CC	O
 as	IN	O
 two	CD	DOS
@@ -15324,8 +15324,8 @@ AMRIX	$	O
 mg	NN	UNIT
 capsules	NNS	UNIT
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 In	IN	O
@@ -15340,8 +15340,8 @@ doses	VBZ	O
 over	IN	O
 600	CD	DOS
 mg	NNS	UNIT
-a	DT	O
-day	NN	O
+a	DT	FREQ
+day	NN	FREQ
 did	VBD	O
 not	RB	O
 appear	VB	O
@@ -15368,10 +15368,10 @@ solution	NN	O
 is	VBZ	O
 one	CD	DOS
 drop	NN	UNIT
-four	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+four	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 in	IN	O
 the	DT	O
 operated	JJ	O
@@ -15448,8 +15448,8 @@ total	NN	O
 of	IN	O
 40	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 Each	DT	O
@@ -15502,7 +15502,7 @@ dosage	NN	O
 of	IN	O
 300	CD	DOS
 mg	NNS	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 may	MD	O
 be	VB	O
 given	VBN	O
@@ -15544,11 +15544,11 @@ tablets	NNS	O
 is	VBZ	O
 25	CD	DOS
 mg	NN	UNIT
-two	CD	O
+two	CD	FREQ
 or	CC	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 It	PRP	O
@@ -15662,8 +15662,8 @@ patients	NNS	WHO
 is	VBZ	O
 200	CD	DOS
 mcg	JJ	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 given	VBN	O
 as	IN	O
 2	CD	DOS
@@ -15678,9 +15678,9 @@ spray	NN	O
 in	IN	O
 each	DT	O
 nostril	NN	O
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -15841,8 +15841,8 @@ to	TO	O
 the	DT	O
 affected	JJ	O
 eye	NN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 beginning	VBG	O
 1	CD	O
 day	NN	O
@@ -15954,7 +15954,7 @@ of	IN	O
 spironolactone	NN	O
 and	CC	O
 hydrochlorothiazide	JJ	O
-daily	RB	O
+daily	RB	FREQ
 ,	,	O
 administered	VBN	O
 in	IN	O
@@ -15978,7 +15978,7 @@ mg	NNS	UNIT
 of	IN	O
 each	DT	O
 component	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 depending	VBG	O
 on	IN	O
 the	DT	O
@@ -16041,10 +16041,10 @@ to	TO	O
 the	DT	O
 affected	JJ	O
 areas	NNS	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 and	CC	O
 rub	NN	O
 in	IN	O
@@ -16064,8 +16064,8 @@ of	IN	O
 or	CC	O
 80	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 given	VBN	O
 as	IN	O
@@ -16338,8 +16338,8 @@ approximately	RB	O
 to	TO	O
 2000	CD	O
 kcal	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -16395,8 +16395,8 @@ equipment	NN	O
 .	.	O
 
 The	DT	O
-recommended	JJ	O
-daily	JJ	O
+recommended	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 in	IN	O
 children	NNS	WHO
@@ -16411,16 +16411,16 @@ mg	NN	UNIT
 kg	VBZ	O
 body	NN	O
 weight	JJ	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 7	CD	DOS
 mcg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 (	(	O
 e.	JJ	O
 g.	NN	O
@@ -16429,8 +16429,8 @@ g.	NN	O
 -	:	O
 125	CD	DOS
 mcg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
 a	DT	O
 70	CD	WHO
@@ -16462,7 +16462,7 @@ diet	JJ	O
 and	CC	O
 otherwise	RB	O
 )	)	O
-daily	RB	O
+daily	RB	FREQ
 calcium	JJ	O
 intake	NN	O
 in	IN	O
@@ -16555,8 +16555,8 @@ ARAVA	NNP	O
 is	VBZ	O
 20	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -16568,8 +16568,8 @@ ABILIFY	NNP	O
 is	VBZ	O
 10	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -16612,7 +16612,7 @@ administered	VBN	O
 as	IN	O
 a	DT	O
 single	JJ	DOS
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	UNIT
 or	CC	O
 in	IN	O
@@ -16628,8 +16628,8 @@ dosage	NN	O
 is	VBZ	O
 6.3	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
@@ -16646,8 +16646,8 @@ mg	NN	UNIT
 to	TO	O
 20	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 administered	VBN	O
 as	IN	O
 a	DT	O
@@ -16702,21 +16702,21 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NNP	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 or	CC	O
 15	CD	DOS
 mg	NNS	UNIT
 /	JJ	O
 kg	VBD	O
-3	CD	O
-times	NNS	O
-daily	RB	O
+3	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 (	(	O
 to	TO	O
 a	DT	O
-maximum	JJ	O
-daily	JJ	O
+maximum	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 2,400	CD	DOS
@@ -16750,11 +16750,11 @@ week	NN	O
 to	TO	O
 50	CD	DOS
 mg	NNS	UNIT
-two	CD	O
+two	CD	FREQ
 or	CC	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 Patients	NNS	WHO
@@ -16768,7 +16768,7 @@ with	IN	WHO
 25	CD	DOS
 mg	NNS	UNIT
 of	IN	O
-daily	JJ	O
+daily	JJ	FREQ
 hydrochlorothiazide	NN	O
 ,	,	O
 but	CC	O
@@ -16824,10 +16824,10 @@ of	IN	O
 2.5	CD	DOS
 mg	NN	UNIT
 taken	VBN	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Complete	JJ	O
@@ -16926,11 +16926,11 @@ dosage	NN	O
 is	VBZ	O
 50	CD	DOS
 mg	NN	UNIT
-two	CD	O
+two	CD	FREQ
 or	CC	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -16946,9 +16946,9 @@ to	TO	WHO
 is	VBZ	O
 5	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 ;	:	O
-daily	RB	O
+daily	RB	FREQ
 dose	VB	O
 may	MD	O
 be	VB	O
@@ -16959,8 +16959,8 @@ of	IN	O
 5	CD	DOS
 mg	NN	UNIT
 at	IN	O
-weekly	JJ	O
-intervals	NNS	O
+weekly	JJ	FREQ
+intervals	NNS	FREQ
 until	IN	O
 optimal	JJ	O
 response	NN	O
@@ -16984,8 +16984,8 @@ is	VBZ	O
 /	JJ	O
 14	CD	DOS
 mcg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -17040,8 +17040,8 @@ micrograms	NNS	UNIT
 mcg	NN	O
 )	)	O
 given	VBN	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 .	.	O
 
 1	CD	O
@@ -17062,7 +17062,7 @@ to	TO	O
 a	DT	O
 maximum	JJ	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 5	CD	DOS
@@ -17082,8 +17082,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 given	VBN	O
 in	IN	O
 two	CD	DOS
@@ -17162,15 +17162,15 @@ to	TO	O
 grams	NNS	UNIT
 of	IN	O
 nitrogen	NN	O
-a	DT	O
-day	NN	O
+a	DT	FREQ
+day	NN	FREQ
 ,	,	O
 and	CC	O
 in	IN	O
 severe	JJ	O
 trauma	VBP	O
 the	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 loss	NN	O
 may	MD	O
 be	VB	O
@@ -17207,8 +17207,8 @@ with	IN	O
 ritonavir	JJ	O
 200	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 or	CC	O
 AGENERASE	$	O
 600	CD	DOS
@@ -17217,8 +17217,8 @@ with	IN	O
 ritonavir	JJ	O
 100	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 A	DT	O
@@ -17260,7 +17260,7 @@ on	IN	O
 g	NN	UNIT
 of	IN	O
 methyldopa	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -17277,8 +17277,8 @@ tablet	NN	UNIT
 )	)	O
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 food	NN	O
 .	.	O
@@ -17466,9 +17466,9 @@ tablets	NNS	O
 :	:	O
 Two	CD	DOS
 tablets	NNS	UNIT
-every	DT	O
-four	CD	O
-hours	NNS	O
+every	DT	FREQ
+four	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Apply	VB	O
@@ -17492,8 +17492,8 @@ area	NN	O
 (	(	O
 s	PRP	O
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 morning	NN	O
 and	CC	O
@@ -17556,21 +17556,21 @@ steps	NNS	O
 .	.	O
 
 The	DT	O
-maximum	JJ	O
-daily	JJ	O
+maximum	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 should	MD	O
 not	RB	O
 exceed	VB	O
 4	CD	DOS
 inhalations	NNS	UNIT
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
 a	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 2	CD	DOS
@@ -17777,7 +17777,7 @@ capsules	NNS	O
 exceeds	VBZ	O
 the	DT	O
 Reference	NNP	O
-Daily	NNP	O
+Daily	NNP	FREQ
 Intake	NNP	O
 (	(	O
 adults	NNS	WHO
@@ -17840,8 +17840,8 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 given	VBN	O
 in	IN	O
 2	CD	DOS
@@ -17867,8 +17867,8 @@ weeks	NNS	O
 up	RB	O
 to	TO	O
 a	DT	O
-daily	JJ	O
-maximum	NN	O
+daily	JJ	FREQ
+maximum	NN	FREQ
 of	IN	O
 3	CD	DOS
 mg	NNS	UNIT
@@ -17944,14 +17944,14 @@ mg	NN	UNIT
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+twice	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 for	IN	O
-7	CD	O
-days	NNS	O
+7	CD	PER
+days	NNS	PER
 .	.	O
 
 Apply	NNP	O
@@ -17966,8 +17966,8 @@ NORITATE	NNP	O
 (	(	O
 metronidazole	NN	O
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 to	TO	O
 entire	JJ	O
 affected	JJ	O
@@ -17991,8 +17991,8 @@ g	NNS	UNIT
 fat	JJ	O
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 infused	VBD	O
 simultaneously	RB	O
@@ -18047,8 +18047,8 @@ doses	NNS	O
 above	IN	O
 30	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 has	VBZ	O
 not	RB	O
 been	VBN	O
@@ -18126,8 +18126,8 @@ kg	NN	O
 
 The	DT	O
 maximum	NN	O
-recommended	VBD	O
-daily	RB	O
+recommended	VBD	FREQ
+daily	RB	FREQ
 dose	NN	O
 of	IN	O
 methyldopa	NN	O
@@ -18183,8 +18183,8 @@ increased	VBN	O
 to	TO	O
 10	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 if	IN	O
 necessary	JJ	O
@@ -18220,8 +18220,8 @@ doses	NNS	O
 ≥	$	O
 1	CD	DOS
 g	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 )	)	O
 of	IN	O
 niacin	NN	O
@@ -18338,8 +18338,8 @@ started	VBN	O
 on	IN	O
 1	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 [	NNP	O
 see	NN	O
 WARNINGS	NNP	O
@@ -18381,10 +18381,10 @@ consumption	NN	O
 to	TO	O
 four	CD	DOS
 or	CC	O
-fewer	JJR	O
-units	NNS	O
-per	IN	O
-day	NN	O
+fewer	JJR	DOS
+units	NNS	UNIT
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 When	WRB	O
@@ -18550,7 +18550,7 @@ rate	NN	O
 The	DT	O
 recommended	JJ	O
 initial	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 ACEON	NNP	O
@@ -18560,7 +18560,7 @@ elderly	JJ	WHO
 is	VBZ	O
 4	CD	DOS
 mg	JJ	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 ,	,	O
 given	VBN	O
 in	IN	O
@@ -18638,8 +18638,8 @@ eye	NN	O
 (	(	O
 s	JJ	O
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 (	(	O
@@ -18668,9 +18668,9 @@ One	CD	DOS
 or	CC	O
 two	CD	DOS
 tablets	NNS	UNIT
-every	DT	O
-four	CD	O
-hours	NNS	O
+every	DT	FREQ
+four	CD	FREQ
+hours	NNS	FREQ
 as	IN	O
 needed	VBN	O
 .	.	O
@@ -18698,8 +18698,8 @@ dose	NN	O
 of	IN	O
 0.5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 and	CC	O
 monitor	NN	O
 frequently	RB	O
@@ -18830,8 +18830,8 @@ less	JJR	O
 than	IN	O
 one	CD	DOS
 capsule	NN	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	WHO
@@ -18856,8 +18856,8 @@ and	CC	O
 grams	NNS	UNIT
 of	IN	O
 nitrogen	JJ	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -18901,16 +18901,16 @@ lansoprazole	NN	UNIT
 ,	,	O
 all	DT	O
 given	VBN	O
-twice	NNS	O
-daily	RB	O
+twice	NNS	FREQ
+daily	RB	FREQ
 (	(	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 )	)	O
 for	IN	O
-14	CD	O
-days	NNS	O
+14	CD	PER
+days	NNS	PER
 .	.	O
 
 Dosage	NN	O
@@ -18968,9 +18968,9 @@ administered	VBN	O
 Take	VB	O
 a	DT	O
 multivitamin	NN	O
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 ,	,	O
 at	IN	O
 bedtime	NN	O
@@ -19061,8 +19061,8 @@ should	MD	O
 be	VB	O
 2	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 and	CC	O
 dosage	NN	O
 should	MD	O
@@ -19070,8 +19070,8 @@ not	RB	O
 exceed	VB	O
 8	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Table	JJ	O
@@ -19306,7 +19306,7 @@ mania	NN	WHO
 If	IN	O
 the	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 exceeds	VBZ	O
 300	CD	DOS
@@ -19350,9 +19350,9 @@ dosage	NN	O
 is	VBZ	O
 250	CD	DOS
 mg	NN	UNIT
-every	DT	O
-four	CD	O
-hours	NNS	O
+every	DT	FREQ
+four	CD	FREQ
+hours	NNS	FREQ
 ,	,	O
 although	IN	O
 some	DT	O
@@ -19362,8 +19362,8 @@ responded	VBN	O
 to	TO	O
 250	CD	DOS
 mg	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 on	IN	O
 short	JJ	O
 -	:	O
@@ -19469,8 +19469,8 @@ careful	JJ	O
 medical	JJ	O
 supervision	NN	O
 for	IN	O
-several	JJ	O
-hours	NNS	O
+several	JJ	PER
+hours	NNS	PER
 and	CC	O
 until	IN	O
 blood	NN	O
@@ -19551,8 +19551,8 @@ usually	RB	O
 to	TO	O
 375	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
@@ -19753,9 +19753,9 @@ ulcer	NN	O
 is	VBZ	O
 40	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 at	IN	O
 bedtime	NN	O
 .	.	O
@@ -19910,10 +19910,10 @@ after	IN	O
 an	DT	O
 interval	NN	O
 of	IN	O
-one	CD	O
+one	CD	PER
 or	CC	O
-two	CD	O
-weeks	NNS	O
+two	CD	PER
+weeks	NNS	PER
 ,	,	O
 depending	VBG	O
 on	IN	O
@@ -19934,8 +19934,8 @@ of	IN	O
 g	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 may	MD	O
 be	VB	O
 increased	VBN	O
@@ -19947,8 +19947,8 @@ of	IN	O
 g	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 to	TO	O
 approximate	VB	O
 desired	JJ	O
@@ -19991,9 +19991,9 @@ with	IN	O
 mg	NNS	UNIT
 /	JJ	O
 kg	NN	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Available	JJ	O
@@ -20056,7 +20056,7 @@ patient	NN	O
 .	.	O
 
 Total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 should	MD	O
 not	RB	O
@@ -20119,9 +20119,9 @@ treatment	NN	O
 of	IN	O
 hypertension	NN	O
 in	IN	O
-once	RB	O
+once	RB	FREQ
 -	:	O
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	O
 of	IN	O
 10	CD	DOS
@@ -20361,8 +20361,8 @@ of	IN	O
 to	TO	O
 30	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 should	MD	O
 replace	VB	O
 ABILIFY	NNP	O
@@ -20474,9 +20474,9 @@ dose	NN	O
 is	VBZ	O
 4	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 However	RB	O
@@ -20538,9 +20538,9 @@ the	DT	O
 most	RBS	O
 painful	JJ	O
 area	NN	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Admixtures	NNS	O
@@ -20574,8 +20574,8 @@ approximately	RB	O
 to	TO	O
 2000	CD	O
 kcal	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -20595,8 +20595,8 @@ two	CD	DOS
 mg	NNS	UNIT
 tablets	NNS	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 or	CC	O
 750	CD	DOS
 mg	NN	UNIT
@@ -20606,9 +20606,9 @@ three	CD	DOS
 mg	JJ	UNIT
 tablets	NNS	UNIT
 )	)	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 See	JJ	O
@@ -20737,13 +20737,13 @@ adults	NNS	WHO
 is	VBZ	O
 400	CD	DOS
 mg	NN	UNIT
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 (	(	O
 1200	CD	DOS
 mg	FW	UNIT
-daily	RB	O
+daily	RB	FREQ
 )	)	O
 ,	,	O
 preferably	RB	O
@@ -20768,8 +20768,8 @@ morning	NN	O
 and	CC	O
 night	NN	O
 for	IN	O
-two	CD	O
-weeks	NNS	O
+two	CD	PER
+weeks	NNS	PER
 ,	,	O
 in	IN	O
 nonspecific	JJ	O
@@ -20801,9 +20801,9 @@ is	VBZ	O
 mg	NN	UNIT
 per	IN	O
 kg	NN	O
-every	DT	O
-4	CD	O
-weeks	NNS	O
+every	DT	FREQ
+4	CD	FREQ
+weeks	NNS	FREQ
 followed	VBN	O
 by	IN	O
 an	DT	O
@@ -20813,9 +20813,9 @@ to	TO	O
 mg	NNS	UNIT
 per	IN	O
 kg	NN	O
-every	DT	O
-4	CD	O
-weeks	NNS	O
+every	DT	FREQ
+4	CD	FREQ
+weeks	NNS	FREQ
 based	VBN	O
 on	IN	O
 clinical	JJ	O
@@ -20891,8 +20891,8 @@ CONTRAINDICATIONS	NNP	O
 .	.	O
 
 The	DT	O
-recommended	JJ	O
-daily	JJ	O
+recommended	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 NEXAVAR	NNP	O
@@ -20907,8 +20907,8 @@ mg	JJ	UNIT
 tablets	NNS	UNIT
 )	)	O
 taken	VBN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 without	IN	O
 food	NN	O
 (	(	O
@@ -20969,8 +20969,8 @@ more	JJR	O
 than	IN	O
 one	CD	DOS
 inhalation	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 )	)	O
 of	IN	O
 the	DT	O
@@ -21063,9 +21063,9 @@ with	IN	O
 mg	NNS	UNIT
 /	JJ	O
 kg	NN	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Nongonococcal	JJ	O
@@ -21085,14 +21085,14 @@ urealyticum	NN	O
 mg	NN	UNIT
 by	IN	O
 mouth	NN	O
-twice	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+twice	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 for	IN	O
-7	CD	O
-days	NNS	O
+7	CD	PER
+days	NNS	PER
 .	.	O
 
 The	DT	O
@@ -21106,8 +21106,8 @@ patients	NNS	WHO
 is	VBZ	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	JJ	O
@@ -21261,8 +21261,8 @@ to	TO	O
 grams	NNS	UNIT
 of	IN	O
 nitrogen	JJ	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 (	(	O
 from	IN	O
 essential	JJ	O
@@ -21405,8 +21405,8 @@ is	VBZ	O
 /	JJ	O
 18	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 in	IN	O
 the	DT	O
 evening	NN	O
@@ -21418,8 +21418,8 @@ therapy	NN	O
 with	IN	O
 2	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 is	VBZ	O
 instituted	VBN	O
 when	WRB	O
@@ -21463,9 +21463,9 @@ an	DT	O
 intravenous	JJ	O
 infusion	NN	O
 administered	VBD	O
-every	DT	O
-3	CD	O
-weeks	NNS	O
+every	DT	FREQ
+3	CD	FREQ
+weeks	NNS	FREQ
 until	IN	O
 treatment	NN	O
 failure	NN	O
@@ -21479,13 +21479,13 @@ Savella	NNP	O
 is	VBZ	O
 100	CD	DOS
 mg	JJ	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 (	(	O
 50	CD	DOS
 mg	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 )	)	O
 .	.	O
 
@@ -21528,12 +21528,12 @@ to	TO	O
 mL	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 nutrient	NN	O
 requirements	NNS	O
 of	IN	O
@@ -21582,8 +21582,8 @@ amino	NN	O
 acids	NNS	O
 /	VBP	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 )	)	O
 and	CC	O
 between	IN	O
@@ -21804,7 +21804,7 @@ drainage	NN	O
 ,	,	O
 diarrhea	NN	O
 )	)	O
-daily	JJ	O
+daily	JJ	FREQ
 losses	NNS	O
 .	.	O
 
@@ -21832,20 +21832,20 @@ effective	JJ	O
 is	VBZ	O
 0.025	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 applied	VBD	O
 to	TO	O
 the	DT	O
 skin	NN	O
-twice	RB	O
-weekly	RB	O
+twice	RB	FREQ
+weekly	RB	FREQ
 .	.	O
 
 The	DT	O
 usual	JJ	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 BUPHENYL	NNP	O
@@ -21865,8 +21865,8 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 in	IN	O
 patients	NNS	WHO
 weighing	VBG	WHO
@@ -21882,8 +21882,8 @@ or	CC	O
 g	NN	UNIT
 /	NNP	O
 m²	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 in	IN	O
 larger	JJR	WHO
 patients	NNS	WHO
@@ -22065,8 +22065,8 @@ mg	NN	UNIT
 /	NNP	O
 m²	NN	O
 ,	,	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 Generally	RB	O
@@ -22141,14 +22141,14 @@ in	IN	O
 each	DT	O
 affected	JJ	O
 eye	NN	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 for	IN	O
-up	IN	O
-to	TO	O
-3	CD	O
-months	NNS	O
+up	IN	PER
+to	TO	PER
+3	CD	PER
+months	NNS	PER
 .	.	O
 
 In	IN	O
@@ -22170,11 +22170,11 @@ dose	NN	O
 of	IN	O
 4	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 for	IN	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 ,	,	O
 and	CC	O
 then	RB	O
@@ -22189,8 +22189,8 @@ dose	NN	O
 of	IN	O
 8	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -22205,12 +22205,12 @@ methyldopa	NN	O
 is	VBZ	O
 250	CD	DOS
 mg	NN	UNIT
-two	CD	O
+two	CD	FREQ
 or	CC	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 in	IN	O
 the	DT	O
 first	JJ	O
@@ -22224,7 +22224,7 @@ deficiency	NN	O
 -	:	O
 The	DT	O
 recommended	JJ	O
-weekly	JJ	O
+weekly	JJ	FREQ
 dose	NN	O
 is	VBZ	O
 0.18	CD	DOS
@@ -22278,8 +22278,8 @@ is	VBZ	O
 -	:	O
 80	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 in	IN	O
 single	JJ	DOS
 or	CC	O
@@ -22294,8 +22294,8 @@ dose	NN	O
 is	VBZ	O
 80	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Dosage	NNP	O
@@ -22375,8 +22375,8 @@ of	IN	O
 to	TO	O
 3	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 If	IN	O
@@ -22448,7 +22448,7 @@ solution	NN	O
 exceeds	VBZ	O
 the	DT	O
 Reference	NNP	O
-Daily	NNP	O
+Daily	NNP	FREQ
 Intake	NNP	O
 (	(	O
 adults	NNS	WHO
@@ -22480,14 +22480,14 @@ to	TO	O
 mg	NN	UNIT
 of	IN	O
 acetazolamide	NN	O
-once	IN	O
-a	DT	O
-day	NN	O
+once	IN	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-one	CD	O
+one	CD	PER
 or	CC	O
-two	CD	O
-days	NNS	O
+two	CD	PER
+days	NNS	PER
 ,	,	O
 alternating	VBG	O
 with	IN	O
@@ -22626,7 +22626,7 @@ kg	NN	O
 of	IN	O
 body	NN	O
 weight	JJ	O
-daily	RB	O
+daily	RB	FREQ
 in	IN	O
 two	CD	DOS
 to	TO	O
@@ -22639,7 +22639,7 @@ Syndrome	NNP	O
 -	:	O
 The	DT	O
 recommended	JJ	O
-weekly	JJ	O
+weekly	JJ	FREQ
 dose	NN	O
 is	VBZ	O
 0.36	CD	DOS
@@ -22664,9 +22664,9 @@ diuretic	JJ	WHO
 is	VBZ	O
 2.5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -22785,14 +22785,14 @@ with	IN	O
 Alora	NNP	O
 0.05	CD	DOS
 mg	NN	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 applied	VBD	O
 to	TO	O
 the	DT	O
 skin	NN	O
-twice	RB	O
-weekly	RB	O
+twice	RB	FREQ
+weekly	RB	FREQ
 .	.	O
 
 Each	DT	O
@@ -22837,8 +22837,8 @@ four	CD	DOS
 mg	NN	UNIT
 capsules	NNS	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 combination	NN	O
 with	IN	O
@@ -22892,8 +22892,8 @@ amino	JJ	O
 acids	NNS	O
 /	VBP	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 with	IN	O
 dextrose	JJ	O
 alone	NNS	O
@@ -22983,8 +22983,8 @@ administered	VBN	O
 as	IN	O
 1	CD	DOS
 inhalation	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 approximately	RB	O
 12	CD	O
@@ -23025,7 +23025,7 @@ some	DT	O
 investigators	NNS	O
 feel	VBP	O
 that	IN	O
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	O
 in	IN	O
 excess	NN	O
@@ -23057,8 +23057,8 @@ and	CC	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 it	PRP	O
 was	VBD	O
@@ -23093,8 +23093,8 @@ mg	NN	UNIT
 to	TO	O
 60	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 in	IN	O
 divided	JJ	O
 doses	NNS	O
@@ -23124,8 +23124,8 @@ AMRIX	$	O
 mg	NN	UNIT
 capsule	NN	UNIT
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -23145,8 +23145,8 @@ maximum	NN	O
 of	IN	O
 45	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 based	VBN	O
 on	IN	O
 glycemic	JJ	O
@@ -23172,8 +23172,8 @@ mg	NNS	UNIT
 tablets	NNS	UNIT
 )	)	O
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 or	CC	O
 without	IN	O
@@ -23195,11 +23195,11 @@ initiated	VBN	O
 at	IN	O
 2	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 for	IN	O
-2	CD	O
-days	NNS	O
+2	CD	PER
+days	NNS	PER
 ,	,	O
 and	CC	O
 then	RB	O
@@ -23207,11 +23207,11 @@ increased	VBD	O
 to	TO	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 for	IN	O
-5	CD	O
-days	NNS	O
+5	CD	PER
+days	NNS	PER
 ,	,	O
 with	IN	O
 a	DT	O
@@ -23220,8 +23220,8 @@ dose	NN	O
 of	IN	O
 10	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 on	IN	O
 day	NN	O
 8	CD	O
@@ -23243,8 +23243,8 @@ is	VBZ	O
 1.25	CD	DOS
 mg	JJ	UNIT
 ALTACE	NNP	O
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -23253,8 +23253,8 @@ dose	NN	O
 is	VBZ	O
 8	CD	DOS
 mcg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 orally	RB	O
 with	IN	O
 food	NN	O
@@ -23707,21 +23707,21 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NNP	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 or	CC	O
 15	CD	DOS
 mg	NNS	UNIT
 /	JJ	O
 kg	VBD	O
-3	CD	O
-times	NNS	O
-daily	RB	O
+3	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 (	(	O
 to	TO	O
 a	DT	O
-maximum	JJ	O
-daily	JJ	O
+maximum	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 2400	CD	DOS
@@ -23754,9 +23754,9 @@ intramuscularly	RB	O
 may	MD	O
 be	VB	O
 repeated	VBN	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Therefore	RB	O
@@ -23830,8 +23830,8 @@ approximately	RB	O
 to	TO	O
 2000	CD	O
 kcal	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 7	CD	O
@@ -23848,9 +23848,9 @@ in	IN	O
 each	DT	O
 affected	JJ	O
 eye	NN	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 For	IN	O
@@ -23915,8 +23915,8 @@ mL	NN	O
 solutions	NNS	O
 aged	VBD	O
 for	IN	O
-60	CD	O
-days	NNS	O
+60	CD	PER
+days	NNS	PER
 at	IN	O
 4°C	CD	O
 and	CC	O
@@ -23966,9 +23966,9 @@ drops	NNS	UNIT
 in	IN	O
 each	DT	O
 eye	NN	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -24003,7 +24003,7 @@ one	CD	DOS
 5	CD	DOS
 mg	JJ	UNIT
 tablet	NN	UNIT
-daily	RB	O
+daily	RB	FREQ
 ,	,	O
 should	MD	O
 be	VB	O
@@ -24027,7 +24027,7 @@ deficiency	NN	O
 -	:	O
 The	DT	O
 recommended	JJ	O
-weekly	JJ	O
+weekly	JJ	FREQ
 dose	NN	O
 is	VBZ	O
 0.18	CD	DOS
@@ -24102,8 +24102,8 @@ one	CD	DOS
 10	CD	DOS
 mg	NN	UNIT
 tablet	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 taken	VBN	O
 with	IN	O
@@ -24153,7 +24153,7 @@ age	NN	WHO
 with	IN	WHO
 schizophrenia	NN	WHO
 at	IN	O
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	O
 of	IN	O
 10	CD	DOS
@@ -24182,9 +24182,9 @@ of	IN	O
 the	DT	O
 affected	JJ	O
 eye	NN	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 beginning	VBG	O
 24	CD	O
 hours	NNS	O
@@ -24212,8 +24212,8 @@ ABILIFY	NNP	O
 is	VBZ	O
 15	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 as	IN	O
 monotherapy	NN	O
@@ -24236,10 +24236,10 @@ Aerosol	NNP	O
 is	VBZ	O
 two	CD	DOS
 inhalations	NNS	UNIT
-four	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+four	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -24262,13 +24262,13 @@ norethindrone	JJ	O
 acetate	NN	O
 5	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 is	VBZ	O
 not	RB	O
 to	TO	O
 exceed	VB	O
-six	CD	O
-months	NNS	O
+six	CD	PER
+months	NNS	PER
 .	.	O
 
 Children	NNP	WHO
@@ -24303,15 +24303,15 @@ treatment	NN	O
 administered	VBN	O
 100	CD	DOS
 mg	NN	UNIT
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 or	CC	O
 50	CD	DOS
 mg	NN	UNIT
-every	DT	O
-6	CD	O
-hours	NNS	O
+every	DT	FREQ
+6	CD	FREQ
+hours	NNS	FREQ
 )	)	O
 followed	VBN	O
 by	IN	O
@@ -24321,8 +24321,8 @@ dose	NN	O
 of	IN	O
 100	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -24331,16 +24331,16 @@ dosage	NN	O
 is	VBZ	O
 250	CD	DOS
 mg	NN	UNIT
-every	DT	O
-6	CD	O
-hours	NNS	O
+every	DT	FREQ
+6	CD	FREQ
+hours	NNS	FREQ
 ;	:	O
 or	CC	O
 500	CD	DOS
 mg	NN	UNIT
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Patients	NNS	WHO
@@ -24349,11 +24349,11 @@ controlled	VBN	WHO
 on	IN	O
 0.5	CD	DOS
 mg	NN	UNIT
-once	RB	O
+once	RB	FREQ
 or	CC	O
-twice	VB	O
-a	DT	O
-day	NN	O
+twice	VB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 may	MD	O
 be	VB	O
 maintained	VBN	O
@@ -24483,8 +24483,8 @@ ADCIRCA	NNP	O
 at	IN	O
 20	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 For	IN	O
@@ -24502,11 +24502,11 @@ into	IN	O
 the	DT	O
 affected	JJ	O
 ear	JJ	O
-3	CD	O
+3	CD	FREQ
 or	CC	O
-4	CD	O
-times	NNS	O
-daily	RB	O
+4	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 A	DT	O
@@ -24560,8 +24560,8 @@ aripiprazole	NN	O
 is	VBZ	O
 10	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 After	IN	O
@@ -24580,8 +24580,8 @@ ADCIRCA	NNP	O
 at	IN	O
 20	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -24647,7 +24647,7 @@ clinical	JJ	O
 trials	NNS	O
 ,	,	O
 mean	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	O
 above	IN	O
 2100	CD	DOS
@@ -24681,8 +24681,8 @@ B	NNP	WHO
 )	)	WHO
 ,	,	O
 the	DT	O
-maximum	JJ	O
-daily	JJ	O
+maximum	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 should	MD	O
 not	RB	O
@@ -24789,11 +24789,11 @@ is	VBZ	O
 one	CD	DOS
 pink	NN	UNIT
 tablet	NN	UNIT
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
-21	CD	O
-consecutive	JJ	O
-days	NNS	O
+21	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 ,	,	O
 followed	VBN	O
 by	IN	O
@@ -24801,11 +24801,11 @@ one	CD	DOS
 lightgreen	NN	UNIT
 inert	JJ	UNIT
 tablet	NN	UNIT
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
-7	CD	O
-consecutive	JJ	O
-days	NNS	O
+7	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 ,	,	O
 according	VBG	O
 to	TO	O
@@ -24864,9 +24864,9 @@ with	IN	O
 the	DT	O
 antipsychotic	JJ	O
 for	IN	O
-14	CD	O
-consecutive	JJ	O
-days	NNS	O
+14	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 to	TO	O
 maintain	VB	O
 therapeutic	JJ	O
@@ -24886,8 +24886,8 @@ increased	VBN	O
 to	TO	O
 10	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 in	IN	O
 patients	NNS	WHO
 who	WP	WHO
@@ -25047,8 +25047,8 @@ not	RB	O
 exceed	VB	O
 20	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 [	NNP	O
 see	VBP	O
 WARNINGS	NNP	O
@@ -25124,10 +25124,10 @@ Cream	NN	O
 should	MD	O
 be	VB	O
 applied	VBN	O
-four	CD	O
-times	NNS	O
-each	DT	O
-day	NN	O
+four	CD	FREQ
+times	NNS	FREQ
+each	DT	FREQ
+day	NN	FREQ
 with	IN	O
 at	IN	O
 least	JJS	O
@@ -25171,8 +25171,8 @@ greater	JJR	O
 than	IN	O
 10	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 and	CC	O
 adverse	JJ	O
 reactions	NNS	O
@@ -25213,17 +25213,17 @@ should	MD	O
 proceed	VB	O
 over	IN	O
 a	DT	O
-7	CD	O
+7	CD	PER
 to	TO	O
-14	CD	O
-day	NN	O
+14	CD	PER
+day	NN	PER
 period	NN	O
 starting	VBG	O
 with	IN	O
 30	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Patients	NNS	WHO
@@ -25233,8 +25233,8 @@ not	RB	WHO
 tolerate	VB	WHO
 25	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 may	MD	O
 have	VB	O
 their	PRP$	O
@@ -25243,14 +25243,14 @@ reduced	VBN	O
 to	TO	O
 25	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-other	JJ	O
-day	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
-recommended	JJ	O
-daily	JJ	O
+recommended	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 DUEXIS	NNP	O
@@ -25270,10 +25270,10 @@ single	JJ	DOS
 tablet	NN	UNIT
 administered	VBN	O
 orally	RB	O
-three	CD	O
-times	NNS	O
-per	IN	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 Table	JJ	O
@@ -25326,7 +25326,7 @@ or	CC	O
 .	.	O
 
 The	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 nutrient	NN	O
 requirements	NNS	O
 of	IN	O
@@ -25394,10 +25394,10 @@ by	IN	O
 0.5	CD	DOS
 mg	NNS	UNIT
 taken	VBN	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Therapy	NN	O
@@ -25448,8 +25448,8 @@ to	TO	O
 kcal	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 for	IN	O
 children	NNS	WHO
@@ -25466,8 +25466,8 @@ to	TO	O
 kcal	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 and	CC	O
 for	IN	O
@@ -25483,8 +25483,8 @@ to	TO	O
 kcal	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 For	IN	O
@@ -25561,8 +25561,8 @@ is	VBZ	O
 to	TO	O
 15	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 Peak	JJ	O
@@ -25859,7 +25859,7 @@ MAINTENA	NNP	O
 is	VBZ	O
 400	CD	DOS
 mg	NN	UNIT
-monthly	RB	O
+monthly	RB	FREQ
 (	(	O
 no	DT	O
 sooner	NN	O
@@ -25898,7 +25898,7 @@ of	IN	O
 to	TO	O
 400	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 in	IN	O
 preparation	NN	O
 for	IN	O
@@ -25942,7 +25942,7 @@ kg	VBD	O
 or	CC	O
 3	CD	DOS
 g	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 ,	,	O
 whichever	WP	O
 is	VBZ	O
@@ -26020,8 +26020,8 @@ four	CD	DOS
 mg	NNS	UNIT
 tablets	NNS	UNIT
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 at	IN	O
 bedtime	NN	O
 .	.	O
@@ -26063,8 +26063,8 @@ tablet	NN	UNIT
 to	TO	O
 be	VB	O
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 the	DT	O
 prevention	NN	O
@@ -26242,7 +26242,7 @@ drainage	NN	O
 ,	,	O
 diarrhea	NN	O
 )	)	O
-daily	JJ	O
+daily	JJ	FREQ
 losses	NNS	O
 .	.	O
 
@@ -26284,8 +26284,8 @@ and	CC	O
 8	CD	DOS
 mg	NNS	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 on	IN	O
 days	NNS	O
 2	CD	O
@@ -26343,7 +26343,7 @@ is	VBZ	O
 to	TO	O
 30	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 Caution	NN	O
@@ -26455,8 +26455,8 @@ not	RB	O
 exceed	VB	O
 6	CD	DOS
 tablets	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 For	IN	O
@@ -26470,7 +26470,7 @@ kg	NN	WHO
 ,	,	O
 the	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 amino	JJ	O
@@ -26483,8 +26483,8 @@ to	TO	O
 g	NN	UNIT
 amino	NN	O
 acids	NNS	O
-/	VBP	O
-day	NN	O
+/	VBP	FREQ
+day	NN	FREQ
 for	IN	O
 the	DT	O
 first	JJ	O
@@ -26530,8 +26530,8 @@ mL	NN	O
 solutions	NNS	O
 aged	VBD	O
 for	IN	O
-60	CD	O
-days	NNS	O
+60	CD	PER
+days	NNS	PER
 at	IN	O
 4°C	CD	O
 and	CC	O
@@ -26582,7 +26582,7 @@ response	NN	O
 .	.	O
 
 The	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 nutrient	NN	O
 requirements	NNS	O
 of	IN	O
@@ -26631,8 +26631,8 @@ amino	NN	O
 acid	VBP	O
 /	NNP	O
 kg	FW	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 )	)	O
 and	CC	O
 between	IN	O
@@ -26647,8 +26647,8 @@ fluids	NNS	O
 For	IN	O
 doses	NNS	O
 above	IN	O
-24	CD	O
-units	NNS	O
+24	CD	DOS
+units	NNS	UNIT
 ,	,	O
 combinations	NNS	O
 of	IN	O
@@ -26855,7 +26855,7 @@ more	JJR	O
 may	MD	O
 be	VB	O
 required	VBN	O
-daily	RB	O
+daily	RB	FREQ
 to	TO	O
 achieve	VB	O
 nitrogen	NN	O
@@ -26872,8 +26872,8 @@ one	CD	DOS
 capsule	NN	UNIT
 given	VBN	O
 orally	RB	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 ,	,	O
 one	CD	DOS
 in	IN	O
@@ -27084,9 +27084,9 @@ infusion	NN	O
 over	IN	O
 60	CD	O
 minutes	NNS	O
-every	DT	O
-3	CD	O
-weeks	NNS	O
+every	DT	FREQ
+3	CD	FREQ
+weeks	NNS	FREQ
 until	IN	O
 disease	JJ	O
 progression	NN	O
@@ -27096,8 +27096,8 @@ toxicity	NN	O
 .	.	O
 
 for	IN	O
-three	CD	O
-weeks	NNS	O
+three	CD	PER
+weeks	NNS	PER
 should	MD	O
 be	VB	O
 accompanied	VBN	O
@@ -27107,14 +27107,14 @@ streptomycin	NN	O
 1	CD	DOS
 gram	NN	UNIT
 intramuscularly	JJ	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 the	DT	O
 first	JJ	O
 week	NN	O
 and	CC	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 the	DT	O
 second	JJ	O
 week	NN	O
@@ -27184,10 +27184,10 @@ solution	NN	O
 is	VBZ	O
 one	CD	DOS
 drop	NN	UNIT
-four	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+four	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 to	TO	O
 the	DT	O
 affected	JJ	O
@@ -27294,8 +27294,8 @@ initiated	VBN	O
 at	IN	O
 2	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 with	IN	O
 a	DT	O
 target	NN	O
@@ -27303,8 +27303,8 @@ dose	NN	O
 of	IN	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 after	IN	O
 2	CD	O
 days	NNS	O
@@ -27364,8 +27364,8 @@ one	CD	DOS
 drop	NN	UNIT
 of	IN	O
 Xiidra	NNP	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 approximately	RB	O
 12	CD	O
@@ -27395,7 +27395,7 @@ be	VB	O
 initiated	VBN	O
 with	IN	O
 a	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 0.05	CD	DOS
@@ -27420,8 +27420,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 given	VBN	O
 in	IN	O
 two	CD	DOS
@@ -27445,8 +27445,8 @@ is	VBZ	O
 -	:	O
 60	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 in	IN	O
 single	JJ	O
@@ -27488,13 +27488,13 @@ capsules	NNS	O
 is	VBZ	O
 2.5	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 5	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 )	)	O
 .	.	O
 
@@ -27534,11 +27534,11 @@ dose	NN	O
 is	VBZ	O
 one	CD	DOS
 tablet	NN	UNIT
-three	CD	O
+three	CD	FREQ
 or	CC	O
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 .	.	O
 
 Treatment	NN	O
@@ -27554,8 +27554,8 @@ not	RB	O
 exceed	VB	O
 1.5	CD	DOS
 gram	JJ	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 Severe	JJ	O
@@ -27577,9 +27577,9 @@ tablets	NNS	UNIT
 1	CD	DOS
 g	NN	UNIT
 )	)	O
-three	CD	O
-times	NNS	O
-daily	JJ	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	JJ	FREQ
 thereafter	RB	O
 .	.	O
 
@@ -27611,9 +27611,9 @@ up	RB	O
 to	TO	O
 1	CD	DOS
 mg	NN	UNIT
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -27632,8 +27632,8 @@ is	VBZ	O
 or	CC	O
 20	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 ACEON	NNP	O
@@ -27674,8 +27674,8 @@ dose	NN	O
 is	VBZ	O
 8	CD	DOS
 mcg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -27686,8 +27686,8 @@ not	RB	O
 exceed	VB	O
 400	CD	DOS
 mcg	JJ	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -27733,7 +27733,7 @@ doses	NNS	O
 above	IN	O
 90	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 is	VBZ	O
 not	RB	O
 recommended	VBN	O
@@ -27751,8 +27751,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 administered	VBD	O
 in	IN	O
 divided	JJ	O
@@ -27972,16 +27972,16 @@ monotherapy	NN	O
 is	VBZ	O
 2	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 with	IN	O
 titration	NN	O
 to	TO	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 after	IN	O
 2	CD	O
 days	NNS	O
@@ -27993,8 +27993,8 @@ dose	NN	O
 of	IN	O
 10	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 after	IN	O
 2	CD	O
 additional	JJ	O
@@ -28022,9 +28022,9 @@ dosage	NN	O
 of	IN	O
 0.5	CD	DOS
 mg	NN	UNIT
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 For	IN	O
@@ -28058,8 +28058,8 @@ and	CC	O
 chemical	JJ	O
 properties	NNS	O
 for	IN	O
-3	CD	O
-days	NNS	O
+3	CD	PER
+days	NNS	PER
 under	IN	O
 refrigeration	NN	O
 at	IN	O
@@ -28101,11 +28101,11 @@ is	VBZ	O
 15	CD	DOS
 mg	NN	UNIT
 intramuscularly	RB	O
-once	RB	O
-weekly	JJ	O
+once	RB	FREQ
+weekly	JJ	FREQ
 for	IN	O
-12	CD	O
-weeks	NNS	O
+12	CD	PER
+weeks	NNS	PER
 .	.	O
 
 ALLEGRA	NNP	O
@@ -28142,8 +28142,8 @@ administered	VBN	O
 as	IN	O
 1	CD	DOS
 inhalation	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 approximately	RB	O
 12	CD	O
@@ -28158,7 +28158,7 @@ route	NN	O
 .	.	O
 
 Average	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 adult	NN	WHO
 fluid	NN	O
 requirements	NNS	O
@@ -28199,7 +28199,7 @@ given	VBN	O
 in	IN	O
 a	DT	O
 single	JJ	DOS
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	UNIT
 ,	,	O
 not	RB	O
@@ -28227,7 +28227,7 @@ mg	NN	UNIT
 3	CD	DOS
 tablets	NNS	UNIT
 )	)	O
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 Once	RB	O
@@ -28280,8 +28280,8 @@ total	NN	O
 of	IN	O
 30	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 may	MD	O
 be	VB	O
 given	VBN	O
@@ -28295,7 +28295,7 @@ one	CD	DOS
 to	TO	O
 two	CD	DOS
 tablets	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 or	CC	O
 as	IN	O
 directed	VBN	O
@@ -28338,8 +28338,8 @@ not	RB	O
 exceed	VB	O
 12.5	CD	DOS
 mg	JJ	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	NN	O
@@ -28398,8 +28398,8 @@ of	IN	O
 to	TO	O
 50	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 when	WRB	O
 used	VBN	O
 alone	RB	O
@@ -28467,8 +28467,8 @@ sulfate	NN	O
 is	VBZ	O
 stable	JJ	O
 for	IN	O
-24	CD	O
-hours	NNS	O
+24	CD	PER
+hours	NNS	PER
 at	IN	O
 room	NN	O
 temperature	NN	O
@@ -28655,8 +28655,8 @@ than	IN	O
 kcal	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 If	IN	O
@@ -28724,9 +28724,9 @@ kg	NN	O
 should	MD	O
 be	VB	O
 administered	VBN	O
-every	DT	O
-18	CD	O
-hours	NNS	O
+every	DT	FREQ
+18	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 Patients	NNS	O
@@ -28819,7 +28819,7 @@ dose	NN	O
 of	IN	O
 2	CD	DOS
 mg	NNS	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 may	MD	O
 be	VB	O
 instituted	VBN	O
@@ -28854,8 +28854,8 @@ is	VBZ	O
 mg	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 Consult	NN	O
@@ -28893,20 +28893,20 @@ four	CD	DOS
 mg	NN	UNIT
 injections	NNS	UNIT
 in	IN	O
-one	CD	O
-day	NN	O
+one	CD	PER
+day	NN	PER
 or	CC	O
 as	IN	O
 two	CD	DOS
 40	CD	DOS
 mg	NNS	UNIT
 injections	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 for	IN	O
-two	CD	O
-consecutive	JJ	O
-days	NNS	O
+two	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 )	)	O
 ,	,	O
 followed	VBN	O
@@ -28962,9 +28962,12 @@ hairy	JJ	O
 areas	NNS	O
 ,	,	O
 two	CD	O
-times	NNS	O
-per	IN	O
-day.The	NN	O
+times	NNS	FREQ
+per	IN	FREQ
+day	NN	FREQ
+.	.	O
+
+The	DT	O
 lotion	NN	O
 should	MD	O
 be	VB	O
@@ -29122,8 +29125,8 @@ to	TO	O
 mM	NN	UNIT
 of	IN	O
 phosphate	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 appear	VBP	O
 necessary	JJ	O
 to	TO	O
@@ -29174,8 +29177,8 @@ is	VBZ	O
 250	CD	DOS
 mg	NN	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 or	CC	O
 without	IN	O
@@ -29231,12 +29234,12 @@ patients	NNS	WHO
 may	MD	O
 be	VB	O
 treated	VBN	O
-2	CD	O
+2	CD	FREQ
 or	CC	O
-3	CD	O
-times	NNS	O
-per	IN	O
-week	NN	O
+3	CD	FREQ
+times	NNS	FREQ
+per	IN	FREQ
+week	NN	FREQ
 ,	,	O
 as	IN	O
 a	DT	O
@@ -29255,7 +29258,7 @@ administered	VBN	O
 
 The	DT	O
 usual	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 of	IN	O
 methyldopa	NN	O
@@ -29314,8 +29317,8 @@ medication	NN	WHO
 is	VBZ	O
 10	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 If	IN	O
@@ -29428,11 +29431,11 @@ a	DT	O
 thin	JJ	O
 film	NN	O
 from	IN	O
-two	CD	O
+two	CD	FREQ
 to	TO	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 depending	VBG	O
 on	IN	O
 the	DT	O
@@ -29517,7 +29520,7 @@ given	VBN	O
 as	IN	O
 a	DT	O
 single	JJ	DOS
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	UNIT
 or	CC	O
 divided	VBN	O
@@ -29549,8 +29552,8 @@ of	IN	O
 to	TO	O
 30	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 ,	,	O
 when	WRB	O
 administered	VBN	O
@@ -29568,8 +29571,8 @@ than	IN	O
 or	CC	O
 15	CD	DOS
 mg	JJ	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 were	VBD	O
 not	RB	O
 more	RBR	O
@@ -29579,8 +29582,8 @@ than	IN	O
 or	CC	O
 15	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 PROVERA	NNP	O
@@ -29595,7 +29598,7 @@ of	IN	O
 or	CC	O
 10	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
 5	CD	O
 to	TO	O
@@ -29665,7 +29668,7 @@ half	NN	O
 of	IN	O
 an	DT	O
 estimated	VBN	O
-daily	JJ	O
+daily	JJ	FREQ
 amino	NN	O
 acid	JJ	O
 requirement	NN	O
@@ -29740,7 +29743,7 @@ given	VBN	O
 as	IN	O
 a	DT	O
 single	JJ	DOS
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	UNIT
 or	CC	O
 divided	VBN	O
@@ -29768,8 +29771,8 @@ above	NN	WHO
 is	VBZ	O
 20	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
@@ -29805,10 +29808,10 @@ of	IN	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-daily	NN	O
+daily	NN	FREQ
 for	IN	O
-5	CD	O
-days	NNS	O
+5	CD	PER
+days	NNS	PER
 as	IN	O
 a	DT	O
 single	JJ	O
@@ -29945,10 +29948,10 @@ one	CD	DOS
 mL	NN	UNIT
 vial	NN	UNIT
 administered	VBD	O
-4	CD	O
-times	NNS	O
-per	IN	O
-day	NN	O
+4	CD	FREQ
+times	NNS	FREQ
+per	IN	FREQ
+day	NN	FREQ
 via	IN	O
 nebulization	NN	O
 with	IN	O
@@ -29960,8 +29963,8 @@ additional	JJ	O
 mL	NN	UNIT
 doses	NNS	UNIT
 allowed	VBN	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 if	IN	O
 needed	VBN	O
@@ -30056,8 +30059,8 @@ amino	NN	O
 acid	VBP	O
 /	NNP	O
 kg	FW	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
 infants	NNS	WHO
 up	RB	WHO
@@ -30200,7 +30203,7 @@ at	IN	O
 1	CD	DOS
 mcg	NN	UNIT
 /	NNP	O
-kg	NN	UNIT
+kg	NN	O
 is	VBZ	O
 recommended	VBN	O
 for	IN	O
@@ -30294,11 +30297,11 @@ with	IN	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
-7	CD	O
-days	NNS	O
+7	CD	PER
+days	NNS	PER
 .	.	O
 
 In	IN	O
@@ -30312,8 +30315,8 @@ was	VBD	O
 given	VBN	O
 by	IN	O
 mouth	JJ	O
-twice	JJ	O
-daily	JJ	O
+twice	JJ	FREQ
+daily	JJ	FREQ
 the	DT	O
 day	NN	O
 before	IN	O
@@ -30350,13 +30353,13 @@ hydrochloride	NN	O
 is	VBZ	O
 2	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 or	CC	O
 1	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 3	CD	O
@@ -30382,8 +30385,8 @@ increases	NNS	O
 above	IN	O
 20	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 should	MD	O
 be	VB	O
 carefully	RB	O
@@ -30424,8 +30427,8 @@ not	RB	O
 exceed	VB	O
 40	CD	DOS
 mg	JJ	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 (	(	O
 see	VB	O
 WARNINGS	NNP	O
@@ -30543,8 +30546,8 @@ In	IN	O
 some	DT	WHO
 patients	NNS	WHO
 treated	VBD	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 the	DT	O
 antihypertensive	JJ	O
@@ -30602,8 +30605,8 @@ mg	NN	UNIT
 34	CD	DOS
 mL	NN	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 and	CC	O
 adult	NN	WHO
@@ -30635,8 +30638,8 @@ mg	NN	UNIT
 23	CD	DOS
 mL	NN	UNIT
 )	)	O
-twice	RB	O
-daily	JJ	O
+twice	RB	FREQ
+daily	JJ	FREQ
 (	(	O
 see	VB	O
 CLINICAL	NNP	O
@@ -30672,8 +30675,8 @@ of	IN	O
 mL	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 will	MD	O
 meet	VB	O
@@ -30705,8 +30708,8 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 m2	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -30859,8 +30862,8 @@ to	TO	O
 mMol	NN	UNIT
 of	IN	O
 phosphorus	JJ	O
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 appear	VBP	O
 necessary	JJ	O
 to	TO	O
@@ -30890,14 +30893,14 @@ mg	NN	UNIT
 1	CD	DOS
 tablet	NN	UNIT
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
 recommended	JJ	O
 starting	VBG	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 rufinamide	NN	O
@@ -31058,7 +31061,7 @@ added	VBD	O
 to	TO	O
 the	DT	O
 calculated	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 requirement	NN	O
 of	IN	O
 amino	NN	O
@@ -31079,7 +31082,7 @@ patient	NN	WHO
 The	DT	O
 suggested	JJ	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 is	VBZ	O
 8	CD	DOS
@@ -31130,8 +31133,8 @@ switched	VBN	O
 to	TO	O
 1.25	CD	DOS
 mg	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Flares	NNS	O
@@ -31244,7 +31247,7 @@ Increases	NNS	O
 above	IN	O
 300	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 should	MD	O
 be	VB	O
 made	VBN	O
@@ -31252,7 +31255,7 @@ only	RB	O
 if	IN	O
 300	CD	DOS
 mg	JJ	UNIT
-daily	NN	O
+daily	NN	FREQ
 has	VBZ	O
 been	VBN	O
 ineffective	JJ	O
@@ -31261,10 +31264,10 @@ a	DT	O
 trial	NN	O
 period	NN	O
 of	IN	O
-at	IN	O
-least	JJS	O
-two	CD	O
-weeks	NNS	O
+at	IN	PER
+least	JJS	PER
+two	CD	PER
+weeks	NNS	PER
 .	.	O
 
 150	CD	DOS
@@ -31304,8 +31307,8 @@ mg	NN	UNIT
 20	CD	DOS
 mg	NNS	UNIT
 tablet	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 at	IN	O
 bedtime	NN	O
 .	.	O
@@ -31365,9 +31368,9 @@ mg	NNS	UNIT
 or	CC	O
 250	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-four	CD	O
-hours	NNS	O
+every	DT	FREQ
+four	CD	FREQ
+hours	NNS	FREQ
 depending	VBG	O
 on	IN	O
 the	DT	O
@@ -31404,7 +31407,7 @@ dosage	NN	O
 is	VBZ	O
 1	CD	DOS
 gram	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 in	IN	O
 divided	JJ	O
 doses	NNS	O
@@ -31417,13 +31420,13 @@ in	IN	O
 the	DT	O
 affected	JJ	O
 eye	NN	O
-3	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+3	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-7	CD	O
-days	NNS	O
+7	CD	PER
+days	NNS	PER
 .	.	O
 
 Ambien	NNP	O
@@ -31460,8 +31463,8 @@ on	IN	O
 a	DT	O
 400	CD	DOS
 mcg	NN	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 dose	NN	O
 of	IN	O
 AllerNaze	NNP	O
@@ -31475,8 +31478,8 @@ than	IN	O
 with	IN	O
 200	CD	DOS
 mcg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 .	.	O
 
 ACAM2000	NNP	O
@@ -31538,7 +31541,7 @@ from	IN	O
 to	TO	O
 1000	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 Administer	RB	O
@@ -31613,8 +31616,8 @@ increased	VBN	O
 to	TO	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 ,	,	O
 with	IN	O
 subsequent	JJ	O
@@ -31624,8 +31627,8 @@ to	TO	O
 or	CC	O
 15	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 if	IN	O
 needed	VBN	O
 .	.	O
@@ -31664,8 +31667,8 @@ up	RB	O
 to	TO	O
 20	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 for	IN	O
 patients	NNS	WHO
 who	WP	WHO
@@ -31802,8 +31805,8 @@ tolerate	VB	O
 the	DT	O
 300	CD	DOS
 mg	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 dose	VB	O
 .	.	O
 
@@ -31829,8 +31832,8 @@ dose	NN	O
 is	VBZ	O
 8	CD	DOS
 mcg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 For	IN	O
@@ -31873,9 +31876,9 @@ lovastatin	NN	O
 is	VBZ	O
 20	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -31900,7 +31903,7 @@ bifurcation	NN	O
 .	.	O
 
 The	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 requirements	NNS	O
 of	IN	O
 the	DT	WHO
@@ -31962,19 +31965,19 @@ of	IN	O
 2.5	CD	DOS
 mg	NNS	UNIT
 ,	,	O
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-1	CD	O
-week	NN	O
+1	CD	PER
+week	NN	PER
 ,	,	O
 5	CD	DOS
 mg	NN	UNIT
 ,	,	O
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
 the	DT	O
 next	JJ	O
@@ -31995,9 +31998,9 @@ of	IN	O
 10	CD	DOS
 mg	NNS	UNIT
 ,	,	O
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -32021,8 +32024,8 @@ prior	RB	O
 to	TO	O
 meals	NNS	O
 ,	,	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 If	IN	O
@@ -32063,11 +32066,11 @@ taken	VBN	O
 a	DT	O
 pink	JJ	UNIT
 tablet	NN	UNIT
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
-7	CD	O
-consecutive	JJ	O
-days	NNS	O
+7	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 .	.	O
 
 Children	NNS	WHO
@@ -32089,14 +32092,14 @@ weight	NN	O
 by	IN	O
 mouth	NN	O
 ,	,	O
-twice	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+twice	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 for	IN	O
-60	CD	O
-days	NNS	O
+60	CD	PER
+days	NNS	PER
 .	.	O
 
 More	JJR	O
@@ -32138,24 +32141,24 @@ age	NN	WHO
 is	VBZ	O
 10	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Adults	NNS	WHO
 :	:	O
 The	DT	O
 usual	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 is	VBZ	O
 250	CD	DOS
 mg	NN	UNIT
 administered	VBN	O
-once	RB	O
-every	DT	O
-24	CD	O
-hours	NNS	O
+once	RB	FREQ
+every	DT	FREQ
+24	CD	FREQ
+hours	NNS	FREQ
 or	CC	O
 300	CD	DOS
 mg	NNS	UNIT
@@ -32193,8 +32196,8 @@ VESIcare	NNP	O
 is	VBZ	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Plasma	NNP	O
@@ -32227,16 +32230,16 @@ have	VBP	O
 been	VBN	O
 maintained	VBN	O
 for	IN	O
-several	JJ	O
-weeks	NNS	O
+several	JJ	PER
+weeks	NNS	PER
 in	IN	O
 one	CD	WHO
 patient	NN	WHO
 who	WP	WHO
 received	VBD	WHO
-twice	RB	WHO
-weekly	JJ	WHO
-injections	NNS	WHO
+twice	RB	FREQ
+weekly	JJ	FREQ
+injections	NNS	O
 (	(	O
 20	CD	DOS
 U	NNP	UNIT
@@ -32256,7 +32259,7 @@ Injection	NN	O
 
 The	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 should	MD	O
 not	RB	O
@@ -32265,8 +32268,8 @@ exceed	VB	O
 mg	JJ	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 and	CC	O
 may	MD	O
 be	VB	O
@@ -32297,8 +32300,8 @@ is	VBZ	O
 9	CD	DOS
 mg	NNS	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 up	IN	O
 to	TO	O
@@ -32345,7 +32348,7 @@ up	IN	O
 to	TO	O
 300	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 are	VBP	O
 indicated	VBN	O
 in	IN	O
@@ -32362,8 +32365,8 @@ is	VBZ	O
 5	CD	DOS
 mg	NN	UNIT
 given	VBN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Inject	JJ	O
@@ -32399,8 +32402,8 @@ administered	VBN	O
 as	IN	O
 one	CD	DOS
 inhalation	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 by	IN	O
 the	DT	O
 orally	RB	O
@@ -32437,11 +32440,11 @@ cream	NN	O
 should	MD	O
 be	VB	O
 applied	VBN	O
-2	CD	O
+2	CD	FREQ
 to	TO	O
-4	CD	O
-times	NNS	O
-daily	RB	O
+4	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 ,	,	O
 as	IN	O
 required	VBN	O
@@ -32502,8 +32505,8 @@ should	MD	O
 be	VB	O
 250	CD	DOS
 mg	JJ	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 in	IN	O
 addition	NN	O
 to	TO	O
@@ -32722,12 +32725,12 @@ is	VBZ	O
 to	TO	O
 20	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 Usual	JJ	O
-daily	RB	O
+daily	RB	FREQ
 dose	VBP	O
 ,	,	O
 1	CD	DOS
@@ -32775,7 +32778,7 @@ of	IN	O
 spironolactone	NN	O
 and	CC	O
 hydrochlorothiazide	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 ,	,	O
 given	VBN	O
 in	IN	O
@@ -32802,8 +32805,8 @@ more	JJR	O
 than	IN	O
 1	CD	DOS
 inhalation	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 )	)	O
 of	IN	O
 the	DT	O
@@ -32833,7 +32836,7 @@ salmeterol	NN	O
 .	.	O
 
 The	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 nutrient	NN	O
 requirements	NNS	O
 of	IN	O
@@ -32882,8 +32885,8 @@ amino	NN	O
 acid	VBP	O
 /	NNP	O
 kg	FW	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 )	)	O
 and	CC	O
 between	IN	O
@@ -32928,11 +32931,11 @@ Acetic	NNP	O
 Acid	NNP	O
 Otic	NNP	O
 Solution	NNP	O
-3	CD	O
+3	CD	FREQ
 or	CC	O
-4	CD	O
-times	NNS	O
-daily	JJ	O
+4	CD	FREQ
+times	NNS	FREQ
+daily	JJ	FREQ
 thereafter	RB	O
 ,	,	O
 for	IN	O
@@ -33086,8 +33089,8 @@ to	TO	O
 kcal	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 is	VBZ	O
 recommended	VBN	O
 .	.	O
@@ -33098,8 +33101,8 @@ not	RB	O
 exceed	VB	O
 10	CD	DOS
 mg	JJ	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 or	CC	O
 2.5	CD	DOS
 mg	NNS	UNIT
@@ -33160,8 +33163,8 @@ either	DT	O
 ABILIFY	NNP	O
 15	CD	DOS
 mg	NN	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 or	CC	O
 placebo	NN	O
 ,	,	O
@@ -33182,9 +33185,9 @@ patients	NNS	WHO
 ,	,	O
 one	CD	DOS
 inhalation	NN	UNIT
-every	DT	O
-4	CD	O
-hours	NNS	O
+every	DT	FREQ
+4	CD	FREQ
+hours	NNS	FREQ
 may	MD	O
 be	VB	O
 sufficient	JJ	O
@@ -33257,8 +33260,8 @@ treatment	NN	O
 with	IN	O
 5	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
@@ -33394,7 +33397,7 @@ The	DT	O
 safety	NN	O
 of	IN	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	O
 greater	JJR	O
 than	IN	O
@@ -33406,9 +33409,9 @@ given	VBN	O
 more	RBR	O
 frequently	RB	O
 than	IN	O
-every	DT	O
-2	CD	O
-hours	NNS	O
+every	DT	FREQ
+2	CD	FREQ
+hours	NNS	FREQ
 have	VBP	O
 not	RB	O
 been	VBN	O
@@ -33447,7 +33450,7 @@ greater	JJR	O
 than	IN	O
 50	CD	DOS
 mg	JJ	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 should	MD	O
 be	VB	O
 avoided	VBN	O
@@ -33561,9 +33564,9 @@ eye	NN	O
 (	(	O
 s	NN	O
 )	)	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 ,	,	O
 approximately	RB	O
 8	CD	O
@@ -33573,7 +33576,7 @@ apart	RB	O
 
 The	DT	O
 starting	VBG	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 the	DT	O
@@ -33689,7 +33692,7 @@ of	IN	O
 multiple	JJ	O
 sclerosis	NN	O
 ,	,	O
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	O
 of	IN	O
 200	CD	DOS
@@ -33697,18 +33700,18 @@ mg	NN	UNIT
 of	IN	O
 prednisolone	NN	O
 for	IN	O
-a	DT	O
-week	NN	O
+a	DT	PER
+week	NN	PER
 followed	VBN	O
 by	IN	O
 80	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-other	JJ	O
-day	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+day	NN	FREQ
 for	IN	O
-1	CD	O
-month	NN	O
+1	CD	PER
+month	NN	PER
 have	VBP	O
 been	VBN	O
 shown	VBN	O
@@ -33824,8 +33827,8 @@ or	CC	O
 6.3	CD	DOS
 mg	NN	UNIT
 at	IN	O
-weekly	JJ	O
-intervals	NNS	O
+weekly	JJ	FREQ
+intervals	NNS	FREQ
 .	.	O
 
 If	IN	O
@@ -33845,8 +33848,8 @@ should	MD	O
 be	VB	O
 1.25	CD	DOS
 mg	JJ	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 5	CD	O
@@ -33933,7 +33936,7 @@ dose	NN	O
 is	VBZ	O
 25	CD	DOS
 mg	JJ	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 and	CC	O
 should	MD	O
 be	VB	O
@@ -33965,8 +33968,8 @@ tolerated	VBN	O
 up	RB	O
 to	TO	O
 a	DT	O
-daily	JJ	O
-maximum	NN	O
+daily	JJ	FREQ
+maximum	NN	FREQ
 of	IN	O
 3	CD	DOS
 mg	NNS	UNIT
@@ -34040,7 +34043,7 @@ PRECAUTIONS	NNP	O
 
 The	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 by	IN	O
 all	DT	O
@@ -34054,8 +34057,8 @@ exceed	VB	O
 mg	JJ	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Instill	NNP	O
@@ -34096,10 +34099,10 @@ Cream	NNP	O
 should	MD	O
 be	VB	O
 applied	VBN	O
-2	CD	O
-times	NNS	O
-per	IN	O
-week	NN	O
+2	CD	FREQ
+times	NNS	FREQ
+per	IN	FREQ
+week	NN	FREQ
 for	IN	O
 a	DT	O
 full	JJ	O
@@ -34151,8 +34154,8 @@ is	VBZ	O
 to	TO	O
 20	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 administered	VBN	O
 as	IN	O
 a	DT	O
@@ -34240,8 +34243,8 @@ dose	NN	O
 is	VBZ	O
 20	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 THE	DT	O
@@ -34358,12 +34361,12 @@ at	IN	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
-4	CD	O
-consecutive	JJ	O
-days	NNS	O
+4	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 (	(	O
 or	CC	O
 ,	,	O
@@ -34371,12 +34374,12 @@ or	CC	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
-5	CD	O
-consecutive	JJ	O
-days	NNS	O
+5	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 )	)	O
 for	IN	O
 a	DT	O
@@ -34460,8 +34463,8 @@ tablet	NN	UNIT
 to	TO	O
 be	VB	O
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 the	DT	O
 treatment	NN	O
@@ -34657,8 +34660,8 @@ ALTACE	NNP	O
 ramipril	JJ	O
 capsules	NNS	O
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 A	DT	O
@@ -34699,11 +34702,11 @@ months	NNS	WHO
 or	CC	WHO
 older	JJR	WHO
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 for	IN	O
-5	CD	O
-days	NNS	O
+5	CD	PER
+days	NNS	PER
 .	.	O
 
 ADVAIR	NNP	O
@@ -34714,8 +34717,8 @@ administered	VBN	O
 as	IN	O
 2	CD	DOS
 inhalations	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 by	IN	O
 the	DT	O
 orally	RB	O
@@ -34752,8 +34755,8 @@ not	RB	O
 exceed	VB	O
 40	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -34789,8 +34792,8 @@ tablet	NN	UNIT
 to	TO	O
 be	VB	O
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 the	DT	O
 treatment	NN	O
@@ -34855,8 +34858,8 @@ dose	NN	O
 of	IN	O
 20	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 was	VBD	O
 not	RB	O
 associated	VBN	O
@@ -34898,9 +34901,9 @@ then	RB	O
 mg	NNS	UNIT
 /	JJ	O
 kg	NN	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 ,	,	O
 not	RB	O
 to	TO	O
@@ -34922,9 +34925,9 @@ mg	NNS	UNIT
 then	RB	O
 100	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 and	CC	O
 should	MD	O
 not	RB	O
@@ -34974,8 +34977,8 @@ g	NN	O
 kg	VBZ	O
 body	NN	O
 weight	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 basis	NN	O
 ,	,	O
 with	IN	O
@@ -34998,8 +35001,8 @@ to	TO	O
 g	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 ages	VBZ	WHO
 4	CD	WHO
@@ -35011,8 +35014,8 @@ years	NNS	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 ages	VBZ	WHO
 13	CD	WHO
@@ -35024,8 +35027,8 @@ years	NNS	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 ages	VBZ	WHO
 16	CD	WHO
@@ -35036,8 +35039,8 @@ above	RB	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Subsequent	JJ	O
@@ -35053,8 +35056,8 @@ administered	VBN	O
 in	IN	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 increments	NNS	O
 .	.	O
 
@@ -35071,12 +35074,12 @@ of	IN	O
 to	TO	O
 30	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
 a	DT	O
-five	CD	O
--	:	O
-day	NN	O
+five	CD	PER
+-	:	PER
+day	NN	PER
 course	NN	O
 .	.	O
 
@@ -35139,8 +35142,8 @@ hydrochlorothiazide	RB	O
 12.5	CD	DOS
 mg	NN	UNIT
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 Syphilis	NN	O
@@ -35167,14 +35170,14 @@ doxycycline	JJ	O
 mg	NN	UNIT
 by	IN	O
 mouth	NN	O
-twice	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+twice	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 for	IN	O
-4	CD	O
-weeks	NNS	O
+4	CD	PER
+weeks	NNS	PER
 .	.	O
 
 For	IN	O
@@ -35194,8 +35197,8 @@ mg	NN	UNIT
 per	IN	O
 kg	NN	O
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 up	IN	O
 to	TO	O
 the	DT	O
@@ -35254,8 +35257,8 @@ with	IN	O
 ritonavir	JJ	O
 200	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 or	CC	O
 AGENERASE	$	O
 600	CD	DOS
@@ -35264,8 +35267,8 @@ with	IN	O
 ritonavir	JJ	O
 100	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 One	CD	O
@@ -35285,12 +35288,12 @@ at	IN	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
-4	CD	O
-consecutive	JJ	O
-days	NNS	O
+4	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 (	(	O
 or	CC	O
 ,	,	O
@@ -35298,12 +35301,12 @@ or	CC	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 for	IN	O
-5	CD	O
-consecutive	JJ	O
-days	NNS	O
+5	CD	PER
+consecutive	JJ	PER
+days	NNS	PER
 )	)	O
 for	IN	O
 a	DT	O
@@ -35352,12 +35355,12 @@ start	VBP	O
 with	IN	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
+once	RB	FREQ
 or	CC	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 ;	:	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 may	MD	O
 be	VB	O
@@ -35368,8 +35371,8 @@ of	IN	O
 5	CD	DOS
 mg	NN	UNIT
 at	IN	O
-weekly	JJ	O
-intervals	NNS	O
+weekly	JJ	FREQ
+intervals	NNS	FREQ
 until	IN	O
 optimal	JJ	O
 response	NN	O
@@ -35432,8 +35435,8 @@ mg	NN	UNIT
 /	NNP	O
 m²	NN	O
 ,	,	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 [	NNP	O
 see	VBP	O
 Dose	NNP	O
@@ -35453,9 +35456,9 @@ dose	NN	O
 is	VBZ	O
 20	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 given	VBN	O
 with	IN	O
 the	DT	O
@@ -35478,9 +35481,9 @@ given	VBN	O
 either	CC	O
 as	IN	O
 a	DT	O
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 dosage	NN	O
 (	(	O
 4	CD	DOS
@@ -35493,16 +35496,16 @@ or	CC	O
 divided	VBN	O
 into	IN	O
 two	CD	DOS
-daily	JJ	O
+daily	JJ	FREQ
 doses	NNS	UNIT
 of	IN	O
 two	CD	DOS
 sprays	NNS	UNIT
 /	VBP	O
 nostril	JJ	O
-twice	RB	O
-a	DT	O
-day	NN	O
+twice	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 One	CD	O
@@ -35558,16 +35561,16 @@ VIII	NNP	O
 per	IN	O
 kg	NN	O
 body	NN	O
-weight	JJ	O
-every	DT	O
-other	JJ	O
-day	NN	O
+weight	JJ	FREQ
+every	DT	FREQ
+other	JJ	FREQ
+day	NN	FREQ
 (	(	O
-3	CD	O
+3	CD	FREQ
 to	TO	O
-4	CD	O
-times	NNS	O
-weekly	RB	O
+4	CD	FREQ
+times	NNS	FREQ
+weekly	RB	FREQ
 )	)	O
 may	MD	O
 be	VB	O
@@ -35581,7 +35584,7 @@ sufficient	NN	O
 to	TO	O
 yield	VB	O
 a	DT	O
-daily	JJ	O
+daily	JJ	FREQ
 urinary	JJ	O
 output	NN	O
 of	IN	O
@@ -35699,8 +35702,8 @@ with	IN	O
 ALDACTONE	NNP	O
 25	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 if	IN	O
 the	DT	O
 patient	NN	O
@@ -35850,12 +35853,12 @@ methyldopa	SYM	O
 hydrochlorothiazide	NN	O
 )	)	O
 15	CD	O
-two	CD	O
+two	CD	FREQ
 or	CC	O
-three	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+three	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 or	CC	O
 one	CD	DOS
 tablet	NN	UNIT
@@ -35867,10 +35870,10 @@ methyldopa	SYM	O
 hydrochlorothiazide	NN	O
 )	)	O
 25	CD	O
-two	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+two	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 Dosage	NN	O
@@ -35880,8 +35883,8 @@ up	IN	O
 to	TO	O
 5	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 should	MD	O
 occur	VB	O
 gradually	RB	O
@@ -35936,8 +35939,8 @@ four	CD	DOS
 mg	NN	UNIT
 capsules	NNS	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 combination	NN	O
 with	IN	O
@@ -36094,8 +36097,8 @@ B	NNP	O
 is	VBZ	O
 600	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 taken	VBN	O
 orally	RB	O
@@ -36216,8 +36219,8 @@ who	WP	WHO
 tolerate	VBP	WHO
 25	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 may	MD	O
 have	VB	O
 their	PRP$	O
@@ -36226,8 +36229,8 @@ increased	VBD	O
 to	TO	O
 50	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 as	IN	O
 clinically	RB	O
 indicated	VBN	O
@@ -36242,11 +36245,11 @@ is	VBZ	O
 mg	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -36309,12 +36312,12 @@ inhalations	NNS	UNIT
 may	MD	O
 be	VB	O
 administered	VBN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 for	IN	O
 a	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 1	CD	DOS
@@ -36353,15 +36356,15 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 as	IN	O
 tolerated	VBN	O
 .	.	O
 
 Usual	JJ	O
-daily	RB	O
+daily	RB	FREQ
 dose	VBP	O
 ,	,	O
 10	CD	DOS
@@ -36462,12 +36465,12 @@ ER	NNP	O
 is	VBZ	O
 administered	VBN	O
 ,	,	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 ,	,	O
 and	CC	O
 must	MD	O
@@ -36521,7 +36524,7 @@ limited	VBN	O
 to	TO	O
 500	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 in	IN	O
 divided	JJ	O
 doses	NNS	O
@@ -36551,7 +36554,7 @@ dose	NN	O
 is	VBZ	O
 18.8	CD	DOS
 mg	JJ	UNIT
-daily	JJ	O
+daily	JJ	FREQ
 for	IN	O
 patients	NNS	WHO
 6	CD	WHO
@@ -36562,7 +36565,7 @@ years	NNS	WHO
 and	CC	O
 12.5	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 for	IN	O
 patients	NNS	WHO
 13	CD	WHO
@@ -36615,8 +36618,8 @@ administered	VBN	O
 as	IN	O
 1	CD	DOS
 inhalation	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 by	IN	O
 the	DT	O
 orally	RB	O
@@ -36634,14 +36637,14 @@ AGRYLIN	NNP	O
 is	VBZ	O
 0.5	CD	DOS
 mg	NN	UNIT
-four	CD	O
-times	NNS	O
-daily	RB	O
+four	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 or	CC	O
 1	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 For	IN	O
@@ -36667,7 +36670,7 @@ dosage	NN	O
 of	IN	O
 100	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 in	IN	O
 combination	NN	O
 with	IN	O
@@ -36692,7 +36695,7 @@ Lamprene	NNP	O
 (	(	O
 clofazimine	NN	O
 )	)	O
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -36747,8 +36750,8 @@ then	RB	O
 be	VB	O
 titrated	VBN	O
 at	IN	O
-weekly	JJ	O
-intervals	NNS	O
+weekly	JJ	FREQ
+intervals	NNS	FREQ
 until	IN	O
 an	DT	O
 effective	JJ	O
@@ -36759,7 +36762,7 @@ usually	RB	O
 to	TO	O
 40	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 given	VBN	O
 in	IN	O
 two	CD	DOS
@@ -36959,8 +36962,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 given	VBN	O
 in	IN	O
 two	CD	DOS
@@ -36992,8 +36995,8 @@ loss	NN	WHO
 is	VBZ	O
 600	CD	DOS
 mg	JJ	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 (	(	O
 300	CD	DOS
 mg	NN	UNIT
@@ -37013,16 +37016,16 @@ is	VBZ	O
 or	CC	O
 15	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 administered	VBD	O
 on	IN	O
 a	DT	O
-once	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+once	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 schedule	NN	O
 without	IN	O
 regard	NN	O
@@ -37058,8 +37061,8 @@ is	VBZ	O
 1.25	CD	DOS
 mg	JJ	UNIT
 ALTACE	NNP	O
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 For	IN	O
@@ -37105,8 +37108,8 @@ increased	VBN	O
 to	TO	O
 1.25	CD	DOS
 mg	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 and	CC	O
 up	RB	O
@@ -37117,8 +37120,8 @@ dose	NN	O
 of	IN	O
 2.5	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 depending	VBG	O
 on	IN	O
 clinical	JJ	O
@@ -37141,8 +37144,8 @@ g	NNS	UNIT
 fat	JJ	O
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ,	,	O
 infused	VBD	O
 simultaneously	RB	O
@@ -37263,13 +37266,13 @@ ALTACE	NNP	O
 is	VBZ	O
 2.5	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 5	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 )	)	O
 .	.	O
 
@@ -37327,8 +37330,8 @@ is	VBZ	O
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 for	IN	O
 13	CD	WHO
@@ -37342,8 +37345,8 @@ age	NN	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 ;	:	O
 and	CC	O
 for	IN	O
@@ -37358,8 +37361,8 @@ above	IN	WHO
 g	NN	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -37382,8 +37385,8 @@ to	TO	O
 the	DT	O
 gum	JJ	O
 region	NN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ;	:	O
 morning	NN	O
 and	CC	O
@@ -37444,7 +37447,7 @@ limited	VBN	O
 to	TO	O
 500	CD	DOS
 mg	NNS	UNIT
-daily	RB	O
+daily	RB	FREQ
 in	IN	O
 divided	JJ	O
 doses	NNS	O
@@ -37483,9 +37486,9 @@ is	VBZ	O
 or	CC	O
 60	CD	DOS
 mg	NN	UNIT
-once	RB	O
-a	DT	O
-day	NN	O
+once	RB	FREQ
+a	DT	FREQ
+day	NN	FREQ
 given	VBN	O
 in	IN	O
 the	DT	O
@@ -37513,14 +37516,14 @@ doxycycline	JJ	O
 mg	NN	UNIT
 by	IN	O
 mouth	NN	O
-twice	RB	O
--	:	O
-a	DT	O
--	:	O
-day	NN	O
+twice	RB	FREQ
+-	:	FREQ
+a	DT	FREQ
+-	:	FREQ
+day	NN	FREQ
 for	IN	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 .	.	O
 
 The	DT	O
@@ -37597,8 +37600,8 @@ approximately	RB	O
 to	TO	O
 2000	CD	O
 kcal	JJ	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Generally	RB	O
@@ -37618,8 +37621,8 @@ equivalent	NN	O
 .	.	O
 
 The	DT	O
-recommended	JJ	O
-daily	JJ	O
+recommended	JJ	FREQ
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 Oxtellar	NNP	O
@@ -37630,12 +37633,12 @@ mg	NN	UNIT
 to	TO	O
 2400	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 Initial	JJ	O
@@ -37676,8 +37679,8 @@ Tablets	NNP	O
 is	VBZ	O
 1	CD	DOS
 tablet	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 administered	VBN	O
 with	IN	O
@@ -37723,8 +37726,8 @@ unit	NN	O
 dose	JJ	O
 vial	JJ	O
 administered	VBN	O
-twice	RB	O
-daily	JJ	O
+twice	RB	FREQ
+daily	JJ	FREQ
 (	(	O
 morning	NN	O
 and	CC	O
@@ -37751,16 +37754,16 @@ dosing	NN	O
 at	IN	O
 2.5	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 for	IN	O
-1	CD	O
-week	NN	O
+1	CD	PER
+week	NN	PER
 ,	,	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 for	IN	O
 the	DT	O
 next	JJ	O
@@ -37780,8 +37783,8 @@ dose	NN	O
 of	IN	O
 10	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -37793,8 +37796,8 @@ is	VBZ	O
 to	TO	O
 15	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 Dosing	VBG	O
@@ -37804,8 +37807,8 @@ initiated	VBN	O
 at	IN	O
 2	CD	DOS
 mg	NNS	UNIT
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 .	.	O
 
 Patients	NNS	WHO
@@ -37820,12 +37823,12 @@ VI	NNP	O
 may	MD	O
 be	VB	O
 treated	VBN	O
-2	CD	O
+2	CD	FREQ
 or	CC	O
-3	CD	O
-times	NNS	O
-per	IN	O
-week	NN	O
+3	CD	FREQ
+times	NNS	FREQ
+per	IN	FREQ
+week	NN	FREQ
 .	.	O
 
 Although	IN	O
@@ -37868,8 +37871,8 @@ HS	NN	O
 should	MD	O
 be	VB	O
 administered	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 at	IN	O
 bedtime	NN	O
 .	.	O
@@ -37888,8 +37891,8 @@ adults	NNS	WHO
 is	VBZ	O
 6	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 A	DT	O
@@ -37956,15 +37959,15 @@ mg	NN	UNIT
 by	IN	O
 mouth	NN	O
 ,	,	O
-four	CD	O
-times	NNS	O
-a	DT	O
-day	NN	O
+four	CD	FREQ
+times	NNS	FREQ
+a	DT	FREQ
+day	NN	FREQ
 for	IN	O
-at	IN	O
-least	JJS	O
-seven	CD	O
-days	NNS	O
+at	IN	PER
+least	JJS	PER
+seven	CD	PER
+days	NNS	PER
 .	.	O
 
 Initial	JJ	O
@@ -37991,7 +37994,7 @@ peripherally	RB	O
 
 The	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 should	MD	O
 not	RB	O
@@ -38000,8 +38003,8 @@ exceed	VB	O
 mg	JJ	UNIT
 /	NNP	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 and	CC	O
 may	MD	O
 be	VB	O
@@ -38065,18 +38068,18 @@ to	TO	O
 kcal	JJ	O
 /	NN	O
 kg	NN	O
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 An	DT	O
 example	NN	O
 of	IN	O
 a	DT	O
-5	CD	O
-times	NNS	O
-per	IN	O
-week	NN	O
+5	CD	FREQ
+times	NNS	FREQ
+per	IN	FREQ
+week	NN	FREQ
 application	NN	O
 schedule	NN	O
 is	VBZ	O
@@ -38085,9 +38088,9 @@ apply	VB	O
 Aldara	NNP	O
 Cream	NNP	O
 ,	,	O
-once	RB	O
-per	IN	O
-day	NN	O
+once	RB	FREQ
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 Monday	NNP	O
 through	IN	O
@@ -38099,8 +38102,8 @@ Gel	NNP	O
 should	MD	O
 be	VB	O
 applied	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 before	IN	O
 bedtime	NN	O
@@ -38156,8 +38159,8 @@ increased	VBN	O
 to	TO	O
 10	CD	DOS
 mg	NNS	UNIT
-per	IN	O
-day	NN	O
+per	IN	FREQ
+day	NN	FREQ
 ,	,	O
 if	IN	O
 necessary	JJ	O
@@ -38207,13 +38210,13 @@ start	VBP	O
 with	IN	O
 10	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
 ;	:	O
-daily	JJ	O
+daily	JJ	FREQ
 dosage	NN	O
 may	MD	O
 be	VB	O
@@ -38227,8 +38230,8 @@ or	CC	O
 10	CD	DOS
 mg	NN	UNIT
 at	IN	O
-weekly	JJ	O
-intervals	NNS	O
+weekly	JJ	FREQ
+intervals	NNS	FREQ
 .	.	O
 
 Calculate	VB	O
@@ -38312,9 +38315,9 @@ treatment	NN	O
 administered	VBN	O
 100	CD	DOS
 mg	NN	UNIT
-every	DT	O
-12	CD	O
-hours	NNS	O
+every	DT	FREQ
+12	CD	FREQ
+hours	NNS	FREQ
 )	)	O
 ,	,	O
 followed	VBN	O
@@ -38325,7 +38328,7 @@ dose	NN	O
 of	IN	O
 100	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -38340,8 +38343,8 @@ patients	NNS	WHO
 is	VBZ	O
 6.25	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	NN	O
@@ -38415,8 +38418,8 @@ not	RB	O
 exceed	VB	O
 20	CD	DOS
 mg	JJ	UNIT
-/	NNP	O
-day	NN	O
+/	NNP	FREQ
+day	NN	FREQ
 .	.	O
 
 Aminosyn	RB	O
@@ -38478,17 +38481,17 @@ lansoprazole	NN	UNIT
 ,	,	O
 each	DT	O
 given	VBN	O
-three	CD	O
-times	NNS	O
-daily	RB	O
+three	CD	FREQ
+times	NNS	FREQ
+daily	RB	FREQ
 (	(	O
-every	DT	O
-8	CD	O
-hours	NNS	O
+every	DT	FREQ
+8	CD	FREQ
+hours	NNS	FREQ
 )	)	O
 for	IN	O
-14	CD	O
-days	NNS	O
+14	CD	PER
+days	NNS	PER
 .	.	O
 
 Amikacin	NNP	O
@@ -38496,8 +38499,8 @@ sulfate	NN	O
 is	VBZ	O
 stable	JJ	O
 for	IN	O
-24	CD	O
-hours	NNS	O
+24	CD	PER
+hours	NNS	PER
 at	IN	O
 room	NN	O
 temperature	NN	O
@@ -38562,8 +38565,8 @@ is	VBZ	O
 one	CD	DOS
 capsule	NN	UNIT
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 whether	IN	O
 given	VBN	O
 alone	RB	O
@@ -38577,7 +38580,7 @@ antihypertensives	NNS	O
 
 The	DT	O
 usual	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 maintenance	NN	O
 dose	NN	O
 of	IN	O
@@ -38589,8 +38592,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	JJ	O
-/	JJ	O
-day	NN	O
+/	JJ	FREQ
+day	NN	FREQ
 as	IN	O
 a	DT	O
 single	JJ	DOS
@@ -38668,11 +38671,11 @@ one	CD	DOS
 or	CC	O
 two	CD	DOS
 tablets	NNS	UNIT
-every	DT	O
-four	CD	O
+every	DT	FREQ
+four	CD	FREQ
 to	TO	O
-six	CD	O
-hours	NNS	O
+six	CD	FREQ
+hours	NNS	FREQ
 as	IN	O
 needed	VBN	O
 for	IN	O
@@ -38688,8 +38691,8 @@ dose	NN	O
 is	VBZ	O
 2	CD	DOS
 inhalations	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 morning	NN	O
 and	CC	O
@@ -38698,7 +38701,7 @@ evening	NN	O
 for	IN	O
 a	DT	O
 total	JJ	O
-daily	JJ	O
+daily	JJ	FREQ
 dose	NN	O
 of	IN	O
 1	CD	DOS

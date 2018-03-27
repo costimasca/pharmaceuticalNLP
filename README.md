@@ -1,8 +1,13 @@
 # Information extraction on drug dosage
 
-Information extraction system that returns quantity (DOS) and measuring unit (UNIT) as well as to whom the treatement is directed (WHO) given a natural language description of the dosage for a farmaceutical drug. The model is based on python's CRF implementation, crfsuite. Part-ofspeech tags were obtained with nltk.
-
-For more details, read the pdf in the Report folder.
+Information extraction system that labels the following named entities given a natural language description of the dosage for a farmaceutical drug:
+ - quantity (DOS)
+ - measuring unit (UNIT) 
+ - to whom the treatement is directed (WHO)
+ - frequency (FREQ)
+ - period (PER)
+  
+The model is based on python's CRF implementation, crfsuite. Part-ofspeech tags were obtained with nltk. For more details, read the pdf in the Report folder.
 
 
 ## Getting Started
@@ -64,8 +69,10 @@ Using 10-fold cross validation:
 ```
 
  	precision	recall	f1-measure
-WHO 	0.950		0.918	0.933
-UNIT 	0.985		0.960	0.972
-DOS 	0.983		0.966	0.974
+PER 	0.950		0.918	0.933
+WHO 	0.944		0.934	0.938
+UNIT 	0.983		0.956	0.969
+DOS 	0.981		0.962	0.971
+FREQ 	0.987		0.982	0.985
 avg 	0.969		0.942	0.955
 ```

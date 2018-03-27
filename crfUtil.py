@@ -18,13 +18,9 @@ from scipy.stats import norm
 import matplotlib.mlab as mlab
 import model
 
-
 nltk.corpus.conll2002.fileids()
 
-
-
 # clf = joblib.load('model.pkl')
-
 
 def sent2features(sent):
     return [word2features(sent, i) for i in range(len(sent))]
@@ -299,6 +295,10 @@ def view_issues():
                         corp[j][i][2] += ' !!! ' + prediction[i]
                     if corp[j][i][2] == "UNIT" or prediction[i] == "UNIT":
                         corp[j][i][2] += ' !!! ' + prediction[i]
+                    if corp[j][i][2] == "FREQ" or prediction[i] == "FREQ":
+                        corp[j][i][2] += ' !!! ' + prediction[i]
+                    if corp[j][i][2] == "PER" or prediction[i] == "PER":
+                        corp[j][i][2] += ' !!! ' + prediction[i]
 
     writeTsv(corp, 'issues.tsv')
 
@@ -466,4 +466,4 @@ def sent_file_to_unlab_corp():
 
 
 if __name__ == '__main__':
-    print()
+    view_issues()

@@ -36,15 +36,23 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
 
     sets.append(sent)
 
+    per_precision = 0
     who_precision = 0
     unit_precision = 0
     dos_precision = 0
+    freq_precision = 0
+
+    per_recall = 0
     who_recall = 0
     unit_recall = 0
     dos_recall = 0
+    freq_recall = 0
+
+    per_f1 = 0
     who_f1 = 0
     unit_f1 = 0
     dos_f1 = 0
+    freq_f1 = 0
 
     total_precision = 0
     total_recall = 0
@@ -59,43 +67,58 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
 
         data = data.split('     ')
 
-        who_precision += float(data[4])
-        unit_precision += float(data[9])
-        dos_precision += float(data[14])
+        per_precision += float(data[4])
+        who_precision += float(data[9])
+        unit_precision += float(data[14])
+        dos_precision += float(data[19])
+        freq_precision += float(data[24])
 
-        who_recall += float(data[5])
-        unit_recall += float(data[10])
-        dos_recall += float(data[15])
+        per_recall += float(data[5])
+        who_recall += float(data[10])
+        unit_recall += float(data[15])
+        dos_recall += float(data[20])
+        freq_recall += float(data[25])
 
-        who_f1 += float(data[6])
-        unit_f1 += float(data[11])
-        dos_f1 += float(data[16])
+        per_f1 += float(data[6])
+        who_f1 += float(data[11])
+        unit_f1 += float(data[16])
+        dos_f1 += float(data[21])
+        freq_f1 += float(data[26])
 
-        total_precision += float(data[18])
-        total_recall += float(data[19])
-        total_f1 += float(data[20])
+        total_precision += float(data[28])
+        total_recall += float(data[29])
+        total_f1 += float(data[30])
 
         if not ten_fold:
             break
 
     if ten_fold:
+        per_precision /= 10
         who_precision /= 10
         unit_precision /= 10
         dos_precision /= 10
+        freq_precision /= 10
 
+        per_recall /= 10
         who_recall /= 10
         unit_recall /= 10
         dos_recall /= 10
+        freq_recall /= 10
 
+        per_f1 /= 10
         who_f1 /= 10
         unit_f1 /= 10
         dos_f1 /= 10
+        freq_f1 /= 10
 
         total_precision /= 10
         total_recall /= 10
         total_f1 /= 10
 
     res = '        precision    recall    f1-score\n'
+    res += (
+        'PER     ' + "{:.3f}".format(per_precision) + '\t\t' + "{:.3f}".format(per_recall) + '\t\t' + "{:.3f}".format(
+            per_f1) + '\n')
     res += (
         'WHO    ' + "{:.3f}".format(who_precision) + '\t\t' + "{:.3f}".format(who_recall) + '\t\t' + "{:.3f}".format(
             who_f1) + '\n')
@@ -105,6 +128,10 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
     res += (
         'DOS     ' + "{:.3f}".format(dos_precision) + '\t\t' + "{:.3f}".format(dos_recall) + '\t\t' + "{:.3f}".format(
             dos_f1) + '\n')
+    res += (
+        'FREQ     ' + "{:.3f}".format(freq_precision) + '\t\t' + "{:.3f}".format(freq_recall) + '\t\t' + "{:.3f}".format(
+            freq_f1) + '\n')
+
     res += (
         'AVG     ' + "{:.3f}".format(total_precision) + '\t\t' + "{:.3f}".format(
             total_recall) + '\t\t' + "{:.3f}".format(
