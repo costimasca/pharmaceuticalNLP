@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from sklearn.externals import joblib
-import nltk,sys
+import nltk
 
 clf = joblib.load('model.pkl')
 
@@ -16,6 +16,7 @@ def getLabels(sentence):
     labels = clf.predict([sent])
 
     return labels[0]
+
 
 def word2features(sent, i):
     word = sent[i][0]

@@ -1,6 +1,6 @@
 import os
 import sys
-import distance
+import structure
 import matplotlib.pyplot as plt
 from itertools import chain
 import nltk
@@ -56,8 +56,8 @@ def getAllDosages():
 
     text2 = []
 
-    for line in text:
-        text2.append(getDosage(line))
+    # for line in text:
+    #     text2.append(getDosage(line))
 
     return text, text2
 
@@ -104,23 +104,6 @@ def makeDosageCorpus():
                 f.write(tup[0] + '\t' + tup[1] + '\t' + 'O\n')
             f.write('\n')
         f.close()
-
-
-def repairCorpus2():
-    with open("corpus.tsv", r) as f:
-        text = f.readlines()
-        f.close()
-
-    text2 = []
-    sent = []
-    for line in text:
-        if line == '\t\t\n':
-            text2.append(sent)
-            sent = []
-        else:
-            sent.append(line.strip().split('\t'))
-
-    return text2
 
 
 def loadCorpus(file):
@@ -305,7 +288,7 @@ def view_issues():
 
 def contains_named_entities(sentence):
     pred = model.getLabels(sentence)
-    if 'WHO' in pred[0] or 'DOS' in pred[0] or 'UNIT' in pred[0]:
+    if 'DOS' in pred or 'UNIT' in pred:
         return True
 
 
@@ -343,7 +326,7 @@ def fix_dashes_slashes():
 
 
 def fix_eg_ie():
-    c = open('tmp2.tsv')
+    c = open('corpus.tsv')
     lines = c.readlines()
 
     t = open('corp2.tsv','w')
@@ -404,15 +387,15 @@ def plot_error_distrib(x):
 
 
 def fix_slashes_dashes_on_sent_file():
-    f = open('corpus2')
+    f = open('corpus')
     sentences = f.readlines()
     f.close()
     new_sentences = []
 
     for sent in sentences:
         new_sent = ''
-        sent_list = sent.split(' ')
-        sent_list = list(filter(None, sent_list))
+
+        sent_list = nltk.word_tokenize(sent)
         l = len(sent_list)
         for i, word in enumerate(sent_list):
             if '-' in word:
@@ -427,6 +410,14 @@ def fix_slashes_dashes_on_sent_file():
 
             if '/' in word:
                 word = ' / '.join(word.split('/'))
+
+            if word == 'eg.' or word == 'e.g.':
+                print(word)
+                word = 'e.g'
+            if word == 'ie.' or word == 'i.e.':
+                print(word)
+                word = 'i.e'
+
             new_sent += word
             if i != l:
                 new_sent += ' '
@@ -444,7 +435,7 @@ def fix_slashes_dashes_on_sent_file():
 
 def sent_file_to_unlab_corp():
     file = 'corpus2_split'
-    corpus = 'tmp2.tsv'
+    corpus = 'corpus.tsv'
 
     with open(file, 'r') as f:
         text = f.readlines()
@@ -466,4 +457,4 @@ def sent_file_to_unlab_corp():
 
 
 if __name__ == '__main__':
-    view_issues()
+    print()

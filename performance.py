@@ -192,5 +192,6 @@ def error_distribution(corpus_file="corp.tsv"):
     print(total_recall)
     print(total_f1)
 
+
 if __name__ == '__main__':
     print(performance_measure(ten_fold=True, verbose=True))

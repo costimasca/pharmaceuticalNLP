@@ -1,4 +1,3 @@
-import sys
 from crfUtil import *
 from sklearn.externals import joblib
 
@@ -63,6 +62,7 @@ def gen_model(train, test, writeFile=False):
     return metrics.flat_classification_report(
         y_test, y_pred, labels=sorted_labels, digits=3
     )
+
 
 if __name__ == '__main__':
     gen_test_train_files('corp.tsv')

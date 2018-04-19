@@ -60,7 +60,7 @@ chmod +x dosage.py
 You can specify any sentence using different quantities (1, two, 3 to 5, 0.5 etc.) and different measuring units (drops, ml, miligrams, tablespoons etc.) Feel free to choose one from the corpus.
 
 In the above example, the output is the following label list:
- (['O', 'O', 'O', 'O', 'O', 'WHO', 'O', 'DOS', 'UNIT', 'O', 'O', 'O', 'O', 'O'])
+ (['O', 'O', 'O', 'O', 'O', 'WHO', 'O', 'DOS', 'UNIT', 'FREQ', 'FREQ', 'O', 'O', 'O'])
 
 ### Performance
 
