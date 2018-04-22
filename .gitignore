@@ -7,3 +7,4 @@ test.tsv
 train.tsv
 issues.tsv
 *.png
+*.ui
