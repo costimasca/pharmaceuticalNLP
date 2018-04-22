@@ -248,3 +248,8 @@ nodes, just the structure
 
 27.Mar.2018
 -added frequency and period labels
+
+21.Apr.2018
+-nltk.word_tokenize identifies the last dot in 'e.g.' as sentence ending, so it splits 'e.g.' into two entities. fixing
+    by removing the last dot in every word that has one except for the last word in the sentence.
+-created Model class

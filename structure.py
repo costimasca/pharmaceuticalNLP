@@ -3,7 +3,7 @@ from sklearn.externals import joblib
 from apted import helpers,apted, Config
 import subprocess
 import re
-from model import getLabels
+from model import label
 
 clf = joblib.load('model.pkl')
 
@@ -44,7 +44,7 @@ def convert_to_ne_text_tree(sentence):
     returns a bracket notation tree
     """
 
-    ne_labels = getLabels(sentence)
+    ne_labels = label(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
@@ -68,7 +68,7 @@ def convert_to_ne_tree(sentence):
     returns a bracket notation tree
     """
 
-    ne_labels = getLabels(sentence)
+    ne_labels = label(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
@@ -85,7 +85,7 @@ def convert_to_ne_tree(sentence):
 
 
 def view_tree(sentence):
-    ne_labels = getLabels(sentence)
+    ne_labels = label(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
@@ -139,7 +139,7 @@ def generate_distance_matrix(folder):
 
 
 def contains_named_entities(sentence):
-    pred = getLabels(sentence)
+    pred = label(sentence)
     if not pred:
         return False
     if 'WHO' in pred[0] or 'DOS' in pred[0] or 'UNIT' in pred[0]:
@@ -260,7 +260,7 @@ def all_structures2():
             structures[struct] = [sent]
 
     for key, v in sorted(structures.items(), key=lambda x: len(x[1]), reverse=True):
-        print(key + ":" + str(len(v)))
+        print(key + ": " + str(len(v)) + ' ' + str(v))
 
     print(len(structures))
 
@@ -268,7 +268,7 @@ def all_structures2():
 def chunk_sentence(sentence):
 
     sentence = fix_dashes_slashes(sentence)
-    ne_labels = getLabels(sentence)
+    ne_labels = label(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
@@ -357,4 +357,3 @@ def fix_dashes_slashes(sent):
 
 if __name__ == '__main__':
     all_structures2()
-

@@ -287,7 +287,7 @@ def view_issues():
 
 
 def contains_named_entities(sentence):
-    pred = model.getLabels(sentence)
+    pred = model.label(sentence)
     if 'DOS' in pred or 'UNIT' in pred:
         return True
 
