@@ -1,15 +1,23 @@
-from crfUtil import *
+from model import Model
 from sklearn.externals import joblib
+import sklearn_crfsuite
+import scipy
+import sys
+from sklearn.metrics import make_scorer
+from sklearn_crfsuite import metrics
+from sklearn.grid_search import RandomizedSearchCV
+from crfUtil import gen_test_train_files, loadCorpus, view_issues
 
 sys.path.insert(0, '.')
 
 
 def gen_model(train, test, writeFile=False):
-    X_train = [sent2features(s) for s in train]
-    y_train = [sent2labels(s) for s in train]
+    model = Model()
+    X_train = [model.sentence2features(s) for s in train]
+    y_train = [model.sentence2labels(s) for s in train]
 
-    X_test = [sent2features(s) for s in test]
-    y_test = [sent2labels(s) for s in test]
+    X_test = [model.sentence2features(s) for s in test]
+    y_test = [model.sentence2labels(s) for s in test]
 
     crf = sklearn_crfsuite.CRF(
         algorithm='lbfgs',

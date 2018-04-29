@@ -1,7 +1,8 @@
+import sys
 from PyQt5 import QtWidgets
-import sys, os
 
-import design, model
+import design
+import model
 
 
 class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
@@ -12,11 +13,11 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.model = model.Model()
         self.color_dict = {
             'O': '#FFFFFF',
-            'DOS': '#111111',
-            'UNIT': '#FF1F00',
-            'WHO': '#2FFF00',
-            'FREQ': '#F99F00',
-            'PER': '#FF4400'
+            'DOS': '#EE964B',
+            'UNIT': '#F95738',
+            'WHO': '#FAF0CA',
+            'FREQ': '#F4D35E',
+            'PER': '#0D3B66'
         }
 
     def parse(self):

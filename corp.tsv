@@ -229,7 +229,7 @@ attained	VBN	O
 monitor	VB	O
 trough	IN	O
 concentrations	NNS	O
-every	DT	O
+every	DT	FREQ
 3	CD	FREQ
 to	TO	O
 6	CD	FREQ
@@ -242,7 +242,7 @@ body	NN	WHO
 surface	JJ	WHO
 area	NN	WHO
 or	CC	O
-every	DT	O
+every	DT	FREQ
 6	CD	FREQ
 to	TO	O
 12	CD	FREQ
@@ -610,9 +610,9 @@ meet	VB	O
 the	DT	O
 requirements	NNS	O
 of	IN	O
-the	DT	WHO
-majority	NN	WHO
-of	IN	WHO
+the	DT	O
+majority	NN	O
+of	IN	O
 pediatric	JJ	WHO
 patients	NNS	WHO
 .	.	O
@@ -905,7 +905,7 @@ over	IN	O
 the	DT	O
 next	JJ	O
 several	JJ	O
-weeks	NNS	O
+weeks	NNS	PER
 ,	,	O
 up	RB	O
 to	TO	O
@@ -1216,8 +1216,8 @@ mg	JJ	UNIT
 day	NN	FREQ
 in	IN	O
 any	DT	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 .	.	O
 
 The	DT	O
@@ -2570,8 +2570,8 @@ symptoms	NNS	O
 was	VBD	O
 seen	VBN	O
 within	IN	O
-two	CD	O
-days	NNS	O
+two	CD	PER
+days	NNS	PER
 after	IN	O
 starting	VBG	O
 treatment	NN	O
@@ -2634,8 +2634,8 @@ of	IN	O
 no	DT	O
 less	JJR	O
 than	IN	O
-1	CD	O
-week	NN	O
+1	CD	PER
+week	NN	PER
 [	NNP	O
 see	VBP	O
 Clinical	JJ	O
@@ -2965,8 +2965,8 @@ continuing	VBG	O
 through	IN	O
 the	DT	O
 first	JJ	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 of	IN	O
 the	DT	O
 postoperative	JJ	O
@@ -3156,7 +3156,7 @@ vitamin	JJ	O
 B12	NNP	O
 during	IN	O
 the	DT	O
-week	NN	O
+week	NN	PER
 preceding	VBG	O
 the	DT	O
 first	JJ	O
@@ -3192,7 +3192,7 @@ end	NN	O
 of	IN	O
 the	DT	O
 first	JJ	O
-week	NN	O
+week	NN	PER
 .	.	O
 
 The	DT	O
@@ -3674,8 +3674,8 @@ of	IN	O
 IBS	NNP	O
 symptoms	NNS	O
 after	IN	O
-4	CD	O
-weeks	NNS	O
+4	CD	PER
+weeks	NNS	PER
 of	IN	O
 treatment	NN	O
 with	IN	O
@@ -4028,8 +4028,8 @@ the	DT	O
 starting	VBG	O
 dose	NN	O
 after	IN	O
-4	CD	O
-weeks	NNS	O
+4	CD	PER
+weeks	NNS	PER
 of	IN	O
 therapy	NN	O
 ,	,	O
@@ -4548,9 +4548,9 @@ Units	NNS	UNIT
 /	VBP	O
 kg	NN	O
 administered	VBN	O
-every	DT	O
-other	JJ	O
-week	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+week	NN	FREQ
 as	IN	O
 a	DT	O
 60	CD	DOS
@@ -4740,10 +4740,10 @@ of	IN	O
 400	CD	DOS
 mg	NN	UNIT
 for	IN	O
-three	CD	O
+three	CD	PER
 to	TO	O
-four	CD	O
-weeks	NNS	O
+four	CD	PER
+weeks	NNS	PER
 .	.	O
 
 Second	JJ	O
@@ -4829,8 +4829,8 @@ at	IN	O
 the	DT	O
 same	JJ	O
 time	NN	O
-every	DT	O
-day	NN	O
+every	DT	FREQ
+day	NN	FREQ
 .	.	O
 
 In	IN	O
@@ -4859,14 +4859,14 @@ schedule	NN	O
 (	(	O
 e.g	NN	O
 ,	,	O
-3	CD	O
-weeks	NNS	O
+3	CD	PER
+weeks	NNS	PER
 of	IN	O
 therapy	NN	O
 followed	VBN	O
 by	IN	O
-1	CD	O
-week	NN	O
+1	CD	PER
+week	NN	PER
 without	IN	O
 )	)	O
 for	IN	O
@@ -5208,10 +5208,10 @@ doses	NNS	UNIT
 with	IN	O
 food	NN	O
 for	IN	O
-15	CD	O
+15	CD	PER
 to	TO	O
-20	CD	O
-weeks	NNS	O
+20	CD	PER
+weeks	NNS	PER
 .	.	O
 
 The	DT	O
@@ -5330,9 +5330,9 @@ is	VBZ	O
 40	CD	DOS
 mg	NN	UNIT
 administered	VBN	O
-every	DT	O
-other	JJ	O
-week	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+week	NN	FREQ
 .	.	O
 
 Dosage	NN	O
@@ -5663,8 +5663,8 @@ daily	RB	FREQ
 ,	,	O
 and	CC	O
 after	IN	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 at	IN	O
 the	DT	O
 starting	VBG	O
@@ -5694,8 +5694,8 @@ dosage	NN	O
 increases	NNS	O
 being	VBG	O
 about	IN	O
-3	CD	O
-weeks	NNS	O
+3	CD	PER
+weeks	NNS	PER
 apart	RB	O
 .	.	O
 
@@ -6201,7 +6201,7 @@ roughly	RB	O
 3	CD	DOS
 mg	NN	UNIT
 /	NNP	O
-dL	NN	UNIT
+dL	NN	O
 or	CC	O
 265	CD	DOS
 μmol	JJ	UNIT
@@ -6420,10 +6420,10 @@ mg	NNS	UNIT
 /	JJ	FREQ
 day	NN	FREQ
 for	IN	O
-7	CD	O
+7	CD	PER
 to	TO	O
-10	CD	O
-days	NNS	O
+10	CD	PER
+days	NNS	PER
 .	.	O
 
 This	DT	O
@@ -6964,8 +6964,8 @@ recommended	VBN	O
 Clearance	NN	O
 measurements	NNS	O
 using	VBG	O
-single	JJ	O
-injection	NN	O
+single	JJ	DOS
+injection	NN	UNIT
 techniques	NNS	O
 are	VBP	O
 generally	RB	O
@@ -7812,7 +7812,7 @@ doses	NNS	O
 ,	,	O
 the	DT	O
 maximum	NN	O
-recommended	VBD	FREQ
+recommended	VBD	O
 daily	JJ	FREQ
 dosage	NN	O
 is	VBZ	O
@@ -8373,8 +8373,8 @@ mg	JJ	UNIT
 day	NN	FREQ
 ,	,	O
 in	IN	O
-single	JJ	O
-doses	NNS	O
+single	JJ	DOS
+doses	NNS	UNIT
 .	.	O
 
 If	IN	O
@@ -8430,8 +8430,8 @@ or	CC	O
 valproate	NN	O
 .	.	O
 
-Three	CD	O
-weeks	NNS	O
+Three	CD	PER
+weeks	NNS	PER
 constitutes	VBZ	O
 an	DT	O
 adequate	JJ	O
@@ -8881,11 +8881,11 @@ kg	NNS	WHO
 
 ERPF	NNP	O
 =	VBD	O
-8	CD	DOS
+8	CD	O
 x	JJ	O
-1.5	CD	DOS
+1.5	CD	O
 /	JJ	O
-0.02	CD	DOS
+0.02	CD	O
 =	JJ	O
 600	CD	DOS
 mL	NN	UNIT
@@ -9775,8 +9775,8 @@ RESPICLICK	NNP	WHO
 14	CD	DOS
 mcg	NN	UNIT
 after	IN	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 of	IN	O
 therapy	NN	O
 ,	,	O
@@ -10009,8 +10009,8 @@ to	TO	WHO
 kg	NNS	WHO
 
 After	IN	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 at	IN	O
 the	DT	O
 starting	VBG	O
@@ -10037,8 +10037,8 @@ dosage	NN	O
 increases	NNS	O
 being	VBG	O
 about	IN	O
-3	CD	O
-weeks	NNS	O
+3	CD	PER
+weeks	NNS	PER
 apart	RB	O
 .	.	O
 
@@ -10070,10 +10070,10 @@ mg	NNS	UNIT
 /	JJ	O
 kg	NN	O
 at	IN	O
-3	CD	O
+3	CD	PER
 to	TO	O
-4	CD	O
-week	NN	O
+4	CD	PER
+week	NN	PER
 intervals	NNS	O
 ,	,	O
 after	IN	O
@@ -10435,8 +10435,8 @@ followed	VBN	O
 by	IN	O
 80	CD	DOS
 mg	NNS	UNIT
-two	CD	O
-weeks	NNS	O
+two	CD	PER
+weeks	NNS	PER
 later	RB	O
 (	(	O
 Day	NNP	O
@@ -10506,7 +10506,7 @@ to	TO	O
 four	CD	DOS
 100	CD	DOS
 mg	NN	UNIT
-vials	NNS	UNIT
+vials	NNS	O
 .	.	O
 
 Immediately	RB	O
@@ -10587,8 +10587,8 @@ of	IN	O
 U	NNP	UNIT
 /	NNP	O
 kg	NNP	O
-/	NNP	O
-week	NN	O
+/	NNP	FREQ
+week	NN	FREQ
 may	MD	O
 be	VB	O
 necessary	JJ	O
@@ -10642,8 +10642,8 @@ a	DT	O
 single	JJ	DOS
 0.075	CD	DOS
 mg	NN	UNIT
-intravenous	JJ	O
-dose	NN	O
+intravenous	JJ	UNIT
+dose	NN	UNIT
 administered	VBD	O
 over	IN	O
 10	CD	O
@@ -10728,8 +10728,8 @@ of	IN	O
 no	DT	O
 less	JJR	O
 than	IN	O
-1	CD	O
-week	NN	O
+1	CD	PER
+week	NN	PER
 .	.	O
 
 A	DT	O
@@ -10860,8 +10860,8 @@ flare	NN	O
 occurs	VBZ	O
 less	JJR	O
 than	IN	O
-6	CD	O
-weeks	NNS	O
+6	CD	PER
+weeks	NNS	PER
 after	IN	O
 the	DT	O
 last	JJ	O
@@ -10910,7 +10910,7 @@ cells	NNS	UNIT
 /	JJ	O
 mm³	NN	O
 for	IN	O
-a	DT	PER
+a	DT	O
 week	NN	PER
 or	CC	O
 longer	JJR	O
@@ -10960,7 +10960,7 @@ i.e	FW	O
 ,	,	O
 0.05	CD	DOS
 mL	NN	UNIT
-injection	NN	O
+injection	NN	UNIT
 intradermally	RB	O
 to	TO	O
 be	VB	O
@@ -11075,9 +11075,9 @@ than	IN	O
 mg	NNS	UNIT
 in	IN	O
 any	DT	O
-4	CD	O
+4	CD	PER
 -	:	O
-week	NN	O
+week	NN	PER
 period	NN	O
 .	.	O
 
@@ -11154,7 +11154,7 @@ should	MD	O
 be	VB	O
 withheld	VBN	O
 and	CC	O
-weekly	JJ	O
+weekly	JJ	FREQ
 monitoring	NN	O
 instituted	VBN	O
 .	.	O
@@ -11162,12 +11162,12 @@ instituted	VBN	O
 Fluid	NNP	O
 intake	NN	O
 for	IN	O
-the	DT	O
-infant	NN	O
-receiving	VBG	O
-central	JJ	O
-venous	JJ	O
-TPN	NNP	O
+the	DT	WHO
+infant	NN	WHO
+receiving	VBG	WHO
+central	JJ	WHO
+venous	JJ	WHO
+TPN	NNP	WHO
 should	MD	O
 be	VB	O
 approximately	RB	O
@@ -11604,8 +11604,8 @@ mg	JJ	UNIT
 day	NN	FREQ
 in	IN	O
 any	DT	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 .	.	O
 
 If	IN	O
@@ -12026,8 +12026,8 @@ a	DT	O
 continuing	VBG	O
 rate	NN	O
 of	IN	O
-1	CD	O
-AMICAR	NNP	O
+1	CD	DOS
+AMICAR	NNP	UNIT
 (	(	O
 aminocaproic	JJ	O
 acid	NN	O
@@ -13114,10 +13114,10 @@ Sprinkle	NNP	O
 is	VBZ	O
 recommended	VBN	O
 for	IN	O
-up	RB	O
-to	TO	O
-12	CD	O
-weeks	NNS	O
+up	RB	PER
+to	TO	PER
+12	CD	PER
+weeks	NNS	PER
 in	IN	O
 pediatric	JJ	WHO
 patients	NNS	WHO
@@ -13159,7 +13159,7 @@ daily	RB	FREQ
 in	IN	O
 the	DT	O
 first	JJ	O
-week	NN	O
+week	NN	PER
 ,	,	O
 followed	VBN	O
 by	IN	O
@@ -13170,7 +13170,7 @@ daily	RB	FREQ
 in	IN	O
 the	DT	O
 second	JJ	O
-week	NN	O
+week	NN	PER
 and	CC	O
 8	CD	DOS
 mg	NN	UNIT
@@ -13460,8 +13460,8 @@ Free	JJ	O
 Injection	NN	O
 System	NNP	O
 (	(	O
-18	CD	O
-through	IN	O
+18	CD	WHO
+through	IN	WHO
 64	CD	WHO
 years	NNS	WHO
 of	IN	WHO
@@ -13485,7 +13485,7 @@ of	IN	O
 the	DT	O
 12.5	CD	DOS
 mg	NN	UNIT
-dose	JJ	O
+dose	JJ	UNIT
 increase	NN	O
 the	DT	O
 risk	NN	O
@@ -13537,8 +13537,8 @@ mg	NNS	UNIT
 during	IN	O
 the	DT	O
 first	JJ	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 .	.	O
 
 Acetylcysteine	NNP	O
@@ -13605,7 +13605,7 @@ volume	NN	O
 as	IN	O
 a	DT	O
 single	JJ	DOS
-intramuscular	JJ	UNIT
+intramuscular	JJ	O
 injection	NN	UNIT
 into	IN	O
 the	DT	O
@@ -13720,10 +13720,10 @@ course	NN	O
 of	IN	O
 treatment	NN	O
 is	VBZ	O
-15	CD	O
+15	CD	PER
 –	JJ	O
-20	CD	O
-weeks	NNS	O
+20	CD	PER
+weeks	NNS	PER
 .	.	O
 
 The	DT	O
@@ -14045,8 +14045,8 @@ mg	NNS	UNIT
 /	JJ	FREQ
 day	NN	FREQ
 after	IN	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 if	IN	O
 ADHD	NNP	O
 symptoms	NNS	O
@@ -15253,7 +15253,7 @@ attain	VB	O
 trough	JJ	O
 concentrations	NNS	O
 of	IN	O
-5	CD	O
+5	CD	DOS
 to	TO	O
 15	CD	DOS
 ng	NNS	UNIT
@@ -15385,10 +15385,10 @@ burning	NN	O
 /	NN	O
 stinging	VBG	O
 for	IN	O
-up	IN	O
-to	TO	O
-4	CD	O
-days	NNS	O
+up	IN	PER
+to	TO	PER
+4	CD	PER
+days	NNS	PER
 following	VBG	O
 corneal	JJ	O
 refractive	JJ	O
@@ -15862,8 +15862,8 @@ and	CC	O
 through	IN	O
 the	DT	O
 first	JJ	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 of	IN	O
 the	DT	O
 postoperative	JJ	O
@@ -16746,7 +16746,7 @@ end	NN	O
 of	IN	O
 the	DT	O
 first	JJ	O
-week	NN	O
+week	NN	PER
 to	TO	O
 50	CD	DOS
 mg	NNS	UNIT
@@ -17015,12 +17015,12 @@ by	IN	O
 40	CD	DOS
 mg	NNS	UNIT
 given	VBN	O
-every	DT	O
-other	JJ	O
-week	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+week	NN	FREQ
 starting	VBG	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 after	IN	O
 the	DT	O
 initial	JJ	O
@@ -17094,10 +17094,10 @@ regard	NN	O
 to	TO	O
 meals	NNS	O
 for	IN	O
-15	CD	O
-to	TO	O
-20	CD	O
-weeks	NNS	O
+15	CD	PER
+to	TO	PER
+20	CD	PER
+weeks	NNS	PER
 (	(	O
 see	VB	O
 Table	NNP	O
@@ -17499,11 +17499,11 @@ morning	NN	O
 and	CC	O
 evening	NN	O
 for	IN	O
-up	IN	O
-to	TO	O
-2	CD	O
-consecutive	JJ	O
-weeks	NNS	O
+up	IN	PER
+to	TO	PER
+2	CD	PER
+consecutive	JJ	PER
+weeks	NNS	PER
 .	.	O
 
 Patients	NNS	WHO
@@ -17657,7 +17657,7 @@ administered	VBN	O
 in	IN	O
 5	CD	DOS
 mg	NN	UNIT
-increments	NNS	UNIT
+increments	NNS	O
 .	.	O
 
 The	DT	O
@@ -17863,7 +17863,7 @@ over	IN	O
 the	DT	O
 next	JJ	O
 several	JJ	O
-weeks	NNS	O
+weeks	NNS	PER
 up	RB	O
 to	TO	O
 a	DT	O
@@ -19805,13 +19805,13 @@ status	NN	O
 is	VBZ	O
 essential	JJ	O
 in	IN	O
-any	DT	O
-patient	NN	O
-with	IN	O
-a	DT	O
-primary	JJ	O
-immunodeficiency	NN	O
-disease	NN	O
+any	DT	WHO
+patient	NN	WHO
+with	IN	WHO
+a	DT	WHO
+primary	JJ	WHO
+immunodeficiency	NN	WHO
+disease	NN	WHO
 and	CC	O
 should	MD	O
 be	VB	O
@@ -20156,7 +20156,7 @@ of	IN	O
 the	DT	O
 10	CD	DOS
 mg	NN	UNIT
-dose	JJ	O
+dose	JJ	UNIT
 increase	NN	O
 the	DT	O
 risk	NN	O
@@ -21015,10 +21015,10 @@ possible	JJ	O
 ,	,	O
 be	VB	O
 discontinued	VBN	O
-two	CD	O
+two	CD	PER
 to	TO	O
-three	CD	O
-days	NNS	O
+three	CD	PER
+days	NNS	PER
 prior	RB	O
 to	TO	O
 beginning	VBG	O
@@ -21332,8 +21332,8 @@ is	VBZ	O
 U	NNP	UNIT
 /	NNP	O
 kg	FW	O
-per	IN	O
-week	NN	O
+per	IN	FREQ
+week	NN	FREQ
 .	.	O
 
 When	WRB	O
@@ -21743,9 +21743,9 @@ than	IN	O
 packets	NNS	UNIT
 for	IN	O
 the	DT	O
-6	CD	O
+6	CD	PER
 -	:	O
-week	NN	O
+week	NN	PER
 treatment	NN	O
 period	NN	O
 .	.	O
@@ -22360,8 +22360,8 @@ be	VB	O
 used	VBN	O
 .	.	O
 
-Most	JJS	O
-patients	NNS	O
+Most	JJS	WHO
+patients	NNS	WHO
 will	MD	O
 experience	VB	O
 an	DT	O
@@ -23612,9 +23612,9 @@ than	IN	O
 packets	NNS	UNIT
 for	IN	O
 the	DT	O
-16	CD	O
+16	CD	PER
 -	:	O
-week	NN	O
+week	NN	PER
 treatment	NN	O
 period	NN	O
 .	.	O
@@ -23981,18 +23981,18 @@ for	IN	O
 tablets	NNS	O
 on	IN	O
 a	DT	O
-mg	JJ	O
+mg	JJ	UNIT
 -	:	O
 per	IN	O
 -	:	O
-mg	NN	O
+mg	NN	UNIT
 basis	NN	O
 up	RB	O
 to	TO	O
 the	DT	O
 25	CD	DOS
 mg	NN	UNIT
-dose	JJ	O
+dose	JJ	UNIT
 level	NN	O
 .	.	O
 
@@ -24054,8 +24054,8 @@ weight	NN	O
 Adjust	NNP	O
 dose	NN	O
 at	IN	O
-2	CD	O
-week	NN	O
+2	CD	PER
+week	NN	PER
 intervals	NNS	O
 as	IN	O
 needed	VBN	O
@@ -24066,7 +24066,7 @@ maintain	VB	O
 trough	JJ	O
 concentrations	NNS	O
 of	IN	O
-5	CD	O
+5	CD	DOS
 to	TO	O
 15	CD	DOS
 ng	NNS	UNIT
@@ -24195,8 +24195,8 @@ continuing	VBG	O
 throughout	IN	O
 the	DT	O
 first	JJ	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 of	IN	O
 the	DT	O
 postoperative	JJ	O
@@ -24420,12 +24420,12 @@ Free	JJ	O
 Injection	NN	O
 System	NNP	O
 (	(	O
-18	CD	O
-through	IN	O
-64	CD	O
-years	NNS	O
-of	IN	O
-age	NN	O
+18	CD	WHO
+through	IN	WHO
+64	CD	WHO
+years	NNS	WHO
+of	IN	WHO
+age	NN	WHO
 )	)	O
 .	.	O
 
@@ -24475,8 +24475,8 @@ ritonavir	NN	WHO
 for	IN	O
 at	IN	O
 least	JJS	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 ,	,	O
 start	VBP	O
 ADCIRCA	NNP	O
@@ -24567,8 +24567,8 @@ day	NN	FREQ
 After	IN	O
 at	IN	O
 least	JJS	O
-one	CD	O
-week	NN	O
+one	CD	PER
+week	NN	PER
 following	VBG	O
 the	DT	O
 initiation	NN	O
@@ -25961,10 +25961,10 @@ untreated	VBN	WHO
 with	IN	WHO
 interferon	NN	WHO
 is	VBZ	O
-24	CD	O
+24	CD	PER
 to	TO	O
-48	CD	O
-weeks	NNS	O
+48	CD	PER
+weeks	NNS	PER
 .	.	O
 
 Revised	VBN	O
@@ -27111,13 +27111,13 @@ twice	RB	FREQ
 daily	RB	FREQ
 the	DT	O
 first	JJ	O
-week	NN	O
+week	NN	PER
 and	CC	O
 once	RB	FREQ
 daily	JJ	FREQ
 the	DT	O
 second	JJ	O
-week	NN	O
+week	NN	PER
 .	.	O
 
 After	IN	O
@@ -27430,10 +27430,10 @@ doses	NNS	UNIT
 with	IN	O
 food	NN	O
 for	IN	O
-15	CD	O
+15	CD	PER
 to	TO	O
-20	CD	O
-weeks	NNS	O
+20	CD	PER
+weeks	NNS	PER
 .	.	O
 
 The	DT	O
@@ -27449,8 +27449,8 @@ mg	JJ	UNIT
 day	NN	FREQ
 ,	,	O
 in	IN	O
-single	JJ	O
-doses	NNS	O
+single	JJ	DOS
+doses	NNS	UNIT
 taken	VBN	O
 in	IN	O
 the	DT	O
@@ -27585,8 +27585,8 @@ thereafter	RB	O
 
 If	IN	O
 after	IN	O
-4	CD	O
-weeks	NNS	O
+4	CD	PER
+weeks	NNS	PER
 the	DT	O
 dosage	NN	O
 is	VBZ	O
@@ -27914,10 +27914,10 @@ duration	NN	O
 of	IN	O
 treatment	NN	O
 is	VBZ	O
-7	CD	O
+7	CD	PER
 to	TO	O
-10	CD	O
-days	NNS	O
+10	CD	PER
+days	NNS	PER
 .	.	O
 
 To	TO	O
@@ -28241,10 +28241,10 @@ injection	NN	O
 may	MD	O
 be	VB	O
 stored	VBN	O
-up	IN	O
-to	TO	O
-14	CD	O
-days	NNS	O
+up	IN	PER
+to	TO	PER
+14	CD	PER
+days	NNS	PER
 when	WRB	O
 refrigerated	VBN	O
 [	RB	O
@@ -28614,8 +28614,8 @@ the	DT	O
 starting	NN	O
 dosage	NN	O
 after	IN	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 of	IN	O
 therapy	NN	O
 ,	,	O
@@ -28913,8 +28913,8 @@ followed	VBN	O
 by	IN	O
 80	CD	DOS
 mg	NNS	UNIT
-two	CD	O
-weeks	NNS	O
+two	CD	PER
+weeks	NNS	PER
 later	RB	O
 (	(	O
 Day	NNP	O
@@ -29194,8 +29194,8 @@ toxicity	NN	O
 During	IN	O
 withdrawal	NN	O
 ,	,	O
-some	DT	O
-patients	NNS	O
+some	DT	WHO
+patients	NNS	WHO
 may	MD	O
 experience	VB	O
 symptoms	NNS	O
@@ -29600,10 +29600,10 @@ or	CC	O
 mg	NNS	UNIT
 daily	RB	FREQ
 for	IN	O
-5	CD	O
+5	CD	PER
 to	TO	O
-10	CD	O
-days	NNS	O
+10	CD	PER
+days	NNS	PER
 .	.	O
 
 Note	NN	O
@@ -30536,10 +30536,10 @@ mL	NNS	UNIT
 at	IN	O
 intervals	NNS	O
 of	IN	O
-1	CD	O
+1	CD	PER
 to	TO	O
-3	CD	O
-days	NNS	O
+3	CD	PER
+days	NNS	PER
 .	.	O
 
 In	IN	O
@@ -30991,8 +30991,8 @@ PROVERA	NNP	O
 Sterile	NNP	O
 Aqueous	NNP	O
 Suspension	NNP	O
-per	IN	O
-week	NN	O
+per	IN	FREQ
+week	NN	FREQ
 are	VBP	O
 recommended	VBN	O
 initially	RB	O
@@ -31339,8 +31339,8 @@ AMJEVITA	NNP	O
 to	TO	O
 40	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-week	NN	O
+every	DT	FREQ
+week	NN	FREQ
 .	.	O
 
 In	IN	O
@@ -31552,7 +31552,7 @@ single	JJ	DOS
 0.5	CD	DOS
 -	:	O
 mL	NN	UNIT
-dose	NN	O
+dose	NN	UNIT
 .	.	O
 
 In	IN	O
@@ -31981,8 +31981,8 @@ day	NN	FREQ
 for	IN	O
 the	DT	O
 next	JJ	O
-3	CD	O
-weeks	NNS	O
+3	CD	PER
+weeks	NNS	PER
 ,	,	O
 and	CC	O
 then	RB	O
@@ -32211,8 +32211,8 @@ the	DT	O
 upper	JJ	O
 limit	NN	O
 of	IN	O
-35	CD	O
-μmol	JJ	O
+35	CD	DOS
+μmol	JJ	UNIT
 /	NNP	O
 hr	NN	O
 /	NNP	O
@@ -32222,8 +32222,8 @@ occurred	VBN	O
 on	IN	O
 occasion	NN	O
 in	IN	O
-several	JJ	O
-patients	NNS	O
+several	JJ	WHO
+patients	NNS	WHO
 ,	,	O
 and	CC	O
 have	VBP	O
@@ -32303,10 +32303,10 @@ orally	RB	O
 once	RB	FREQ
 daily	JJ	FREQ
 for	IN	O
-up	IN	O
-to	TO	O
-8	CD	O
-weeks	NNS	O
+up	IN	PER
+to	TO	PER
+8	CD	PER
+weeks	NNS	PER
 .	.	O
 
 c.	NN	O
@@ -32705,11 +32705,11 @@ a	DT	O
 single	JJ	DOS
 intravenous	JJ	UNIT
 injection	NN	UNIT
-every	DT	O
-21	CD	O
+every	DT	FREQ
+21	CD	FREQ
 to	TO	O
-28	CD	O
-days	NNS	O
+28	CD	FREQ
+days	NNS	FREQ
 .	.	O
 
 The	DT	O
@@ -32985,8 +32985,8 @@ by	IN	O
 an	DT	O
 interval	NN	O
 of	IN	O
-8	CD	O
-weeks	NNS	O
+8	CD	PER
+weeks	NNS	PER
 )	)	O
 .	.	O
 
@@ -33201,7 +33201,7 @@ a	DT	O
 single	JJ	DOS
 0.5	CD	DOS
 mL	NN	UNIT
-intramuscular	JJ	UNIT
+intramuscular	JJ	O
 injection	NN	UNIT
 ,	,	O
 preferably	RB	O
@@ -33466,9 +33466,9 @@ mg	NN	UNIT
 /	NN	O
 kg	NN	O
 at	IN	O
-2	CD	O
+2	CD	PER
 -	:	O
-week	NN	O
+week	NN	PER
 intervals	NNS	O
 for	IN	O
 the	DT	O
@@ -33477,9 +33477,9 @@ first	JJ	O
 doses	NNS	O
 and	CC	O
 at	IN	O
-4	CD	O
+4	CD	PER
 -	:	O
-week	NN	O
+week	NN	PER
 intervals	NNS	O
 thereafter	RB	O
 .	.	O
@@ -33700,7 +33700,7 @@ mg	NN	UNIT
 of	IN	O
 prednisolone	NN	O
 for	IN	O
-a	DT	PER
+a	DT	O
 week	NN	PER
 followed	VBN	O
 by	IN	O
@@ -33751,7 +33751,7 @@ in	IN	O
 clinical	JJ	O
 studies	NNS	O
 in	IN	O
-patients	NNS	O
+patients	NNS	WHO
 .	.	O
 
 For	IN	O
@@ -33959,8 +33959,8 @@ effects	NNS	O
 during	IN	O
 the	DT	O
 first	JJ	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 ,	,	O
 as	IN	O
 tolerated	VBN	O
@@ -33984,8 +33984,8 @@ is	VBZ	O
 smaller	JJR	O
 .	.	O
 
-Two	CD	O
-weeks	NNS	O
+Two	CD	PER
+weeks	NNS	PER
 later	RB	O
 (	(	O
 Day	NNP	O
@@ -33998,9 +33998,9 @@ dose	NN	O
 of	IN	O
 40	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-other	JJ	O
-week	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+week	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -34106,8 +34106,8 @@ week	NN	FREQ
 for	IN	O
 a	DT	O
 full	JJ	O
-16	CD	O
-weeks	NNS	O
+16	CD	PER
+weeks	NNS	PER
 to	TO	O
 a	DT	O
 defined	VBN	O
@@ -34218,8 +34218,8 @@ phototoxic	NN	O
 erythema	NN	O
 .	.	O
 
-Two	CD	O
-weeks	NNS	O
+Two	CD	PER
+weeks	NNS	PER
 later	RB	O
 (	(	O
 Day	NNP	O
@@ -34232,9 +34232,9 @@ dose	NN	O
 of	IN	O
 40	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-other	JJ	O
-week	NN	O
+every	DT	FREQ
+other	JJ	FREQ
+week	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -34250,7 +34250,7 @@ day	NN	FREQ
 THE	DT	O
 100	CD	DOS
 mg	NN	UNIT
-VIALS	NNP	UNIT
+VIALS	NNP	O
 DO	NNP	O
 NOT	NNP	O
 CONTAIN	NNP	O
@@ -35078,7 +35078,7 @@ daily	RB	FREQ
 for	IN	O
 a	DT	O
 five	CD	PER
--	:	PER
+-	:	O
 day	NN	PER
 course	NN	O
 .	.	O
@@ -35392,8 +35392,8 @@ the	DT	O
 starting	VBG	O
 dose	NN	O
 after	IN	O
-2	CD	O
-weeks	NNS	O
+2	CD	PER
+weeks	NNS	PER
 of	IN	O
 therapy	NN	O
 ,	,	O
@@ -35561,7 +35561,7 @@ VIII	NNP	O
 per	IN	O
 kg	NN	O
 body	NN	O
-weight	JJ	FREQ
+weight	JJ	O
 every	DT	FREQ
 other	JJ	FREQ
 day	NN	FREQ
@@ -35665,10 +35665,10 @@ to	TO	O
 baseline	NN	O
 levels	NNS	O
 in	IN	O
-one	CD	O
+one	CD	PER
 to	TO	O
-two	CD	O
-weeks	NNS	O
+two	CD	PER
+weeks	NNS	PER
 ,	,	O
 possibly	RB	O
 rebounding	VBG	O
@@ -35895,8 +35895,8 @@ of	IN	O
 no	DT	O
 less	JJR	O
 than	IN	O
-1	CD	O
-week	NN	O
+1	CD	PER
+week	NN	PER
 [	NNP	O
 see	VBP	O
 Clinical	JJ	O
@@ -36849,10 +36849,10 @@ the	DT	O
 starting	VBG	O
 dose	NN	O
 after	IN	O
-3	CD	O
+3	CD	PER
 -	:	O
-4	CD	O
-weeks	NNS	O
+4	CD	PER
+weeks	NNS	PER
 of	IN	O
 therapy	NN	O
 ,	,	O
@@ -36972,10 +36972,10 @@ doses	NNS	UNIT
 with	IN	O
 food	NN	O
 for	IN	O
-15	CD	O
+15	CD	PER
 to	TO	O
-20	CD	O
-weeks	NNS	O
+20	CD	PER
+weeks	NNS	PER
 .	.	O
 
 The	DT	O
@@ -37767,8 +37767,8 @@ daily	RB	FREQ
 for	IN	O
 the	DT	O
 next	JJ	O
-3	CD	O
-weeks	NNS	O
+3	CD	PER
+weeks	NNS	PER
 ,	,	O
 and	CC	O
 then	RB	O
@@ -37896,16 +37896,16 @@ daily	RB	FREQ
 .	.	O
 
 A	DT	O
-previously	RB	O
-unvaccinated	JJ	O
-infant	NN	O
-,	,	O
-7	CD	O
-to	TO	O
-11	CD	O
-months	NNS	O
-of	IN	O
-age	NN	O
+previously	RB	WHO
+unvaccinated	JJ	WHO
+infant	NN	WHO
+,	,	WHO
+7	CD	WHO
+to	TO	WHO
+11	CD	WHO
+months	NNS	WHO
+of	IN	WHO
+age	NN	WHO
 ,	,	O
 should	MD	O
 receive	VB	O
@@ -37921,9 +37921,9 @@ b	NN	O
 Conjugate	NNP	O
 Vaccine	NNP	O
 at	IN	O
-8	CD	O
+8	CD	PER
 -	:	O
-week	NN	O
+week	NN	PER
 intervals	NNS	O
 ,	,	O
 followed	VBN	O
@@ -38257,8 +38257,8 @@ diluted	VBN	O
 Adjust	NNP	O
 dose	NN	O
 at	IN	O
-2	CD	O
-week	NN	O
+2	CD	PER
+week	NN	PER
 intervals	NNS	O
 as	IN	O
 needed	VBN	O

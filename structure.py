@@ -3,7 +3,7 @@ from sklearn.externals import joblib
 from apted import helpers,apted, Config
 import subprocess
 import re
-from model import label
+from model import Model
 
 clf = joblib.load('model.pkl')
 
@@ -44,7 +44,8 @@ def convert_to_ne_text_tree(sentence):
     returns a bracket notation tree
     """
 
-    ne_labels = label(sentence)
+    model = Model()
+    ne_labels = model.label(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 

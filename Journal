@@ -253,3 +253,40 @@ nodes, just the structure
 -nltk.word_tokenize identifies the last dot in 'e.g.' as sentence ending, so it splits 'e.g.' into two entities. fixing
     by removing the last dot in every word that has one except for the last word in the sentence.
 -created Model class
+
+24.Apr.2018
+-solve issues x mai multe ori
+-add features for to / or / - / /
+-augment dataset
+-enlarge dataset with sentences containing relevant info
+-enlarge dataset with sentences containing irrelevant info
+-add button for generating model on GUI
+-change button label to write "extract NE"
+
+27.Apr.2018
+-manually checked WHO labels until 13465
+
+28.Apr.2018
+-check consistency for:
+    - "with ages between x and y and weight < z"
+    -   average	JJ	O
+        adult	NN	WHO
+        patient	NN	WHO
+        ,	,	O
+        not	RB	O
+        hypermetabolic	JJ	O
+        ,	,	O
+        in	IN	O
+        an	DT	O
+        acceptable	JJ	O
+        weight	NN	O
+        range	NN	O
+        and	CC	O
+        with	IN	O
+        restricted	JJ	O
+        physical	JJ	O
+        activity	NN	O
+    - CHILD PUGH SCORE
+    -specifying age in parenthesis
+    -SOME PATIENTS
+    -in an acceptable weight range ......

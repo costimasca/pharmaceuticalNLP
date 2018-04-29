@@ -142,13 +142,13 @@ def writeTsv(sentences, name):
 
 def gen_test_train_files(corpus_file='corp.tsv'):
     """Given the .tsv corp file, it will generate 2 disjoint files, "train.tsv" and "test.tsv",
-    whose cardinality is in a 80%/20% ratio. """
+    whose cardinality is in a 90%/10% ratio. """
     sentences = loadCorpus(corpus_file)
 
     import random
-    test_number = int(len(sentences) * 0.2)
+    test_number = int(len(sentences) * 0.1)
     test = random.sample(sentences, test_number)
-    train = list(sent for sent in sentences if not sent in test)
+    train = list(sent for sent in sentences if sent not in test)
 
     writeTsv(train, "train.tsv")
     writeTsv(test, "test.tsv")
@@ -171,7 +171,7 @@ def word2features(sent, i):
         'word[-2:]': word[-2:],
         'word.isupper()': word.isupper(),
         'word.istitle()': word.istitle(),
-        'word.isdigit()': word.isdigit(),
+        'word.isdigit()': word.isdigit() or postag == 'CD',
         'word.ispunctuation()': ispunctuation(word),
         'postag': postag,
         'postag[:2]': postag[:2],
@@ -184,6 +184,7 @@ def word2features(sent, i):
             '-2:word.lower()': word2.lower(),
             '-2:word.istitle()': word2.istitle(),
             '-2:word.isupper()': word2.isupper(),
+            '-2:word.isdigit()': word2.isdigit() or postag2 == 'CD',
             '-2:postag': postag2,
             '-2:postag[:2]': postag2[:2],
         })
@@ -195,6 +196,7 @@ def word2features(sent, i):
             '-1:word.lower()': word1.lower(),
             '-1:word.istitle()': word1.istitle(),
             '-1:word.isupper()': word1.isupper(),
+            '-1:word.isdigit()': word1.isdigit() or postag1 == 'CD',
             '-1:postag': postag1,
             '-1:postag[:2]': postag1[:2],
         })
@@ -208,6 +210,7 @@ def word2features(sent, i):
             '+2:word.lower()': word2.lower(),
             '+2:word.istitle()': word2.istitle(),
             '+2:word.isupper()': word2.isupper(),
+            '+2:word.isdigit()': word2.isdigit() or postag2 == 'CD',
             '+2:postag': postag2,
             '+2:postag[:2]': postag2[:2],
         })
@@ -219,6 +222,7 @@ def word2features(sent, i):
             '+3:word.lower()': word3.lower(),
             '+3:word.istitle()': word3.istitle(),
             '+3:word.isupper()': word3.isupper(),
+            '+3:word.isdigit()': word3.isdigit() or postag3 == 'CD',
             '+3:postag': postag3,
             '+3:postag[:2]': postag3[:2],
         })
@@ -230,6 +234,7 @@ def word2features(sent, i):
             '+1:word.lower()': word1.lower(),
             '+1:word.istitle()': word1.istitle(),
             '+1:word.isupper()': word1.isupper(),
+            '+1:word.isdigit()': word1.isdigit() or postag1 == 'CD',
             '+1:postag': postag1,
             '+1:postag[:2]': postag1[:2],
         })
@@ -456,5 +461,28 @@ def sent_file_to_unlab_corp():
         f.close()
 
 
+def calc_performance(valid):
+    """calculates the performance for a model on the given validation dataset"""
+    test = loadCorpus(valid)
+
+    X_test = [sent2features(s) for s in test]
+    y_test = [sent2labels(s) for s in test]
+
+    crf = joblib.load('model.pkl')
+    y_pred = crf.predict(X_test)
+
+    labels = list(crf.classes_)
+    labels.remove('O')
+    sorted_labels = sorted(
+        labels,
+        key=lambda name: (name[1:], name[0])
+    )
+
+    return metrics.flat_classification_report(
+        y_test, y_pred, labels=sorted_labels, digits=3
+    )
+
+
 if __name__ == '__main__':
     print()
+    print(calc_performance('tmp_validation.tsv'))
