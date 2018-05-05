@@ -904,7 +904,7 @@ gradually	RB	O
 over	IN	O
 the	DT	O
 next	JJ	O
-several	JJ	O
+several	JJ	PER
 weeks	NNS	PER
 ,	,	O
 up	RB	O
@@ -10681,7 +10681,7 @@ administer	VB	O
 this	DT	O
 product	NN	O
 under	IN	O
-adult	JJ	O
+adult	JJ	WHO
 supervision	NN	O
 .	.	O
 
@@ -14396,7 +14396,7 @@ given	VBN	O
 in	IN	O
 divided	JJ	O
 doses	NNS	O
-two	CD	O
+two	CD	FREQ
 ,	,	O
 three	CD	FREQ
 or	CC	O
@@ -17862,7 +17862,7 @@ gradually	RB	O
 over	IN	O
 the	DT	O
 next	JJ	O
-several	JJ	O
+several	JJ	PER
 weeks	NNS	PER
 up	RB	O
 to	TO	O
@@ -18897,7 +18897,7 @@ clarithromycin	NN	O
 and	CC	O
 30	CD	DOS
 mg	NN	UNIT
-lansoprazole	NN	UNIT
+lansoprazole	NN	O
 ,	,	O
 all	DT	O
 given	VBN	O
@@ -19642,10 +19642,10 @@ switching	VBG	WHO
 to	TO	WHO
 AIRDUO	NNP	WHO
 RESPICLICK	NNP	WHO
-from	IN	O
-another	DT	O
-inhaled	VBN	O
-corticosteroid	NN	O
+from	IN	WHO
+another	DT	WHO
+inhaled	VBN	WHO
+corticosteroid	NN	WHO
 or	CC	O
 combination	NN	O
 product	NN	O
@@ -24604,9 +24604,9 @@ men	NNS	WHO
 ,	,	O
 taken	VBN	O
 only	RB	O
-once	RB	O
-per	IN	O
-night	NN	O
+once	RB	FREQ
+per	IN	FREQ
+night	NN	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	NN	O
@@ -28961,7 +28961,7 @@ in	IN	O
 hairy	JJ	O
 areas	NNS	O
 ,	,	O
-two	CD	O
+two	CD	FREQ
 times	NNS	FREQ
 per	IN	FREQ
 day	NN	FREQ
@@ -29266,8 +29266,8 @@ is	VBZ	O
 500	CD	DOS
 mg	NN	UNIT
 to	TO	O
-2	CD	O
-g.	NN	O
+2	CD	DOS
+g.	NN	UNIT
 To	TO	O
 minimize	VB	O
 the	DT	O
@@ -29838,9 +29838,9 @@ men	NNS	WHO
 ,	,	O
 taken	VBN	O
 only	RB	O
-once	RB	O
-per	IN	O
-night	NN	O
+once	RB	FREQ
+per	IN	FREQ
+night	NN	FREQ
 immediately	RB	O
 before	IN	O
 bedtime	NN	O
@@ -33497,7 +33497,7 @@ mg	NN	UNIT
 mL	NN	O
 )	)	O
 to	TO	O
-1:20,000	CD	DOS
+1:20,000	CD	O
 (	(	O
 0.05	CD	DOS
 mg	NN	UNIT
@@ -34629,7 +34629,7 @@ mg	NN	UNIT
 mL	NN	O
 )	)	O
 to	TO	O
-1:1,000	CD	DOS
+1:1,000	CD	O
 (	(	O
 1	CD	DOS
 mg	NN	UNIT
@@ -34911,10 +34911,10 @@ exceed	VB	O
 the	DT	O
 usual	JJ	O
 adult	NN	WHO
-dose	JJ	WHO
-Usual	NNP	WHO
+dose	JJ	O
+Usual	NNP	O
 adult	NN	WHO
-dose	NN	WHO
+dose	NN	O
 :	:	O
 Initial	JJ	O
 dose	NN	O
@@ -37211,11 +37211,11 @@ eye	NN	O
 (	(	O
 s	JJ	O
 )	)	O
-every	DT	O
-two	CD	O
+every	DT	FREQ
+two	CD	FREQ
 to	TO	O
-three	CD	O
-hours	NNS	O
+three	CD	FREQ
+hours	NNS	FREQ
 initially	RB	O
 .	.	O
 
@@ -38477,7 +38477,7 @@ AMOXIL	NNP	O
 and	CC	O
 30	CD	DOS
 mg	NN	UNIT
-lansoprazole	NN	UNIT
+lansoprazole	NN	O
 ,	,	O
 each	DT	O
 given	VBN	O

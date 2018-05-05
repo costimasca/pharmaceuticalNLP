@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from sklearn.externals import joblib
 import nltk
 
@@ -10,9 +8,9 @@ class Model:
     """
 
     def __init__(self):
-        self.clf = joblib.load('model.pkl')
+        self.crf = joblib.load('model.pkl')
 
-    def label(self, text):
+    def predict(self, text):
         """
         Labels the named entities in the given text.
         :param text: A string representation of the sentence or sentences.
@@ -20,7 +18,6 @@ class Model:
         """
 
         new_sentences = []
-
         sentences = nltk.sent_tokenize(text)
 
         for sentence in sentences:
@@ -29,7 +26,7 @@ class Model:
             tagged_words = nltk.pos_tag(word_list)
             sentence = self.sentence2features(tagged_words)
 
-            labels = self.clf.predict([sentence])[0]
+            labels = self.crf.predict([sentence])[0]
 
             new_sentences.append(list(zip(word_list, labels)))
 
@@ -121,6 +118,9 @@ class Model:
 
         return features
 
+    def save(self):
+        joblib.dump(self.crf, 'model.pkl')
+
     @staticmethod
     def __is_punctuation(word):
         if word in ['.', ',', '(', ')', '[', ']', '{', '}', ':', ';']:
@@ -153,7 +153,7 @@ class Model:
             if '/' in word:
                 word = ' / '.join(word.split('/'))
 
-            if word.endswith('.') and i < length - 1:
+            if word.endswith('.') and not word == '.' and i < length - 1:
                 word = word[:-1]
 
             new_sentence += word

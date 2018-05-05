@@ -1,11 +1,10 @@
 from model import Model
-from sklearn.externals import joblib
 import sklearn_crfsuite
 import scipy
 import sys
 from sklearn.metrics import make_scorer
 from sklearn_crfsuite import metrics
-from sklearn.grid_search import RandomizedSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 from crfUtil import gen_test_train_files, loadCorpus, view_issues
 
 sys.path.insert(0, '.')
@@ -65,7 +64,7 @@ def gen_model(train, test, writeFile=False):
     )
 
     if writeFile:
-        joblib.dump(crf, 'model.pkl')
+        model.save()
 
     return metrics.flat_classification_report(
         y_test, y_pred, labels=sorted_labels, digits=3
@@ -73,10 +72,10 @@ def gen_model(train, test, writeFile=False):
 
 
 if __name__ == '__main__':
-    gen_test_train_files('corp.tsv')
+    gen_test_train_files('corpus2.tsv')
     train = loadCorpus('train.tsv')
     test = loadCorpus('test.tsv')
 
     print(gen_model(train, test, True))
 
-    view_issues()
+    view_issues('corpus2.tsv')

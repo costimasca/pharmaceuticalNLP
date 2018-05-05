@@ -290,3 +290,8 @@ nodes, just the structure
     -specifying age in parenthesis
     -SOME PATIENTS
     -in an acceptable weight range ......
+
+30.Apr.2018
+-created folder 'sentences' that contains all sentences from all files in 'train_full'
+-split the sentences into 10 subgroups which will be corrected then added to the main corpus file
+-added 'sentences_0' to the main corpus
