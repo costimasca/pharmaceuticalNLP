@@ -1,3 +1,6 @@
+"""
+Implements the CRF model class
+"""
 from sklearn.externals import joblib
 import nltk
 
@@ -119,9 +122,16 @@ class Model:
         return features
 
     def save(self):
+        """
+        Saves a .pkl file with the thrained model. This can later be loaded with the load function.
+        """
         joblib.dump(self.crf, 'model.pkl')
 
     def load(self, model_file):
+        """
+        Loads a trained model into memory.
+        :param model_file: path to the model
+        """
         if not model_file.endswith('.pkl'):
             raise TypeError("Incorrect model file")
         else:
@@ -134,10 +144,20 @@ class Model:
         return False
 
     def sentence2features(self, sentence):
+        """
+        Returns a list of features for a sentence.
+        :param sentence: A list of words.
+        :return: A list of features for each word in the sentence.
+        """
         return [self.__word2features__(sentence, i) for i in range(len(sentence))]
 
     @staticmethod
     def sentence2labels(sentence):
+        """
+        Labels a sentence.
+        :param sentence: A sentence taken from the corpus file.
+        :return: A list of labels predicted by the model.
+        """
         return [label for token, pos_tag, label in sentence]
 
     @staticmethod
@@ -159,7 +179,7 @@ class Model:
             if '/' in word:
                 word = ' / '.join(word.split('/'))
 
-            if word.endswith('.') and not word == '.' and i < length - 1:
+            if word.endswith('.') and word != '.' and i < length - 1:
                 word = word[:-1]
 
             new_sentence += word

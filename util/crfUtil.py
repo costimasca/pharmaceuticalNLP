@@ -356,4 +356,4 @@ def sent_file_to_unlab_corp(file):
 
 
 if __name__ == '__main__':
-    view_issues('corpus2.tsv')
+    view_issues('model/corp.tsv')

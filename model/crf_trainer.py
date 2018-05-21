@@ -1,21 +1,37 @@
-from model.crf_model import Model
-import sklearn_crfsuite
-import scipy
-from sklearn.metrics import make_scorer
-from sklearn_crfsuite import metrics
-from sklearn.model_selection import RandomizedSearchCV
+"""
+Implements the training algorithm for the CRF model.
+"""
+import argparse
 import random
 import csv
+
+import sklearn_crfsuite
+import scipy
+
+from sklearn.metrics import make_scorer
+from sklearn.model_selection import RandomizedSearchCV
 from sklearn.externals import joblib
-import argparse
+from sklearn_crfsuite import metrics
+
+from model.crf_model import Model
 
 
 class Trainer:
+    """
+    Generates a CRF model given a data set of labeled words.
+    """
+
     def __init__(self):
         self.model = Model()
 
     def generate_model(self, data_set):
-        X_train, y_train, X_test, y_test = self.__gen_test_train__(data_set)
+        """
+        Generates a CRF model given the data set.
+        It saves the model to disk with the name 'model.pkl'.
+        :param data_set: Path to the labeled data set.
+        :return: Performance results.
+        """
+        x_train, y_train, x_test, y_test = self.gen_test_train(data_set)
 
         crf = sklearn_crfsuite.CRF(
             algorithm='lbfgs',
@@ -24,7 +40,7 @@ class Trainer:
             max_iterations=100,
             all_possible_transitions=True
         )
-        crf.fit(X_train, y_train)
+        crf.fit(x_train, y_train)
 
         labels = list(crf.classes_)
         labels.remove('O')
@@ -44,17 +60,17 @@ class Trainer:
                                 average='weighted', labels=labels)
 
         # search
-        rs = RandomizedSearchCV(crf, params_space,
-                                cv=3,
-                                verbose=1,
-                                n_jobs=-1,
-                                n_iter=50,
-                                scoring=f1_scorer)
-        rs.fit(X_train, y_train)
+        rand_search = RandomizedSearchCV(crf, params_space,
+                                         cv=3,
+                                         verbose=1,
+                                         n_jobs=-1,
+                                         n_iter=50,
+                                         scoring=f1_scorer)
+        rand_search.fit(x_train, y_train)
 
-        crf = rs.best_estimator_
+        crf = rand_search.best_estimator_
 
-        y_pred = crf.predict(X_test)
+        y_prediction = crf.predict(x_test)
 
         # group B and I results
         sorted_labels = sorted(
@@ -65,44 +81,44 @@ class Trainer:
         joblib.dump(crf, 'model.pkl')
 
         print(metrics.flat_classification_report(
-            y_test, y_pred, labels=sorted_labels, digits=3))
+            y_test, y_prediction, labels=sorted_labels, digits=3))
 
         return metrics.flat_classification_report(
-            y_test, y_pred, labels=sorted_labels, digits=3
+            y_test, y_prediction, labels=sorted_labels, digits=3
         )
 
-    def __gen_test_train__(self, corpus_file):
+    def gen_test_train(self, corpus_file):
         """
         Given the corpus file, it will generate the train and test sets
             whose cardinality is in a 90%/10% ratio.
         """
-        sentences = self.__loadCorpus__(corpus_file)
+        sentences = self.__load_corpus__(corpus_file)
 
         test_number = int(len(sentences) * 0.1)
         test = random.sample(sentences, test_number)
         train = list(sent for sent in sentences if sent not in test)
 
-        X_train = [self.model.sentence2features(s) for s in train]
+        x_train = [self.model.sentence2features(s) for s in train]
         y_train = [self.model.sentence2labels(s) for s in train]
 
-        X_test = [self.model.sentence2features(s) for s in test]
+        x_test = [self.model.sentence2features(s) for s in test]
         y_test = [self.model.sentence2labels(s) for s in test]
 
-        return X_train, y_train, X_test, y_test
+        return x_train, y_train, x_test, y_test
 
     @staticmethod
     def __write_tsv__(sentences, name):
-        with open(name, 'w') as f:
+        with open(name, 'w') as file:
             for sent in sentences:
                 for line in sent:
-                    f.write(line[0] + '\t' + line[1] + '\t' + line[2] + '\n')
-                f.write('\n')
-            f.close()
+                    file.write(line[0] + '\t' + line[1] + '\t' + line[2] + '\n')
+                file.write('\n')
+            file.close()
 
     @staticmethod
-    def __loadCorpus__(file):
-        with open(file, 'r') as f:
-            data = list(csv.reader(f, delimiter='\t'))
+    def __load_corpus__(corpus_file):
+        with open(corpus_file, 'r') as file:
+            data = list(csv.reader(file, delimiter='\t'))
 
         sentences = []
         sent = []
@@ -125,9 +141,9 @@ class Trainer:
 
 
 if __name__ == '__main__':
-    trainer = Trainer()
-    parser = argparse.ArgumentParser()
-    parser.add_argument('data_set')
-    args = parser.parse_args()
+    TRAINER = Trainer()
+    PARSER = argparse.ArgumentParser()
+    PARSER.add_argument('data_set')
+    ARGS = PARSER.parse_args()
 
-    trainer.generate_model(args.data_set)
+    TRAINER.generate_model(ARGS.data_set)
