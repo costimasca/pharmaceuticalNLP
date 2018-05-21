@@ -8,3 +8,4 @@ train.tsv
 issues.tsv
 *.png
 sentences/
+data/

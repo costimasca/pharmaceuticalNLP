@@ -1,17 +1,28 @@
 import sys
-from PyQt5 import QtWidgets, QtGui
+import threading
+from PyQt5 import QtWidgets, QtGui, QtCore
+from PyQt5.QtCore import pyqtSignal
 
-import design
-import model
+from view import design
+from model.crf_model import Model
+from model.crf_trainer import Trainer
+
+import subprocess
 
 
-class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
+class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
     def __init__(self, parent=None):
-        super(ExampleApp, self).__init__(parent)
+        super(App, self).__init__(parent)
         self.setupUi(self)
-        self.pushButton.clicked.connect(self.parse)
-        self.pushButton_2.clicked.connect(self.load_text)
-        self.model = model.Model()
+
+        self.model = Model()
+        self.trainer = Trainer()
+
+        self.pushButton.clicked.connect(self.__extract__)
+        self.pushButton_2.clicked.connect(self.__load_text__)
+        self.pushButton_3.clicked.connect(self.__train_model__)
+        self.pushButton_4.clicked.connect(self.__load_model__)
+
         self.css = '''
         label {
             font-style: normal;
@@ -42,16 +53,49 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.label_5.setText(f"<html><head/><body><p><span style=\" background-color:"
                              f"{self.color_dict['PER']};\">Period</span></p></body></html>")
 
-    def load_text(self):
-        fname = QtWidgets.QFileDialog.getOpenFileName(QtWidgets.QMainWindow(), 'Open file', '~', "All files *")
+    def __load_text__(self):
+        fname = QtWidgets.QFileDialog.getOpenFileName(QtWidgets.QMainWindow(), 'Open file', '~', "All files *")[0]
+        if not fname == '':
+            with open(fname) as f:
+                text = f.read(-1)
+                f.close()
 
-        with open(fname[0]) as f:
-            text = f.read(-1)
-            f.close()
+            self.text_doc.setHtml('<body>' + text + '</body>')
 
-        self.text_doc.setHtml('<body>' + text + '</body>')
+    def __train_finished__(self, value):
+        print('received result: ' + str(value))
+        self.pushButton_3.setText("Train")
+        self.pushButton_3.setEnabled(True)
 
-    def parse(self):
+        d = QtWidgets.QDialog()
+        b1 = QtWidgets.QPushButton("ok", d)
+        b1.move(50, 50)
+        d.setWindowTitle("Dialog")
+        d.setWindowModality(QtCore.Qt.ApplicationModal)
+        d.exec_()
+
+    def __train_model__(self):
+        def train_in_thread(data_set):
+            process = subprocess.Popen(['python', 'model/crf_trainer.py', data_set]
+                                       , stdout=subprocess.PIPE)
+            out, err = process.communicate()
+            process.wait()
+            self.__train_finished__(out)
+
+        data_set = QtWidgets.QFileDialog.getOpenFileName(QtWidgets.QMainWindow(), 'Select data set', '~', "*.tsv")[0]
+
+        thread = threading.Thread(target=train_in_thread, args=(data_set,))
+        thread.start()
+
+        self.pushButton_3.setText("Training...")
+        self.pushButton_3.setEnabled(False)
+
+    def __load_model__(self):
+        model_file = QtWidgets.QFileDialog.getOpenFileName(QtWidgets.QMainWindow(), 'Select model', '~', "*.pkl")[0]
+        if model_file:
+            self.model.load(model_file)
+
+    def __extract__(self):
         text = self.textEdit.toPlainText()
 
         parsed_sentences = self.model.predict(text)
@@ -83,7 +127,7 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
-    form = ExampleApp()
+    form = App()
     form.show()
     app.exec_()
 

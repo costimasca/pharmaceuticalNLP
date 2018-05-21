@@ -8,7 +8,7 @@ class Model:
     """
 
     def __init__(self):
-        self.crf = joblib.load('model.pkl')
+        self.crf = joblib.load('model/model.pkl')
 
     def predict(self, text):
         """
@@ -120,6 +120,12 @@ class Model:
 
     def save(self):
         joblib.dump(self.crf, 'model.pkl')
+
+    def load(self, model_file):
+        if not model_file.endswith('.pkl'):
+            raise TypeError("Incorrect model file")
+        else:
+            self.crf = joblib.load(model_file)
 
     @staticmethod
     def __is_punctuation(word):

@@ -1,6 +1,6 @@
-import crfTrainer
+from model import crf_trainer
 import random
-from crfUtil import loadCorpus
+from util.crfUtil import loadCorpus
 
 
 def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
@@ -61,7 +61,7 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
     for s in sets:
         test = s
         train = [sentence for set in sets for sentence in set if set != s]
-        data = crfTrainer.gen_model(train, test, False)
+        data = crf_trainer.gen_model(train, test, False)
         if verbose:
             print(data)
 
@@ -166,7 +166,7 @@ def error_distribution(corpus_file="corp.tsv"):
     for s in sets:
         test = s
         train = [sentence for set in sets for sentence in set if set != s]
-        data = crfTrainer.gen_model(train, test, False)
+        data = crf_trainer.gen_model(train, test, False)
 
         print(data)
 

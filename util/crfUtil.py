@@ -7,7 +7,7 @@ from sklearn.externals import joblib
 import csv
 from scipy.stats import norm
 import matplotlib.mlab as mlab
-from model import Model
+from model.crf_model import Model
 
 sys.path.insert(0, '.')
 

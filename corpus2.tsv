@@ -21,7 +21,7 @@ not	RB	O
 exceed	VB	O
 more	JJR	O
 than	IN	O
-75	CD	O
+75	CD	DOS
 to	TO	O
 150	CD	DOS
 IU	NNP	UNIT
@@ -875,7 +875,7 @@ eye	NN	O
 (	(	O
 s	NN	O
 )	)	O
-three	CD	O
+three	CD	FREQ
 -	:	O
 times	NNS	FREQ
 daily	RB	FREQ
@@ -1181,7 +1181,7 @@ syringe	NN	O
 to	TO	O
 withdraw	VB	O
 the	DT	O
-0.5	CD	O
+0.5	CD	DOS
 -	:	O
 mL	NN	UNIT
 dose	NN	UNIT
@@ -3249,7 +3249,7 @@ exception	NN	O
 of	IN	O
 heparin	NN	O
 at	IN	O
-1	CD	O
+1	CD	DOS
 to	TO	O
 2	CD	DOS
 units	NNS	UNIT
@@ -6472,7 +6472,7 @@ AAP	NNP	O
 have	VBP	O
 endorsed	VBN	O
 universal	JJ	O
-infant	JJ	O
+infant	JJ	WHO
 immunization	NN	O
 as	IN	O
 part	NN	O
@@ -6609,7 +6609,7 @@ infusion	NN	O
 at	IN	O
 zero	CD	O
 ,	,	O
-two	CD	O
+two	CD	PER
 and	CC	O
 six	CD	PER
 weeks	NNS	PER
@@ -8900,7 +8900,7 @@ dose	JJ	O
 related	VBN	O
 over	IN	O
 the	DT	O
-15	CD	O
+15	CD	DOS
 -	:	O
 50	CD	DOS
 mg	JJ	UNIT
@@ -11854,9 +11854,9 @@ in	IN	O
 a	DT	O
 single	JJ	DOS
 or	CC	O
-two	CD	O
-divided	JJ	O
-doses	NNS	O
+two	CD	DOS
+divided	JJ	UNIT
+doses	NNS	UNIT
 one	CD	O
 hour	NN	O
 before	IN	O
@@ -12800,13 +12800,13 @@ patients	NNS	WHO
 Prophylaxis	NNP	O
 of	IN	O
 an	DT	O
-infant	NN	O
-less	JJR	O
-than	IN	O
-12	CD	O
-months	NNS	O
-of	IN	O
-age	NN	O
+infant	NN	WHO
+less	JJR	WHO
+than	IN	WHO
+12	CD	WHO
+months	NNS	WHO
+of	IN	WHO
+age	NN	WHO
 with	IN	O
 0.5	CD	DOS
 mL	NNS	UNIT
@@ -13416,7 +13416,7 @@ administered	VBN	O
 (	(	O
 e.g	NN	O
 ,	,	O
-infant	JJ	O
+infant	JJ	WHO
 spits	NNS	O
 or	CC	O
 regurgitates	VBZ	O
@@ -14965,7 +14965,7 @@ fluid	NN	O
 requirements	NNS	O
 of	IN	O
 the	DT	O
-infant	NN	O
+infant	NN	WHO
 and	CC	O
 greater	JJR	O
 caloric	NN	O
@@ -18643,7 +18643,7 @@ in	IN	O
 the	DT	O
 hand	NN	O
 for	IN	O
-one	CD	DOS
+one	CD	O
 or	CC	O
 two	CD	O
 minutes	NNS	O
@@ -19963,7 +19963,7 @@ Do	NNP	O
 not	RB	O
 suction	VB	O
 the	DT	O
-infant	NN	O
+infant	NN	WHO
 during	IN	O
 the	DT	O
 first	JJ	O
@@ -20263,8 +20263,8 @@ for	IN	O
 a	DT	O
 total	NN	O
 of	IN	O
-6	CD	O
-months	NNS	O
+6	CD	PER
+months	NNS	PER
 [	JJ	O
 ie	NN	O
 ,	,	O
@@ -22658,7 +22658,7 @@ patients	NNS	WHO
 with	IN	WHO
 creatinine	JJ	WHO
 clearance	NN	WHO
-10	CD	WHO
+10	CD	DOS
 -	:	O
 30	CD	DOS
 mL	NN	UNIT
@@ -25123,7 +25123,7 @@ quarter	NN	O
 dose	NN	O
 ,	,	O
 the	DT	O
-infant	NN	O
+infant	NN	WHO
 's	POS	O
 ventilator	NN	O
 settings	NNS	O
@@ -25590,13 +25590,13 @@ supplied	VBN	O
 in	IN	O
 two	CD	O
 different	JJ	O
-two	CD	DOS
+two	CD	O
 -	:	O
 compartment	NN	O
 bags	NNS	O
 ,	,	O
-one	CD	DOS
-made	NN	UNIT
+one	CD	O
+made	NN	O
 of	IN	O
 polyvinyl	JJ	O
 chloride	NN	O
@@ -25615,8 +25615,8 @@ Figure	NNP	O
 1	CD	O
 )	)	O
 and	CC	O
-one	CD	DOS
-made	NN	UNIT
+one	CD	O
+made	NN	O
 of	IN	O
 polyolefin	NN	O
 with	IN	O
@@ -28566,8 +28566,8 @@ and	CC	WHO
 who	WP	WHO
 have	VBP	WHO
 relapsed	VBN	WHO
-at	IN	WHO
-least	JJS	WHO
+at	IN	PER
+least	JJS	PER
 6	CD	PER
 months	NNS	PER
 after	IN	O
@@ -29439,7 +29439,7 @@ listed	VBN	O
 above	IN	O
 ,	,	O
 administer	RB	O
-two	CD	O
+two	CD	DOS
 (	(	O
 2	CD	DOS
 )	)	O
@@ -32899,9 +32899,9 @@ every	DT	FREQ
 four	CD	FREQ
 hours	NNS	FREQ
 for	IN	O
-two	CD	O
+two	CD	PER
 -	:	O
-days	NNS	FREQ
+days	NNS	PER
 ,	,	O
 four	CD	FREQ
 times	NNS	FREQ
@@ -34264,8 +34264,8 @@ daily	JJ	FREQ
 and	CC	O
 at	IN	O
 least	JJS	O
-400	CD	O
-IU	NNP	O
+400	CD	DOS
+IU	NNP	UNIT
 vitamin	NN	O
 D	NNP	O
 daily	JJ	FREQ
@@ -36327,7 +36327,7 @@ mg	NNS	UNIT
 /	JJ	FREQ
 day	NN	FREQ
 (	(	O
-600	CD	O
+600	CD	DOS
 ,	,	O
 800	CD	DOS
 or	CC	O
@@ -36806,7 +36806,7 @@ dominant	JJ	O
 upper	JJ	O
 arm	NN	O
 about	IN	O
-8	CD	O
+8	CD	DOS
 -	:	O
 10	CD	DOS
 cm	NN	UNIT
@@ -41247,7 +41247,7 @@ is	VBZ	O
 mL	NN	UNIT
 (	(	O
 range	NN	O
-30	CD	O
+30	CD	DOS
 -	:	O
 50	CD	DOS
 mL	NN	UNIT
@@ -42195,7 +42195,7 @@ concentration	NN	O
 should	MD	O
 be	VB	O
 between	IN	O
-35	CD	O
+35	CD	DOS
 and	CC	O
 60	CD	DOS
 μmol	NN	UNIT
@@ -42372,7 +42372,7 @@ for	IN	O
 primidone	NN	O
 is	VBZ	O
 between	IN	O
-5	CD	O
+5	CD	DOS
 to	TO	O
 12	CD	DOS
 μg	NNS	UNIT
@@ -43122,8 +43122,8 @@ stabilization	NN	O
 every	DT	FREQ
 3	CD	FREQ
 to	TO	O
-12	CD	O
-months	NNS	O
+12	CD	FREQ
+months	NNS	FREQ
 thereafter	RB	O
 until	IN	O
 growth	NN	O
@@ -43565,13 +43565,13 @@ the	DT	O
 following	JJ	O
 schedule	NN	O
 :	:	O
-0	CD	DOS
+0	CD	O
 ,	,	O
-2	CD	O
-months	NNS	O
+2	CD	PER
+months	NNS	PER
 ,	,	O
-6	CD	O
-months	NNS	O
+6	CD	PER
+months	NNS	PER
 .	.	O
 
 Because	IN	O
@@ -46128,8 +46128,8 @@ before	IN	O
 surgery	NN	O
 followed	VBN	O
 by	IN	O
-2,500	CD	O
-IU	NNP	O
+2,500	CD	DOS
+IU	NNP	UNIT
 subcutaneously	RB	O
 12	CD	O
 hours	NNS	O
@@ -49596,7 +49596,7 @@ IGF	NNP	O
 1	CD	DOS
 levels	NNS	UNIT
 of	IN	O
-0	CD	DOS
+0	CD	O
 to	TO	O
 +2	VB	O
 SD	NNP	O
@@ -51996,7 +51996,7 @@ dL	NN	O
 ,	,	O
 redose	VBP	O
 between	IN	O
-125	CD	O
+125	CD	DOS
 to	TO	O
 200	CD	DOS
 international	JJ	UNIT
@@ -52743,11 +52743,11 @@ initiation	NN	O
 Regimen	NNP	O
 After	IN	O
 Missing	VBG	O
-4	CD	O
-Months	NNS	O
+4	CD	PER
+Months	NNS	PER
 to	TO	O
-9	CD	O
-Months	NNS	O
+9	CD	PER
+Months	NNS	PER
 of	IN	O
 INVEGA	NNP	O
 TRINZA®	NNP	O
@@ -53195,7 +53195,7 @@ divided	JJ	UNIT
 doses	NNS	UNIT
 (	(	O
 range	NN	O
-150	CD	O
+150	CD	DOS
 -	:	O
 750	CD	DOS
 mcg	NN	UNIT
@@ -54975,8 +54975,8 @@ starting	VBG	O
 as	RB	O
 soon	RB	O
 as	IN	O
-one	CD	DOS
-month	NN	UNIT
+one	CD	PER
+month	NN	PER
 after	IN	O
 initiating	VBG	O
 treatment	NN	O
@@ -56410,12 +56410,12 @@ warfarin	NN	O
 is	VBZ	O
 recommended	VBN	O
 for	IN	O
-at	IN	O
-least	JJS	O
-6	CD	O
+at	IN	PER
+least	JJS	PER
+6	CD	PER
 to	TO	O
-12	CD	FREQ
-months	NNS	FREQ
+12	CD	PER
+months	NNS	PER
 .	.	O
 
 A	DT	O
@@ -56523,11 +56523,11 @@ reducing	VBG	O
 the	DT	O
 dosage	NN	O
 from	IN	O
-0.1	CD	O
+0.1	CD	DOS
 to	TO	O
-0.05	CD	O
+0.05	CD	DOS
 to	TO	O
-0.025	CD	O
+0.025	CD	DOS
 to	TO	O
 0.01	CD	DOS
 micrograms	NNS	UNIT
@@ -60290,7 +60290,7 @@ below	IN	O
 11	CD	O
 .	.	O
 
-Infants	NNS	O
+Infants	NNS	WHO
 may	MD	O
 be	VB	O
 given	VBN	O
@@ -61034,7 +61034,7 @@ blood	NN	O
 concentration	NN	O
 .	.	O
 
-Infants	NNS	O
+Infants	NNS	WHO
 may	MD	O
 be	VB	O
 given	VBN	O
@@ -61119,7 +61119,7 @@ is	VBZ	O
 mL	NN	UNIT
 (	(	O
 range	NN	O
-35	CD	O
+35	CD	DOS
 -	:	O
 45	CD	DOS
 mL	NN	UNIT
@@ -65387,7 +65387,7 @@ mg	NN	UNIT
 mL	NN	O
 ,	,	O
 heparin	VBZ	O
-10	CD	O
+10	CD	DOS
 or	CC	O
 50	CD	DOS
 U	NNP	UNIT
@@ -67752,9 +67752,9 @@ time	NN	O
 (	(	O
 such	JJ	O
 as	IN	O
-a	DT	O
-few	JJ	O
-months	NNS	O
+a	DT	PER
+few	JJ	PER
+months	NNS	PER
 )	)	O
 .	.	O
 
@@ -69404,7 +69404,7 @@ ranges	NNS	O
 of	IN	O
 oral	JJ	O
 olanzapine	NN	O
-5	CD	O
+5	CD	DOS
 to	TO	O
 20	CD	DOS
 mg	NNS	UNIT
@@ -69570,7 +69570,7 @@ dropper	NN	O
 .	.	O
 
 A	DT	O
-3	CD	O
+3	CD	DOS
 to	TO	O
 5	CD	DOS
 mm	NN	UNIT
@@ -71712,10 +71712,10 @@ maintenance	NN	O
 of	IN	O
 clinical	JJ	O
 remission	NN	O
-up	RB	O
-to	TO	O
-3	CD	FREQ
-months	NNS	FREQ
+up	RB	PER
+to	TO	PER
+3	CD	PER
+months	NNS	PER
 .	.	O
 
 SURFAXIN	NNP	O
@@ -73049,8 +73049,8 @@ episodes	NNS	O
 of	IN	O
 depression	NN	O
 require	VBP	O
-several	JJ	O
-months	NNS	O
+several	JJ	PER
+months	NNS	PER
 or	CC	O
 longer	JJR	O
 of	IN	O
@@ -75350,7 +75350,7 @@ If	IN	O
 the	DT	O
 patient	NN	O
 misses	VBZ	O
-two	CD	O
+two	CD	DOS
 (	(	O
 2	CD	DOS
 )	)	O
@@ -75647,8 +75647,8 @@ with	IN	O
 norethindrone	JJ	O
 acetate	NN	O
 is	VBZ	O
-six	CD	O
-months	NNS	O
+six	CD	PER
+months	NNS	PER
 .	.	O
 
 administration	NN	O
@@ -75787,7 +75787,7 @@ tablets	NNS	O
 )	)	O
 1	CD	O
 /	$	O
-50E	CD	O
+50E	CD	DOS
 -	:	O
 28	CD	DOS
 tablet	NN	UNIT
@@ -81556,13 +81556,13 @@ sufficient	JJ	O
 .	.	O
 
 A	DT	O
-child	NN	O
-15	CD	O
-to	TO	O
-71	CD	O
-months	NNS	O
-of	IN	O
-age	NN	O
+child	NN	WHO
+15	CD	WHO
+to	TO	WHO
+71	CD	WHO
+months	NNS	WHO
+of	IN	WHO
+age	NN	WHO
 should	MD	O
 receive	VB	O
 one	CD	DOS
@@ -81908,8 +81908,8 @@ may	MD	O
 be	VB	O
 required	VBN	O
 for	IN	O
-several	JJ	O
-months	NNS	O
+several	JJ	PER
+months	NNS	PER
 after	IN	O
 therapy	NN	O
 has	VBZ	O
@@ -82966,7 +82966,7 @@ then	RB	O
 in	IN	O
 increments	NNS	O
 of	IN	O
-5	CD	O
+5	CD	DOS
 to	TO	O
 10	CD	DOS
 micrograms	NNS	UNIT
@@ -83558,8 +83558,8 @@ of	IN	O
 cysteine	NN	O
 by	IN	O
 the	DT	O
-preterm	NN	O
-infant	NN	O
+preterm	NN	WHO
+infant	NN	WHO
 ingesting	VBG	O
 maternal	JJ	O
 milk	NN	O
@@ -88246,8 +88246,8 @@ applicator	NN	O
 and	CC	O
 reprime	NN	O
 with	IN	O
-two	CD	O
-sprays	NNS	O
+two	CD	DOS
+sprays	NNS	UNIT
 or	CC	O
 until	IN	O
 a	DT	O
@@ -88300,7 +88300,7 @@ should	MD	O
 be	VB	O
 extended	VBN	O
 to	TO	O
-18	CD	O
+18	CD	PER
 to	TO	O
 24	CD	PER
 months	NNS	PER
@@ -88566,7 +88566,7 @@ size	NN	O
 ,	,	O
 usually	RB	O
 from	IN	O
-2.0	CD	O
+2.0	CD	DOS
 to	TO	O
 2.5	CD	DOS
 liters	NNS	UNIT
@@ -89779,7 +89779,7 @@ gently	RB	O
 squeezing	VBG	O
 liquid	NN	O
 into	IN	O
-infant	NN	O
+infant	NN	WHO
 's	POS	O
 mouth	NN	O
 toward	IN	O
@@ -90449,7 +90449,7 @@ hypothyroidism	NN	O
 
 Reposition	NNP	O
 the	DT	O
-infant	NN	O
+infant	NN	WHO
 for	IN	O
 instillation	NN	O
 of	IN	O
@@ -93261,7 +93261,7 @@ moderate	JJ	O
 (	(	O
 creatinine	JJ	O
 clearance	NN	O
-30	CD	O
+30	CD	DOS
 to	TO	O
 50	CD	DOS
 mL	NNS	UNIT
@@ -94889,7 +94889,7 @@ ER	NNP	O
 .	.	O
 
 The	DT	O
-infant	NN	O
+infant	NN	WHO
 should	MD	O
 be	VB	O
 allowed	VBN	O
@@ -95423,7 +95423,7 @@ meals	NNS	O
 Room	JJ	O
 temperature	NN	O
 :	:	O
-6	CD	O
+6	CD	DOS
 ,	,	O
 9	CD	DOS
 and	CC	O
@@ -97345,7 +97345,7 @@ Adults	NNS	WHO
 and	CC	WHO
 children	NNS	WHO
 :	:	O
-15,000	CD	O
+15,000	CD	DOS
 to	TO	O
 25,000	CD	DOS
 units	NNS	UNIT
@@ -98544,8 +98544,8 @@ acute	JJ	O
 gouty	NN	O
 attacks	NNS	O
 for	IN	O
-several	JJ	O
-months	NNS	O
+several	JJ	PER
+months	NNS	PER
 .	.	O
 
 The	DT	O
@@ -98939,7 +98939,7 @@ emulsions	NNS	O
 Studies	NNS	O
 comparing	VBG	O
 fluoxetine	NN	O
-20	CD	O
+20	CD	DOS
 ,	,	O
 40	CD	DOS
 ,	,	O
@@ -100170,7 +100170,7 @@ required	VBN	O
 for	IN	O
 the	DT	O
 growing	VBG	O
-infant	NN	O
+infant	NN	WHO
 .	.	O
 
 The	DT	O
@@ -100632,13 +100632,13 @@ weight	NN	O
 .	.	O
 
 An	DT	O
-infant	JJ	O
-2	CD	O
-to	TO	O
-10	CD	DOS
-months	NNS	UNIT
-of	IN	O
-age	NN	O
+infant	JJ	WHO
+2	CD	WHO
+to	TO	WHO
+10	CD	WHO
+months	NNS	WHO
+of	IN	WHO
+age	NN	WHO
 should	MD	O
 receive	VB	O
 three	CD	DOS
@@ -101736,10 +101736,10 @@ by	IN	O
 no	DT	O
 more	JJR	O
 than	IN	O
-75	CD	O
+75	CD	DOS
 -	:	O
-150	CD	O
-IU	NNP	O
+150	CD	DOS
+IU	NNP	UNIT
 additionally	RB	O
 at	IN	O
 each	DT	O
@@ -102529,7 +102529,7 @@ lost	VBN	O
 )	)	O
 .	.	O
 
-0	CD	DOS
+0	CD	O
 
 Do	NNP	O
 not	RB	O
@@ -103367,7 +103367,7 @@ either	DT	O
 dosing	VBG	O
 schedule	NN	O
 (	(	O
-0	CD	DOS
+0	CD	O
 ,	,	O
 1	CD	O
 ,	,	O
@@ -105054,10 +105054,10 @@ significant	JJ	O
 repigmentation	NN	O
 may	MD	O
 require	VB	O
-6	CD	O
+6	CD	PER
 to	TO	O
-9	CD	O
-months	NNS	O
+9	CD	PER
+months	NNS	PER
 of	IN	O
 treatment	NN	O
 .	.	O
@@ -106085,7 +106085,7 @@ tube	NN	O
 and	CC	O
 ventilate	VB	O
 the	DT	O
-infant	NN	O
+infant	NN	WHO
 for	IN	O
 at	IN	O
 least	JJS	O
@@ -106623,9 +106623,9 @@ pediatric	JJ	WHO
 patients	NNS	WHO
 14	CD	WHO
 days	NNS	WHO
-to	TO	O
-6	CD	FREQ
-months	NNS	FREQ
+to	TO	WHO
+6	CD	WHO
+months	NNS	WHO
 .	.	O
 
 <	RB	O
@@ -108087,10 +108087,10 @@ dose	NN	O
 administered	VBD	O
 anytime	RB	O
 between	IN	O
-6	CD	O
+6	CD	PER
 and	CC	O
-12	CD	O
-months	NNS	O
+12	CD	PER
+months	NNS	PER
 later	RB	O
 .	.	O
 
@@ -111300,7 +111300,7 @@ at	IN	O
 a	DT	O
 dosage	NN	O
 of	IN	O
-5	CD	O
+5	CD	DOS
 to	TO	O
 10mg	CD	DOS
 bretylium	NN	UNIT
@@ -112148,13 +112148,13 @@ five	CD	DOS
 dose	JJ	UNIT
 cohorts	NNS	UNIT
 (	(	O
-2	CD	O
+2	CD	DOS
 ,	,	O
-7	CD	O
+7	CD	DOS
 ,	,	O
-24	CD	O
+24	CD	DOS
 ,	,	O
-60	CD	O
+60	CD	DOS
 and	CC	O
 89	CD	DOS
 IU	NNP	UNIT
@@ -115304,8 +115304,8 @@ excess	JJ	O
 drug	NN	O
 
 After	IN	O
-3	CD	O
-months	NNS	O
+3	CD	PER
+months	NNS	PER
 ,	,	O
 dosage	NN	O
 may	MD	O
@@ -116310,8 +116310,8 @@ mg	NN	UNIT
 doses	NNS	UNIT
 .	.	O
 
-Preterm	JJ	O
-infants	NNS	O
+Preterm	JJ	WHO
+infants	NNS	WHO
 should	MD	O
 be	VB	O
 vaccinated	VBN	O
@@ -117453,7 +117453,7 @@ such	JJ	WHO
 patients	NNS	WHO
 .	.	O
 
-Infants	NNS	O
+Infants	NNS	WHO
 may	MD	O
 absorb	VB	O
 the	DT	O
@@ -117843,7 +117843,7 @@ be	VB	O
 administered	VBN	O
 to	TO	O
 any	DT	O
-infant	NN	O
+infant	NN	WHO
 before	IN	O
 the	DT	O
 age	NN	O
@@ -118009,7 +118009,7 @@ the	DT	O
 ,	,	O
 7th	CD	O
 ,	,	O
-9th	CD	DOS
+9th	CD	O
 or	CC	O
 11th	CD	O
 days	NNS	O
@@ -120141,7 +120141,7 @@ the	DT	O
 procedure	NN	O
 with	IN	O
 the	DT	O
-infant	NN	O
+infant	NN	WHO
 in	IN	O
 the	DT	O
 left	NN	O
@@ -122469,8 +122469,8 @@ hours	NNS	O
 .	.	O
 
 After	IN	O
-several	JJ	O
-months	NNS	O
+several	JJ	PER
+months	NNS	PER
 on	IN	O
 treatment	NN	O
 ,	,	O
@@ -123042,10 +123042,10 @@ of	IN	O
 mL	NN	UNIT
 is	VBZ	O
 given	VBN	O
-6	CD	O
+6	CD	PER
 to	TO	O
-12	CD	O
-months	NNS	O
+12	CD	PER
+months	NNS	PER
 after	IN	O
 the	DT	O
 second	JJ	O
