@@ -1,20 +1,20 @@
 Usual	JJ	O
-adult	NN	O
+adult	NN	WHO
 dose	VBD	O
 4	CD	DOS
 -	:	O
 8	CD	DOS
 mg	JJ	UNIT
-daily	RB	O
+daily	RB	FREQ
 .	.	O
 
 One	CD	DOS
 or	CC	O
 two	CD	DOS
 capsules	NNS	UNIT
-every	DT	O
-four	CD	O
-hours	NNS	O
+every	DT	FREQ
+four	CD	FREQ
+hours	NNS	FREQ
 .	.	O
 
 The	DT	O
@@ -79,9 +79,9 @@ followed	VBN	O
 by	IN	O
 300	CD	DOS
 mg	NNS	UNIT
-every	DT	O
-4	CD	O
-weeks	NNS	O
+every	DT	FREQ
+4	CD	FREQ
+weeks	NNS	FREQ
 .	.	O
 
 The	DT	O
@@ -238,9 +238,9 @@ tablets	NNS	O
 ,	,	O
 50	CD	DOS
 mg	NN	UNIT
-every	DT	O
-6	CD	O
-hours	NNS	O
+every	DT	FREQ
+6	CD	FREQ
+hours	NNS	FREQ
 ,	,	O
 15	CD	O
 minutes	NNS	O
@@ -265,8 +265,8 @@ Clindamycin	NNP	O
 Phosphate	NNP	O
 Topical	NNP	O
 Solution	NNP	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 to	TO	O
 affected	JJ	O
 area	NN	O
@@ -355,8 +355,8 @@ treated	VBN	O
 Apply	NNP	O
 Tolak	NNP	O
 Cream	NNP	O
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 an	DT	O
 amount	NN	O
@@ -405,8 +405,8 @@ approximately	RB	O
 mg	NNS	UNIT
 /	JJ	O
 kg	NNS	O
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 for	IN	O
 12	CD	O
 weeks	NNS	O
@@ -489,8 +489,8 @@ extended	VBN	O
 -	:	O
 release	NN	O
 tablets	NNS	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 within	IN	O
 one	CD	O
@@ -630,8 +630,8 @@ AMRIX	$	O
 mg	NN	UNIT
 capsule	NN	UNIT
 taken	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -704,8 +704,8 @@ is	VBZ	O
 mg	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -863,8 +863,8 @@ adults	NNS	O
 is	VBZ	O
 300	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 at	IN	O
 bedtime	NN	O
 .	.	O
@@ -1003,8 +1003,8 @@ dose	NN	O
 is	VBZ	O
 20	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -1043,8 +1043,8 @@ and	CC	O
 /	NN	O
 or	CC	O
 trunk	NN	O
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 after	IN	O
 washing	VBG	O
 .	.	O
@@ -1126,8 +1126,8 @@ arthritis	NN	O
 is	VBZ	O
 10	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -1161,8 +1161,8 @@ Oleptro	NNP	O
 is	VBZ	O
 150	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 in	IN	O
 adults	NNS	O
 .	.	O
@@ -1264,8 +1264,8 @@ two	CD	DOS
 sprays	NNS	UNIT
 per	IN	O
 nostril	JJ	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 .	.	O
 
 Initiate	NNP	O
@@ -1276,8 +1276,8 @@ dose	NN	O
 of	IN	O
 1000	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Daily	JJ	O
@@ -1398,8 +1398,8 @@ Orenitram	NNP	O
 is	VBZ	O
 0.25	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 BID	NNP	O
 )	)	O
@@ -1480,8 +1480,8 @@ powder	NN	O
 should	MD	O
 be	VB	O
 administered	VBN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 by	IN	O
 the	DT	O
 orally	RB	O
@@ -1519,8 +1519,8 @@ to	TO	O
 40	CD	DOS
 mg	NNS	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 food	NN	O
 .	.	O
@@ -1693,8 +1693,8 @@ FLOMAX	NNP	O
 capsules	VBZ	O
 0.4	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 is	VBZ	O
 recommended	VBN	O
 as	IN	O
@@ -1774,8 +1774,8 @@ mg	NN	UNIT
 capsule	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 food	NN	O
 .	.	O
@@ -1829,8 +1829,8 @@ one	CD	DOS
 mg	NN	UNIT
 VIREAD	NNP	UNIT
 tablet	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 taken	VBN	O
 orally	RB	O
 ,	,	O
@@ -1869,8 +1869,8 @@ is	VBZ	O
 12	CD	DOS
 mg	NN	UNIT
 subcutaneously	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -2146,8 +2146,8 @@ mg	NN	UNIT
 to	TO	O
 120	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 with	IN	O
 or	CC	O
@@ -2186,8 +2186,8 @@ COZAAR	NNP	O
 is	VBZ	O
 50	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Apply	RB	O
@@ -2232,8 +2232,8 @@ is	VBZ	O
 60	CD	DOS
 mg	NN	UNIT
 ,	,	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 orally	RB	O
 .	.	O
@@ -2333,8 +2333,8 @@ mg	NN	UNIT
 /	NNP	O
 m2	NN	O
 administered	VBD	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 as	IN	O
 a	DT	O
 15	CD	DOS
@@ -2416,8 +2416,8 @@ Corlanor	NNP	O
 is	VBZ	O
 5	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 with	IN	O
 meals	NNS	O
 .	.	O
@@ -2574,8 +2574,8 @@ one	CD	DOS
 tablet	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 or	CC	O
 without	IN	O
@@ -2592,8 +2592,8 @@ one	CD	DOS
 tablet	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 a	DT	O
 meal	NN	O
@@ -2715,8 +2715,8 @@ tablets	NNS	UNIT
 )	)	O
 administered	VBD	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 in	IN	O
 combination	NN	O
 with	IN	O
@@ -2725,8 +2725,8 @@ prednisone	NN	O
 mg	NN	UNIT
 administered	VBN	O
 orally	RB	O
-twice	JJ	O
-daily	NN	O
+twice	JJ	FREQ
+daily	NN	FREQ
 .	.	O
 
 The	DT	O
@@ -2797,8 +2797,8 @@ Adults	NNS	O
 or	CC	O
 2	CD	DOS
 capsules	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Take	VB	O
@@ -2844,8 +2844,8 @@ is	VBZ	O
 or	CC	O
 20	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -3379,8 +3379,8 @@ tablets	NNS	UNIT
 )	)	O
 taken	VBN	O
 orally	RB	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 (	(	O
 10	CD	O
 -	:	O
@@ -3686,8 +3686,8 @@ One	CD	DOS
 250	CD	DOS
 mg	NN	UNIT
 tablet	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 12	CD	O
 weeks	NNS	O
@@ -4149,13 +4149,13 @@ either	CC	O
 as	IN	O
 3	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 or	CC	O
 6	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 TO	NNP	O
@@ -4218,15 +4218,15 @@ either	DT	O
 mg	NN	UNIT
 taken	VBN	O
 orally	RB	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 or	CC	O
 300	CD	DOS
 mg	NNS	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 or	CC	O
 without	IN	O
@@ -4247,8 +4247,8 @@ areas	NNS	O
 affected	VBN	O
 by	IN	O
 acne	JJ	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 ,	,	O
 in	IN	O
 the	DT	O
@@ -4350,8 +4350,8 @@ mg	NN	UNIT
 capsule	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 21	CD	O
 consecutive	JJ	O
@@ -4599,11 +4599,11 @@ dose	NN	O
 is	VBZ	O
 12.5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 or	CC	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -4748,8 +4748,8 @@ of	IN	O
 the	DT	O
 skin	NN	O
 ,	,	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 at	IN	O
 nighttime	NN	O
 .	.	O
@@ -4849,8 +4849,8 @@ AVAPRO	NNP	O
 is	VBZ	O
 150	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -4888,8 +4888,8 @@ is	VBZ	O
 or	CC	O
 20	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -4902,8 +4902,8 @@ is	VBZ	O
 mg	NN	UNIT
 given	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 on	IN	O
 Days	NNS	O
 1	CD	O
@@ -4950,8 +4950,8 @@ dose	NN	O
 of	IN	O
 50	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 is	VBZ	O
 recommended	VBN	O
 for	IN	O
@@ -4985,8 +4985,8 @@ ear	NN	O
 (	(	O
 s	PRP	O
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 for	IN	O
 seven	CD	O
 days	NNS	O
@@ -5004,8 +5004,8 @@ mg	NN	UNIT
 1	CD	DOS
 mL	NN	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 injected	VBN	O
 subcutaneously	RB	O
 into	IN	O
@@ -5028,8 +5028,8 @@ is	VBZ	O
 200	CD	DOS
 mg	NN	UNIT
 administered	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 six	CD	O
 (	(	O
@@ -5108,8 +5108,8 @@ is	VBZ	O
 mg	NN	UNIT
 administered	VBN	O
 orally	RB	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -5127,8 +5127,8 @@ is	VBZ	O
 mg	NN	UNIT
 administered	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 Apply	VB	O
@@ -5240,8 +5240,8 @@ dose	NN	O
 of	IN	O
 300	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Instill	NNP	O
@@ -5290,8 +5290,8 @@ to	TO	O
 be	VB	O
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -5350,8 +5350,8 @@ HCT	NNP	O
 /	VBD	O
 12.5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Start	NNP	O
@@ -5359,8 +5359,8 @@ dosing	VBG	O
 with	IN	O
 45	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Adults	NNS	O
@@ -5506,8 +5506,8 @@ mg	NN	UNIT
 or	CC	O
 30	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -5550,8 +5550,8 @@ dosing	NN	O
 at	IN	O
 50	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -5627,8 +5627,8 @@ the	DT	O
 affected	JJ	O
 skin	NN	O
 areas	NNS	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -5706,8 +5706,8 @@ a	DT	O
 single	JJ	DOS
 tablet	NN	UNIT
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -5717,8 +5717,8 @@ is	VBZ	O
 400	CD	DOS
 mg	NN	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 food	NN	O
 .	.	O
@@ -5770,8 +5770,8 @@ days	NNS	O
 0.1	CD	DOS
 mg	JJ	UNIT
 tablet	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 (	(	O
 morning	NN	O
 and	CC	O
@@ -5831,8 +5831,8 @@ pentoxifylline	NN	O
 is	VBZ	O
 400	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 after	IN	O
 meals	NNS	O
 .	.	O
@@ -5858,8 +5858,8 @@ dosing	NN	O
 (	(	O
 500	CD	DOS
 mg	NN	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 )	)	O
 .	.	O
 
@@ -6189,8 +6189,8 @@ the	DT	O
 affected	JJ	O
 skin	NN	O
 areas	NNS	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Initial	JJ	O
@@ -6268,8 +6268,8 @@ one	CD	DOS
 tablet	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 or	CC	O
 without	IN	O
@@ -6288,8 +6288,8 @@ capsule	NN	UNIT
 162.5	CD	DOS
 mg	NN	UNIT
 )	)	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 Adults	NNS	O
@@ -6372,8 +6372,8 @@ dosage	NN	O
 is	VBZ	O
 25	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
@@ -6430,8 +6430,8 @@ is	VBZ	O
 20	CD	DOS
 mg	NN	UNIT
 given	VBN	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 It	PRP	O
@@ -6443,8 +6443,8 @@ CC	NNP	O
 be	VB	O
 administered	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 on	IN	O
 an	DT	O
 empty	JJ	O
@@ -6459,8 +6459,8 @@ administered	VBN	O
 as	IN	O
 2	CD	DOS
 inhalations	NNS	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 by	IN	O
 the	DT	O
 orally	RB	O
@@ -6509,8 +6509,8 @@ CERDELGA	NNP	O
 is	VBZ	O
 84	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 CYP2D6	NNP	O
 EMs	NNP	O
@@ -6630,8 +6630,8 @@ dose	NN	O
 is	VBZ	O
 600	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -6674,8 +6674,8 @@ ASTEPRO	RB	O
 spray	NN	UNIT
 per	IN	O
 nostril	JJ	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 .	.	O
 
 Use	NNP	O
@@ -6737,8 +6737,8 @@ to	TO	O
 mg	NNS	UNIT
 /	JJ	O
 kg	NNS	O
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -6751,8 +6751,8 @@ one	CD	DOS
 tablet	NN	UNIT
 taken	VBN	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 food	NN	O
 in	IN	O
@@ -6795,8 +6795,8 @@ JARDIANCE	NNP	O
 is	VBZ	O
 10	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 the	DT	O
 morning	NN	O
@@ -6899,8 +6899,8 @@ is	VBZ	O
 8	CD	DOS
 mg	NN	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 with	IN	O
 a	DT	O
 meal	NN	O
@@ -7031,8 +7031,8 @@ mg	NN	UNIT
 to	TO	O
 480	CD	DOS
 mg	NNS	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 Adults	NNS	O
@@ -7065,8 +7065,8 @@ ATRIPLA	NNP	O
 is	VBZ	O
 one	CD	DOS
 tablet	NN	UNIT
-once	IN	O
-daily	JJ	O
+once	IN	FREQ
+daily	JJ	FREQ
 taken	VBN	O
 orally	RB	O
 on	IN	O
@@ -7286,8 +7286,8 @@ mg	NN	UNIT
 /	NN	O
 m²administered	VBD	O
 subcutaneously	RB	O
-twice	JJ	O
-daily	RB	O
+twice	JJ	FREQ
+daily	RB	FREQ
 for	IN	O
 14	CD	O
 consecutive	JJ	O
@@ -7319,8 +7319,8 @@ mg	NN	UNIT
 18	CD	DOS
 tablet	NN	UNIT
 )	)	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -7425,8 +7425,8 @@ is	VBZ	O
 10	CD	DOS
 mcg	NN	UNIT
 subcutaneously	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 for	IN	O
 14	CD	O
 days	NNS	O
@@ -7571,8 +7571,8 @@ the	DT	O
 affected	JJ	O
 skin	JJ	O
 area	NN	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 once	RB	O
 in	IN	O
@@ -7653,8 +7653,8 @@ mg	NN	UNIT
 capsules	NNS	UNIT
 )	)	O
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 .	.	O
 
 The	DT	O
@@ -7666,8 +7666,8 @@ RETROVIR	NNP	O
 is	VBZ	O
 300	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 in	IN	O
 combination	NN	O
 with	IN	O
@@ -7717,8 +7717,8 @@ given	VBN	O
 as	IN	O
 20	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 )	)	O
 to	TO	O
 60	CD	DOS
@@ -7728,14 +7728,14 @@ day	NN	O
 (	(	O
 given	VBN	O
 either	DT	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 or	CC	O
 as	IN	O
 30	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 )	)	O
 .	.	O
 
@@ -7747,8 +7747,8 @@ PLETAL	NNP	O
 is	VBZ	O
 100	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 taken	VBN	O
 at	IN	O
 least	JJS	O
@@ -7868,8 +7868,8 @@ is	VBZ	O
 mg	NN	UNIT
 once	RB	O
 or	CC	O
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 One	CD	DOS
@@ -8353,8 +8353,8 @@ dose	NN	O
 is	VBZ	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 RISPERDAL®	NNP	O
@@ -8390,8 +8390,8 @@ dose	NN	O
 of	IN	O
 20	CD	DOS
 mg	JJ	UNIT
-twice	RB	O
-daily	RB	O
+twice	RB	FREQ
+daily	RB	FREQ
 with	IN	O
 food	NN	O
 .	.	O
@@ -8683,8 +8683,8 @@ VMS	NNP	O
 is	VBZ	O
 7.5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 at	IN	O
 bedtime	NN	O
@@ -8873,8 +8873,8 @@ to	TO	O
 4	CD	DOS
 mg	NNS	UNIT
 orally	RB	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 at	IN	O
 any	DT	O
 time	NN	O
@@ -8939,8 +8939,8 @@ NORVASC	NNP	O
 is	VBZ	O
 5	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 ,	,	O
 and	CC	O
 the	DT	O
@@ -8949,8 +8949,8 @@ dose	NN	O
 is	VBZ	O
 10	CD	DOS
 mg	NN	UNIT
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 .	.	O
 
 The	DT	O
@@ -8963,8 +8963,8 @@ is	VBZ	O
 mg	NN	UNIT
 orally	RB	O
 ,	,	O
-once	RB	O
-daily	JJ	O
+once	RB	FREQ
+daily	JJ	FREQ
 until	IN	O
 disease	JJ	O
 progression	NN	O
@@ -8986,8 +8986,8 @@ is	VBZ	O
 mg	JJ	UNIT
 Inderal	NNP	O
 LA	NNP	O
-once	RB	O
-daily	RB	O
+once	RB	FREQ
+daily	RB	FREQ
 ,	,	O
 whether	IN	O
 used	VBN	O
