@@ -2,6 +2,7 @@
 Controller module for the application's interface.
 """
 import sys
+sys.path.append('../')
 import threading
 import subprocess
 
@@ -44,7 +45,7 @@ class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
             'UNIT': '#F95738',
             'WHO': '#8F78AD',
             'FREQ': '#D4BA6A',
-            'PER': '#BBCD67'
+            'DUR': '#BBCD67'
         }
 
         self.label.setText(f"<html><head/><body><p><span style=\" background-color:"
@@ -56,7 +57,7 @@ class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.label_4.setText(f"<html><head/><body><p><span style=\" background-color:"
                              f"{self.color_dict['FREQ']};\">Frequency</span></p></body></html>")
         self.label_5.setText(f"<html><head/><body><p><span style=\" background-color:"
-                             f"{self.color_dict['PER']};\">Period</span></p></body></html>")
+                             f"{self.color_dict['DUR']};\">Period</span></p></body></html>")
 
     def __load_text__(self):
         file_path = QtWidgets.QFileDialog.getOpenFileName(
@@ -115,6 +116,7 @@ class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
             if label == 'O':
                 rich_text += f'<label>{word}</label>'
             else:
+                label = label.split('-')[1]
                 rich_text += f'<nobr><label style=\"background-color:' \
                              f'{self.color_dict[label]}\">{word}</label></nobr>'
 
@@ -134,3 +136,4 @@ if __name__ == '__main__':
     FORM.show()
 
     APP.exec_()
+

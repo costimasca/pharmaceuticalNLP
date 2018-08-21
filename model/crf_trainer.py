@@ -21,7 +21,7 @@ class Trainer:
     Generates a CRF model given a data set of labeled words.
     """
 
-    def __init__(self):
+    def __init__(self, model_file='model/model.pkl'):
         self.model = Model()
 
     def generate_model(self, data_set):
@@ -33,18 +33,13 @@ class Trainer:
         """
         x_train, y_train, x_test, y_test = self.gen_test_train(data_set)
 
-        crf = sklearn_crfsuite.CRF(
-            algorithm='lbfgs',
-            c1=0.1,
-            c2=0.1,
-            max_iterations=100,
-            all_possible_transitions=True
-        )
-        crf.fit(x_train, y_train)
+        results = self.gen_model(x_train, y_train, x_test, y_test)
+        print(results)
+        return results
 
-        labels = list(crf.classes_)
-        labels.remove('O')
-
+    def gen_model(self, x_train, y_train, x_test, y_test):
+        labels = ['O-DOS', 'B-DOS', 'I-UNIT', 'B-UNIT', 'O-UNIT', 'I-FREQ', 'B-FREQ', 'O-FREQ', 'I-DUR', 'B-DUR', 'O-DUR', 'I-WHO', 'B-WHO', 'O-WHO']
+        # labels = ['m', 'r', 'f', 'do', 'du', 'mo']
         crf = sklearn_crfsuite.CRF(
             algorithm='lbfgs',
             max_iterations=100,
@@ -72,6 +67,7 @@ class Trainer:
 
         y_prediction = crf.predict(x_test)
 
+
         # group B and I results
         sorted_labels = sorted(
             labels,
@@ -80,12 +76,59 @@ class Trainer:
 
         joblib.dump(crf, 'model.pkl')
 
-        print(metrics.flat_classification_report(
-            y_test, y_prediction, labels=sorted_labels, digits=3))
-
         return metrics.flat_classification_report(
             y_test, y_prediction, labels=sorted_labels, digits=3
         )
+
+    def validate_performance(self, test_set):
+        sentences = self.__load_corpus__(test_set)
+
+        y_test = [self.model.sentence2labels(s) for s in sentences]
+
+        y_prediction = []
+        for i, sent in enumerate(sentences):
+            new_sent = ' '.join([word[0] for word in sent])
+            prediction = self.model.predict(new_sent)
+            new_prediction = []
+            if len(prediction) > 1:
+                for p in prediction:
+                    new_prediction += [p1 for p1 in p]
+                # print(prediction)
+                # print(new_prediction)
+
+                prediction = new_prediction
+            else:
+                prediction = prediction[0]
+
+            try:
+                pred = [w[1] for w in prediction]
+            except Exception:
+                print(prediction)
+                return
+
+            # if len(pred) != len(y_test[i]):
+            #     print(sent)
+            #     print(new_sent)
+            #     print(y_test[i])
+            #     print(len(y_test[i]))
+            #     print(pred)
+            #     print(len(pred))
+
+            y_prediction.append(pred)
+
+        labels = ['O-DOS', 'B-DOS', 'I-UNIT', 'B-UNIT', 'O-UNIT', 'I-FREQ', 'B-FREQ', 'O-FREQ', 'I-DUR', 'B-DUR',
+                  'O-DUR', 'I-WHO', 'B-WHO', 'O-WHO']
+
+        # labels = ['DOS', 'UNIT', 'WHO', 'DUR', 'FREQ']
+
+        sorted_labels = sorted(
+            labels,
+            key=lambda name: (name[1:], name[0])
+        )
+
+        print(metrics.flat_classification_report(
+            y_test, y_prediction, labels=sorted_labels, digits=3
+        ))
 
     def gen_test_train(self, corpus_file):
         """
@@ -132,10 +175,10 @@ class Trainer:
 
         sentences.append(sent)
 
-        for sent in sentences:
-            if sent and sent[0] == '0' and sent[1] == '0':
-                sent[0] = '.'
-                sent[1] = '.'
+        # for sent in sentences:
+        #     if sent and sent[0] == '0' and sent[1] == '0':
+        #         sent[0] = '.'
+        #         sent[1] = '.'
 
         return sentences
 

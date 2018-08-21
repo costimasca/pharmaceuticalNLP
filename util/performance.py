@@ -1,9 +1,10 @@
 from model import crf_trainer
+from model import crf_model
 import random
 from util.crfUtil import loadCorpus
 
 
-def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
+def performance_measure(corpus_file="../model/corp.tsv", ten_fold=False, verbose=False):
     """
     Measures the performance on a given corpus file.
     ten_fold parameter changes the behavior of the function, performing a
@@ -24,6 +25,7 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
         precision, recall and f1-score for all labels
 
     """
+    model = crf_model.Model("../model/model.pkl")
     sent = loadCorpus(corpus_file)
     random.shuffle(sent)
     l = int(len(sent) / 10)
@@ -61,7 +63,16 @@ def performance_measure(corpus_file="corp.tsv", ten_fold=False, verbose=False):
     for s in sets:
         test = s
         train = [sentence for set in sets for sentence in set if set != s]
-        data = crf_trainer.gen_model(train, test, False)
+
+        x_train = [model.sentence2features(s) for s in train]
+        y_train = [model.sentence2labels(s) for s in train]
+
+        x_test = [model.sentence2features(s) for s in test]
+        y_test = [model.sentence2labels(s) for s in test]
+
+        trainer = crf_trainer.Trainer("../model/model.pkl")
+
+        data = trainer.gen_model(x_train, y_train, x_test, y_test)
         if verbose:
             print(data)
 

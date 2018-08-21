@@ -9,3 +9,6 @@ issues.tsv
 *.png
 sentences/
 data/
+model/corpus_i2b2.tsv
+model/i2b2_corpus/*
+model/results_i2b2

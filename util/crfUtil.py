@@ -2,12 +2,11 @@ import os
 import sys
 import matplotlib.pyplot as plt
 import nltk
-from sklearn_crfsuite import metrics
-from sklearn.externals import joblib
 import csv
 from scipy.stats import norm
 import matplotlib.mlab as mlab
 from model.crf_model import Model
+from model.crf_trainer import Trainer
 
 sys.path.insert(0, '.')
 
@@ -18,6 +17,7 @@ def corpus2file(list, name):
             for token in line:
                 f.write(token[0] + '\t' + token[1] + '\t' + token[2] + '\n')
             f.write('\n')
+
 
 def getAllDosages():
     dir = 'DATASET/dosage/'
@@ -145,18 +145,22 @@ def lists_equal(l1,l2):
     return True
 
 
-def view_issues(file='corp.tsv'):
+def view_issues(file='model/corp.tsv'):
     """generates a tsv file with labels given to test sentences.
     the purpose of this is to see where most errors occur.
     perhaps a clue to a correction in the data set can be inferred from this"""
     corp = loadCorpus(file)
-    model = Model()
+    model = Model('model.pkl')
+
+    entities = ['B-DOS', 'O-DOS', 'B-DUR', 'I-DUR', 'O-DUR', 'B-FREQ',
+                'I-FREQ', 'O-FREQ', 'B-UNIT', 'I-UNIT', 'O-UNIT', 'B-WHO', 'I-WHO', 'O-WHO']
 
     for sent in corp:
         new_sent = ' '.join([el[0] for el in sent])
         labels = [el[2] for el in sent]
 
         prediction = model.predict(new_sent)
+        print(prediction)
         if prediction:
             pred = []
             for p in prediction:
@@ -170,16 +174,9 @@ def view_issues(file='corp.tsv'):
                 p = prediction[i]
 
                 if c != p:
-                    if corp[j][i][2] == "WHO" or prediction[i] == "WHO":
-                        corp[j][i][2] += ' !!! ' + prediction[i]
-                    if corp[j][i][2] == "DOS" or prediction[i] == "DOS":
-                        corp[j][i][2] += ' !!! ' + prediction[i]
-                    if corp[j][i][2] == "UNIT" or prediction[i] == "UNIT":
-                        corp[j][i][2] += ' !!! ' + prediction[i]
-                    if corp[j][i][2] == "FREQ" or prediction[i] == "FREQ":
-                        corp[j][i][2] += ' !!! ' + prediction[i]
-                    if corp[j][i][2] == "PER" or prediction[i] == "PER":
-                        corp[j][i][2] += ' !!! ' + prediction[i]
+                    for en in entities:
+                        if corp[j][i][2] == en or prediction[i] == en:
+                            corp[j][i][2] += ' !!! ' + prediction[i]
 
     writeTsv(corp, 'issues.tsv')
 
@@ -221,7 +218,7 @@ def fix_eg_ie():
     c = open('corpus.tsv')
     lines = c.readlines()
 
-    t = open('corp2.tsv','w')
+    t = open('corp2.tsv', 'w')
     new_lines = []
     sent = ''
     for line in lines:
@@ -270,13 +267,13 @@ def plot_error_distrib(x):
 
    (mu,sigma) = norm.fit(p)
 
-   n, bins, patches = plt.hist(p, normed=1, facecolor='green', alpha=0.75)
+   n, bins, patches = plt.hist(p, normed=1, facecolor='grey', alpha=0.75)
 
    y = mlab.normpdf(bins, mu, sigma)
-   l = plt.plot(bins,y,'r--', linewidth=2)
+   l = plt.plot(bins, y, 'b--', linewidth=2)
 
-   plt.title("Distributia erorilor de recall")
-   plt.grid(True)
+   # plt.title("f1 error distribution")
+   plt.grid(False)
 
    plt.show()
 
@@ -355,5 +352,90 @@ def sent_file_to_unlab_corp(file):
         f.close()
 
 
+def change_format():
+    file = 'model/test.tsv'
+    with open(file) as corpus_file:
+        corp = corpus_file.readlines()
+
+    new_corp = []
+
+    for i, line in enumerate(corp):
+        if line.endswith('\tI-WHO\n'):
+            if not corp[i+1].endswith('\tI-WHO\n'):
+                line = line[:-7] + '\tO-WHO\n'
+        new_corp.append(line)
+
+    for sent in new_corp:
+        print(sent)
+
+    with open('model/tmp.tsv', 'w') as f:
+        for line in new_corp:
+            f.write(line)
+
+
+def distrib():
+    file = 'model/corp.tsv'
+    with open(file) as corpus_file:
+        corp = corpus_file.readlines()
+
+    count = {'DOS': 0, 'UNIT': 0, 'DUR': 0, 'FREQ': 0, 'WHO': 0}
+
+    for line in corp:
+        label = line.split('-')[-1][:-1]
+        if label in count.keys():
+            count[label] += 1
+
+    count = {key: c/1401 for key, c in count.items()}
+    print(count)
+
+
+def average_results():
+    file = 'model/results'
+    with open(file) as f:
+        results = f.readlines()
+
+    new_list = []
+    tmp = []
+    for line in results:
+        if line == '\n':
+            new_list.append(tmp)
+            tmp = []
+        else:
+            line = line.split(',')[:-1]
+            tmp.append(line)
+
+    result_dict = {}
+    for line in new_list[0]:
+        result_dict.update({line[0]: []})
+
+    for res in new_list:
+        for line in res:
+            result_dict[line[0]].append(line[1:])
+
+    print(result_dict.keys())
+
+    for entity, result_list in result_dict.items():
+        precision = 0
+        recall = 0
+        f1 = 0
+
+        for res in result_list:
+            precision += float(res[0])
+            recall += float(res[1])
+            f1 += float(res[2])
+
+        precision /= 6
+        recall /= 6
+        f1 /= 6
+        print(entity + ' & %.3f & %.3f & %.3f \\\\' % (precision, recall, f1))
+
+
 if __name__ == '__main__':
-    view_issues('model/corp.tsv')
+    # change_format()
+
+    average_results()
+    # trainer = Trainer('model.pkl')
+    # trainer.validate_performance('model/test.tsv')
+    # trainer.generate_model('model/corp.tsv')
+    # trainer.generate_model('model/corp.tsv')
+    # view_issues()

@@ -3,9 +3,7 @@ from sklearn.externals import joblib
 from apted import helpers,apted, Config
 import subprocess
 import re
-from model import Model
-
-clf = joblib.load('model.pkl')
+from model.crf_model import Model
 
 
 def convert_to_IOB(sent):
@@ -68,8 +66,8 @@ def convert_to_ne_tree(sentence):
 
     returns a bracket notation tree
     """
-
-    ne_labels = label(sentence)
+    model = Model()
+    ne_labels = model.predict(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
@@ -86,16 +84,17 @@ def convert_to_ne_tree(sentence):
 
 
 def view_tree(sentence):
-    ne_labels = label(sentence)
+    model = Model('../model.pkl')
+    ne_labels = model.predict(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
-    sent = list(zip([x[0] for x in pos],[x[1] for x in pos],ne_labels))
-    sent = convert_to_IOB(sent)
-
+    sent = list(zip([x[0] for x in pos], [x[1] for x in pos], ne_labels[0]))
+    # sent = convert_to_IOB(sent)
+    print(sent)
     text = ''
     for t, p, n in sent:
-        text += t + ' ' + p + ' ' + n + '\n'
+        text += t + ' ' + p + ' ' + n[1] + '\n'
 
     tree = nltk.chunk.conllstr2tree(text, chunk_types=['DOS', 'UNIT', 'WHO', 'O', 'FREQ', 'PER'])
     tree.draw()
@@ -267,14 +266,14 @@ def all_structures2():
 
 
 def chunk_sentence(sentence):
-
+    model = Model('../model.pkl')
     sentence = fix_dashes_slashes(sentence)
-    ne_labels = label(sentence)
+    ne_labels = model.predict(sentence)
     sent = nltk.word_tokenize(sentence)
     pos = nltk.pos_tag(sent)
 
-    sent = list(zip([x[0] for x in pos], ne_labels))
-    # sent = convert_to_IOB(sent)
+    sent = list(zip([x[0] for x in pos], [n[1] for n in ne_labels]))
+    sent = convert_to_IOB(sent)
 
     for i,t in enumerate(sent):
         if t[0] == 'or':
@@ -304,6 +303,7 @@ def chunk_sentence(sentence):
     """
 
     cp = nltk.RegexpParser(grammar)
+    print(sent)
     result = cp.parse(sent)
 
     for st in result.subtrees(lambda t: '_' in t.label()):
@@ -357,4 +357,4 @@ def fix_dashes_slashes(sent):
 
 
 if __name__ == '__main__':
-    all_structures2()
+    view_tree('The recommended dosage is 30 to 40 mg per day.')

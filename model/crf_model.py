@@ -10,8 +10,11 @@ class Model:
     Loads the CRF model and returns labels given a sentence.
     """
 
-    def __init__(self):
-        self.crf = joblib.load('model/model.pkl')
+    def __init__(self, model_path='model.pkl'):
+        """
+        :param model_path: path to the model.
+        """
+        self.crf = joblib.load(model_path)
 
     def predict(self, text):
         """
@@ -35,9 +38,9 @@ class Model:
 
         return new_sentences
 
-    def __word2features__(self, sent, i):
-        word = sent[i][0]
-        postag = sent[i][1]
+    def _word2features(self, sent, position):
+        word = sent[position][0]
+        postag = sent[position][1]
 
         features = {
             'bias': 1.0,
@@ -46,70 +49,70 @@ class Model:
             'word[-2:]': word[-2:],
             'word.isupper()': word.isupper(),
             'word.istitle()': word.istitle(),
-            'word.isdigit()': word.isdigit() or postag == 'CD',
-            'word.ispunctuation()': self.__is_punctuation(word),
+            'word.containsDigit()': any(ch.isdigit() for ch in word),
+            'word.containsPunctuation()': any(self.__is_punctuation(ch) for ch in word),
             'postag': postag,
             'postag[:2]': postag[:2],
         }
 
-        if i > 1:
-            word2 = sent[i - 2][0]
-            postag2 = sent[i - 2][1]
+        if position > 1:
+            word2 = sent[position - 2][0]
+            postag2 = sent[position - 2][1]
             features.update({
                 '-2:word.lower()': word2.lower(),
                 '-2:word.istitle()': word2.istitle(),
                 '-2:word.isupper()': word2.isupper(),
-                '-2:word.isdigit()': word2.isdigit() or postag2 == 'CD',
+                '-2:word.containsDigit()': any(ch.isdigit() for ch in word),
                 '-2:postag': postag2,
                 '-2:postag[:2]': postag2[:2],
             })
 
-        if i > 0:
-            word1 = sent[i - 1][0]
-            postag1 = sent[i - 1][1]
+        if position > 0:
+            word1 = sent[position - 1][0]
+            postag1 = sent[position - 1][1]
             features.update({
                 '-1:word.lower()': word1.lower(),
                 '-1:word.istitle()': word1.istitle(),
                 '-1:word.isupper()': word1.isupper(),
-                '-1:word.isdigit()': word1.isdigit() or postag1 == 'CD',
+                '-1:word.containsDigit()': any(ch.isdigit() for ch in word),
                 '-1:postag': postag1,
                 '-1:postag[:2]': postag1[:2],
             })
         else:
             features['BOS'] = True
 
-        if i < len(sent) - 2:
-            word2 = sent[i + 2][0]
-            postag2 = sent[i + 2][1]
+        if position < len(sent) - 2:
+            word2 = sent[position + 2][0]
+            postag2 = sent[position + 2][1]
             features.update({
                 '+2:word.lower()': word2.lower(),
                 '+2:word.istitle()': word2.istitle(),
                 '+2:word.isupper()': word2.isupper(),
-                '+2:word.isdigit()': word2.isdigit() or postag2 == 'CD',
+                '+2:word.containsDigit()': any(ch.isdigit() for ch in word),
                 '+2:postag': postag2,
                 '+2:postag[:2]': postag2[:2],
             })
 
-        if i < len(sent) - 3:
-            word3 = sent[i + 3][0]
-            postag3 = sent[i + 3][1]
+        if position < len(sent) - 3:
+            word3 = sent[position + 3][0]
+            postag3 = sent[position + 3][1]
             features.update({
                 '+3:word.lower()': word3.lower(),
                 '+3:word.istitle()': word3.istitle(),
                 '+3:word.isupper()': word3.isupper(),
-                '+3:word.isdigit()': word3.isdigit() or postag3 == 'CD',
+                '+3:word.containsDigit()': any(ch.isdigit() for ch in word),
                 '+3:postag': postag3,
                 '+3:postag[:2]': postag3[:2],
             })
 
-        if i < len(sent) - 1:
-            word1 = sent[i + 1][0]
-            postag1 = sent[i + 1][1]
+        if position < len(sent) - 1:
+            word1 = sent[position + 1][0]
+            postag1 = sent[position + 1][1]
             features.update({
                 '+1:word.lower()': word1.lower(),
                 '+1:word.istitle()': word1.istitle(),
                 '+1:word.isupper()': word1.isupper(),
-                '+1:word.isdigit()': word1.isdigit() or postag1 == 'CD',
+                '+1:word.containsDigit()': any(ch.isdigit() for ch in word),
                 '+1:postag': postag1,
                 '+1:postag[:2]': postag1[:2],
             })
@@ -149,7 +152,7 @@ class Model:
         :param sentence: A list of words.
         :return: A list of features for each word in the sentence.
         """
-        return [self.__word2features__(sentence, i) for i in range(len(sentence))]
+        return [self._word2features(sentence, i) for i in range(len(sentence))]
 
     @staticmethod
     def sentence2labels(sentence):
