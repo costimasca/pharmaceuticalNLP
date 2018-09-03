@@ -13,6 +13,8 @@ from sklearn.model_selection import RandomizedSearchCV
 from sklearn.externals import joblib
 from sklearn_crfsuite import metrics
 
+from sklearn import metrics as mt
+
 from model.crf_model import Model
 
 
@@ -34,11 +36,24 @@ class Trainer:
         x_train, y_train, x_test, y_test = self.gen_test_train(data_set)
 
         results = self.gen_model(x_train, y_train, x_test, y_test)
-        print(results)
         return results
 
     def gen_model(self, x_train, y_train, x_test, y_test):
-        labels = ['O-DOS', 'B-DOS', 'I-UNIT', 'B-UNIT', 'O-UNIT', 'I-FREQ', 'B-FREQ', 'O-FREQ', 'I-DUR', 'B-DUR', 'O-DUR', 'I-WHO', 'B-WHO', 'O-WHO']
+
+        for i in range(len(y_train)):
+            for j in range(len(y_train[i])):
+                y_train[i][j] = y_train[i][j].replace('B-', '')
+                y_train[i][j] = y_train[i][j].replace('O-', '')
+                y_train[i][j] = y_train[i][j].replace('I-', '')
+
+        for i in range(len(y_test)):
+            for j in range(len(y_test[i])):
+                y_test[i][j] = y_test[i][j].replace('B-', '')
+                y_test[i][j] = y_test[i][j].replace('O-', '')
+                y_test[i][j] = y_test[i][j].replace('I-', '')
+
+        labels = ['DOS', 'UNIT', 'FREQ', 'DUR', 'WHO']
+        # labels = ['O-DOS', 'B-DOS', 'I-UNIT', 'B-UNIT', 'O-UNIT', 'I-FREQ', 'B-FREQ', 'O-FREQ', 'I-DUR', 'B-DUR', 'O-DUR', 'I-WHO', 'B-WHO', 'O-WHO']
         # labels = ['m', 'r', 'f', 'do', 'du', 'mo']
         crf = sklearn_crfsuite.CRF(
             algorithm='lbfgs',
@@ -75,6 +90,20 @@ class Trainer:
         )
 
         joblib.dump(crf, 'model.pkl')
+
+        precision = metrics.flat_precision_score(y_test, y_prediction, labels=sorted_labels, average='micro')
+        recall = metrics.flat_recall_score(y_test, y_prediction, labels=sorted_labels, average='micro')
+        f1 = metrics.flat_f1_score(y_test, y_prediction, labels=sorted_labels, average='micro')
+
+        print('MICRO')
+        print(precision, recall, f1)
+
+        precision = metrics.flat_precision_score(y_test, y_prediction, labels=sorted_labels, average='macro')
+        recall = metrics.flat_recall_score(y_test, y_prediction, labels=sorted_labels, average='macro')
+        f1 = metrics.flat_f1_score(y_test, y_prediction, labels=sorted_labels, average='macro')
+
+        print('MACRO')
+        print(precision, recall, f1)
 
         return metrics.flat_classification_report(
             y_test, y_prediction, labels=sorted_labels, digits=3
@@ -119,12 +148,41 @@ class Trainer:
         labels = ['O-DOS', 'B-DOS', 'I-UNIT', 'B-UNIT', 'O-UNIT', 'I-FREQ', 'B-FREQ', 'O-FREQ', 'I-DUR', 'B-DUR',
                   'O-DUR', 'I-WHO', 'B-WHO', 'O-WHO']
 
+        for i in range(len(y_prediction)):
+            for j in range(len(y_prediction[i])):
+                y_prediction[i][j] = y_prediction[i][j].replace('B-', '')
+                y_prediction[i][j] = y_prediction[i][j].replace('O-', '')
+                y_prediction[i][j] = y_prediction[i][j].replace('I-', '')
+
+        for i in range(len(y_test)):
+            for j in range(len(y_test[i])):
+                y_test[i][j] = y_test[i][j].replace('B-', '')
+                y_test[i][j] = y_test[i][j].replace('O-', '')
+                y_test[i][j] = y_test[i][j].replace('I-', '')
+
+        labels = ['DOS', 'UNIT', 'FREQ', 'DUR', 'WHO']
+
         # labels = ['DOS', 'UNIT', 'WHO', 'DUR', 'FREQ']
 
         sorted_labels = sorted(
             labels,
             key=lambda name: (name[1:], name[0])
         )
+
+        precision = metrics.flat_precision_score(y_test, y_prediction, labels=sorted_labels, average='micro')
+        recall = metrics.flat_recall_score(y_test, y_prediction, labels=sorted_labels, average='micro')
+        f1 = metrics.flat_f1_score(y_test, y_prediction, labels=sorted_labels, average='micro')
+
+        print('MICRO')
+        print(precision, recall, f1)
+
+        precision = metrics.flat_precision_score(y_test, y_prediction, labels=sorted_labels, average='macro')
+        recall = metrics.flat_recall_score(y_test, y_prediction, labels=sorted_labels, average='macro')
+        f1 = metrics.flat_f1_score(y_test, y_prediction, labels=sorted_labels, average='macro')
+
+        print('MACRO')
+        print(precision, recall, f1)
+
 
         print(metrics.flat_classification_report(
             y_test, y_prediction, labels=sorted_labels, digits=3
@@ -160,7 +218,7 @@ class Trainer:
 
     @staticmethod
     def __load_corpus__(corpus_file):
-        with open(corpus_file, 'r') as file:
+        with open(corpus_file, newline='', encoding='utf-8') as file:
             data = list(csv.reader(file, delimiter='\t'))
 
         sentences = []

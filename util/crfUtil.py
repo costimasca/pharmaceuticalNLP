@@ -430,12 +430,33 @@ def average_results():
         print(entity + ' & %.3f & %.3f & %.3f \\\\' % (precision, recall, f1))
 
 
-if __name__ == '__main__':
-    # change_format()
+def experiment(data_set='model/corp.tsv'):
+    """
+    Takes the first 500 sentences from the corpus, splits them into five equal sets, keeping one of them for test.
+    The other sets are used to train a model firstly with 100 sentences, then with 200, 300 and finally with 400.
+    Prints the results to the console.
 
-    average_results()
-    # trainer = Trainer('model.pkl')
-    # trainer.validate_performance('model/test.tsv')
-    # trainer.generate_model('model/corp.tsv')
-    # trainer.generate_model('model/corp.tsv')
-    # view_issues()
+    :parameter data_set: path to the data set
+    :return: None
+    """
+    trainer = Trainer('model.pkl')
+
+    sentences = trainer.__load_corpus__(data_set)[:500]
+
+    sets = [sentences[i:i+100] for i in range(5)]
+
+    test = sets[4]
+    x_test = [trainer.model.sentence2features(s) for s in test]
+    y_test = [trainer.model.sentence2labels(s) for s in test]
+
+    for i in range(1, 5):
+        train = [el for sub_set in sets[:i] for el in sub_set]
+        x_train = [trainer.model.sentence2features(s) for s in train]
+        y_train = [trainer.model.sentence2labels(s) for s in train]
+
+        print(trainer.gen_model(x_train, y_train, x_test, y_test))
+        print(50 * '--')
+
+
+if __name__ == '__main__':
+    experiment()
