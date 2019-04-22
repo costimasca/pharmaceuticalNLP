@@ -56,7 +56,7 @@ day	NN	O-FREQ
 for	IN	O
 at	IN	B-DUR
 least	JJ	I-DUR
-10	CD	O-DUR
+10	CD	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -67,7 +67,7 @@ of	IN	O
 ABSTRAL	NNP	O
 to	TO	O
 treat	VB	O
-four	CD	B-DOS
+four	CD	O
 or	CC	O
 fewer	JJR	O
 episodes	NNS	O
@@ -1064,7 +1064,7 @@ and	CC	O
 a	DT	O
 1	CD	B-DOS
 -	:	O
-mg	NN	O
+mg	NN	B-UNIT
 starting	VBG	O
 dose	NN	O
 is	VBZ	O
@@ -1088,8 +1088,8 @@ that	IN	O
 particles	VBZ	O
 less	JJR	O
 than	IN	O
-10	CD	B-DOS
-microns	NNS	B-UNIT
+10	CD	O
+microns	NNS	O
 should	MD	O
 be	VB	O
 retained	VBN	O
@@ -1232,7 +1232,7 @@ a	DT	I-FREQ
 day	NN	O-FREQ
 for	IN	O
 fourteen	JJ	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -2209,8 +2209,8 @@ count	NN	O
 is	VBZ	O
 greater	JJR	O
 than	IN	O
-4000	CD	B-DOS
-cells	NNS	B-UNIT
+4000	CD	O
+cells	NNS	O
 /	JJ	O
 mcL	NN	O
 and	CC	O
@@ -2220,8 +2220,8 @@ count	NN	O
 is	VBZ	O
 greater	JJR	O
 than	IN	O
-100000	CD	B-DOS
-cells	NNS	B-UNIT
+100000	CD	O
+cells	NNS	O
 /	JJ	O
 mcL	NN	O
 .	.	O
@@ -3116,7 +3116,7 @@ in	IN	O
 for	IN	O
 at	IN	B-DUR
 least	JJS	I-DUR
-24	CD	O-DUR
+24	CD	I-DUR
 hours	NNS	O-DUR
 and	CC	O
 to	TO	O
@@ -3842,7 +3842,7 @@ day	NN	O-FREQ
 for	IN	O
 at	IN	B-DUR
 least	JJ	I-DUR
-10	CD	O-DUR
+10	CD	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -3930,7 +3930,7 @@ day	NN	O-FREQ
 for	IN	O
 at	IN	B-DUR
 least	JJ	I-DUR
-10	CD	O-DUR
+10	CD	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -4056,7 +4056,7 @@ hours	NNS	O-FREQ
 ,	,	O
 for	IN	O
 3	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 ,	,	O
 then	RB	O
@@ -4064,7 +4064,7 @@ withhold	VBD	O
 use	NN	O
 for	IN	O
 4	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -4615,7 +4615,7 @@ mg	NNS	B-UNIT
 )	)	O
 for	IN	O
 14	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 to	TO	O
 achieve	VB	O
@@ -4682,7 +4682,7 @@ day	NN	O-FREQ
 for	IN	O
 at	IN	B-DUR
 least	JJ	I-DUR
-7	CD	O-DUR
+7	CD	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -8455,7 +8455,7 @@ tolerance	NN	O
 for	IN	O
 at	IN	B-DUR
 least	JJS	I-DUR
-two	CD	O-DUR
+two	CD	I-DUR
 weeks	NNS	O-DUR
 .	.	O
 
@@ -8468,7 +8468,7 @@ taken	VBN	O
 daily	RB	B-FREQ
 for	IN	O
 21	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 ,	,	O
 followed	VBN	O
@@ -8482,7 +8482,7 @@ tablet	NN	O-UNIT
 daily	RB	B-FREQ
 for	IN	O
 7	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -8654,7 +8654,7 @@ continued	VBN	O
 for	IN	O
 at	IN	B-DUR
 least	JJS	I-DUR
-five	CD	O-DUR
+five	CD	I-DUR
 days	NNS	O-DUR
 at	IN	O
 the	DT	O
@@ -10427,7 +10427,7 @@ per	IN	B-FREQ
 day	NN	O-FREQ
 for	IN	O
 two	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 )	)	O
 ,	,	O
@@ -12786,14 +12786,14 @@ twice	RB	B-FREQ
 daily	RB	O-FREQ
 for	IN	O
 3	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 ,	,	O
 then	RB	O
 discontinue	NN	O
 for	IN	O
 4	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -13116,7 +13116,7 @@ recommended	VBN	O
 for	IN	O
 up	RB	B-DUR
 to	TO	I-DUR
-12	CD	O-DUR
+12	CD	I-DUR
 weeks	NNS	O-DUR
 in	IN	O
 pediatric	JJ	B-WHO
@@ -13775,7 +13775,7 @@ fluids	NNS	O
 for	IN	O
 at	IN	B-DUR
 least	JJ	I-DUR
-5	CD	O-DUR
+5	CD	I-DUR
 days	NNS	O-DUR
 after	IN	O
 each	DT	O
@@ -14160,7 +14160,7 @@ doses	NNS	O
 for	IN	O
 at	IN	B-DUR
 least	JJ	I-DUR
-10	CD	O-DUR
+10	CD	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -15387,7 +15387,7 @@ stinging	VBG	O
 for	IN	O
 up	IN	B-DUR
 to	TO	I-DUR
-4	CD	O-DUR
+4	CD	I-DUR
 days	NNS	O-DUR
 following	VBG	O
 corneal	JJ	O
@@ -17096,7 +17096,7 @@ meals	NNS	O
 for	IN	O
 15	CD	B-DUR
 to	TO	I-DUR
-20	CD	O-DUR
+20	CD	I-DUR
 weeks	NNS	O-DUR
 (	(	O
 see	VB	O
@@ -17502,7 +17502,7 @@ for	IN	O
 up	IN	B-DUR
 to	TO	I-DUR
 2	CD	I-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 weeks	NNS	O-DUR
 .	.	O
 
@@ -22147,7 +22147,7 @@ daily	RB	O-FREQ
 for	IN	O
 up	IN	B-DUR
 to	TO	I-DUR
-3	CD	O-DUR
+3	CD	I-DUR
 months	NNS	O-DUR
 .	.	O
 
@@ -24792,7 +24792,7 @@ tablet	NN	O-UNIT
 daily	RB	B-FREQ
 for	IN	O
 21	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 ,	,	O
 followed	VBN	O
@@ -24804,7 +24804,7 @@ tablet	NN	O-UNIT
 daily	RB	B-FREQ
 for	IN	O
 7	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 ,	,	O
 according	VBG	O
@@ -24865,7 +24865,7 @@ the	DT	O
 antipsychotic	JJ	O
 for	IN	O
 14	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 to	TO	O
 maintain	VB	O
@@ -28243,7 +28243,7 @@ be	VB	O
 stored	VBN	O
 up	IN	B-DUR
 to	TO	I-DUR
-14	CD	O-DUR
+14	CD	I-DUR
 days	NNS	O-DUR
 when	WRB	O
 refrigerated	VBN	O
@@ -28905,7 +28905,7 @@ per	IN	B-FREQ
 day	NN	O-FREQ
 for	IN	O
 two	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 )	)	O
 ,	,	O
@@ -31266,7 +31266,7 @@ period	NN	O
 of	IN	O
 at	IN	B-DUR
 least	JJS	I-DUR
-two	CD	O-DUR
+two	CD	I-DUR
 weeks	NNS	O-DUR
 .	.	O
 
@@ -32069,7 +32069,7 @@ tablet	NN	O-UNIT
 daily	RB	B-FREQ
 for	IN	O
 7	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -32305,7 +32305,7 @@ daily	JJ	O-FREQ
 for	IN	O
 up	IN	B-DUR
 to	TO	I-DUR
-8	CD	O-DUR
+8	CD	I-DUR
 weeks	NNS	O-DUR
 .	.	O
 
@@ -34365,7 +34365,7 @@ kg	NN	O
 day	NN	O-FREQ
 for	IN	O
 4	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 (	(	O
 or	CC	O
@@ -34378,7 +34378,7 @@ kg	NN	O
 day	NN	O-FREQ
 for	IN	O
 5	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 )	)	O
 for	IN	O
@@ -35292,7 +35292,7 @@ kg	NN	O
 day	NN	O-FREQ
 for	IN	O
 4	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 (	(	O
 or	CC	O
@@ -35305,7 +35305,7 @@ kg	NN	O
 day	NN	O-FREQ
 for	IN	O
 5	CD	B-DUR
-consecutive	JJ	O-DUR
+consecutive	JJ	I-DUR
 days	NNS	O-DUR
 )	)	O
 for	IN	O
@@ -37966,7 +37966,7 @@ day	NN	O-FREQ
 for	IN	O
 at	IN	B-DUR
 least	JJS	I-DUR
-seven	CD	O-DUR
+seven	CD	I-DUR
 days	NNS	O-DUR
 .	.	O
 
@@ -39257,7 +39257,7 @@ clinical	JJ	O
 remission	NN	O
 up	RB	B-DUR
 to	TO	I-DUR
-3	CD	O-DUR
+3	CD	I-DUR
 months	NNS	O-DUR
 .	.	O
 
@@ -39323,7 +39323,7 @@ administered	VBN	O
 for	IN	O
 up	IN	B-DUR
 to	TO	I-DUR
-9	CD	O-DUR
+9	CD	I-DUR
 months	NNS	O-DUR
 .	.	O
 
@@ -39332,7 +39332,7 @@ may	MD	O
 begin	VB	O
 after	IN	O
 a	DT	B-DUR
-few	JJ	O-DUR
+few	JJ	I-DUR
 weeks	NNS	O-DUR
 but	CC	O
 significant	JJ	O
